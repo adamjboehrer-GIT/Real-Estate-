@@ -143,7 +143,7 @@ Every outreach action should be logged with: channel, contact ID, date, message 
 
 ---
 
-## Working Directory Structure (Planned)
+## Working Directory Structure
 
 ```
 /
@@ -158,5 +158,8 @@ Every outreach action should be logged with: channel, contact ID, date, message 
 │   └── score_leads.py         # Lead scoring logic
 ├── outreach/
 │   └── templates/             # Email and messaging templates
-└── reports/                   # Campaign performance reports
+├── reports/                   # Campaign performance reports
+└── Newsletter/
+    ├── NEWSLETTER_GUIDE.md    # Process guide and brand standards
+    └── issues/                # One HTML file per issue, named YYYY-MM-DD_issue-##.html
 ```
