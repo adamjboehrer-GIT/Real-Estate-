@@ -33,7 +33,7 @@ Send this link plus `2_walking_route.html` to whoever is delivering the flyers. 
 If the source xlsx files are updated, re-run:
 
 ```bash
-cd "/Users/adamboehrer/Farming Walking Route"
+cd "/Users/adamboehrer/Desktop/Claude Code/Farming Walking Route"
 python3 build_delivery_package.py
 ```
 
