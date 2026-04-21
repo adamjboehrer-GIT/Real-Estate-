@@ -157,12 +157,15 @@ Every outreach action should be logged with: channel, contact ID, date, message 
 ├── data/
 │   └── imports/               # Drop PropStream CSV exports here
 ├── scripts/
-│   ├── ingest_propstream.py   # CSV → SQLite ingestion + dedup
-│   ├── sync_sheets.py         # SQLite → Google Sheets sync
-│   └── score_leads.py         # Lead scoring logic
+│   ├── ingest_propstream.py            # CSV → SQLite ingestion + dedup
+│   ├── ingest_firstam_property.py      # FirstAm textLayer dict → SQLite + markdown
+│   ├── migrate_add_firstam_columns.py  # Idempotent schema migration
+│   ├── sync_sheets.py                  # SQLite → Google Sheets sync
+│   └── score_leads.py                  # Lead scoring logic
 ├── outreach/
 │   └── templates/             # Email and messaging templates
 ├── reports/                   # Campaign performance reports
+├── Title Database/            # Per-property markdown docs from FirstAm IgniteRE
 └── Newsletter/
     ├── NEWSLETTER_GUIDE.md    # Process guide and brand standards
     └── issues/                # One HTML file per issue, named YYYY-MM-DD_issue-##.html
