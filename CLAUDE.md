@@ -48,8 +48,12 @@ Both are non-engineers. Claude Code is the primary technical operator for this s
 
 ### MLS (CRMLS)
 - **Access:** Adam's licensed agent credentials.
-- **CRITICAL CONSTRAINT:** Do NOT use Playwright or any automation to bulk extract MLS data. CRMLS subscriber agreement prohibits automated bulk extraction regardless of credential validity. Violation risk = loss of MLS access = loss of ability to practice real estate.
-- **Permitted use:** Manual property research, looking up specific listings, deal analysis. Human-driven only.
+- **Usage:** Property research, looking up specific listings, deal analysis.
+
+### First American IgniteRE
+- **Access:** Adam's licensed agent credentials. OAuth via login.firstam.com.
+- **Usage:** Draw-polygon farming tool → per-property title reports (owner, vesting, APN, sale/loan history, tax info). Playwright automation validated 2026-04-21 — DOM-based extraction from the PDF.js textLayer (no PDF download needed).
+- **Workflow:** Navigate to properties.ignitere.firstam.com/Polygon/MapSearch → draw polygon → click each property in the list → click Property Detail → wait for green ready arrow → click arrow → extract textLayer → upsert to SQLite + write markdown → back → back → reopen list → next.
 
 ---
 
