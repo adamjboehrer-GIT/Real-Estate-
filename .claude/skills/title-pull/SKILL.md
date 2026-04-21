@@ -1,19 +1,35 @@
 ---
 name: title-pull
-description: Pull FirstAm IgniteRE Property Detail reports for a range of properties in a drawn polygon via Playwright, extract the textLayer DOM into structured data, upsert into SQLite, and write a per-property markdown file to Title Database/. Use when Adam says "title-pull from N to M", "run title-pull on N through M", or any variant naming a start/end property number in a polygon he has already drawn.
+description: Pull FirstAm IgniteRE Property Detail reports for a range of properties in a drawn polygon via Playwright, extract the textLayer DOM into structured data, upsert into SQLite, and write a per-property markdown file to Title Database/. Invoke this skill when Adam types `/title-pull` or asks to "title-pull", "pull titles", "run title-pull", etc. The skill itself asks Adam for the property-number range as its first step, then executes continuously through that range.
 ---
 
 # Title Pull — FirstAm IgniteRE → SQLite + Markdown
 
 ## When to use
 
-Adam invokes this skill by telling you a property-number range within a polygon he has *already drawn* on FirstAm IgniteRE. Examples:
+Adam invokes this skill by typing `/title-pull` in the chat, or by saying "title-pull", "pull titles", "run title-pull", or any variant. He will have already drawn a polygon and logged into FirstAm IgniteRE manually before invoking — you do not draw polygons or handle login.
 
-- "Title-pull properties 1 through 10"
-- "Run title-pull on 1 to 50"
-- "Pull titles 51 to 100"
+The skill itself is responsible for asking Adam for the property-number range as its **first action**. Do not assume a range. Do not start the loop until you have one.
 
-He will not ask you to draw the polygon. He will not log in. He handles both of those manually before invoking the skill.
+## Step 0 — Ask for the range
+
+Before doing anything else, ask Adam for the start and end property numbers. Use a plain text question (not AskUserQuestion) since the range is free-form:
+
+> "What range of property numbers should I title-pull? (e.g., `1 to 10`, `51 through 100`, `200-250`)"
+
+Wait for his answer. Parse a start integer N and end integer M from his reply. Accept variants: `1 to 10`, `1-10`, `1 through 10`, `1..10`. If parsing fails or the range is invalid (M < N, N < 1, M > total properties in the current selection), ask him to clarify — do not guess.
+
+Once you have a valid N and M, confirm back to him in one line: "Running title-pull on properties N through M — that's (M - N + 1) homes. Starting now." Then proceed to the preconditions check.
+
+## Preconditions — verify before starting the loop
+
+Ask the user to confirm if any of these are unclear. Never start the loop blind.
+
+1. Playwright browser is running on `https://properties.ignitere.firstam.com/Polygon/MapSearch#` and Adam is logged in (session cookies carry over between runs).
+2. A polygon has been drawn on the map — the property list popup is open showing "X of X Properties" in the top section.
+3. The `boundary-search-property-itemN` rows exist in the DOM for the N you're about to process.
+
+If any of those fail, stop and tell Adam what's missing.
 
 ## Preconditions — verify before starting
 
