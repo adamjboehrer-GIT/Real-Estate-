@@ -75,6 +75,9 @@ Both are non-engineers. Claude Code is the primary technical operator for this s
 - **Playwright MCP** — Available. Use for assisted browsing, research, and automation of portal workflows (e.g., PropStream exports, FirstAm IgniteRE property detail extraction).
 - **Google Sheets MCP** — To be configured once Google Cloud service account credentials are ready.
 
+### Skills
+- **`title-pull`** — Canonical workflow for pulling FirstAm IgniteRE Property Detail reports for a range of properties in a drawn polygon. Adam draws the polygon and logs in manually, then invokes this skill with a property-number range (e.g., "title-pull 1 through 10"). The skill handles: clicking each row, triggering Property Detail generation, retrying on Temporary Error, extracting the PDF.js textLayer, piping through `scripts/ingest_firstam_property.py`, writing SQLite rows + per-property markdown to `Title Database/`, and clicking back through to the next property. Full procedure at `.claude/skills/title-pull/SKILL.md` — always follow that exactly; do not invent a new procedure from scratch for this workflow.
+
 ---
 
 ## Current Active Deals (as of project start)
