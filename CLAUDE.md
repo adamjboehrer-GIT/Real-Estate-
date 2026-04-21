@@ -121,8 +121,8 @@ Every outreach action should be logged with: channel, contact ID, date, message 
 
 ## Key Decisions & Constraints
 
-1. **No MLS automation** — CRMLS ToS violation risk is too high. MLS is manual research only.
-2. **PropStream CSV → SQLite** is the primary data pipeline. Simple, compliant, scalable within plan limits.
+1. **PropStream CSV → SQLite** is the primary data pipeline. Simple, compliant, scalable within plan limits.
+2. **FirstAm IgniteRE textLayer → SQLite + per-property markdown** — automated property-detail extraction from the PDF.js preview DOM. No PDF download needed. Lands in `database/leads.db` and `Title Database/*.md`.
 3. **Google Sheets is the working CRM** — Not a replacement for SQLite. It's the collaborative interface layer.
 4. **Precision over volume** — Sotheby's brand is luxury. System should identify 12 perfect buyers, not blast 10,000 people.
 5. **Feedback loop is the core asset** — Every closed deal, every response, every unsubscribe gets logged and fed back to improve targeting. This is what compounds over time.
