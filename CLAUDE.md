@@ -72,7 +72,7 @@ Both are non-engineers. Claude Code is the primary technical operator for this s
 - **Other channels:** Direct mail flyers (already active in San Clemente), cold calling, geo-fenced ads, in-person visits, word of mouth.
 
 ### MCP Servers
-- **Playwright MCP** — Available. Use for assisted browsing and research (not bulk extraction). Can be used to automate PropStream exports if needed in the future (PropStream ToS is permissive about this since exports are their core product).
+- **Playwright MCP** — Available. Use for assisted browsing, research, and automation of portal workflows (e.g., PropStream exports, FirstAm IgniteRE property detail extraction).
 - **Google Sheets MCP** — To be configured once Google Cloud service account credentials are ready.
 
 ---
