@@ -7,13 +7,27 @@ description: Pull FirstAm IgniteRE Property Detail reports for a range of proper
 
 ## When to use
 
-Adam invokes this skill by typing `/title-pull` in the chat, or by saying "title-pull", "pull titles", "run title-pull", or any variant. He will have already drawn a polygon and logged into FirstAm IgniteRE manually before invoking — you do not draw polygons or handle login.
+Adam invokes this skill by typing `/title-pull` in the chat, or by saying "title-pull", "pull titles", "run title-pull", or any variant. On invocation the skill opens a Playwright browser to the FirstAm IgniteRE polygon search URL; Adam handles login and polygon drawing himself — you never automate either.
 
-The skill itself is responsible for asking Adam for the property-number range as its **first action**. Do not assume a range. Do not start the loop until you have one.
+The skill is responsible for (a) opening the browser, (b) waiting for Adam to confirm he's ready, (c) asking for the property-number range, and (d) running the per-property loop. Do not assume a range. Do not start the loop until you have one.
 
-## Step 0 — Ask for the range
+## Step 0 — Open the browser and wait for "ready"
 
-Before doing anything else, ask Adam for the start and end property numbers. Use a plain text question (not AskUserQuestion) since the range is free-form:
+Before doing anything else, open a Playwright browser to the FirstAm IgniteRE polygon search URL using the Playwright MCP tool:
+
+    mcp__playwright__browser_navigate → https://properties.ignitere.firstam.com/Polygon/MapSearch#
+
+Then send Adam this message (no extra commentary):
+
+> "Browser is open. Log in, draw your polygon, and say **ready** when the property list popup shows 'X of X Properties'."
+
+Wait for his reply. Accept any of: `ready`, `go`, `done`, `ok`, `yes`, or an explicit range (in which case skip straight to Step 1 with that range already in hand). If he replies with something else (e.g., "the polygon won't save", "still loading"), help him troubleshoot — do not start the loop until he confirms.
+
+Only after Adam confirms he's ready do you proceed to Step 1.
+
+## Step 1 — Ask for the range
+
+Ask Adam for the start and end property numbers. Use a plain text question (not AskUserQuestion) since the range is free-form:
 
 > "What range of property numbers should I title-pull? (e.g., `1 to 10`, `51 through 100`, `200-250`)"
 
@@ -25,18 +39,8 @@ Once you have a valid N and M, confirm back to him in one line: "Running title-p
 
 Ask the user to confirm if any of these are unclear. Never start the loop blind.
 
-1. Playwright browser is running on `https://properties.ignitere.firstam.com/Polygon/MapSearch#` and Adam is logged in (session cookies carry over between runs).
-2. A polygon has been drawn on the map — the property list popup is open showing "X of X Properties" in the top section.
-3. The `boundary-search-property-itemN` rows exist in the DOM for the N you're about to process.
-
-If any of those fail, stop and tell Adam what's missing.
-
-## Preconditions — verify before starting
-
-Ask the user to confirm if any of these are unclear. Never start the loop blind.
-
-1. Playwright browser is running on `https://properties.ignitere.firstam.com/Polygon/MapSearch#` and Adam is logged in (session cookies carry over between runs).
-2. A polygon has been drawn on the map — the property list popup is open showing "X of X Properties" in the top section.
+1. Playwright browser is open at `https://properties.ignitere.firstam.com/Polygon/MapSearch#` (you opened it in Step 0) and Adam has confirmed he logged in and drew a polygon.
+2. The property list popup is open showing "X of X Properties" in the top section.
 3. Adam has specified a clear start and end property number (e.g., "1 through 10").
 4. The `boundary-search-property-itemN` rows exist in the DOM for the N you're about to process.
 
