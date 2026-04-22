@@ -1,15 +1,22 @@
 # Terramar Association — Buyer Brief
 
 *Carlsbad, CA · private beach landing serving Terramar-area homes*
-*Source: 2025–2026 Membership Packet · Last updated: 2026-04-22*
+*Sources: 2025–2026 Membership Packet; Carlsbad STVR market data pulled 2026-04-13; Ram/Tanuja 5303 Los Robles analysis 2026-04-12*
+*Last updated: 2026-04-22*
 
 ---
 
+## Why Terramar matters
+
+Terramar is one of the most tightly held coastal pockets in North County San Diego. The thing that sets it apart from the rest of Carlsbad is a **private, deeded beach access** — a member-only gate and stairway to the sand, maintained by the Terramar Association. That amenity is scarce, protected, and a meaningful driver of long-term value in the neighborhood. It is also, as this brief details, governed by a strict volunteer board with real teeth.
+
+This is a neighborhood amenity, not a resort. Treat it as such.
+
 ## What it is
 
-A private, member-only beach landing (gate, stairway, hose area) maintained by the Terramar Association, a California nonprofit mutual benefit corporation. Access is by key only, issued to members in good standing. It is a neighborhood amenity, not a resort, and is actively policed by a volunteer board.
+A private beach landing (gate, stairway, hose area) owned and maintained by the Terramar Association, a California nonprofit mutual benefit corporation. Access is by key only, issued to members in good standing. The Board polices usage actively.
 
-## Who qualifies
+## Who qualifies for membership
 
 Owners of property on any of these streets:
 
@@ -36,36 +43,72 @@ If the home isn't on one of those streets, there is no path to a key.
 | Mailed key delivery | $5 |
 | Party/event use fee (non-refundable) | $300 |
 
-Renewal happens once a year, in person, over one weekend in late June at the gate. Out-of-town owners must arrange with the secretary in advance.
+Renewal happens once a year, in person, over one weekend in late June at the gate. Out-of-town owners must arrange with the secretary in advance. Late fees apply after June 30.
 
 ## Things buyers don't expect
 
-1. **No dogs on the property, even on leash.** Pass-through only, no stopping, no loitering. No exceptions (registered CA service dogs excepted).
+1. **No dogs on the property, even on leash.** Pass-through only, no stopping, no loitering. No exceptions (California-registered service dogs excepted).
 2. **Gate hours 7:00 a.m. – 10:00 p.m.** No after-hours beach access through the landing.
-3. **No commercial use of any kind.** No real estate showings, photo shoots, surf lessons, yoga, exercise classes, etc.
+3. **No commercial use of any kind.** No real estate showings, photo shoots, surf lessons, yoga, exercise classes, etc. on Association property.
 4. **Keys cannot be lent.** Not to houseguests alone, not to dog walkers, not to contractors. Violations risk suspension or revocation of membership.
 5. **No smoking, vaping, amplified music, wood fires, fishing from the landing, or bikes/skateboards/scooters.**
 6. **Parties of 11 or more** require Board approval 3 weeks in advance, a $300 non-refundable fee, a portable toilet at the owner's expense, and proof of $1M day-of liability insurance naming the Association as additional insured. Capped at 30 people. **No parties approved between Memorial Day and Labor Day.**
 7. **Even approved events aren't private** — other members retain full gate access during the event.
-8. **Tenants can get keys only if the owner is a current member in good standing.** Rental situations carry higher annual cost ($300 total: $150 owner + $150 tenant).
-9. **Keys are non-transferable.** When the property sells, keys return to the Association. The buyer starts fresh with the $650 initiation.
-10. **Members sign a full liability waiver and indemnity every year.** Members indemnify the Association even for the Association's own negligence, and are responsible for claims brought by their guests.
-11. **Rules can be changed at any time** at the Board's discretion.
+8. **Keys are non-transferable.** When the property sells, keys return to the Association. The buyer starts fresh with the $650 initiation.
+9. **Members sign a full liability waiver and indemnity every year.** Members indemnify the Association even for the Association's own negligence, and are responsible for claims brought by their guests.
+10. **Rules can be changed at any time** at the Board's discretion.
+
+---
+
+## Critical note for STR / investor buyers
+
+The beach access is the single biggest value driver for Terramar STR pricing power — and the Association rules substantially constrain how it can actually be used by short-term rental guests. Read this carefully before underwriting STR income:
+
+- **Tenants qualify for their own key only if they are renting the property for 30 consecutive days or more**, AND the owner must be a current member in good standing. Month+ rentals work. Nightly/weekly rentals do not.
+- **Keys cannot be lent** to non-members. There is no "leave the key in the lockbox for guests" workaround.
+- **Non-members cannot pass through the gate.** Guests must be *accompanied* by the Member. That means an STR guest in a < 30-day booking cannot independently use the private beach landing — the owner would have to be on-site.
+- **"No commercial use of the landing"** is called out explicitly and includes real estate activities; the Association treats short-stay rental operations with hostility in principle.
+- **Keys are non-transferable and revert at sale** — the new buyer pays the $650 initiation fresh.
+
+**What this means in practice:** if a Terramar property is being sold on an STR thesis that leans on "private beach access," the listing copy and marketing language can accurately describe it for the owner's personal use, but the actual guest experience for a nightly/weekly STR booking is *public Carlsbad beach access*, not the private landing. Buyers underwriting peak-season STR rates in the $500–$900+/night range should understand that the private-beach premium is real for the owner, partial (at best) for guests, and essentially unavailable for sub-30-day bookings unless the owner is physically present.
+
+For long-term rentals (30+ days), tenants can qualify for their own key and the amenity is available to them normally — so the thesis holds for LTR and medium-term rental strategies, not nightly STR.
+
+## Carlsbad / Terramar market context (for reference)
+
+*Pulled April 2026 — verify current before underwriting any deal.*
+
+- **Carlsbad STR market average:** $200–$300/night, ~59–70% occupancy (AirDNA: 59% occupancy, $299.60 ADR, $25.7K median annual revenue)
+- **Terramar 3BR peak-season VRBO comps (June 2026):** $842/night to $2,128/night — oceanfront and direct-beach-access listings at the top
+- **Airbnb 3BR Terramar (same dates):** $430–$860/night typical; $1,500+ for oceanfront luxury outliers
+- **Terramar 2BR ADU long-term rent:** ~$3,000–$3,500/month (vs. $3,168–$3,415 Carlsbad-wide 2BR average)
+- **Carlsbad market score (AirDNA):** 79/100
+
+The premium you see in the top Terramar comps is driven by *true oceanfront* frontage — "61' ocean frontage," "oceanfront, private beach access" — not by the Association membership per se. A non-oceanfront home on El Arbol or Los Robles gets a neighborhood premium but not the oceanfront multiplier.
 
 ## Who this works well for
 
-Owners who want a quiet, walkable beach amenity in their backyard and are comfortable treating it like a shared neighborhood space rather than a personal resort.
+- Primary residents who want a quiet, walkable beach amenity in their backyard
+- Second-home owners who will be on-site during guest visits
+- Long-term rental investors (30+ days) willing to coordinate membership with their tenant annually
+- Owners comfortable treating the landing as a shared neighborhood space, not a personal resort
 
 ## Who this may frustrate
 
-- Dog owners who envisioned beach walks with their pet
-- Buyers planning to rent short-term or use the property for events
+- Dog owners who envisioned beach walks with their pet from the landing
+- Short-term rental investors whose underwriting depends on guests using the private beach independently
+- Buyers planning to rent the home for events or weddings
 - Agents or professionals who want to use the landing for commercial purposes
 - Buyers planning large summer gatherings (Memorial Day–Labor Day party ban)
-- Buyers who expect the amenity to transfer automatically at close
+- Absentee owners who expected the amenity to transfer automatically at close
 
 ## Contacts
 
 - General / renewal: secretary@terramarassociation.com
 - Violations / rules: president@terramarassociation.com
 - Mailing: Terramar Association, P.O. Box 1711, Carlsbad, CA 92018
+
+## Related files in this repo
+
+- `client-emails/ram-tanuja-property-summary-04-12-2026.md` — 5303 Los Robles property summary and STR thesis
+- `STR RENTAL MARKET REPORTS/Carlsbad_STVR_Market_Data.md` — full Carlsbad STVR comps and cash flow analysis
