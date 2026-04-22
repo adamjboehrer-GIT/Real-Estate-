@@ -176,7 +176,14 @@ To get the full list popup back, click the green list-toggle button: `#boundary-
 
 ## Error handling
 
-- **"Temporary Error" on Property Detail click:** **Never re-click Property Detail inside the same single-property popup** — that duplicate click is what triggers FirstAm's "Temporary Error" response in the first place. Instead, back out (PDF back → single-popup back → list toggle), re-open the same property from the list, and click Property Detail once on the fresh popup. That reliably works. Only after three *fresh-popup* failures in a row is it a real rate-limit — stop the loop and tell Adam.
+- **"Temporary Error" detection — use the visibility of `#rl-report-msg-temp-error-21`, not a whole-DOM text scan.** Critical bug fixed 2026-04-22: FirstAm has hidden `<label class="rl-report-msg-temp-error" id="rl-report-msg-temp-error-N">Temporary Error</label>` elements in the DOM for *every* report type (21, 22, 10, 2, 25, 24, ...). These are present always but hidden via CSS; they're only displayed when a real error occurs. A naive `document.body.innerText.match(/Temporary Error/)` or `querySelectorAll('*').some(e => /Temporary Error/.test(e.textContent))` false-positives constantly. The correct check:
+  ```js
+  const errLabel = document.querySelector('#rl-report-msg-temp-error-21');
+  const cs = errLabel && getComputedStyle(errLabel);
+  const sawError = errLabel && cs.display !== 'none' && cs.visibility !== 'hidden' && errLabel.getBoundingClientRect().width > 0;
+  ```
+  Using the text-scan approach caused the 2026-04-21 run to falsely stop at #16, and caused early 2026-04-22 retries to loop through back-outs for no reason.
+- **Actual Temporary Error on Property Detail click:** **Never re-click Property Detail inside the same single-property popup** — that duplicate click triggers FirstAm's real error response. Instead, back out (PDF back → single-popup back → list toggle), re-open the same property from the list, and click Property Detail once on the fresh popup. Only after three *fresh-popup* failures in a row is it a real rate-limit — stop the loop and tell Adam.
 - **Green ready arrow never appears (90s timeout):** screenshot the state and stop. Don't keep polling indefinitely.
 - **textLayer is empty or missing:** the preview may not have finished rendering. Wait 2 more seconds and retry once. If still empty, skip this property with a logged note and move on.
 - **Python ingestion fails:** capture the raw lines to `Title Database/_failed/<apn>.json` for later re-processing. Do not crash the whole loop — move on.
