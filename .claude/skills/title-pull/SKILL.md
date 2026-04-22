@@ -201,7 +201,8 @@ Report to Adam: count of new rows in SQLite today, count of markdown files in Ti
 
 ## Files this skill depends on
 
-- `scripts/ingest_firstam_property.py` — the textLayer-lines → SQLite + markdown module. Entry point `ingest_firstam_lines(lines)`, CLI via stdin JSON.
+- `scripts/ingest_firstam_property.py` — the textLayer-lines → SQLite + markdown module. Entry point `ingest_firstam_lines(lines)`, CLI via stdin JSON. Upserts by APN (so re-running on the same property updates in place — no duplicate rows). Markdown filename is `{apn}_{slug}.md` (no date prefix — re-pulls overwrite cleanly).
+- `scripts/check_property_exists.py` — CLI helper for Step 0's dedupe pre-check. Takes a street address, exits 0/`EXISTS <apn>` if already ingested, 1/`MISSING` if not.
 - `scripts/migrate_add_firstam_columns.py` — idempotent schema migration. Run once before first use; no-op on repeats.
 - `database/leads.db` — SQLite master database with the extended `properties` schema.
 - `Title Database/` — destination folder for per-property markdown files.
