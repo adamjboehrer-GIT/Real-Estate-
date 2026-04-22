@@ -154,7 +154,7 @@ To get the full list popup back, click the green list-toggle button: `#boundary-
 
 ## Error handling
 
-- **"Temporary Error" on first click of Property Detail:** normal. Retry the click once. If the second attempt also errors, wait 5 seconds and try a third time. If three consecutive failures, stop the loop and tell Adam — that's a signal First American may be rate-limiting.
+- **"Temporary Error" on Property Detail click:** **Never re-click Property Detail inside the same single-property popup** — that duplicate click is what triggers FirstAm's "Temporary Error" response in the first place. Instead, back out (PDF back → single-popup back → list toggle), re-open the same property from the list, and click Property Detail once on the fresh popup. That reliably works. Only after three *fresh-popup* failures in a row is it a real rate-limit — stop the loop and tell Adam.
 - **Green ready arrow never appears (90s timeout):** screenshot the state and stop. Don't keep polling indefinitely.
 - **textLayer is empty or missing:** the preview may not have finished rendering. Wait 2 more seconds and retry once. If still empty, skip this property with a logged note and move on.
 - **Python ingestion fails:** capture the raw lines to `Title Database/_failed/<apn>.json` for later re-processing. Do not crash the whole loop — move on.
