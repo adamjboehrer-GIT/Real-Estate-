@@ -50,6 +50,28 @@ If any of those fail, stop and tell Adam what's missing.
 
 For each property number N in the range:
 
+### 0. Skip if already ingested (dedupe pre-check)
+
+Because Adam often re-draws overlapping polygons and re-runs `/title-pull 1 through M` on each one, the same properties recur across sessions. Before clicking into row N, read the row-label address and check SQLite:
+
+```js
+() => {
+  const row = document.querySelector('.boundary-search-property-itemN');  // replace N
+  const label = row.querySelector('label.boundary__search-result-address');
+  return label.textContent.trim();
+}
+```
+
+Parse out the first line (the street address, e.g. "193 Avenue La Cuesta, San Clemente, CA 92672") and shell out:
+
+```bash
+python3 scripts/check_property_exists.py "193 Avenue La Cuesta, San Clemente, CA 92672"
+```
+
+Exit 0 with stdout `EXISTS <apn>` = already ingested; **skip property N entirely** (log "skipped N — EXISTS <apn>" and continue to N+1). Exit 1 with stdout `MISSING` = new property; proceed to step 1.
+
+This keeps us from burning FirstAm report quota on duplicates.
+
 ### 1. Click into property #N
 
 Scroll the list to that row and click the name label. The row selector is `.boundary-search-property-itemN` (dynamic class per row). Inside that row, the clickable name is `label.boundary__search-result-address`.
