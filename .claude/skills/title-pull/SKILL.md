@@ -78,9 +78,15 @@ async () => {
 
 The single-property popup shows a Reports menu including "Combined", "Property Detail", "Transaction History", "Comparable Sales", "Foreclosure".
 
-Click the element `#rl-report-name-link-21` (Property Detail's ID is always 21). Use the same synthetic pointer sequence.
+Click the element `#rl-report-name-link-21` (Property Detail's ID is always 21) **exactly once**. Use the same synthetic pointer sequence.
 
-**The first click frequently shows "Temporary Error"** — we observed this on both Austin (property 1) and Pichika (property 2) during initial testing. On error, click Property Detail once more; this almost always succeeds.
+**Do NOT re-click Property Detail inside the same single-property popup if the first click errors.** Adam established on 2026-04-21 (after a run hit the error on property #16 of 21) that repeatedly clicking Property Detail within the same popup is what triggers FirstAm's "Temporary Error" — their backend appears to treat the duplicate clicks as abuse. The fix is to back out and re-enter the property from the list instead:
+
+1. If "Temporary Error" appears (or no ready arrow after 20s), **do not re-click Property Detail**.
+2. Close out: click `.ico-pdf-arrow-left` if a PDF pane is open, then click `#divPropDetailListIconID` to dismiss the single-property popup, then click `#boundary-search-list-link` to reopen the list.
+3. Wait ~2 seconds, then click the same `.boundary-search-property-itemN label.boundary__search-result-address` row again.
+4. Wait for the single-property popup to re-populate, then click `#rl-report-name-link-21` **exactly once** — this usually succeeds on the fresh popup.
+5. If it fails on the fresh popup too, try once more from the list (total two fresh-popup attempts). Three fresh-popup failures in a row = real rate-limit; stop the loop and tell Adam.
 
 Poll `#rl-view-report-ready-21` for visibility (`display !== 'none' && rect.width > 0`) for up to 90 seconds. When it becomes visible, the report is generated.
 
