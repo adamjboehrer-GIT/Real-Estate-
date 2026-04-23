@@ -1,8 +1,6 @@
 # adamboehrer.com
 
-Single-page personal site for Adam Boehrer, Pacific Sotheby's International Realty.
-
-Matches the Coastal Currents newsletter look. Sections: Get to Know Me → Join the Newsletter → Reach Out → Branded Footer.
+Single-page personal site for Adam Boehrer, Pacific Sotheby's International Realty. Matches the Coastal Currents newsletter look.
 
 ## Structure
 
@@ -11,32 +9,40 @@ website/
 ├── index.html          # The whole site
 ├── css/site.css        # Styles (Pacific Sotheby's brand tokens)
 ├── images/
-│   ├── portrait.jpg    # Family portrait (same image used in welcome email)
-│   └── brand-footer.jpg # Locked Sotheby's footer lockup with contact + DRE
+│   ├── portrait.jpg    # Family portrait
+│   └── brand-footer.jpg # Locked Sotheby's footer lockup (contact + DRE)
+├── _headers            # Cloudflare Pages response headers
 └── README.md
 ```
 
-## Before going live — one-time fixes
+## Two things to finish before going live
 
-1. **Mailchimp form action URL** in `index.html`. Find `[MC_SERVER]` and replace with the real server prefix (e.g. `us21`). Get the full form URL from Mailchimp → Audience → Signup forms → Embedded forms. Submissions flow into audience `f44752d032` and auto-trigger the "Welcome — Coastal Currents" journey.
+### 1. Mailchimp form action URL
 
-2. **Portrait** (optional). `images/portrait.jpg` is the family portrait from the welcome email (~4 MB). Swap in a lighter or more agent-style headshot later if desired.
+Open `index.html` and find `[MC_SERVER]` in the `<form action="...">` line. Replace it with the real server prefix from your Mailchimp account.
 
-## Deploying to Cloudflare Pages
+Easiest way to get the exact value:
 
-1. Push this repo to GitHub.
-2. Cloudflare dashboard → Pages → Create project → Connect to GitHub.
-3. Pick the repo. Settings:
+1. Mailchimp → **Audience** → **Signup forms** → **Embedded forms**.
+2. In the generated HTML, find the line `<form action="https://adamboehrer.usNN.list-manage.com/subscribe/post?..."`.
+3. Copy the `usNN` part (for example `us21`) and paste it in place of `[MC_SERVER]`. The rest of the URL should already match (user ID `cf70355a0c40376ae76d606fd`, audience ID `f44752d032`).
+
+Submissions hit audience `f44752d032` and automatically trigger the "Welcome — Coastal Currents" journey.
+
+### 2. Deploy to Cloudflare Pages
+
+The repo already has a GitHub remote: `adamjboehrer-GIT/Real-Estate-`.
+
+1. Push the latest commit (including the `website/` folder) to GitHub.
+2. Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
+3. Select repo `adamjboehrer-GIT/Real-Estate-`.
+4. Project settings:
+   - **Framework preset:** None
    - **Build command:** (leave empty)
    - **Build output directory:** `website`
-4. Deploy.
-5. In Pages project → Custom domains → add `adamboehrer.com` and `www.adamboehrer.com`. Cloudflare handles DNS automatically since the domain is already on Cloudflare Registrar.
+5. Deploy.
+6. When the first deploy succeeds, go to the Pages project → **Custom domains** → add `adamboehrer.com` and `www.adamboehrer.com`. Cloudflare will set up the DNS records automatically because the domain is on Cloudflare Registrar.
 
 ## Brand standards
 
-See `/CLAUDE.md` "Pacific Sotheby's Brand & Design Standards" for the full spec. Quick reference:
-
-- Colors: SIR Blue `#002349`, Gold `#C29B40`, Text Grey `#666666`, White, Paper `#f4f4f2`.
-- Type: Amiri (serif headlines), Source Sans Pro (body). Never heavier than semibold.
-- No em-dashes in body copy.
-- No client-speak: reader is the client, never addressed as an agent.
+See `/CLAUDE.md` "Pacific Sotheby's Brand & Design Standards" for the full spec.
