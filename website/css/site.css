@@ -1,0 +1,284 @@
+/* Adam Boehrer — personal site
+   Visual language matches Coastal Currents newsletter.
+   Palette + typography per Pacific Sotheby's brand standards in CLAUDE.md */
+
+:root {
+  --sir-blue: #002349;
+  --gold: #C29B40;
+  --text-grey: #666666;
+  --accent-grey: #999999;
+  --paper: #f4f4f2;
+  --white: #ffffff;
+  --rule: #e8e8e4;
+
+  --serif: 'Amiri', Garamond, 'Times New Roman', serif;
+  --sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--text-grey);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+a { color: var(--sir-blue); }
+a:hover { color: var(--gold); text-decoration: underline; }
+
+/* ===== PAGE SHELL — centered card on paper, like the newsletter ===== */
+.page {
+  padding: 32px 16px;
+}
+.card {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--white);
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  padding: 48px 56px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+}
+.site-header .brand {
+  font-family: var(--serif);
+  font-size: 28px;
+  color: var(--sir-blue);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+.site-header .affiliation {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.eyebrow-bar {
+  background: var(--paper);
+  padding: 14px 48px;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--text-grey);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+.section { padding: 40px 56px; }
+.section + .section { border-top: 1px solid var(--rule); }
+
+.section h2 {
+  margin: 0 0 20px;
+  font-family: var(--serif);
+  font-size: 22px;
+  color: var(--gold);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.section p {
+  margin: 0 0 16px;
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--text-grey);
+  line-height: 1.8;
+  font-weight: 300;
+}
+.section p:last-child { margin-bottom: 0; }
+
+.section p strong {
+  color: var(--sir-blue);
+  font-weight: 600;
+}
+
+.portrait {
+  padding: 40px 56px 0;
+  text-align: center;
+}
+.portrait img {
+  width: 100%;
+  max-width: 488px;
+  margin: 0 auto;
+}
+
+/* ===== BY THE NUMBERS ===== */
+.stats-eyebrow {
+  margin: 0 0 6px;
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--accent-grey);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.stats-eyebrow + .stats-eyebrow { margin-top: 32px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.stats-grid .stat {
+  border-top: 1px solid var(--gold);
+  padding-top: 14px;
+}
+.stats-grid .stat .val {
+  font-family: var(--serif);
+  font-size: 30px;
+  color: var(--sir-blue);
+  line-height: 1;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+.stats-grid .stat .lbl {
+  font-family: var(--sans);
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.stats-grid .stat .note {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--accent-grey);
+  line-height: 1.55;
+  font-weight: 300;
+  margin: 0;
+}
+.stats-sources {
+  margin: 20px 0 0;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--accent-grey);
+  line-height: 1.6;
+  font-weight: 300;
+}
+@media only screen and (max-width: 620px) {
+  .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .stats-grid .stat .val { font-size: 26px; }
+}
+@media only screen and (max-width: 420px) {
+  .stats-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== SIGNUP FORM ===== */
+.signup {
+  margin: 0 auto;
+  max-width: 420px;
+}
+.signup .field { margin-bottom: 14px; }
+.signup label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  margin-bottom: 6px;
+}
+.signup input[type="email"],
+.signup input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--rule);
+  background: var(--white);
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--sir-blue);
+  font-weight: 400;
+  border-radius: 0;
+}
+.signup input:focus { outline: none; border-color: var(--sir-blue); }
+
+.btn-row { text-align: center; margin-top: 22px; }
+
+.btn {
+  display: inline-block;
+  background: var(--sir-blue);
+  padding: 14px 36px;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--white);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover { background: var(--gold); color: var(--white); text-decoration: none; }
+
+/* ===== SOCIAL ROW ===== */
+.social-row {
+  text-align: center;
+  padding: 8px 56px 32px;
+}
+.social-row .follow-label {
+  margin: 0 0 10px 0;
+  font-family: var(--sans);
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.social-row .socials {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--sir-blue);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.social-row .socials a { color: var(--sir-blue); }
+.social-row .socials .dot { color: var(--gold); padding: 0 14px; }
+
+/* ===== BRAND FOOTER IMG ===== */
+.brand-footer img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.legal-bar {
+  background: var(--paper);
+  padding: 20px 48px 28px;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--text-grey);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+/* ===== MOBILE ===== */
+@media only screen and (max-width: 620px) {
+  .site-header { padding: 36px 28px 20px; }
+  .section { padding: 32px 28px; }
+  .portrait { padding: 32px 28px 0; }
+  .social-row { padding: 8px 28px 24px; }
+  .eyebrow-bar { padding: 14px 20px; }
+  .legal-bar { padding: 18px 24px 24px; }
+}

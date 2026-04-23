@@ -1,0 +1,39 @@
+{
+  "last_updated": "2026-04-23",
+  "reporting_label": "San Clemente · March 2026",
+  "row_1_label": "San Clemente Single-Family · March 2026",
+  "row_2_label": "San Clemente City-Wide · April 2026 Snapshot",
+  "sources": "California Regional MLS (via InfoSparks / ShowingTime Plus) and Pacific Sotheby's April 2026 Market Report.",
+  "stats": [
+    {
+      "value": "11",
+      "label": "Median Days on Market",
+      "note": "Down from 19 days last March."
+    },
+    {
+      "value": "2.5",
+      "label": "Months of Supply",
+      "note": "Tighter than 3.3 months a year ago."
+    },
+    {
+      "value": "$1.81M",
+      "label": "Median Sales Price",
+      "note": "91 active listings. 32 new pendings in March."
+    },
+    {
+      "value": "28%",
+      "label": "Listings with a Price Cut",
+      "note": "Among the lowest in Orange County."
+    },
+    {
+      "value": "100.8%",
+      "label": "Sale-to-List Ratio",
+      "note": "Homes under $5M closed at 101.1% in March."
+    },
+    {
+      "value": "+123%",
+      "label": "10-Year Home Value Growth",
+      "note": "Top tier of Orange County."
+    }
+  ]
+}
