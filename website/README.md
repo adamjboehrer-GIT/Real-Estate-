@@ -11,7 +11,7 @@ website/
 ├── data/
 │   └── stats.json      # Drives the "By the Numbers" section (see below)
 ├── images/
-│   ├── portrait.jpg    # Family portrait
+│   ├── headshot.jpg    # Adam's headshot (matches business card / email signature)
 │   └── brand-footer.jpg # Locked Sotheby's footer lockup (contact + DRE)
 ├── _headers            # Cloudflare Pages response headers
 └── README.md
