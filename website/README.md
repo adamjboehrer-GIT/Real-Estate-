@@ -8,12 +8,28 @@ Single-page personal site for Adam Boehrer, Pacific Sotheby's International Real
 website/
 ├── index.html          # The whole site
 ├── css/site.css        # Styles (Pacific Sotheby's brand tokens)
+├── data/
+│   └── stats.json      # Drives the "By the Numbers" section (see below)
 ├── images/
 │   ├── portrait.jpg    # Family portrait
 │   └── brand-footer.jpg # Locked Sotheby's footer lockup (contact + DRE)
 ├── _headers            # Cloudflare Pages response headers
 └── README.md
 ```
+
+## Refreshing the "By the Numbers" section each month
+
+The six stats on the page are driven by `website/data/stats.json`. The page ships with hard-coded fallback values matching the current issue, and JavaScript fetches `stats.json` at load to override them.
+
+To refresh after a new Coastal Currents pull:
+
+1. Drop the new InfoSparks CSVs and run the existing newsletter workflow so you have fresh files in `data/market_stats/` (typically `YYYY-MM_san_clemente_sfr.json` and `YYYY-MM_oc_market_report.json`).
+2. From the repo root: `python3 scripts/generate_website_stats.py`
+3. Commit `website/data/stats.json` and push.
+
+Cloudflare Pages redeploys automatically on push. The live site reflects the new numbers within about a minute.
+
+The generator picks the newest matching file in `data/market_stats/` by filename (`YYYY-MM_*` sorts chronologically). If a month is missing, the script exits with an error rather than publishing stale or broken data.
 
 ## Two things to finish before going live
 
