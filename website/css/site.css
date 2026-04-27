@@ -174,11 +174,10 @@ a:hover { color: var(--gold); text-decoration: underline; }
   font-weight: 300;
 }
 @media only screen and (max-width: 620px) {
-  .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
-  .stats-grid .stat .val { font-size: 26px; }
-}
-@media only screen and (max-width: 420px) {
-  .stats-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; gap: 18px; }
+  .stats-grid .stat { padding-top: 12px; }
+  .stats-grid .stat .val { font-size: 28px; }
+  .stats-eyebrow + .stats-eyebrow { margin-top: 28px; }
 }
 
 /* ===== SIGNUP FORM ===== */
