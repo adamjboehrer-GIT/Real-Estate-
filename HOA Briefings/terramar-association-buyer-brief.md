@@ -1,8 +1,8 @@
 # Terramar Association — Buyer Brief
 
 *Carlsbad, CA · private beach landing serving Terramar-area homes*
-*Sources: 2025–2026 Membership Packet; Carlsbad STVR market data pulled 2026-04-13; Ram/Tanuja 5303 Los Robles analysis 2026-04-12*
-*Last updated: 2026-04-22*
+*Sources: 2025–2026 Membership Packet; Carlsbad STVR market data pulled 2026-04-13; Ram/Tanuja 5303 Los Robles analysis 2026-04-12; Airbnb listing-level pull 2026-04-27 (6 confirmed Terramar comps)*
+*Last updated: 2026-04-27*
 
 ---
 
