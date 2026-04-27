@@ -145,3 +145,5 @@ At least one of the confirmed Terramar listings displays a Carlsbad STR permit n
 
 - `client-emails/ram-tanuja-property-summary-04-12-2026.md` — 5303 Los Robles property summary and STR thesis
 - `STR RENTAL MARKET REPORTS/Carlsbad_STVR_Market_Data.md` — full Carlsbad STVR comps and cash flow analysis
+- `STR RENTAL MARKET REPORTS/terramar-airbnb-2026-04-27/listings-page1-2.json` — raw Airbnb listing dataset, all Carlsbad-area pulls
+- `STR RENTAL MARKET REPORTS/terramar-airbnb-2026-04-27/seasonal-pricing.json` — per-listing peak/shoulder/off-peak pricing and occupancy signals
