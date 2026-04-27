@@ -109,7 +109,7 @@ Ranges by bedroom count (Terramar Association streets only):
 
 - 5 of 6 confirmed Terramar listings carry Airbnb's "Rare find, this place is usually booked" badge.
 - Casa Terramar booked solid through Jul 4 to Jul 25 2026 already, as of late April.
-- Multiple listings show Feb 2027 as unavailable, consistent with 30+ day winter snowbird monthly rentals taking the calendar. Those rentals are the form of STR the Association rules actually accommodate, since 30+ day tenants qualify for their own beach key.
+- Multiple listings show Feb 2027 as unavailable, consistent with 30+ day winter snowbird monthly rentals taking the calendar. The 30-day threshold also matters separately for the beach-key question: tenants on 30+ day rentals qualify for their own Association key, while sub-30-day guests do not.
 
 ### Where the premium comes from
 
