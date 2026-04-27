@@ -72,7 +72,9 @@ The beach access is the single biggest value driver for Terramar STR pricing pow
 
 **What this means in practice:** if a Terramar property is being sold on an STR thesis that leans on "private beach access," the listing copy and marketing language can accurately describe it for the owner's personal use, but the actual guest experience for a nightly/weekly STR booking is *public Carlsbad beach access*, not the private landing. Buyers underwriting peak-season STR rates in the $500–$900+/night range should understand that the private-beach premium is real for the owner, partial (at best) for guests, and essentially unavailable for sub-30-day bookings unless the owner is physically present.
 
-For long-term rentals (30+ days), tenants can qualify for their own key and the amenity is available to them normally — so the thesis holds for LTR and medium-term rental strategies, not nightly STR.
+For long-term rentals (30+ days), tenants can qualify for their own key and the amenity is available to them normally, so the thesis holds for LTR and medium-term rental strategies, not nightly STR.
+
+**Live-listing reality check (2026-04-27):** at least one current Terramar Airbnb listing on Carlsbad Boulevard markets the Association's gate directly to nightly guests with the line "Discover the only private beach in Carlsbad right across the street." Per the rules above, that is a misrepresentation for sub-30-day STR guests. The Association polices exactly this pattern, so a buyer inheriting (or running) a listing with that copy is taking on enforcement risk on top of the underlying revenue thesis.
 
 ## Carlsbad / Terramar market context (for reference)
 
