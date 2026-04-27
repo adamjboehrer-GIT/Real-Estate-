@@ -76,15 +76,46 @@ For long-term rentals (30+ days), tenants can qualify for their own key and the 
 
 ## Carlsbad / Terramar market context (for reference)
 
-*Pulled April 2026 — verify current before underwriting any deal.*
+*Pulled April 2026. Verify current before underwriting any deal.*
 
-- **Carlsbad STR market average:** $200–$300/night, ~59–70% occupancy (AirDNA: 59% occupancy, $299.60 ADR, $25.7K median annual revenue)
-- **Terramar 3BR peak-season VRBO comps (June 2026):** $842/night to $2,128/night — oceanfront and direct-beach-access listings at the top
-- **Airbnb 3BR Terramar (same dates):** $430–$860/night typical; $1,500+ for oceanfront luxury outliers
-- **Terramar 2BR ADU long-term rent:** ~$3,000–$3,500/month (vs. $3,168–$3,415 Carlsbad-wide 2BR average)
-- **Carlsbad market score (AirDNA):** 79/100
+### Carlsbad-wide STR baseline (AirDNA, April 2026)
 
-The premium you see in the top Terramar comps is driven by *true oceanfront* frontage — "61' ocean frontage," "oceanfront, private beach access" — not by the Association membership per se. A non-oceanfront home on El Arbol or Los Robles gets a neighborhood premium but not the oceanfront multiplier.
+- $200 to $300/night blended ADR, 59 to 70% occupancy
+- $299.60 ADR, $25.7K median annual revenue, market score 79/100
+
+### Terramar Airbnb live comps (pulled 2026-04-27)
+
+Six listings confirmed as sitting on Terramar Association qualifying streets, verified by listing copy, coordinates, and host descriptions. All quoted prices are the 5-night Airbnb total (taxes and fees included), with the implied nightly rate in parentheses.
+
+| Listing | Beds | Peak (Jul/Aug 5nt) | Shoulder (Sep 5nt) | Off-peak (Nov 5nt) |
+|---|---|---|---|---|
+| Casa Terramar | 6BR | $13,546 ($2,709) | $10,587 ($2,117) | unavailable |
+| Shore Drive Oceanfront | 3BR | $12,730 ($2,546) | $8,466 ($1,693) | $7,087 ($1,417) |
+| Terramar Cliffs (oceanfront) | 9BR | $9,921 ($1,984) | $7,547 ($1,509) | n/a |
+| Terramar Cliffs sister | 7BR | $8,245 ($1,649) | $7,058 ($1,412) | $7,058 ($1,412) |
+| West-of-PCH 3BR | 3BR | $5,370 ($1,074) | $4,171 ($834) | $3,030 ($606) |
+| PCH 3BR (older listing) | 3BR | unavailable | $2,370 ($474) | $2,091 ($418) |
+
+Ranges by bedroom count (Terramar Association streets only):
+
+- **3BR peak-summer nightly:** $474 to $2,546. Oceanfront with private bluff staircase tops the band; one-row-back homes mid-band; older non-yield-managed listings at the bottom.
+- **3BR shoulder (Sep):** $474 to $1,693
+- **3BR off-peak (Nov):** $418 to $1,417
+- **Large compound (6BR–9BR):** $1,649 to $2,709 peak nightly
+
+### Demand and occupancy signals
+
+- 5 of 6 confirmed Terramar listings carry Airbnb's "Rare find, this place is usually booked" badge.
+- Casa Terramar booked solid through Jul 4 to Jul 25 2026 already, as of late April.
+- Multiple listings show Feb 2027 as unavailable, consistent with 30+ day winter snowbird monthly rentals taking the calendar. Those rentals are the form of STR the Association rules actually accommodate, since 30+ day tenants qualify for their own beach key.
+
+### Where the premium comes from
+
+The top of the Terramar pricing band is driven by *true oceanfront* frontage and a property's *own private bluff staircase* (Shore Drive and Tierra Del Oro homes), not by Association membership per se. The Shore Drive oceanfront listing in the table above markets its own home staircase to the sand, accurately, and that is the value driver, not the Association gate. A non-oceanfront home on El Arbol or Los Robles earns a neighborhood premium but not the oceanfront multiplier.
+
+### Carlsbad STR registration
+
+At least one of the confirmed Terramar listings displays a Carlsbad STR permit number in the description (BLRE015374-03-2024). Carlsbad requires STR registration under CMC Ch. 5.60. Any underwriting on STR income should verify a current permit, since the city is enforcing.
 
 ## Who this works well for
 
