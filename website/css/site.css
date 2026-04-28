@@ -17,7 +17,7 @@
   --sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   --marker: 'Permanent Marker', 'Marker Felt', 'Comic Sans MS', cursive;
 
-  --topbar-h: 72px;
+  --topbar-h: 144px;
   --container-max: 1200px;
   --container-narrow: 820px;
 }
@@ -592,7 +592,7 @@ a:hover { color: var(--gold); }
 }
 
 /* Topbar annotation: marker text + curved arrow to the right of the brand
-   block, arrowhead pointing LEFT at "Adam Boehrer". Lives inside the sticky
+   name, arrowhead pointing LEFT at "Adam Boehrer". Lives inside the sticky
    header so it travels with the brand on scroll. */
 .topbar-name-row {
   display: inline-flex;
@@ -614,7 +614,7 @@ a:hover { color: var(--gold); }
 .topbar-annotation .handwritten {
   font-size: 17px;
   line-height: 1.1;
-  transform: rotate(-4deg);
+  transform: translateY(-6px) rotate(-4deg);
   max-width: 240px;
   white-space: normal;
 }
@@ -679,6 +679,7 @@ a:hover { color: var(--gold); }
 
 /* ===== MOBILE — annotations hidden; no room ===== */
 @media only screen and (max-width: 860px) {
+  :root { --topbar-h: 72px; }
   .topbar-annotation,
   .hv-cta .cta-annotation { display: none; }
 }
