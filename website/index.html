@@ -9,8 +9,8 @@
   <meta property="og:description" content="Coastal Currents: a bi-weekly read on what is actually happening in South Orange County real estate. Real numbers. The streets worth watching.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://adamboehrer.com/">
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/site.css?v=20260428h">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v=20260428aa">
 </head>
 <body>
 
@@ -18,16 +18,25 @@
 <header class="topbar">
   <div class="container topbar-inner">
     <a href="#top" class="topbar-brand">
-      <span class="topbar-name">Adam Boehrer</span>
+      <span class="topbar-name-row">
+        <span class="topbar-name">Adam Boehrer</span>
+        <span class="topbar-annotation" aria-hidden="true">
+          <svg class="handwritten-arrow" viewBox="0 0 110 56" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M102 42 C 80 4, 40 4, 12 30" />
+            <path d="M26 27 L12 30 L16 17" />
+          </svg>
+          <span class="handwritten">your friendly neighborhood real estate agent</span>
+        </span>
+      </span>
       <span class="topbar-affiliation">Pacific Sotheby's International Realty</span>
     </a>
     <nav class="topbar-nav" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#numbers">Market</a>
-      <a href="#signup">Newsletter</a>
+      <a href="#home-value">Home Value</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="#signup" class="topbar-cta">Subscribe</a>
+    <a href="#newsletter" class="topbar-cta">Join the Newsletter</a>
   </div>
 </header>
 
@@ -40,10 +49,39 @@
         <p class="eyebrow">San Clemente · Coastal Southern California</p>
         <h1 class="hero-title">Relationships over transactions.</h1>
         <p class="hero-lede">Most agents are working the next deal. I am working the next decade. The numbers matter, the strategy matters, and the relationship is what outlasts both.</p>
-        <div class="hero-actions">
-          <a href="#signup" class="btn btn-primary">Get Coastal Currents</a>
-          <a href="https://us6.campaign-archive.com/home/?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032" class="btn-text" target="_blank" rel="noopener">Read past issues</a>
-        </div>
+
+        <form
+          id="newsletter"
+          class="signup hero-signup"
+          action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
+          method="post"
+          target="_blank"
+          novalidate
+        >
+          <div class="hero-signup-row">
+            <div class="field">
+              <label for="mce-HERO-FNAME">First name</label>
+              <input type="text" name="FNAME" id="mce-HERO-FNAME" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="mce-HERO-LNAME">Last name</label>
+              <input type="text" name="LNAME" id="mce-HERO-LNAME" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="mce-HERO-EMAIL">Email address</label>
+            <input type="email" name="EMAIL" id="mce-HERO-EMAIL" required autocomplete="email">
+          </div>
+          <input type="hidden" name="SOURCE" value="newsletter">
+          <!-- Mailchimp honeypot — leave empty, do not remove -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_cf70355a0c40376ae76d606fd_f44752d032" tabindex="-1" value="">
+          </div>
+          <div class="hero-actions">
+            <button type="submit" class="btn btn-primary">Join the newsletter</button>
+            <a href="https://us6.campaign-archive.com/home/?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032" class="btn-text" target="_blank" rel="noopener">Read past issues</a>
+          </div>
+        </form>
       </div>
       <div class="hero-portrait">
         <img src="images/headshot.jpg" alt="Adam Boehrer, Pacific Sotheby's International Realty, San Clemente, California">
@@ -118,24 +156,13 @@
     </div>
   </section>
 
-  <!-- ===== NEWSLETTER ===== -->
-  <section class="band band-white" id="signup">
+  <!-- ===== HOME VALUE (one-time CMA + newsletter) ===== -->
+  <section class="band band-white band-home-value" id="home-value">
     <div class="container narrow">
-      <p class="eyebrow eyebrow-gold">Coastal Currents</p>
-      <h2 class="band-title">Get the next issue in your inbox.</h2>
-      <p class="band-lede">A short, bi-weekly read on what is actually happening in South Orange County real estate. Not a brochure. Not a market-wide blast. Just the stuff I am personally watching. The deals moving, the streets with activity, the new openings in town, and the numbers that matter if you own or want to own here.</p>
-
-      <ul class="value-bar">
-        <li>Bi-weekly. Five-minute read.</li>
-        <li>Real San Clemente numbers, refreshed every issue.</li>
-        <li>The streets I am watching and the deals moving.</li>
-        <li>No fluff. No mass-market pitches.</li>
-      </ul>
-
-      <p class="lead-magnet-hook"><strong>First-time subscribers also get The South OC Seller's Playbook.</strong> A free, 12-page read on what your home is actually worth in 2026 and what moves the needle in this market. Delivered by email when you join.</p>
+      <h2 class="band-title">Find out what your home is actually worth today.</h2>
 
       <form
-        class="signup"
+        class="signup home-value-form"
         action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
         method="post"
         target="_blank"
@@ -143,30 +170,48 @@
       >
         <div class="signup-row">
           <div class="field">
-            <label for="mce-FNAME">First name</label>
-            <input type="text" name="FNAME" id="mce-FNAME" autocomplete="given-name">
+            <label for="mce-HV-FNAME">First name</label>
+            <input type="text" name="FNAME" id="mce-HV-FNAME" autocomplete="given-name" required>
           </div>
           <div class="field">
-            <label for="mce-LNAME">Last name</label>
-            <input type="text" name="LNAME" id="mce-LNAME" autocomplete="family-name">
+            <label for="mce-HV-LNAME">Last name</label>
+            <input type="text" name="LNAME" id="mce-HV-LNAME" autocomplete="family-name" required>
           </div>
         </div>
         <div class="field">
-          <label for="mce-EMAIL">Email address</label>
-          <input type="email" name="EMAIL" id="mce-EMAIL" required autocomplete="email">
+          <label for="mce-HV-EMAIL">Email address</label>
+          <input type="email" name="EMAIL" id="mce-HV-EMAIL" required autocomplete="email">
         </div>
+        <div class="field">
+          <label for="mce-HV-ADDRESS-addr1">Street address <span class="field-optional">(optional)</span></label>
+          <input type="text" name="ADDRESS[addr1]" id="mce-HV-ADDRESS-addr1" autocomplete="street-address">
+        </div>
+        <input type="hidden" name="ADDRESS[country]" value="US">
+        <div class="field">
+          <label for="mce-HV-PHONE">Phone <span class="field-optional">(optional)</span></label>
+          <input type="tel" name="PHONE" id="mce-HV-PHONE" autocomplete="tel" inputmode="tel">
+        </div>
+
+        <!-- This form is the CMA path; tag every submission as cma. -->
+        <input type="hidden" name="SOURCE" value="cma">
 
         <!-- Mailchimp honeypot — leave empty, do not remove -->
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_cf70355a0c40376ae76d606fd_f44752d032" tabindex="-1" value="">
         </div>
 
-        <div class="btn-row">
-          <button type="submit" class="btn btn-primary">Send Me Coastal Currents</button>
+        <div class="hv-cta">
+          <button type="submit" class="btn btn-primary">Get my home value report</button>
+          <div class="cta-annotation" aria-hidden="true">
+            <svg class="handwritten-arrow" viewBox="0 0 110 70" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M100 50 C 76 6, 38 6, 12 36" />
+              <path d="M27 32 L12 36 L15 20" />
+            </svg>
+            <span class="handwritten">from me,<br>personally.</span>
+          </div>
         </div>
+        <p class="hv-note">I will pull the comps, write up the read, and send it back to you.</p>
       </form>
-
-      <p class="archive-link"><a href="https://us6.campaign-archive.com/home/?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032" target="_blank" rel="noopener">Read past issues &rarr;</a></p>
     </div>
   </section>
 

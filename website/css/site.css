@@ -15,6 +15,7 @@
 
   --serif: 'Amiri', Garamond, 'Times New Roman', serif;
   --sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  --marker: 'Permanent Marker', 'Marker Felt', 'Comic Sans MS', cursive;
 
   --topbar-h: 72px;
   --container-max: 1200px;
@@ -83,7 +84,7 @@ a:hover { color: var(--gold); }
   text-transform: uppercase;
   color: var(--text-grey);
   font-weight: 600;
-  margin-top: 4px;
+  margin-top: 12px;
 }
 .topbar-nav {
   display: flex;
@@ -182,12 +183,25 @@ a:hover { color: var(--gold); }
   align-items: center;
   gap: 28px;
   flex-wrap: wrap;
+  margin-top: 24px;
 }
 .hero-portrait img {
   width: 100%;
   max-width: 520px;
   margin-left: auto;
 }
+
+/* Hero quick newsletter form: name + email side by side, submit below */
+.hero-signup {
+  margin: 0;
+  max-width: 540px;
+}
+.hero-signup-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.hero-signup .field { margin-bottom: 16px; }
 
 /* ===== BUTTONS ===== */
 .btn {
@@ -208,6 +222,13 @@ a:hover { color: var(--gold); }
   color: var(--white);
 }
 .btn-primary:hover { background: var(--gold); color: var(--white); }
+.btn-secondary {
+  background: var(--white);
+  color: var(--sir-blue);
+  border: 1px solid var(--sir-blue);
+  padding: 15px 33px; /* compensate for 1px border */
+}
+.btn-secondary:hover { background: var(--sir-blue); color: var(--white); }
 .btn-text {
   font-family: var(--sans);
   font-size: 12px;
@@ -233,15 +254,13 @@ a:hover { color: var(--gold); }
   gap: 96px;
   align-items: start;
 }
-.approach-block {
-  border-top: 1px solid var(--gold);
-  padding-top: 28px;
-}
 .approach-block .eyebrow {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
 }
 .approach-title {
   margin: 0 0 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--gold);
   font-family: var(--serif);
   font-size: 30px;
   line-height: 1.2;
@@ -386,7 +405,8 @@ a:hover { color: var(--gold); }
   margin-bottom: 8px;
 }
 .signup input[type="email"],
-.signup input[type="text"] {
+.signup input[type="text"],
+.signup input[type="tel"] {
   width: 100%;
   padding: 14px 16px;
   border: 1px solid var(--rule);
@@ -531,6 +551,7 @@ a:hover { color: var(--gold); }
   .hero-title { font-size: 34px; }
   .hero-lede { font-size: 17px; }
   .hero-actions { gap: 20px; }
+  .hero-signup-row { grid-template-columns: 1fr; gap: 0; }
   .btn { padding: 14px 26px; }
 
   .band { padding: 56px 0; }
@@ -545,11 +566,121 @@ a:hover { color: var(--gold); }
   .stats-eyebrow { margin: 36px 0 14px; }
 
   .signup-row { grid-template-columns: 1fr; gap: 0; }
+  .signup-row-3 { grid-template-columns: 1fr; }
   .lead-magnet-hook { padding: 20px 22px; }
   .lead-magnet-hook strong { font-size: 17px; }
 
   .contact-grid { grid-template-columns: 1fr; gap: 36px; }
   .contact-details { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule-on-blue); padding-top: 32px; }
+}
+
+/* ===== HANDWRITTEN MARKER ANNOTATIONS =====
+   Reusable personal-touch system. Permanent Marker font, gold,
+   slightly tilted, paired with hand-drawn arrow SVGs. Use sparingly. */
+.handwritten {
+  font-family: var(--marker);
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 0.005em;
+  font-size: 30px;
+  line-height: 1.15;
+  display: inline-block;
+}
+.handwritten-arrow {
+  display: block;
+  color: var(--gold);
+}
+
+/* Topbar annotation: marker text + curved arrow to the right of the brand
+   block, arrowhead pointing LEFT at "Adam Boehrer". Lives inside the sticky
+   header so it travels with the brand on scroll. */
+.topbar-name-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.topbar-annotation {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+  flex: 0 0 auto;
+}
+.topbar-annotation .handwritten-arrow {
+  width: 64px;
+  height: 36px;
+  flex: 0 0 auto;
+}
+.topbar-annotation .handwritten {
+  font-size: 17px;
+  line-height: 1.1;
+  transform: rotate(-4deg);
+  max-width: 240px;
+  white-space: normal;
+}
+
+/* Home value form CTA: single centered "What is my home worth?" button.
+   Marker annotation absolutely positioned offset to the right of the
+   button so the button itself stays visually centered. */
+.hv-cta {
+  position: relative;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+.hv-note {
+  margin: 18px auto 0;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-grey);
+  font-weight: 300;
+  max-width: 520px;
+}
+.cta-annotation {
+  position: absolute;
+  left: calc(50% + 140px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+}
+.cta-annotation .handwritten-arrow {
+  width: 70px;
+  height: 50px;
+  flex: 0 0 auto;
+}
+.cta-annotation .handwritten {
+  font-size: 19px;
+  line-height: 1.1;
+  transform: rotate(-4deg);
+  max-width: 220px;
+}
+
+.field-optional {
+  font-size: 9px;
+  color: var(--accent-grey);
+  letter-spacing: 0.18em;
+  margin-left: 6px;
+}
+
+/* ===== HOME VALUE SECTION ===== */
+.band-home-value .home-value-form { margin-top: 8px; }
+
+/* ===== TABLET — annotations get tighter ===== */
+@media only screen and (max-width: 1100px) {
+  .topbar-annotation .handwritten { font-size: 13px; max-width: 180px; }
+  .topbar-annotation .handwritten-arrow { width: 52px; height: 32px; }
+  .cta-annotation .handwritten { font-size: 16px; }
+}
+
+/* ===== MOBILE — annotations hidden; no room ===== */
+@media only screen and (max-width: 860px) {
+  .topbar-annotation,
+  .hv-cta .cta-annotation { display: none; }
 }
 
 /* ===== SCROLL OFFSET FOR STICKY NAV ===== */
