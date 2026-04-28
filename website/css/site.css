@@ -226,31 +226,30 @@ a:hover { color: var(--gold); }
 .band-paper { background: var(--paper); }
 .band-blue { background: var(--sir-blue); }
 
-/* ===== ABOUT ===== */
-.about-layout {
+/* ===== APPROACH (sellers / buyers) ===== */
+.approach-grid {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 1fr 1fr;
   gap: 96px;
   align-items: start;
 }
-.about-intro .band-title { margin: 0 0 20px; }
-.about-intro .band-lede { margin: 0; max-width: none; }
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 44px;
+.approach-block {
+  border-top: 1px solid var(--gold);
+  padding-top: 28px;
 }
-.about-grid h3 {
-  margin: 0 0 16px;
-  font-family: var(--sans);
-  font-size: 12px;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--gold);
-  font-weight: 600;
+.approach-block .eyebrow {
+  margin: 0 0 18px;
 }
-.about-grid p {
+.approach-title {
+  margin: 0 0 22px;
+  font-family: var(--serif);
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--sir-blue);
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+.approach-body {
   margin: 0;
   font-family: var(--sans);
   font-size: 18px;
@@ -507,7 +506,8 @@ a:hover { color: var(--gold); }
   .contact-grid { gap: 48px; }
   .contact-details { padding-left: 40px; }
 
-  .about-layout { grid-template-columns: 1fr; gap: 48px; }
+  .approach-grid { gap: 56px; }
+  .approach-title { font-size: 26px; }
 }
 
 /* ===== MOBILE ===== */
@@ -537,8 +537,8 @@ a:hover { color: var(--gold); }
   .band-title { font-size: 26px; }
   .band-lede { font-size: 16px; }
 
-  .about-layout { grid-template-columns: 1fr; gap: 36px; }
-  .about-grid { gap: 36px; }
+  .approach-grid { grid-template-columns: 1fr; gap: 40px; }
+  .approach-title { font-size: 24px; }
 
   .stats-grid { grid-template-columns: 1fr; gap: 20px; }
   .stats-grid .stat .val { font-size: 36px; }
