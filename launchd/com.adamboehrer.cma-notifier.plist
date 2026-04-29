@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.adamboehrer.cma-notifier</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/adamboehrer/Desktop/Claude Code/scripts/notify_cma_submissions.py</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>1800</integer>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/Users/adamboehrer/Library/Logs/cma-notifier.stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/adamboehrer/Library/Logs/cma-notifier.stderr.log</string>
+</dict>
+</plist>
