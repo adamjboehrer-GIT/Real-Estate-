@@ -20,8 +20,11 @@ The angle is buyer-demand-led seller prospecting. The reader sees confirmation o
 ```
 Sothebys_Handoff_2026-04-29/
 ├── README.md                                       (this file)
-├── Buyers_For_Neighborhood_Postcards_9x6.pdf       (visual reference, all 3 cards)
 ├── Copy_and_Specs.md                               (production specs and full copy by card)
+├── Buyers_For_Neighborhood_Postcards_9x6.pdf       (combined 3-page visual reference)
+├── Buyers_For_Neighborhood_Capo_Beach_9x6.pdf      (single-card PDF, production source)
+├── Buyers_For_Neighborhood_Broadmoor_9x6.pdf       (single-card PDF, production source)
+├── Buyers_For_Neighborhood_Hillcrest_9x6.pdf       (single-card PDF, production source)
 └── assets/
     ├── headshot.jpg                                (Adam's headshot, same file as adamboehrer.com)
     ├── capo-beach.png                              (QR code → home value form, Capo campaign)
@@ -29,6 +32,8 @@ Sothebys_Handoff_2026-04-29/
     ├── hillcrest.png                               (QR code → home value form, Hillcrest campaign)
     └── handwritten-arrow-up-left.svg               (the brand-aligned hand-drawn arrow used)
 ```
+
+The combined PDF is for quick review of all three together. The individual per-neighborhood PDFs are the production sources — please use those when building the print-ready files.
 
 The browser-rendered HTML mockup lives at `../postcard_mockups/index.html` if you want to see the live source.
 
