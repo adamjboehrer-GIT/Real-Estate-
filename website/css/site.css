@@ -537,7 +537,13 @@ a:hover { color: var(--gold); }
 
   .topbar-inner { gap: 16px; }
   .topbar-nav { display: none; }
-  .topbar-cta { padding: 10px 18px; font-size: 10px; letter-spacing: 0.16em; }
+  .topbar-cta {
+    padding: 9px 14px;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
   .topbar-name { font-size: 17px; }
   .topbar-affiliation { font-size: 8px; letter-spacing: 0.2em; }
 
