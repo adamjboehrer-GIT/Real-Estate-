@@ -55,6 +55,7 @@ The browser-rendered HTML mockup lives at `../postcard_mockups/index.html` if yo
 - **QR annotation (marker font, gold, +4° tilt):** Get your Home Value Report
 - **QR annotation pitch (light sans, text grey):** I will personally pull the comps, write up the read, and send it back to you.
 - **Contact block:** 949.541.8247 · adam.boehrer@pacificsir.com · DRE 02419464
+- **Office address (smaller, supporting):** 32356 Coast Highway, Laguna Beach, CA 92651
 - **Headshot:** circular crop of the file in `/assets/headshot.jpg`
 
 ---
