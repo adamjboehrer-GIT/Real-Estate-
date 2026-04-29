@@ -55,6 +55,7 @@
           class="signup hero-signup"
           action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
           method="post"
+          data-thanks="Thanks for joining. Be on the lookout for the newsletter in your inbox."
         >
           <div class="hero-signup-row">
             <div class="field">
@@ -163,6 +164,7 @@
         class="signup home-value-form"
         action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
         method="post"
+        data-thanks="Thanks. I will pull the comps personally and send your home value report within a day or two."
       >
         <div class="signup-row">
           <div class="field">
@@ -323,7 +325,12 @@
         }
         iframe.addEventListener('load', function onLoad() {
           iframe.removeEventListener('load', onLoad);
-          form.innerHTML = '<p class="form-thanks">Thanks. You are on the list, I will be in touch personally.</p>';
+          var thanks = form.getAttribute('data-thanks') || 'Thanks. You are on the list.';
+          var p = document.createElement('p');
+          p.className = 'form-thanks';
+          p.textContent = thanks;
+          form.innerHTML = '';
+          form.appendChild(p);
         });
       });
     }
