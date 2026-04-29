@@ -40,7 +40,8 @@ Per brand standards: no black or gold backgrounds, no font weights heavier than 
 | Top eyebrow "Pacific Sotheby's International Realty" | Source Sans 3 500 | Benton Sans, Medium | 9 pt, uppercase, 2.6 px tracking, accent grey |
 | Marker annotation "Get your Home Value Report" | Permanent Marker (Google Font) | Keep as Permanent Marker — intentional hand-drawn flourish | 14 pt, gold, +4° rotation |
 | Pitch line under QR | Source Sans 3 300 | Benton Sans, Light | 10.5 pt, text grey, mimics adamboehrer.com body style |
-| Contact stack | Source Sans 3 400 | Benton Sans, Regular | 11 pt, SIR Blue |
+| Contact stack | Source Sans 3 400 | Benton Sans, Regular | 13.5 pt, SIR Blue |
+| Office address | Source Sans 3 300 | Benton Sans, Light | 10.5 pt, text grey |
 
 ---
 
