@@ -55,7 +55,6 @@
           class="signup hero-signup"
           action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
           method="post"
-          novalidate
         >
           <div class="hero-signup-row">
             <div class="field">
@@ -164,7 +163,6 @@
         class="signup home-value-form"
         action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
         method="post"
-        novalidate
       >
         <div class="signup-row">
           <div class="field">
@@ -298,78 +296,34 @@
       .catch(function () { /* keep hard-coded fallback values */ });
   })();
 
-  // Submit Mailchimp signup forms in the background via JSONP so the user
-  // never leaves adamboehrer.com. Shows an inline thank-you on success and
-  // an inline error message on failure.
+  // Submit Mailchimp signup forms through a hidden iframe so the user never
+  // leaves adamboehrer.com. The form posts to Mailchimp's standard
+  // /subscribe/post endpoint; the response renders inside the hidden iframe
+  // and we swap the form for an inline thank-you on completion.
   (function () {
-    var SUBSCRIBE_URL = 'https://pacificsir.us6.list-manage.com/subscribe/post-json';
-    var U = 'cf70355a0c40376ae76d606fd';
-    var ID = 'f44752d032';
-
-    function jsonpSubmit(form, onResult) {
-      var cbName = 'mcjsonp_' + Date.now() + '_' + Math.floor(Math.random() * 1e6);
-      var params = new URLSearchParams();
-      params.set('u', U);
-      params.set('id', ID);
-      var data = new FormData(form);
-      data.forEach(function (val, key) { params.set(key, val); });
-      params.set('c', cbName);
-
-      var script = document.createElement('script');
-      var done = false;
-      function cleanup() {
-        if (done) return;
-        done = true;
-        try { delete window[cbName]; } catch (e) { window[cbName] = undefined; }
-        if (script.parentNode) script.parentNode.removeChild(script);
-      }
-      window[cbName] = function (response) {
-        cleanup();
-        onResult(response || { result: 'error', msg: 'Something went wrong. Please try again.' });
-      };
-      script.onerror = function () {
-        cleanup();
-        onResult({ result: 'error', msg: 'Network error. Please try again or email me directly.' });
-      };
-      script.src = SUBSCRIBE_URL + '?' + params.toString();
-      document.head.appendChild(script);
-    }
-
-    function setStatus(form, kind, html) {
-      var existing = form.querySelector('.form-status');
-      if (existing) existing.parentNode.removeChild(existing);
-      if (!html) return;
-      var div = document.createElement('div');
-      div.className = 'form-status form-status-' + kind;
-      div.setAttribute('role', kind === 'error' ? 'alert' : 'status');
-      div.innerHTML = html;
-      form.appendChild(div);
-    }
+    var iframe = document.createElement('iframe');
+    iframe.name = 'mc_target';
+    iframe.title = 'Mailchimp signup response';
+    iframe.setAttribute('aria-hidden', 'true');
+    iframe.style.position = 'absolute';
+    iframe.style.width = '0';
+    iframe.style.height = '0';
+    iframe.style.border = '0';
+    iframe.style.opacity = '0';
+    document.body.appendChild(iframe);
 
     function bindForm(form) {
       if (!form) return;
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
+      form.setAttribute('target', 'mc_target');
+      form.addEventListener('submit', function () {
         var btn = form.querySelector('button[type="submit"]');
-        var originalLabel = btn ? btn.textContent : null;
         if (btn) {
           btn.disabled = true;
           btn.textContent = 'Sending...';
         }
-        setStatus(form, '', '');
-
-        jsonpSubmit(form, function (response) {
-          if (btn) {
-            btn.disabled = false;
-            if (originalLabel) btn.textContent = originalLabel;
-          }
-          if (response && response.result === 'success') {
-            form.innerHTML = '<p class="form-thanks">Thanks. You are on the list, I will be in touch personally.</p>';
-          } else {
-            var msg = (response && response.msg) || 'Something went wrong. Please try again or email me directly.';
-            msg = String(msg).replace(/^0\s*-\s*/, '');
-            setStatus(form, 'error', msg);
-          }
+        iframe.addEventListener('load', function onLoad() {
+          iframe.removeEventListener('load', onLoad);
+          form.innerHTML = '<p class="form-thanks">Thanks. You are on the list, I will be in touch personally.</p>';
         });
       });
     }
