@@ -480,11 +480,11 @@ a:hover { color: var(--gold); }
 .site-footer-inner {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
 }
 .brand-footer {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 480px;
 }
@@ -506,7 +506,7 @@ a:hover { color: var(--gold); }
   color: var(--text-grey);
   font-weight: 300;
   line-height: 1.7;
-  text-align: left;
+  text-align: center;
 }
 
 /* ===== TABLET ===== */
