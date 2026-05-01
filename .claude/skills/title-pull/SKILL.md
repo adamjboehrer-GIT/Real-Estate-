@@ -197,14 +197,24 @@ If the range is large (>100), also do a 30-second pause every 50 properties as a
 
 ## Post-loop verification
 
-After the last property in the range, run:
+After the last property in the range — OR when the session ends early (e.g. FirstAm signout, Adam interrupts, hard error stops the loop) — always run **both** of these, in order:
 
-```bash
-sqlite3 -header "/Users/adamboehrer/Desktop/Claude Code/database/leads.db" \
-  "SELECT COUNT(*) AS properties_ingested FROM properties WHERE source_report='firstam_ignitere_property_detail' AND date(extracted_at) = date('now');"
-```
+1. SQLite count:
 
-Report to Adam: count of new rows in SQLite today, count of markdown files in Title Database/ from today, any skipped property numbers.
+   ```bash
+   sqlite3 -header "/Users/adamboehrer/Desktop/Claude Code/database/leads.db" \
+     "SELECT COUNT(*) AS properties_ingested FROM properties WHERE source_report='firstam_ignitere_property_detail' AND date(extracted_at) = date('now');"
+   ```
+
+2. Push to the Real Estate CRM Google Sheet (**Title Data** + **Title Tags** tabs):
+
+   ```bash
+   cd "/Users/adamboehrer/Desktop/Claude Code" && python3 scripts/sync_firstam_to_sheets.py
+   ```
+
+   This runs whether the loop completed or stopped early — Adam expects the sheet to reflect SQLite at the end of every session, not just clean finishes. The script is idempotent (overwrites the two tabs from current SQLite state).
+
+Report to Adam: count of new rows in SQLite today, count of markdown files in `Title Database/` from today, the priority breakdown printed by the sync script (P1-act-now, P2, P3, P4, P5), and any skipped property numbers.
 
 ## Files this skill depends on
 
