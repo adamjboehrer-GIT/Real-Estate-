@@ -37,7 +37,7 @@ Per brand standards: no black or gold backgrounds, no font weights heavier than 
 | Display name "ADAM BOEHRER" | Cormorant Garamond 500 | Freight or Mercury, Medium | 34 pt, letter-spacing 4 px |
 | Headline "The conversation *before the listing.*" | Cormorant Garamond 500 (italic on line 2) | Freight or Mercury, Medium | 54 pt, line 2 italic |
 | Eyebrow "A note to [neighborhood] homeowners" | Source Sans 3 500 | Benton Sans, Medium | 9 pt, uppercase, 2.6 px tracking, accent grey |
-| Lifestyle subhead | Cormorant Garamond italic 400 | Freight or Mercury, Italic | 19 pt, SIR Blue |
+| Body (italic serif) | Cormorant Garamond italic 400 | Freight or Mercury, Italic | 17.5 pt, SIR Blue, line-height ~1.38 |
 | CTA line | Source Sans 3 400 | Benton Sans, Regular | 13 pt, SIR Blue |
 | Top eyebrow "Pacific Sotheby's International Realty" | Source Sans 3 500 | Benton Sans, Medium | 9 pt, uppercase, 2.6 px tracking, accent grey |
 | Marker annotation "Get your Home Value Report" | Permanent Marker (Google Font) | Keep as Permanent Marker — intentional hand-drawn flourish | 14 pt, gold, +4° rotation |
