@@ -47,55 +47,39 @@ Per brand standards: no black or gold backgrounds, no font weights heavier than 
 
 ---
 
-## Per-card content
+## Shared content (all cards, identical)
+
+**Headline:**
+The conversation
+*before the listing.*
+
+**Body (italic serif, replaces the previous per-neighborhood lifestyle subhead):**
+The most interesting coastal sales don't start on Zillow. They start with a buyer at Sotheby's, a quiet introduction, a match made before the home is ever formally listed.
+
+**CTA line (sans):**
+If you're thinking about selling in the next year or two, let's start the conversation now.
+
+**Marker annotation by QR (unchanged):** Get your Home Value Report
+
+**Pitch line under QR (unchanged):** I will personally pull the comps, write up the read, and send it back to you.
+
+---
+
+## Per-card content (only the eyebrow and QR routing change per neighborhood)
 
 ### Card 1 — Capo Beach (Dana Point)
 
 **Eyebrow:** A note to Capo Beach homeowners
-
-**Headline:** I have buyers.
-*Looking for sellers.*
-
-**Lifestyle subhead (italic serif):**
-What's not to like? Mornings at Pines Park. Short walk to the beach. Quiet pocket of South County.
-
-**CTA line (sans):**
-If you have been thinking about selling, even loosely, I'd like to talk.
-
 **QR target file:** `assets/capo-beach.png`
-
----
 
 ### Card 2 — Broadmoor (San Clemente)
 
 **Eyebrow:** A note to Broadmoor homeowners
-
-**Headline:** I have buyers.
-*Looking for sellers.*
-
-**Lifestyle subhead (italic serif):**
-What's not to like? Views from the hills. The Ridgeline Trail up top. 2 minute drive to downtown San Clemente.
-
-**CTA line (sans):**
-If you have been thinking about selling, even loosely, I'd like to talk.
-
 **QR target file:** `assets/broadmoor.png`
-
----
 
 ### Card 3 — Hillcrest (San Clemente)
 
 **Eyebrow:** A note to Hillcrest homeowners
-
-**Headline:** I have buyers.
-*Looking for sellers.*
-
-**Lifestyle subhead (italic serif):**
-What's not to like? Views from the hills. The Ridgeline Trail up top. 2 minute drive to downtown San Clemente.
-
-**CTA line (sans):**
-If you have been thinking about selling, even loosely, I'd like to talk.
-
 **QR target file:** `assets/hillcrest.png`
 
 ---
