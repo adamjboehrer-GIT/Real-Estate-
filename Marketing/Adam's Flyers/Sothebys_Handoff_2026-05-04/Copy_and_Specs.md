@@ -105,9 +105,9 @@ So if you're thinking about selling in the next year or two, the time to talk is
 │  who's already had the conversation                        (marker,  │
 │  with the right owner.   (italic serif)                     gold,    │
 │                                                            +4° tilt) │
-│  So if you're thinking about selling in                              │
-│  the next year or two, let's start                                   │
-│  the conversation now.                                               │
+│  So if you're thinking about selling                                 │
+│  in the next year or two, the time to                                │
+│  talk is well before you list.                                       │
 │                                                                       │
 │                                                  I will personally   │
 │                                                  pull the comps,     │
