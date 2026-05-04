@@ -105,9 +105,9 @@ So if you're thinking about selling in the next year or two, let's start the con
 │  want, but they need my help to find it.                   (marker,  │
 │  Often, a match is made before a home is                    gold,    │
 │  ever formally listed.   (italic serif)                    +4° tilt) │
-│  If you're thinking about selling in the                             │
-│  next year or two, let's start the                                   │
-│  conversation now.                                                   │
+│  So if you're thinking about selling in                              │
+│  the next year or two, let's start                                   │
+│  the conversation now.                                               │
 │                                                                       │
 │                                                  I will personally   │
 │                                                  pull the comps,     │
