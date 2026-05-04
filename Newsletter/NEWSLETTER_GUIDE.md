@@ -12,10 +12,10 @@ When a fresh Pacific Sotheby's deck lands (also biweekly), say: **"Ingest the ne
 ---
 
 ## What Adam Fills In Each Issue
-These are the only two things that require your personal input — everything else gets researched automatically:
+These are the only items that require your personal input. Everything else is researched automatically.
 
 1. **Personal note headline + body** — 3 to 4 sentences in your voice. What are you seeing? What are people asking? What's your read on the market right now?
-2. **Hyper-local neighborhood intel** — One thing you personally noticed: a renovation on a specific street, a permit pulled, a neighbor who's prepping to list, a specific home that just sold.
+2. **Hyper-local neighborhood intel** — One thing you personally noticed in this issue's featured area: a renovation, a permit pulled, a neighbor prepping to list, a specific home that just sold. Never name Adam's home street.
 3. **Coming soon teaser** (if applicable) — Neighborhood, price range, one compelling detail. No address needed.
 
 ---
