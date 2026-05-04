@@ -99,12 +99,12 @@ So if you're thinking about selling in the next year or two, the time to talk is
 │  The conversation                                ┌────────┐  ↗       │
 │  before the listing.    (italic line 2)          │        │ ↗ "Get   │
 │                                                  │   QR   │   your   │
-│  Most sales in coastal Orange County             │        │   Home   │
-│  don't start on Zillow. They start with          │        │   Value  │
-│  a buyer that has an idea of what they          └────────┘   Report"│
-│  want, but they need my help to find it.                   (marker,  │
-│  Often, a match is made before a home is                    gold,    │
-│  ever formally listed.   (italic serif)                    +4° tilt) │
+│  Most coastal sales don't start on Zillow.       │        │   Home   │
+│  They start with a buyer at Sotheby's who        │        │   Value  │
+│  knows what they want, and an agent             └────────┘   Report"│
+│  who's already had the conversation                        (marker,  │
+│  with the right owner.   (italic serif)                     gold,    │
+│                                                            +4° tilt) │
 │  So if you're thinking about selling in                              │
 │  the next year or two, let's start                                   │
 │  the conversation now.                                               │
