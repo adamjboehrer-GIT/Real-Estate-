@@ -35,7 +35,7 @@ Per brand standards: no black or gold backgrounds, no font weights heavier than 
 | Element | Mockup font | Brand font (please use) | Size / treatment |
 |---|---|---|---|
 | Display name "ADAM BOEHRER" | Cormorant Garamond 500 | Freight or Mercury, Medium | 34 pt, letter-spacing 4 px |
-| Headline "I have buyers. *Looking for sellers.*" | Cormorant Garamond 500 (italic on line 2) | Freight or Mercury, Medium | 54 pt, line 2 italic |
+| Headline "The conversation *before the listing.*" | Cormorant Garamond 500 (italic on line 2) | Freight or Mercury, Medium | 54 pt, line 2 italic |
 | Eyebrow "A note to [neighborhood] homeowners" | Source Sans 3 500 | Benton Sans, Medium | 9 pt, uppercase, 2.6 px tracking, accent grey |
 | Lifestyle subhead | Cormorant Garamond italic 400 | Freight or Mercury, Italic | 19 pt, SIR Blue |
 | CTA line | Source Sans 3 400 | Benton Sans, Regular | 13 pt, SIR Blue |
