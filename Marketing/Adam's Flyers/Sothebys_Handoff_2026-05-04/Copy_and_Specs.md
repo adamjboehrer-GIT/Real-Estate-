@@ -101,11 +101,10 @@ So if you're thinking about selling in the next year or two, let's start the con
 │                                                  │   QR   │   your   │
 │  Most sales in coastal Orange County             │        │   Home   │
 │  don't start on Zillow. They start with          │        │   Value  │
-│  an interested buyer, or they start with a       └────────┘   Report"│
-│  buyer that has an idea of what they want                  (marker,  │
-│  and they need my help to find it. Often a                  gold,    │
-│  match is made before a home is ever                       +4° tilt) │
-│  formally listed.   (italic serif)                                   │
+│  a buyer that has an idea of what they          └────────┘   Report"│
+│  want, but they need my help to find it.                   (marker,  │
+│  Often, a match is made before a home is                    gold,    │
+│  ever formally listed.   (italic serif)                    +4° tilt) │
 │  If you're thinking about selling in the                             │
 │  next year or two, let's start the                                   │
 │  conversation now.                                                   │
