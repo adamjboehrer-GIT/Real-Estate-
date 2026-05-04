@@ -155,4 +155,5 @@ Please place these in a way that doesn't compete with the headline or QR. A smal
 1. **Print partner** — XpressDocs or another vendor? Need to confirm the bleed and crop spec before final art is built.
 2. **Headshot resolution** — the file in `/assets/headshot.jpg` is the same one used on adamboehrer.com. At 0.95 inch print size it should be sharp; please confirm or request a higher-res original if needed.
 3. **Permanent Marker font for the QR annotation** — this is intentionally hand-drawn and brand-adjacent (matches the adamboehrer.com style). Please confirm it doesn't violate any current Sotheby's typography rules; if it does, propose a brand-approved cursive or italic substitute.
-4. **Mailing list** — Adam will provide the PropStream-filtered seller-target lists for each neighborhood when the print files are ready.
+4. **Mailing list** — Adam will provide the seller-target lists for each neighborhood when the print files are ready.
+5. **Body copy length (revised 2026-05-04)** — the new italic-serif body is roughly twice as long as the prior single-line lifestyle subhead. At 19 pt it should still fit cleanly above the QR; if the layout feels crowded after typesetting, please propose either a slight pt reduction (down to 17 pt) or a small re-line to keep the SIR Blue headline as the dominant element.
