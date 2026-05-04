@@ -94,15 +94,18 @@ If you're thinking about selling in the next year or two, let's start the conver
 │                                                                       │
 │  A NOTE TO [NEIGHBORHOOD] HOMEOWNERS                                  │
 │                                                                       │
-│  I have buyers.                                  ┌────────┐  ↗       │
-│  Looking for sellers.   (italic line 2)          │        │ ↗ "Get   │
+│  The conversation                                ┌────────┐  ↗       │
+│  before the listing.    (italic line 2)          │        │ ↗ "Get   │
 │                                                  │   QR   │   your   │
-│  What's not to like? [lifestyle]                 │        │   Home   │
-│  (italic serif)                                  │        │   Value  │
-│                                                  └────────┘   Report"│
-│  If you have been thinking about selling,                  (marker,  │
-│  even loosely, I'd like to talk.                            gold,    │
+│  The most interesting coastal sales              │        │   Home   │
+│  don't start on Zillow. They start with          │        │   Value  │
+│  a buyer at Sotheby's, a quiet introduction,     └────────┘   Report"│
+│  a match made before the home is ever                      (marker,  │
+│  formally listed.   (italic serif)                          gold,    │
 │                                                            +4° tilt) │
+│  If you're thinking about selling in the                             │
+│  next year or two, let's start the                                   │
+│  conversation now.                                                   │
 │                                                                       │
 │                                                  I will personally   │
 │                                                  pull the comps,     │
