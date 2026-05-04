@@ -54,10 +54,10 @@ The conversation
 *before the listing.*
 
 **Body (italic serif, replaces the previous per-neighborhood lifestyle subhead):**
-Most sales in coastal Orange County don't start on Zillow. They start with an interested buyer, or they start with a buyer that has an idea of what they want and they need my help to find it. Often a match is made before a home is ever formally listed.
+Most sales in coastal Orange County don't start on Zillow. They start with a buyer that has an idea of what they want, but they need my help to find it. Often, a match is made before a home is ever formally listed.
 
 **CTA line (sans):**
-If you're thinking about selling in the next year or two, let's start the conversation now.
+So if you're thinking about selling in the next year or two, let's start the conversation now.
 
 **Marker annotation by QR (unchanged):** Get your Home Value Report
 
