@@ -99,12 +99,13 @@ If you're thinking about selling in the next year or two, let's start the conver
 │  The conversation                                ┌────────┐  ↗       │
 │  before the listing.    (italic line 2)          │        │ ↗ "Get   │
 │                                                  │   QR   │   your   │
-│  The most interesting coastal sales              │        │   Home   │
+│  Most sales in coastal Orange County             │        │   Home   │
 │  don't start on Zillow. They start with          │        │   Value  │
-│  a buyer at Sotheby's, a quiet introduction,     └────────┘   Report"│
-│  a match made before the home is ever                      (marker,  │
-│  formally listed.   (italic serif)                          gold,    │
-│                                                            +4° tilt) │
+│  an interested buyer, or they start with a       └────────┘   Report"│
+│  buyer that has an idea of what they want                  (marker,  │
+│  and they need my help to find it. Often a                  gold,    │
+│  match is made before a home is ever                       +4° tilt) │
+│  formally listed.   (italic serif)                                   │
 │  If you're thinking about selling in the                             │
 │  next year or two, let's start the                                   │
 │  conversation now.                                                   │
