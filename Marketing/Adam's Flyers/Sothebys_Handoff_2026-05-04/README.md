@@ -66,8 +66,8 @@ The browser-rendered HTML mockup lives at `../postcard_mockups/index.html` if yo
 ## What stays the same across all three cards
 
 - **Headline:** The conversation *before the listing.*
-- **Body (italic serif):** Most sales in coastal Orange County don't start on Zillow. They start with an interested buyer, or they start with a buyer that has an idea of what they want and they need my help to find it. Often a match is made before a home is ever formally listed.
-- **CTA line (sans):** If you're thinking about selling in the next year or two, let's start the conversation now.
+- **Body (italic serif, 17.5 pt):** Most sales in coastal Orange County don't start on Zillow. They start with a buyer that has an idea of what they want, but they need my help to find it. Often, a match is made before a home is ever formally listed.
+- **CTA line (sans):** So if you're thinking about selling in the next year or two, let's start the conversation now.
 - **QR annotation (marker font, gold, +4° tilt):** Get your Home Value Report
 - **QR annotation pitch (light sans, text grey):** I will personally pull the comps, write up the read, and send it back to you.
 - **Contact block:** 949.541.8247 · adam.boehrer@pacificsir.com · DRE 02419464
