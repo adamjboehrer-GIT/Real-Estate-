@@ -35,6 +35,20 @@ Wait for his answer. Parse a start integer N and end integer M from his reply. A
 
 Once you have a valid N and M, confirm back to him in one line: "Running title-pull on properties N through M — that's (M - N + 1) homes. Starting now." Then proceed to the preconditions check.
 
+## Step 1.5 — Snapshot all row labels and pre-dedupe (do this BEFORE any per-property work)
+
+**Critical resilience step.** FirstAm IgniteRE silently logs the user out after a couple hours of activity. On 2026-05-04 the session died at property #148 of 481, forcing a polygon redraw to resume. To make session timeouts non-fatal, dump every row label to disk *before* clicking into any property, then run batch dedupe to compute the actual pull queue.
+
+1. Single browser_evaluate that reads every `.boundary-search-property-itemN` (for N=1..M) and returns `{ N: [owner_line, address_line, county_line] | null }`. Save the result via `Write` to `~/Desktop/Claude Code/scripts/.tp_session_<YYYY-MM-DD>_rows.json`.
+2. Run `python3 scripts/batch_dedupe.py <that-file>` — it returns `{ skip: [...], pull: [...] }`. The pull list is what you actually loop over.
+3. Subtract any properties already pulled earlier in this session (if you're resuming after a crash or session re-start). Save the resulting pull queue to `~/Desktop/Claude Code/scripts/.tp_session_<YYYY-MM-DD>_queue.json`.
+
+Why batch dedupe matters: on 2026-05-04 it cut the queue from 481 → 213. With per-row dedupe in the loop, that's still ~960 wasted tool calls. With pre-dedupe, you only loop over the 213 that actually need work.
+
+Why snapshotting matters: if FirstAm logs us out mid-loop, we don't have to re-enumerate the polygon. Adam re-logs in, re-draws (or re-loads if FirstAm has a saved-search feature — check), and we resume from the saved queue without burning quota or context on already-done properties.
+
+After this step, **skip the per-property "Step 0 dedupe pre-check"** in the loop below — batch dedupe already covered it.
+
 ## Preconditions — verify before starting the loop
 
 Ask the user to confirm if any of these are unclear. Never start the loop blind.
