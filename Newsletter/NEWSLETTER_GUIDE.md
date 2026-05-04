@@ -56,6 +56,19 @@ These are the only items that require your personal input. Everything else is re
 
 ---
 
+## Featured Area Rotation
+The "What's Happening in the Neighborhood" and "What's New in [area]" sections rotate each issue across the three coastal pockets Adam works most closely. The audience is broader than just San Clemente neighbors, so every issue includes a one-line geographic anchor for non-locals.
+
+| Cycle Position | Featured Area | Anchor Line (one sentence, edit to taste) |
+|---|---|---|
+| Issue 1, 4, 7… | San Clemente | "The southernmost beach town in Orange County, the last walkable village before the San Diego County line." |
+| Issue 2, 5, 8… | Dana Point | "The harbor town between San Clemente and Laguna Beach, anchored by the harbor, Doheny, Salt Creek, and the Headlands." |
+| Issue 3, 6, 9… | Capistrano Beach | "A small unincorporated stretch of Dana Point between the SC pier and Doheny, mostly bluff homes and the Beach Road oceanfront strip." |
+
+Within each issue, name the specific sub-pocket (Hillcrest, Lantern District, Beach Road, etc.) and add a brief locator so a reader in Newport, Carlsbad, or out of state can place it. **Never name Adam's home street.** "San Clemente" or the neighborhood name is the right specificity.
+
+---
+
 ## Market Stats: Sources and Structure
 
 ### Sources used
