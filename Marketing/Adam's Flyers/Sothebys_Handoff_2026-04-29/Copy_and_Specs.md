@@ -67,19 +67,21 @@ If you're thinking about selling in the next year or two, let's start the conver
 
 ## Per-card content (only the eyebrow and QR routing change per neighborhood)
 
+> **Eyebrow policy (revised 2026-05-04):** The eyebrow now uses the city, not the neighborhood. Both San Clemente farms (Hillcrest and Broadmoor) read as "A note to San Clemente homeowners." The QR code is what carries neighborhood-level attribution behind the scenes — please keep the per-neighborhood QR images intact even though the visible copy is identical.
+
 ### Card 1 — Capo Beach (Dana Point)
 
 **Eyebrow:** A note to Capo Beach homeowners
 **QR target file:** `assets/capo-beach.png`
 
-### Card 2 — Broadmoor (San Clemente)
+### Card 2 — Broadmoor (San Clemente farm A)
 
-**Eyebrow:** A note to Broadmoor homeowners
+**Eyebrow:** A note to San Clemente homeowners
 **QR target file:** `assets/broadmoor.png`
 
-### Card 3 — Hillcrest (San Clemente)
+### Card 3 — Hillcrest (San Clemente farm B)
 
-**Eyebrow:** A note to Hillcrest homeowners
+**Eyebrow:** A note to San Clemente homeowners
 **QR target file:** `assets/hillcrest.png`
 
 ---
