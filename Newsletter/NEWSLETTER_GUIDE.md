@@ -36,9 +36,9 @@ These are the only items that require your personal input. Everything else is re
 
 | Section | Label | Updated By | Source |
 |---------|-------|------------|--------|
-| Personal note | "A Note From Adam" | Adam — every issue | Adam's voice |
-| Neighborhood intel | "What's Happening in the Neighborhood" | Claude researches + Adam adds one personal item | Field observation |
-| Lifestyle | "What's New in San Clemente" | Claude researches | Local news, openings, events |
+| Personal note | "A Note From Adam" | Adam, every issue | Adam's voice |
+| Neighborhood intel | "What's Happening in the Neighborhood" (rotates area) | Claude researches + Adam adds one personal item | Field observation |
+| Lifestyle | "What's New in [area]" (matches the rotation) | Claude researches | Local news, openings, events |
 | Deal highlights | "Deals Worth Knowing About" | Adam provides deal context, Claude writes copy | Adam's pipeline |
 | Market stats | "By The Numbers" | Claude researches | InfoSparks SFR + Pacific Sotheby's deck |
 | Peer comparison | "San Clemente in Context" | Claude researches | Pacific Sotheby's deck |
