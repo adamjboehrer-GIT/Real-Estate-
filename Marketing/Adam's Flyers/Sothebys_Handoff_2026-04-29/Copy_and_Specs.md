@@ -1,5 +1,7 @@
 # Postcard Copy & Production Specs
 
+> **Revision 2026-05-04** — Headline and body copy updated. The earlier "I have buyers. Looking for sellers." angle was retired because it overpromised demand. The new line, "The conversation before the listing," positions Adam's role honestly: a Sotheby's-network introduction before a home formally hits the market. Per-neighborhood lifestyle subheads were removed; geography is carried by the eyebrow and QR attribution.
+
 ---
 
 ## Format
