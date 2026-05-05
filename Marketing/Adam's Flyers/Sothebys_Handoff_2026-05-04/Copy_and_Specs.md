@@ -100,10 +100,10 @@ So if you're thinking about selling in the next year or two, let's talk well bef
 │  before the listing.    (italic line 2)          │        │ ↗ "Get   │
 │                                                  │   QR   │   your   │
 │  Most coastal sales don't start on Zillow.       │        │   Home   │
-│  They start with a buyer at Sotheby's who        │        │   Value  │
-│  knows what they want, and an agent             └────────┘   Report"│
-│  who's already had the conversation                        (marker,  │
-│  with the right owner.   (italic serif)                     gold,    │
+│  A buyer comes to me with an idea of             │        │   Value  │
+│  what they want, and my job is to find          └────────┘   Report"│
+│  the right home, often from an owner                       (marker,  │
+│  I've already talked with.   (italic serif)                 gold,    │
 │                                                            +4° tilt) │
 │  So if you're thinking about selling                                 │
 │  in the next year or two, the time to                                │
