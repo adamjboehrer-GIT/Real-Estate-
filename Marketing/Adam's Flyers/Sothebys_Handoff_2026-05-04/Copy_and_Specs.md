@@ -54,10 +54,10 @@ The conversation
 *before the listing.*
 
 **Body (italic serif, replaces the previous per-neighborhood lifestyle subhead):**
-Most coastal sales don't start on Zillow. They start with a buyer at Sotheby's who knows what they want, and an agent who's already had the conversation with the right owner.
+Most coastal sales don't start on Zillow. A buyer comes to me with an idea of what they want, and my job is to find the right home, often from an owner I've already talked with.
 
 **CTA line (sans):**
-So if you're thinking about selling in the next year or two, the time to talk is well before you list.
+So if you're thinking about selling in the next year or two, let's talk well before you list.
 
 **Marker annotation by QR (unchanged):** Get your Home Value Report
 
