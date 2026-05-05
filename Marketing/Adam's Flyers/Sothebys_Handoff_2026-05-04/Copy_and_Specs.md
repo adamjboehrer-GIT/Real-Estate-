@@ -106,8 +106,8 @@ So if you're thinking about selling in the next year or two, let's talk well bef
 │  I've already talked with.   (italic serif)                 gold,    │
 │                                                            +4° tilt) │
 │  So if you're thinking about selling                                 │
-│  in the next year or two, the time to                                │
-│  talk is well before you list.                                       │
+│  in the next year or two, let's talk                                 │
+│  well before you list.                                               │
 │                                                                       │
 │                                                  I will personally   │
 │                                                  pull the comps,     │
