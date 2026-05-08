@@ -31,9 +31,11 @@
 | Text Grey | `#666666` | 103, 115, 122 | Pitch line under QR |
 | Accent Grey | `#999999` | 173, 173, 173 | Eyebrow text |
 | White | `#FFFFFF` | 255, 255, 255 | QR code panel only |
-| Soft Light Grey | `#E8E8E8` | 232, 232, 232 | Card background (full bleed) |
+| Warm Cream | `#EDE7DC` | 237, 231, 220 | Card background (full bleed) |
+| Eyebrow Tan | `#A89878` | 168, 152, 120 | Section eyebrows ("PACIFIC SOTHEBY'S…", "A NOTE TO…") |
+| Warm Rule Grey | `#C8C0B2` | 200, 192, 178 | 1pt horizontal rules |
 
-Per brand standards (PSIR Design Guidelines): backgrounds may only be White, SIR Blue, or Grey — never black, never gold. The Soft Light Grey above is a working tint of grey chosen to keep SIR Blue body copy legible while reading as a clear grey background. If the marketing team prefers a stricter named-palette grey, Accent Grey `#999999` is the only other option, but body-copy contrast suffers at that value. No font weights heavier than semibold, no rules thicker than 1pt, no underlined text.
+The warm cream, tan, and warm-rule-grey are working values chosen to match the visual language of the existing `StateOfNeighborhood_Mailer_9x6_0413_Print.pdf` (Adam's already-printed Sotheby's mailer). PSIR Design Guidelines permit White, SIR Blue, or Grey as backgrounds; this warm cream reads as a "warm grey" tone-on-tone treatment consistent with that mailer. If the marketing team has a Sotheby's-approved warm-grey/cream value on file, please substitute. No font weights heavier than semibold, no rules thicker than 1pt, no underlined text.
 
 ---
 
