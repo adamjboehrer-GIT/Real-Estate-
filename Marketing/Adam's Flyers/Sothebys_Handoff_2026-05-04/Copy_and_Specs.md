@@ -37,10 +37,10 @@ Per brand standards (PSIR Design Guidelines): backgrounds may only be White, SIR
 
 | Element | Mockup font | Brand font (please use) | Size / treatment |
 |---|---|---|---|
-| Display name "ADAM BOEHRER" | Cormorant Garamond 500 | Freight or Mercury, Medium | 34 pt, letter-spacing 4 px |
-| Headline "The conversation *before the listing.*" | Cormorant Garamond 500 (italic on line 2) | Freight or Mercury, Medium | 54 pt, line 2 italic |
+| Display name "ADAM BOEHRER" | Newsreader 600 (semibold) | Freight or Mercury, Semibold | 34 pt, letter-spacing 4 px |
+| Headline "The conversation *before the listing.*" | Newsreader 600, line 2 italic 500 | Freight or Mercury, Semibold (italic on line 2) | 54 pt, line 2 italic |
 | Eyebrow "A note to [neighborhood] homeowners" | Source Sans 3 500 | Benton Sans, Medium | 9 pt, uppercase, 2.6 px tracking, accent grey |
-| Body (italic serif) | Cormorant Garamond italic 400 | Freight or Mercury, Italic | 17.5 pt, SIR Blue, line-height ~1.38 |
+| Body (italic serif) | Newsreader italic 400 | Freight or Mercury, Italic | 17.5 pt, SIR Blue, line-height ~1.38 |
 | CTA line | Source Sans 3 400 | Benton Sans, Regular | 13 pt, SIR Blue |
 | Top eyebrow "Pacific Sotheby's International Realty" | Source Sans 3 500 | Benton Sans, Medium | 9 pt, uppercase, 2.6 px tracking, accent grey |
 | Marker annotation "Get your Home Value Report" | Permanent Marker (Google Font) | Keep as Permanent Marker — intentional hand-drawn flourish | 14 pt, gold, +4° rotation |
