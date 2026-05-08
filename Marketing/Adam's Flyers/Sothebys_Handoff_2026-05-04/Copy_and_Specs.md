@@ -43,14 +43,14 @@ The warm cream, tan, and warm-rule-grey are working values chosen to match the v
 
 | Element | Mockup font | Brand font (please use) | Size / treatment |
 |---|---|---|---|
-| Display name "ADAM BOEHRER" | Newsreader 600 (semibold) | Freight or Mercury, Semibold | 34 pt, letter-spacing 4 px |
-| Headline "The conversation *before the listing.*" | Newsreader 600, line 2 italic 500 | Freight or Mercury, Semibold (italic on line 2) | 54 pt, line 2 italic |
-| Eyebrow "A note to [neighborhood] homeowners" | Source Sans 3 500 | Benton Sans, Medium | 9 pt, uppercase, 2.6 px tracking, accent grey |
-| Body (italic serif) | Newsreader italic 400 | Freight or Mercury, Italic | 17.5 pt, SIR Blue, line-height ~1.38 |
-| CTA line | Source Sans 3 400 | Benton Sans, Regular | 13 pt, SIR Blue |
-| Top eyebrow "Pacific Sotheby's International Realty" | Source Sans 3 500 | Benton Sans, Medium | 9 pt, uppercase, 2.6 px tracking, accent grey |
-| Marker annotation "Get your Home Value Report" | Permanent Marker (Google Font) | Keep as Permanent Marker — intentional hand-drawn flourish | 14 pt, gold, +4° rotation |
-| Pitch line under QR | Source Sans 3 300 | Benton Sans, Light | 10.5 pt, text grey, mimics adamboehrer.com body style |
+| Display name "ADAM BOEHRER" | Fraunces 500 | Freight or Mercury, Medium | 34 pt, letter-spacing 3 px, SIR Blue |
+| Headline "The conversation *before the listing.*" | Fraunces 500, line 2 italic 500 | Freight or Mercury, Medium (italic on line 2) | 56 pt, line 2 italic, SIR Blue |
+| Eyebrow "A note to [neighborhood] homeowners" | Source Sans 3 600 | Benton Sans, Semibold | 9 pt, uppercase, 2.4 px tracking, Eyebrow Tan |
+| Body (sans) | Source Sans 3 400 | Benton Sans, Regular | 14.5 pt, SIR Blue, line-height ~1.55 |
+| CTA line | Source Sans 3 500 | Benton Sans, Medium | 14.5 pt, SIR Blue |
+| Top eyebrow "Pacific Sotheby's International Realty" | Source Sans 3 600 | Benton Sans, Semibold | 9 pt, uppercase, 2.4 px tracking, Eyebrow Tan |
+| Marker annotation "Get your Home Value Report" | Permanent Marker (Google Font) | Keep as Permanent Marker — intentional hand-drawn flourish, part of Adam's developing visual voice | 14 pt, gold, +4° rotation |
+| Pitch line under QR | Source Sans 3 400 | Benton Sans, Regular | 10 pt, text grey |
 | Contact stack | Source Sans 3 400 | Benton Sans, Regular | 13.5 pt, SIR Blue |
 | Office address | Source Sans 3 300 | Benton Sans, Light | 10.5 pt, text grey |
 
