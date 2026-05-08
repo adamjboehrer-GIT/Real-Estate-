@@ -64,7 +64,7 @@ The Pacific Sotheby's International Realty lockup is the official horizontal blu
 The conversation
 *before the listing.*
 
-**Body (italic serif):**
+**Body (upright sans):**
 You don't have to be ready to sell to start the conversation. The best listings usually begin a year or two before they hit the market. Early conversations let me understand your home and your goals, so when the timing is right, we list it positioned to bring the best result.
 
 **CTA line (sans):**
