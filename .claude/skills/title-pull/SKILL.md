@@ -178,6 +178,17 @@ The script parses 53+ fields with regex patterns, matches or creates a contact b
 
 It returns JSON with `property_id`, `contact_id`, `action` (inserted/updated), `markdown_path`, and `field_count`. Log this, then continue.
 
+### 5b. Auto-enrich phone + email from purchased farm CSVs
+
+Adam has purchased phone/email enrichment files that live in `data/imports/farm_enrichment/*.csv` (any number of files; APN is the match key). After every successful ingest, immediately try to fill the contact's phone/email from those files using the APN of the property just ingested:
+
+```bash
+cd "/Users/adamboehrer/Desktop/Claude Code" && \
+  python3 scripts/enrich_from_farm_csv.py --apn "<the-apn-just-ingested>" --commit
+```
+
+The script is APN-only (never fuzzy), is idempotent, never overwrites an existing email/phone with a different value, and is silent when the property has no enrichment row. Don't pause the loop on the result — log the line and continue. If no enrichment exists for that APN, the script simply reports zero fills and exits 0.
+
 ### 6. Close the PDF preview and get back to the list
 
 Click the left-arrow in the PDF header: `.ico-pdf-arrow-left`. This returns you to the single-property Reports menu.
