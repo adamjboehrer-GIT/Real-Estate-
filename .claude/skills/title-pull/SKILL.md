@@ -247,6 +247,7 @@ Report to Adam: count of new rows in SQLite today, count of markdown files in `T
 - `scripts/check_property_exists.py` — CLI helper for per-row dedupe (legacy, used only when batch dedupe wasn't done). Takes a street address, exits 0/`EXISTS <apn>` if already ingested, 1/`MISSING` if not.
 - `scripts/batch_dedupe.py` — Reads a JSON dict `{N: [owner, address, county]}` from stdin or file arg, returns `{skip: [...], pull: [...]}`. Handles no-street-number rows (e.g. " Camino San Clemente") by always pulling them — dedupe by address-only is unsafe for those.
 - `scripts/migrate_add_firstam_columns.py` — idempotent schema migration. Run once before first use; no-op on repeats.
+- `scripts/enrich_from_farm_csv.py` — APN-keyed phone+email enrichment. Reads `data/imports/farm_enrichment/*.csv` and fills empty contact email/phone for matching properties. Never overwrites existing values. CLI: `--commit` to write, `--apn <X>` for a single property (used by step 5b in the loop above). Safe to run standalone on the whole DB at any time.
 - `database/leads.db` — SQLite master database with the extended `properties` schema.
 - `Title Database/` — destination folder for per-property markdown files.
 
