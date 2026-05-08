@@ -55,11 +55,11 @@ Per brand standards: no black or gold backgrounds, no font weights heavier than 
 The conversation
 *before the listing.*
 
-**Body (italic serif, replaces the previous per-neighborhood lifestyle subhead):**
-Most coastal sales don't start on Zillow. A buyer comes to me with an idea of what they want, and my job is to find the right home, often from an owner I've already talked with.
+**Body (italic serif):**
+You don't have to be ready to sell to start the conversation. The best listings usually begin a year or two before they hit the market. Early conversations let me understand your home and your goals, so when the timing is right, we list it positioned to bring the best result.
 
 **CTA line (sans):**
-So if you're thinking about selling in the next year or two, let's talk well before you list.
+If that sounds like you, let's talk.
 
 **Marker annotation by QR (unchanged):** Get your Home Value Report
 
