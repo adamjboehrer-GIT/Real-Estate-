@@ -26,9 +26,9 @@
 | Gold | `#C29B40` | 193, 154, 61 | 1pt rules, hand-drawn arrow, marker annotation |
 | Text Grey | `#666666` | 103, 115, 122 | Pitch line under QR |
 | Accent Grey | `#999999` | 173, 173, 173 | Eyebrow text |
-| White | `#FFFFFF` | 255, 255, 255 | Background |
+| White | `#FFFFFF` | 255, 255, 255 | Card background (full bleed) |
 
-Per brand standards: no black or gold backgrounds, no font weights heavier than semibold, no rules thicker than 1pt, no underlined text.
+Per brand standards: no black or gold backgrounds, no font weights heavier than semibold, no rules thicker than 1pt, no underlined text. Card background must be pure white — no warm-tone or cream paper tints.
 
 ---
 
