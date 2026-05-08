@@ -47,6 +47,8 @@ Per brand standards: no black or gold backgrounds, no font weights heavier than 
 | Contact stack | Source Sans 3 400 | Benton Sans, Regular | 13.5 pt, SIR Blue |
 | Office address | Source Sans 3 300 | Benton Sans, Light | 10.5 pt, text grey |
 
+The Pacific Sotheby's International Realty lockup is the official horizontal blue logo, supplied as `assets/psir-logo.png`. Place it at the bottom-right of the card at approximately 1.6 in wide. Do not re-typeset or substitute fonts for the lockup — use the supplied PNG (or request the vector EPS/SVG from the marketing team for higher-fidelity print output).
+
 ---
 
 ## Shared content (all cards, identical)
