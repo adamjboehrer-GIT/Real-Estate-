@@ -101,15 +101,16 @@ If that sounds like you, let's talk.
 │  The conversation                                ┌────────┐  ↗       │
 │  before the listing.    (italic line 2)          │        │ ↗ "Get   │
 │                                                  │   QR   │   your   │
-│  Most coastal sales don't start on Zillow.       │        │   Home   │
-│  A buyer comes to me with an idea of             │        │   Value  │
-│  what they want, and my job is to find          └────────┘   Report"│
-│  the right home, often from an owner                       (marker,  │
-│  I've already talked with.   (italic serif)                 gold,    │
-│                                                            +4° tilt) │
-│  So if you're thinking about selling                                 │
-│  in the next year or two, let's talk                                 │
-│  well before you list.                                               │
+│  You don't have to be ready to sell              │        │   Home   │
+│  to start the conversation. The best             │        │   Value  │
+│  listings usually begin a year or two           └────────┘   Report"│
+│  before they hit the market. Early                         (marker,  │
+│  conversations let me understand                            gold,    │
+│  your home and your goals, so when                         +4° tilt) │
+│  the timing is right, we list it                                     │
+│  positioned to bring the best result.   (italic serif)               │
+│                                                                       │
+│  If that sounds like you, let's talk.                                │
 │                                                                       │
 │                                                  I will personally   │
 │                                                  pull the comps,     │
