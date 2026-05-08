@@ -72,7 +72,7 @@ If that sounds like you, let's talk.
 
 **Marker annotation by QR (unchanged):** Get your Home Value Report
 
-**Pitch line under QR (unchanged):** I will personally pull the comps, write up the read, and send it back to you.
+**Pitch line under QR:** I'll pull the comps, write up the read, and send it back to you.
 
 ---
 
