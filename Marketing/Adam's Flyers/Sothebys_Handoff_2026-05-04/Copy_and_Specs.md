@@ -26,9 +26,10 @@
 | Gold | `#C29B40` | 193, 154, 61 | 1pt rules, hand-drawn arrow, marker annotation |
 | Text Grey | `#666666` | 103, 115, 122 | Pitch line under QR |
 | Accent Grey | `#999999` | 173, 173, 173 | Eyebrow text |
-| White | `#FFFFFF` | 255, 255, 255 | Card background (full bleed) |
+| White | `#FFFFFF` | 255, 255, 255 | QR code panel only |
+| Soft Light Grey | `#E8E8E8` | 232, 232, 232 | Card background (full bleed) |
 
-Per brand standards: no black or gold backgrounds, no font weights heavier than semibold, no rules thicker than 1pt, no underlined text. Card background must be pure white — no warm-tone or cream paper tints.
+Per brand standards (PSIR Design Guidelines): backgrounds may only be White, SIR Blue, or Grey — never black, never gold. The Soft Light Grey above is a working tint of grey chosen to keep SIR Blue body copy legible while reading as a clear grey background. If the marketing team prefers a stricter named-palette grey, Accent Grey `#999999` is the only other option, but body-copy contrast suffers at that value. No font weights heavier than semibold, no rules thicker than 1pt, no underlined text.
 
 ---
 
