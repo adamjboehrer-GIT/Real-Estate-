@@ -190,12 +190,58 @@ A seller carry transforms the worst-case scenario from negative-carry to break-e
 
 ## Tax & Depreciation Side
 
-Often the deal that doesn't pencil on cap rate pencils on after-tax IRR.
+Often the deal that doesn't pencil on cap rate pencils on after-tax IRR. The OBBBA, signed July 2025, **permanently restored 100% bonus depreciation** for property placed in service after January 20, 2025. This materially changes the buyer pool.
 
-- Cost segregation on two cottages + ADU: 20-25% of basis as 5/7/15-year accelerated depreciation. On $2.75M basis, ~$600K of accelerated depreciation in year 1 via bonus depreciation (60% in 2026 under current law).
-- Passive losses offset other rental income for any active real estate professional.
-- Mills Act PT savings: ~$15K/yr at $2.68M, compounds over 10-year contract minimum.
-- For a 1031 buyer rolling $1M+ of trapped gains: deferred cap gains + step-up at death + Mills Act + depreciation can outweigh weak current cap rate.
+### Cost segregation, year 1 depreciation
+
+At $2.5M acquisition + $250K ADU = $2.75M basis. Coastal CA land allocation typically 25-30%; use 25% defensible = $688K land (not depreciable), $2,062K depreciable building basis. A small-property engineered cost seg study (cost $2,500-$5,000) typically reclassifies:
+
+| Asset class | Life | % of building basis | Dollar amount | Year 1 with 100% bonus |
+|---|---|---|---|---|
+| 5-year personal property (cabinets, appliances, fixtures, carpet, window treatments) | 5 | 25% | $516K | $516K |
+| 15-year land improvements (landscaping, fences, decks, driveway) | 15 | 12% | $247K | $247K |
+| 27.5-year structure (walls, roof, foundation, structural HVAC/electrical) | 27.5 | 63% | $1,299K | $47K (straight-line) |
+| **Total year 1 depreciation** | | | | **~$810K** |
+
+### STR loophole vs LTR passive treatment
+
+For STR (average stay <7 days) with **material participation** (100+ hours and more than any other person, or 500+ hours), the rental income is treated as **active**, not passive. The $810K of paper losses can offset W-2 income, business income, or any ordinary income.
+
+For LTR or MTR, losses are passive and only offset other passive income, unless the owner qualifies as a Real Estate Professional (REPS: 750+ hours and >50% of work hours in real estate).
+
+At a 50% combined marginal rate (37% federal top bracket + ~10-13% CA effective), $810K of year 1 deductions is worth ~$405K in actual tax savings.
+
+### 1031 exchange mechanics
+
+For a buyer with trapped gains in another investment property:
+
+- 45 calendar days from sale of relinquished property to identify replacement(s) in writing to the Qualified Intermediary. Strict, no extensions.
+- 180 calendar days (or buyer's tax return due date, whichever is earlier) to close.
+- Replacement value must be equal to or greater than relinquished value to defer all tax. Any shortfall ("boot") is taxed.
+- Must use a Qualified Intermediary; buyer cannot touch the cash.
+
+**Example trapped-gains buyer:** Sold a $3M Newport Beach duplex (basis $800K, $400K accumulated depreciation). Tax exposure without 1031: ~$970K (20% federal cap gains + 25% depreciation recapture + 3.8% NIIT + 13.3% CA state). That $970K is what the deal is competing against.
+
+For that buyer to fully defer, they need to deploy $3M into replacement property. Park Ave at $2.5M + $250K ADU + $100K cap-ex absorbs $2.85M; they'd take $150K of boot (taxed ~$60-75K) or pair Park Ave with a smaller second property. Park Ave at $2.7M list + $250K ADU + $100K cap-ex = $3.05M fully absorbs.
+
+### Combined tax value vs. weak cap rate
+
+For the 1031 + STR + cost seg buyer at $2.7M:
+
+- 1031 defers ~$970K tax on relinquished property
+- Year 1 cost seg + 100% bonus depreciation: ~$810K paper losses
+- Year 1 federal+state tax savings (50% marginal): ~$405K
+- Mills Act savings if approved: $15K/yr × 10 years discounted = ~$110K NPV
+- **Combined year 1 tax value: ~$1,375K on a $2.95M total deployment**
+
+A 3% cap rate is irrelevant. The IRR is being driven by tax deferral, not operating yield.
+
+### Caveats
+
+- **Depreciation gets recaptured at sale.** Bonus depreciation comes back as ordinary income up to 25% on exit. It is a deferral, not a permanent benefit, unless the buyer 1031s again or holds to death (step-up basis).
+- **STR loophole requires real material participation.** If buyer outsources to full-service PM and never logs hours, IRS will challenge. Need contemporaneous time logs.
+- **Land allocation matters.** Aggressive 40%+ land allocation by IRS auditor would shrink depreciable base. Defend with engineered study and comparable land sales.
+- **OBBBA is the floor for 2026, not the ceiling.** Bonus depreciation is now permanent at 100%, but future Congress could change it. Window is favorable through at least the current administration.
 
 ---
 
