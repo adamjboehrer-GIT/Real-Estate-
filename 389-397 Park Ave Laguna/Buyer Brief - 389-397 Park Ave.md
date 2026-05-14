@@ -12,7 +12,7 @@
 
 ## The Deal in One Paragraph
 
-Two fully renovated 1923 beach cottages on a single Laguna Village lot, three blocks from Main Beach. Each cottage stands alone. Current combined rent is $92,400/yr. Approved-plans ADU adds projected $60,000/yr. Listed at $2.72M/sqft on built area, which is land-pricing, not income-pricing. The deal pencils for three buyer types: an STR operator if the parcel is in or qualifies for a permitted STR zone, an owner-occupant house-hacker who lives in one cottage and rents the others, or a 1031 buyer with trapped gains who needs depreciation more than yield. Pure cap-rate investor math does not work at list price under current investor financing without STR legality.
+Two fully renovated 1923 beach cottages on a single Laguna Village lot, three blocks from Main Beach. Each cottage stands alone. Current combined rent is $92,400/yr. A 533 sqft ADU has been submitted to the City (plans not yet issued); if it gets through entitlement, projected rent adds roughly $60,000/yr. Listed at $2.72M/sqft on built area, which is land-pricing, not income-pricing. The deal pencils for three buyer types: an STR operator if the parcel is in or qualifies for a permitted STR zone, an owner-occupant house-hacker who lives in one cottage and rents the others, or a 1031 buyer with trapped gains who needs depreciation more than yield. Pure cap-rate investor math does not work at list price under current investor financing without STR legality.
 
 ---
 
