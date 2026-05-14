@@ -54,18 +54,21 @@ All scenarios use these inputs unless noted.
 
 ---
 
+## Zoning Confirmation (2026-05-14)
+
+Parcel confirmed NOT in an STR-eligible zone. STR (≤30-day stays) is prohibited. Any rental on the property must have a minimum 30-day stay term. This rules out scenarios E and F below. The viable rental strategies are LTR, MTR (31+ day furnished), or owner-occupied hybrid.
+
 ## Income Scenarios (Annual Gross)
 
 | Scenario | 397 Park | 389 Park | ADU | Total Gross |
 |---|---|---|---|---|
-| A. Current in-place rents | $48,000 | $44,400 | — | **$92,400** |
+| A. Current in-place rents (LTR) | $48,000 | $44,400 | — | **$92,400** |
 | B. Market re-lease LTR | $54,000 | $48,000 | — | **$102,000** |
 | C. Market LTR + ADU built | $54,000 | $48,000 | $46,000 | **$148,000** |
-| D. MTR (30+ day furnished) | $66,000 | $58,000 | $52,000 | **$176,000** |
-| E. STR conservative | $72,000 | $72,000 | $48,000 | **$192,000** |
-| F. STR top-quartile + ADU | $140,000 | $140,000 | $72,000 | **$352,000** |
+| D1. MTR separate units, furnished | $54,000 | $39,600 | $42,000 | **$135,600** |
+| D2. MTR whole-compound, furnished | — | — | — | **$108,000 (no ADU) / $144,000 (with ADU)** |
 
-Scenario E uses the Laguna market median of $72K/listing/yr from Airbtics. Scenario F uses top-25% performance ($140K/yr per listing) and a conservative ADU figure given its smaller size and rear-lot position.
+Scenarios E and F (STR) are removed; not legal at this parcel.
 
 ### Seasonality (STR scenarios)
 
