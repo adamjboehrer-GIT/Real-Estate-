@@ -70,18 +70,90 @@ Parcel confirmed NOT in an STR-eligible zone. STR (≤30-day stays) is prohibite
 
 Scenarios E and F (STR) are removed; not legal at this parcel.
 
-### Seasonality (STR scenarios)
+## MTR Deep Dive: Compound vs. Separate Unit Strategy
 
-Laguna STR revenue is heavily summer-weighted. Pacing for Scenario E ($72K/listing):
+Two ways to operate MTR on this parcel. Each unlocks a different demand pool.
 
-| Period | Months | % of annual revenue | Rationale |
-|---|---|---|---|
-| Peak | Jun-Aug | ~42% | 80%+ occupancy, $500-600 ADR |
-| Shoulder high | May, Sep | ~18% | 65-70% occupancy, $400 ADR |
-| Shoulder mid | Apr, Oct | ~14% | 55% occupancy, $325 ADR |
-| Off-peak | Nov-Mar | ~26% | 35-45% occupancy, $230-250 ADR |
+### Separate-unit MTR (Scenario D1)
 
-Cash flow modeling should assume Q1 and Q4 require reserves; Q3 carries the year.
+Operate each cottage as an independent 30+ day furnished rental.
+
+| Unit | Furnished MTR rate | Annual @ 85% utilization |
+|---|---|---|
+| 397 (2BR/1BA, 539 sqft) | $4,500/mo | $46,000 |
+| 389 (1BR/1BA, 456 sqft) | $3,300/mo | $33,700 |
+| ADU when built (1BR, 533 sqft) | $3,500/mo | $35,700 |
+| **Total gross (with ADU)** | | **~$115,000** |
+
+Demand pool: solo traveling professionals, traveling nurses (Hoag Memorial is the closest hospital, 7 miles), individual corporate relocations, divorcing executives, sabbatical academics.
+
+Reference points: Laguna Beach 1BR furnished averages $2,990/mo; furnished apartments range $2,748-$3,921. Walking-to-beach Village location supports a premium 10-20% above area average.
+
+### Whole-compound MTR (Scenario D2)
+
+Lease both cottages as a single 3BR/2BA compound. ADU when built operates as integrated guest quarters or separate ADU.
+
+| Configuration | Monthly rate | Annual @ 75% utilization |
+|---|---|---|
+| Compound only (3BR/2BA, 986 sqft, two detached cottages) | $7,500-9,000 | $72,000-86,000 |
+| Compound + ADU (4BR total, 1,519 sqft, three detached structures) | $11,000-13,000 | $99,000-117,000 |
+
+Compound utilization runs lower (~75% vs ~85%) because the larger tenant pool is harder to fill back-to-back. But each tenant typically stays 3-6 months versus 2-3 months for solo professionals.
+
+Demand pool for the compound configuration:
+- **Multi-generational family vacation/relocation.** Three private structures with shared outdoor space is rare and valuable. Grandparents in one cottage, parents in another, ADU for adult child or au pair.
+- **Insurance ALE (Additional Living Expense) displacement.** Family displaced by fire or flood needs a furnished short-term home in their area. ALE coverage often runs 12-24 months. Coastal OC has a real recurring displacement market. **Caveat:** post-emergency-declaration rate caps apply (160% of HUD FMR + 5% if furnished, roughly $4,200/mo for 2BR), which can constrain rate during major events. Outside emergency declarations, no cap.
+- **Corporate executive relocation with family.** $400K+ household incomes, 4-6 month placements while buying or building.
+- **Premium leisure (3-6 month winter or summer stay).** Snowbirds from Chicago/NYC, sabbatical professors, writer/artist residencies.
+
+### Verdict on Adam's Hypothesis
+
+**The hypothesis is directionally correct on operating economics, neutral on headline rate.**
+
+Comparison at $2.5M acquisition:
+
+| Metric | D1: Separate-unit MTR | D2: Whole-compound MTR |
+|---|---|---|
+| Annual gross (with ADU) | $115,000 | $110,000 (mid-range) |
+| Operating cost | ~$58,000 | ~$48,000 |
+| NOI | ~$57,000 | ~$62,000 |
+| Vacancy risk | Three streams, diversified | Single stream, concentrated |
+| Management complexity | Three separate placements, leases, turns | One placement, one lease, one turn |
+| Wear/tear | Higher (3 tenants) | Lower (1 tenant group) |
+| Tenant pool size | Larger but more transient | Smaller but stickier (longer avg stay) |
+
+The compound configuration wins on a risk-adjusted basis by about $5K-$8K of NOI annually. It also unlocks the insurance ALE channel and multi-gen vacation channel, which separate units cannot serve.
+
+Where Adam's hypothesis breaks: 986 sqft total is small for a 3BR/2BA compound. A traditional family of four typically wants integrated living, not split across two cottages. The compound is most appealing to multi-gen groups, not nuclear families. Marketing matters: lead with "two private cottages on one lot, perfect for multi-gen" rather than "3BR/2BA home."
+
+### Recommended MTR Operating Strategy
+
+Hybrid by season:
+
+| Months | Strategy | Rationale |
+|---|---|---|
+| May-Sep (peak) | Compound at premium ($9,500-11,000/mo) | Multi-gen vacation demand, summer relocations |
+| Oct-Apr (off-peak) | Compound at ALE/corporate rate ($7,000-8,000/mo) or split to separate | Insurance displacement is year-round, leisure demand thin |
+
+Annual gross with this strategy: ~$105,000-$115,000 without ADU, ~$140,000-$155,000 with ADU.
+
+### Furnishing Capital Requirement
+
+Adam should factor this into the buyer pitch. Quality furnished compound requires:
+- Initial furnishing both cottages: $35,000-$50,000
+- ADU when built: $15,000-$20,000
+- Platform setup (Furnished Finder, CHBO, Sinistar listings, photography): $3,000-$5,000
+- Total upfront beyond purchase + ADU build: ~$55,000-$75,000
+
+### Platforms to List
+
+Multi-platform distribution is required to fill MTR consistently:
+- **Furnished Finder.** Traveling nurse and corporate channel. 49 Laguna listings, 88 corporate, suggests thin supply.
+- **Airbnb 30+ day filter.** Largest funnel, weak corporate share.
+- **CHBO (Corporate Housing by Owner).** Corporate-only, paid leads.
+- **Sinistar.** Insurance ALE placement network. Important for displacement bookings.
+- **Zumper / Apartments.com.** Long-stay leisure tenants.
+- **Direct relationships.** Laguna Niguel/Newport corporate HR teams, Hoag Memorial recruiting, OC family law attorneys (divorce ALE).
 
 ---
 
