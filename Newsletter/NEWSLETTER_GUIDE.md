@@ -40,11 +40,13 @@ These are the only items that require your personal input. Everything else is re
 | Neighborhood intel | "What's Happening in the Neighborhood" (rotates area) | Claude researches + Adam adds one personal item | Field observation |
 | Lifestyle | "What's New in [area]" (matches the rotation) | Claude researches | Local news, openings, events |
 | Deal highlights | "Deals Worth Knowing About" | Adam provides deal context, Claude writes copy | Adam's pipeline |
-| Market stats | "By The Numbers" | Claude researches | InfoSparks SFR + Pacific Sotheby's deck |
-| Peer comparison | "San Clemente in Context" | Claude researches | Pacific Sotheby's deck |
-| OC comparison | "San Clemente vs. Orange County" | Claude researches | InfoSparks + CRMLS Local Market Update |
+| Market stats | "By The Numbers" (rotates with featured area) | Claude researches | InfoSparks SFR (featured city) + Pacific Sotheby's deck |
+| Peer comparison | "[Featured Area] in Context" (rotates: e.g. Dana Point in Context, Capistrano Beach in Context) | Claude researches | Pacific Sotheby's deck |
+| OC comparison | "[Featured Area] vs. Orange County" (rotates with featured area) | Claude researches | InfoSparks + CRMLS Local Market Update |
 | Coming soon | "First Look" | Adam — only when applicable | Adam's pipeline |
 | CTA | — | Rotates each issue | — |
+
+**Rotation rule:** every numeric section (By The Numbers, the peer table, OC comparison) tracks the featured area for the issue. The peer table always shows the same five coastal cities; only the highlighted row and the section title change.
 
 ---
 
