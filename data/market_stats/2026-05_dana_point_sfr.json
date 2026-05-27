@@ -1,0 +1,78 @@
+{
+  "market": "Dana Point",
+  "property_type": "Residential, Single Family, Detached",
+  "reporting_month": "2026-04",
+  "extracted_on": "2026-05-27",
+  "source": {
+    "system": "California Regional Multiple Listing Service (CRMLS)",
+    "tool": "InfoSparks / ShowingTime Plus",
+    "access_method": "manual export by licensed agent (compliant)",
+    "export_files_dir": "data/imports/mls_stats/2026-05-27_dana_point/"
+  },
+  "current_month": {
+    "median_sales_price_usd": 2994000,
+    "median_days_active_in_mls": 12,
+    "active_listings": 62,
+    "inventory_months_supply": 3.1,
+    "pending_sales": 20
+  },
+  "trailing_3_months_feb_mar_apr_2026": {
+    "median_sales_price_usd": [
+      3512500,
+      2830000,
+      2994000
+    ],
+    "median_days_active_in_mls": [
+      57,
+      14,
+      12
+    ],
+    "active_listings": [
+      59,
+      60,
+      62
+    ],
+    "inventory_months_supply": [
+      2.9,
+      3.0,
+      3.1
+    ],
+    "pending_sales": [
+      25,
+      24,
+      20
+    ]
+  },
+  "year_over_year_april": {
+    "median_sales_price_usd": {
+      "2025": 1740000,
+      "2026": 2994000,
+      "pct_change": 72.1
+    },
+    "median_days_active_in_mls": {
+      "2025": 32,
+      "2026": 12,
+      "pct_change": -62.5
+    },
+    "active_listings": {
+      "2025": 103,
+      "2026": 62,
+      "pct_change": -39.8
+    },
+    "inventory_months_supply": {
+      "2025": 4.8,
+      "2026": 3.1,
+      "pct_change": -35.4
+    },
+    "pending_sales": {
+      "2025": 21,
+      "2026": 20,
+      "pct_change": -4.8
+    }
+  },
+  "data_quality_notes": [
+    "Single-family detached only. Excludes Dana Point condos/townhomes (the deck's all-residential Dana Point figures cover those too and run notably lower in median price).",
+    "Median sales price of $2.99M for April 2026 sits between March 2026 ($2.83M) and February 2026 ($3.51M); recent SFR medians have been bouncing in the $2.8M-$4.4M range as transaction counts are low.",
+    "Jan and Feb 2026 Median Days Active in MLS (66 and 57) read as winter outliers; March (14) and April (12) reflect a normalized spring."
+  ]
+}
