@@ -72,7 +72,8 @@ These are communities Adam genuinely belongs to, not lead lists. Join ONLY as a 
 Write `outreach/facebook/daily_status.md` with: date, account-ok?, groups joined/requested today, intros posted today, NEW responses (who + what + link), any checkpoint/block encountered, and recommended next action. The claude.ai response-notifier routine and the next session both read this.
 
 ## Database (database/leads.db)
-- `facebook_groups(city, group_name, group_url UNIQUE, members, privacy, agents_allowed, rules_notes, join_status, join_requested_at, joined_at, intro_posted_at, notes)`
+- `facebook_groups(category, city, group_name, group_url UNIQUE, members, privacy, agents_allowed, rules_notes, join_status, join_requested_at, joined_at, intro_posted_at, notes)`
+- `category` values: `local_community` (default, city-based) · `pepperdine_alumni` · `local_christian`. Always set it when inserting a new group.
 - `facebook_outreach(person_name, profile_url, group_name, signal, drafted_message, status, approved_at, sent_at, outcome)`
 - join_status values: not_joined → requested → joined. Use `datetime('now')` for timestamps.
 
