@@ -14,8 +14,18 @@ This is his real personal account. Be conservative. Protecting the account matte
 - Never post an intro in a group joined less than ~1 day ago unless that group clearly welcomes intros (e.g. a small-business community).
 - If anything looks like a rate-block ("You're going too fast"), STOP all actions for the day, log it, and report.
 
-## Target cities (work through in order, finish one before the next)
-San Clemente → Dana Point → Capo Beach → Laguna Beach → Newport Beach → Huntington Beach → Oceanside → Carlsbad
+## Two layers of groups (tracked by the `category` column)
+The tracker now spans three categories. Work whichever layer Adam points you at; if unspecified, default to `local_community`.
+
+1. **`local_community`** — city-based coastal-OC groups. Work cities in order, finish one before the next:
+   San Clemente → Dana Point → Capo Beach → Laguna Beach → Newport Beach → Huntington Beach → Oceanside → Carlsbad
+2. **`pepperdine_alumni`** — Pepperdine University alumni groups. Adam is a real **Class of 2019** alum (Pepperdine Waves), so membership is authentic. Targets: "Pepperdine Alumni", "Pepperdine Waves", class-of-2019, Pepperdine in Orange County / SoCal, Pepperdine Greek/major alumni groups he plausibly belongs to. Store these with `city='—'` (or the chapter region) and `category='pepperdine_alumni'`.
+3. **`local_christian`** — South OC faith-community groups (San Clemente / Dana Point / South OC churches, Christian community & moms/young-pros groups, Bible study / small-group networks). Store with the relevant `city` and `category='local_christian'`.
+
+### Authenticity guardrail for the affinity layers (read before joining)
+These are communities Adam genuinely belongs to, not lead lists. Join ONLY as a real member.
+- **Pepperdine:** join as a 2019 alum. Never lead with "realtor." If a join question asks grad year/major, answer truthfully as Adam (Class of 2019); if it needs a detail you don't have, mark `requested` and note "needs Adam input".
+- **Local Christian:** faith groups are almost always strict no-solicitation. Treat EVERY `local_christian` group as a strict no-promo group regardless of its written rules. Join to be part of the community, full stop. Never farm, never pitch, never imply Adam is there for business. If a group's rules require members to attend the church or affirm a statement of faith and you can't honestly do so on Adam's behalf, SKIP it and note why — do not misrepresent.
 
 ## Step 0 — Verify session (CRITICAL)
 1. Navigate to https://www.facebook.com/me/ and snapshot.
