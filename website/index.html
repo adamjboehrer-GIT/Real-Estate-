@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://adamboehrer.com/">
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/site.css?v=20260429ajax">
+  <link rel="stylesheet" href="css/site.css?v=20260601modal">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
       <a href="#home-value">Home Value</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="#newsletter" class="topbar-cta">Join the Newsletter</a>
+    <button type="button" class="topbar-cta" data-newsletter-open>Join the Newsletter</button>
   </div>
 </header>
 
@@ -48,39 +48,11 @@
       <div class="hero-copy">
         <p class="eyebrow">San Clemente · Coastal Southern California</p>
         <h1 class="hero-title">Relationships over transactions.</h1>
-        <p class="hero-lede">My goal is simple: bring some integrity back to the process and build real relationships in the community I actually live in.</p>
+        <p class="hero-lede">My goal is simple: bring some integrity back into the process of buying and selling homes. I build connections that go beyond the deal, in the community I actually live in.</p>
 
-        <form
-          id="newsletter"
-          class="signup hero-signup"
-          action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
-          method="post"
-          data-thanks="Thanks for joining. Be on the lookout for the newsletter in your inbox."
-        >
-          <div class="hero-signup-row">
-            <div class="field">
-              <label for="mce-HERO-FNAME">First name</label>
-              <input type="text" name="FNAME" id="mce-HERO-FNAME" autocomplete="given-name" required>
-            </div>
-            <div class="field">
-              <label for="mce-HERO-LNAME">Last name</label>
-              <input type="text" name="LNAME" id="mce-HERO-LNAME" autocomplete="family-name" required>
-            </div>
-          </div>
-          <div class="field">
-            <label for="mce-HERO-EMAIL">Email address</label>
-            <input type="email" name="EMAIL" id="mce-HERO-EMAIL" required autocomplete="email">
-          </div>
-          <input type="hidden" name="SOURCE" value="newsletter">
-          <!-- Mailchimp honeypot — leave empty, do not remove -->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-            <input type="text" name="b_cf70355a0c40376ae76d606fd_f44752d032" tabindex="-1" value="">
-          </div>
-          <div class="hero-actions">
-            <button type="submit" class="btn btn-primary">Join the newsletter</button>
-            <a href="/newsletter/" class="btn-text">Read past issues</a>
-          </div>
-        </form>
+        <div class="hero-actions">
+          <a href="/newsletter/" class="btn-text">Read Coastal Currents</a>
+        </div>
       </div>
       <div class="hero-portrait">
         <img src="images/headshot.jpg" alt="Adam Boehrer, Pacific Sotheby's International Realty, San Clemente, California">
@@ -88,21 +60,12 @@
     </div>
   </section>
 
-  <!-- ===== APPROACH (sellers + buyers) ===== -->
+  <!-- ===== ABOUT ===== -->
   <section class="band band-white" id="about">
-    <div class="container">
-      <div class="approach-grid">
-        <article class="approach-block">
-          <p class="eyebrow eyebrow-gold">For Sellers</p>
-          <h2 class="approach-title">The launch decides your number.</h2>
-          <p class="approach-body">Before real estate, brand strategy was my career. I bring that lens to your listing, starting with what actually matters to you, then tailoring the story of your home to find the right set of buyers. The first two weeks on the market are what get your home sold at list price.</p>
-        </article>
-        <article class="approach-block">
-          <p class="eyebrow eyebrow-gold">For Buyers</p>
-          <h2 class="approach-title">Read the risk. Spot the value. Buy with conviction.</h2>
-          <p class="approach-body">As an active real estate investor, I know how to read a deal before falling in love with it. Whatever you are considering, I will bring that lens to it, and tell you what I would do if it were my own money.</p>
-        </article>
-      </div>
+    <div class="container narrow">
+      <p class="eyebrow eyebrow-gold">About</p>
+      <h2 class="band-title">Why I do this the way I do.</h2>
+      <p class="approach-body">Before I ever sold a home, I was a father and a neighbor here in San Clemente, and I still lead with that. My background is in brand strategy, which is really the art of positioning: pricing, story, and getting the right people to pay attention. I am also an active real estate investor, so I know how to look at a property and read the risk and the value before falling in love with it. I bring both of those to the people I work with, and I will tell you what I would do if it were my own money.</p>
     </div>
   </section>
 
@@ -244,6 +207,49 @@
 
 </main>
 
+<!-- ===== NEWSLETTER MODAL ===== -->
+<div class="modal" id="newsletter-modal" hidden>
+  <div class="modal-overlay" data-newsletter-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
+    <button type="button" class="modal-close" aria-label="Close" data-newsletter-close>&times;</button>
+    <p class="eyebrow eyebrow-gold">Coastal Currents</p>
+    <h2 class="modal-title" id="newsletter-modal-title">A bi-weekly read on the South OC market.</h2>
+    <p class="modal-lede">Real numbers, the streets I am watching, and the deals moving from San Clemente to San Diego. No spam, unsubscribe anytime.</p>
+
+    <form
+      id="newsletter"
+      class="signup modal-signup"
+      action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
+      method="post"
+      data-thanks="Thanks for joining. Be on the lookout for the newsletter in your inbox."
+    >
+      <div class="signup-row">
+        <div class="field">
+          <label for="mce-HERO-FNAME">First name</label>
+          <input type="text" name="FNAME" id="mce-HERO-FNAME" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label for="mce-HERO-LNAME">Last name</label>
+          <input type="text" name="LNAME" id="mce-HERO-LNAME" autocomplete="family-name" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="mce-HERO-EMAIL">Email address</label>
+        <input type="email" name="EMAIL" id="mce-HERO-EMAIL" required autocomplete="email">
+      </div>
+      <input type="hidden" name="SOURCE" value="newsletter">
+      <!-- Mailchimp honeypot — leave empty, do not remove -->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_cf70355a0c40376ae76d606fd_f44752d032" tabindex="-1" value="">
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn btn-primary">Join the newsletter</button>
+      </div>
+      <p class="archive-link"><a href="/newsletter/">Read past issues</a></p>
+    </form>
+  </div>
+</div>
+
 <!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="container site-footer-inner">
@@ -337,6 +343,31 @@
 
     bindForm(document.getElementById('newsletter'));
     bindForm(document.querySelector('.home-value-form'));
+  })();
+
+  // Newsletter modal: open from the top-right "Join the Newsletter" button,
+  // close on the X, the overlay, or Escape. The signup form lives inside.
+  (function () {
+    var modal = document.getElementById('newsletter-modal');
+    if (!modal) return;
+    var openers = document.querySelectorAll('[data-newsletter-open]');
+    var closers = modal.querySelectorAll('[data-newsletter-close]');
+    function open(e) {
+      if (e) e.preventDefault();
+      modal.hidden = false;
+      document.body.classList.add('modal-open');
+      var firstInput = modal.querySelector('input:not([type="hidden"])');
+      if (firstInput) firstInput.focus();
+    }
+    function close() {
+      modal.hidden = true;
+      document.body.classList.remove('modal-open');
+    }
+    for (var i = 0; i < openers.length; i++) openers[i].addEventListener('click', open);
+    for (var j = 0; j < closers.length; j++) closers[j].addEventListener('click', close);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !modal.hidden) close();
+    });
   })();
 </script>
 

@@ -109,6 +109,8 @@ a:hover { color: var(--gold); }
   color: var(--white);
   background: var(--sir-blue);
   padding: 11px 22px;
+  border: 0;
+  cursor: pointer;
 }
 .topbar-cta:hover { background: var(--gold); color: var(--white); }
 
@@ -708,6 +710,75 @@ a:hover { color: var(--gold); }
   :root { --topbar-h: 72px; }
   .topbar-annotation,
   .hv-cta .cta-annotation { display: none; }
+}
+
+/* ===== NEWSLETTER MODAL ===== */
+body.modal-open { overflow: hidden; }
+.modal[hidden] { display: none; }
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 35, 73, 0.55);
+}
+.modal-panel {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  width: 100%;
+  max-width: 480px;
+  padding: 48px 44px 40px;
+  border-top: 3px solid var(--gold);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(0, 35, 73, 0.25);
+}
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: 0;
+  font-size: 30px;
+  line-height: 1;
+  color: var(--accent-grey);
+  cursor: pointer;
+  font-family: var(--sans);
+  padding: 4px 10px;
+}
+.modal-close:hover { color: var(--sir-blue); }
+.modal-panel .eyebrow { margin-bottom: 14px; }
+.modal-title {
+  margin: 0 0 14px;
+  font-family: var(--serif);
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--sir-blue);
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+.modal-lede {
+  margin: 0 0 28px;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-grey);
+  font-weight: 300;
+}
+.modal-signup .btn-row { margin-top: 24px; }
+.modal-signup .btn-primary { width: 100%; }
+.modal-signup .archive-link { margin-top: 20px; }
+@media only screen and (max-width: 760px) {
+  .modal-panel { padding: 44px 24px 32px; }
+  .modal-title { font-size: 24px; }
 }
 
 /* ===== SCROLL OFFSET FOR STICKY NAV ===== */
