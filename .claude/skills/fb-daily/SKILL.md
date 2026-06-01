@@ -40,7 +40,8 @@ San Clemente → Dana Point → Capo Beach → Laguna Beach → Newport Beach �
     - Mark join_status='requested', join_requested_at=now. Never misrepresent that he is NOT an agent.
 - Log rules in `rules_notes` (esp. promo/advertising restrictions, admin-review-first).
 
-## Step 3 — Stagger intro posts
+## Step 3 — Intro posts (CURRENTLY ON HOLD)
+- **STANDING DECISION (2026-06-01): Adam has paused ALL intro posting.** Build group membership only — do NOT post intros in any group until Adam explicitly re-enables. Skip this step entirely until then. The rest of this step applies once he turns it back on.
 - The locked intro lives in `outreach/facebook/intro_post.md`. Tailor ONLY the first line per city (e.g. "We're in San Clemente but spend a ton of time up in Laguna"). Never add a phone/CTA. Never use em-dashes.
 - Eligible group = join_status='joined' AND intro_posted_at IS NULL AND rules allow member intros (NOT a strict no-promo group unless it's the allowed day).
   - Strict no-promo groups: post the intro only as a genuine personal introduction, never anything that reads as advertising. If a group restricts promo to a specific day, respect it.
