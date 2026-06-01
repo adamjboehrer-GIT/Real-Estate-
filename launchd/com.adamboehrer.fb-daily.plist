@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.adamboehrer.fb-daily</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/adamboehrer/Desktop/Claude Code/scripts/fb_daily_run.sh</string>
+    </array>
+    <!-- Run once a day at 9:30am local. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/Users/adamboehrer/Library/Logs/fb-daily.stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/adamboehrer/Library/Logs/fb-daily.stderr.log</string>
+</dict>
+</plist>
