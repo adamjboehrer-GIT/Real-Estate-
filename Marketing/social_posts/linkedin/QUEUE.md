@@ -54,7 +54,8 @@ Voice rules live in `PILLARS.md`. Numbers cited below are from `website/data/sta
 > home is worth in today's market, from someone who will tell you the honest number rather than the
 > flattering one. That single decision moves more dollars than anything that happens later.
 >
-> If you want that read on your place, message me. No pressure either way.
+> If you are thinking about selling this year, that honest read is where I would start. Message me
+> and I will put real numbers on your place.
 
 ---
 
