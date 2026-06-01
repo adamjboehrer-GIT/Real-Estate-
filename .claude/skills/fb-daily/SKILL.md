@@ -40,7 +40,9 @@ These are communities Adam genuinely belongs to, not lead lists. Join ONLY as a 
 - Log each candidate with name, url, members, privacy, the correct `category`, and join_status='not_joined'. When unsure whether a specific affinity group is a genuine fit for Adam, log it as a candidate and surface it for his pick rather than auto-joining.
 
 ## Step 2 — Join a small batch
-- Select up to 5–8 `not_joined` groups for the current city, prioritizing: general community > local business > neighborhood/safety > buy-sell. Largest, most active first.
+- Select up to 5–8 `not_joined` groups for the current target. The 5–8/day cap is shared across ALL categories, not per-category — never exceed it in total.
+- For `local_community`, prioritize: general community > local business > neighborhood/safety > buy-sell. Largest, most active first.
+- For `pepperdine_alumni` and `local_christian`, prioritize active, clearly-local/relevant groups; for faith groups, smaller authentic community groups over large generic ones. Re-read the authenticity guardrail above before joining either affinity layer.
 - For each: open the group page, click Join.
   - **Public** → usually instant. Mark join_status='joined', joined_at=now.
   - **Private / participant questions** → answer honestly as Adam:
