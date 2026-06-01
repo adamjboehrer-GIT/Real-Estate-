@@ -33,9 +33,11 @@ These are communities Adam genuinely belongs to, not lead lists. Join ONLY as a 
    - If it's a DIFFERENT account → STOP. Do not act. Write status: "Wrong account logged in." 
    - If NOT logged in, or a checkpoint/2FA/"is this you?" screen appears → STOP. Headless cannot solve these. Write status: "Facebook needs login/checkpoint — Adam must log in." Do not retry.
 
-## Step 1 — Discover groups for the current city (only if none logged yet)
-- If `facebook_groups` has no rows for the current city, search https://www.facebook.com/search/groups/?q=<CITY> and log candidate community / buy-sell / neighborhood / local-business groups (name, url, members, privacy) with join_status='not_joined'.
-- Skip groups that are clearly not local-community (fan pages, national groups, MLM/recruiting).
+## Step 1 — Discover groups for the current target (only if none logged yet)
+- **`local_community`:** if `facebook_groups` has no rows for the current city, search https://www.facebook.com/search/groups/?q=<CITY> and log candidate community / buy-sell / neighborhood / local-business groups. Skip non-local groups (fan pages, national groups, MLM/recruiting).
+- **`pepperdine_alumni`:** search queries like `Pepperdine alumni`, `Pepperdine Waves`, `Pepperdine class of 2019`, `Pepperdine Orange County`. Log alumni/chapter groups Adam plausibly belongs to. Skip current-student, sports-fan, and unrelated "Pepperdine" name-collision groups.
+- **`local_christian`:** search queries like `San Clemente church`, `Dana Point Christian`, `South OC Christian community`, `Orange County Bible study`, plus the names of nearby churches. Log local faith-community groups. Skip national ministries, debate/apologetics, and clearly non-local groups.
+- Log each candidate with name, url, members, privacy, the correct `category`, and join_status='not_joined'. When unsure whether a specific affinity group is a genuine fit for Adam, log it as a candidate and surface it for his pick rather than auto-joining.
 
 ## Step 2 — Join a small batch
 - Select up to 5–8 `not_joined` groups for the current city, prioritizing: general community > local business > neighborhood/safety > buy-sell. Largest, most active first.
