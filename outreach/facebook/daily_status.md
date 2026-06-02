@@ -2,7 +2,19 @@
 
 **Account check:** OK — logged in as Adam Boehrer (@AdamonthecoastOC), live attended session. No checkpoint or 2FA wall.
 
-**Intro posting:** ON HOLD (standing decision 2026-06-01). Membership-building only this run.
+**Intro posting:** RE-ENABLED by Adam on 2026-06-02 for accepted general-community groups, EXCLUDING San Clemente Life (realtor admins, no-promo) and any group those same admins run.
+
+## Intros posted today (2)
+- **San Clemente Beach Life** (10K) — locked intro, standard first line. Confirmed live in public feed.
+- **San Clemente Society** (8K) — locked intro, lightly varied first line. Posted (composer closed cleanly, no error).
+
+### Intentionally NOT posted (with reasons)
+- San Clemente Life (SCLifepage) — excluded by Adam; realtor admins, strict no-promo.
+- San Clemente Surf Life — run by the same San Clemente Life admins; no-promo. Excluded.
+- San Clemente Living — local promo Mondays only + admin-reviews first posts; HOLD for a Monday.
+- Buy Sell Trade / Sell My Stuff — items-only marketplaces; intro would read as spam.
+- Neighborhood Watch / Dog Group / Need A Hand — single-purpose groups; self-intro off-topic.
+- Small Business Community — already posted 6/1.
 
 ## Joined today (5)
 All San Clemente `local_community`:
