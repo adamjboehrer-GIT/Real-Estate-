@@ -1,52 +1,40 @@
-# Facebook Daily Status — 2026-06-02
+# Facebook Daily Status — 2026-06-03
 
-**Account check:** OK — logged in as Adam Boehrer (@AdamonthecoastOC), live attended session. No checkpoint or 2FA wall.
+**Account:** ✅ Verified as Adam Boehrer (@AdamonthecoastOC). No checkpoint, no rate-block.
 
-**Intro posting:** RE-ENABLED by Adam on 2026-06-02 for accepted general-community groups, EXCLUDING San Clemente Life (realtor admins, no-promo) and any group those same admins run.
+**Target worked:** `local_community` → **Dana Point** (San Clemente is essentially complete: 11 joined, 2 requested).
 
-## Intros posted today (2)
-- **San Clemente Beach Life** (10K) — locked intro, standard first line. Confirmed live in public feed.
-- **San Clemente Society** (8K) — locked intro, lightly varied first line. Posted (composer closed cleanly, no error).
+## Groups joined today (4 — public, instant)
+- **Dana Point Unplugged** (72K) — also submitted the required participation answers (city, why, 2+2) so Adam can post once an admin approves first-time participation
+- **Dana Point Neighborhood Group** (9K)
+- **Destination Dana Point** (2K)
+- **Dana Point Business Buzz** (1.6K, local business networking)
 
-### Intentionally NOT posted (with reasons)
-- San Clemente Life (SCLifepage) — excluded by Adam; realtor admins, strict no-promo.
-- San Clemente Surf Life — run by the same San Clemente Life admins; no-promo. Excluded.
-- San Clemente Living — local promo Mondays only + admin-reviews first posts; HOLD for a Monday.
-- Buy Sell Trade / Sell My Stuff — items-only marketplaces; intro would read as spam.
-- Neighborhood Watch / Dog Group / Need A Hand — single-purpose groups; self-intro off-topic.
-- Small Business Community — already posted 6/1.
+## Join requests submitted today (2 — private, pending admin review)
+- **Dana Point, CA** (16K) — answered membership questions, agreed to rules (no spam / give more than you take)
+- **Residents (and Friends) of Dana Point, CA** (10K) — STRICT no-advertising group (ads only in a designated thread); answered all 3 required questions truthfully
 
-## Joined today (5)
-All San Clemente `local_community`:
-- San Clemente Dog Group (2.7K, public)
-- San Clemente Neighborhood Watch (2.3K, public)
-- San Clemente Need A Hand (2.1K, public)
-- San Clemente Buy Sell Trade Group (525, public)
-- San Clemente Sell My Stuff (17.3K, private) — answered membership Q&A (two I-5 exits / favorite landmark + city / anti-scam "type 33"); auto-approved on submit
+**Total join actions today: 6** (within the 5–8/day cap).
 
-## Join requested today (1, pending admin approval)
-- San Clemente / Dana Point Rentals and Roommates (5.7K, private) — no questionnaire, awaiting admin
+## Also confirmed
+- **San Clemente / Dana Point Rentals and Roommates** — yesterday's (6/2) request was **accepted**; now marked joined.
 
-Total join actions today: 6 (within the 5–8/day cap).
+## Intro posts
+None today. Intro posting is re-enabled (per the 6/2 decision) for established general-community groups, but **every group touched today was joined within the day** — the pacing rule forbids posting an intro in a group joined less than ~1 day ago. Dana Point groups also need their tailored first line. Revisit intros for the now-settled Dana Point general groups in a future run (Dana Point Unplugged, Neighborhood Group, Destination Dana Point), excluding the strict no-ad Residents group.
 
-## Approvals that came back
-- **San Clemente Life (SCLifepage)** — request from 6/1 approved. Now joined. (Strict no-promo — member only.)
-- San Clemente Surf Life and San Clemente Living — confirmed approved (already tracked as joined).
+## NEW responses (4) — all on Adam's Pepperdine Alumni intro post
+Logged to `facebook_outreach` (signal=inbound, status=new). **Not auto-replied** — queued for Adam's personal reply.
 
-## Still pending
-- San Clemente Life (/groups/sanclementelife/) — request still pending admin review.
-- San Clemente / Dana Point Rentals and Roommates — requested today, pending.
+1. **Hope Mueller Murphy** — Class of **2019** (same year as Adam), lives in the valley with her husband. *"Would love to meet up and connect!"* → warm peer, strong personal-reply candidate.
+2. **Laiken Ritchie** — Seaver class of 2020, lives in LA. *"Would love an OC/LA Waves meetup soon!"* → warm.
+3. **Hung Le** — Pepperdine ambassador. Invited Adam to Waves of Welcome alumni gatherings: Coronado (Jun 27), Solana Beach (Aug 2), Newport Beach (Jul 19).
+4. **Jeanna Stolle Young** — Asked *"Any in OC?"* (re: alumni gatherings).
 
-## NEW responses to review
-- **Jim Habig** tagged Adam in a photo in **San Clemente Life** and commented on it (~8 min before this run). Logged in `facebook_outreach` as inbound, status `needs_review`. No auto-reply sent — Adam to decide whether/how to respond.
+Post also drew 9 reactions (Hung Le, Kat Perry + 7 others).
 
-## Blocks / issues
-- None. No rate-limit warnings.
-- Gmail `from:facebookmail.com` check: only security/passkey/login alerts (ignored per rules). No genuine engagement emails.
-
-## Tracker totals
-- Joined: 11 · Requested (pending): 2 · (all `local_community`, San Clemente)
+## Checkpoint / block
+None.
 
 ## Recommended next action
-- Adam: glance at the Jim Habig tag in San Clemente Life and decide on a reply.
-- Next run: San Clemente is now well-covered — start **Dana Point** `local_community` discovery (strong target: Dana Point Unplugged, 72K public), or keep waiting on the 2 pending requests. Intros remain on hold until Adam re-enables.
+1. **Adam:** personally reply to the 4 Pepperdine alumni — especially **Hope Mueller Murphy** and **Laiken Ritchie** (both genuine peers wanting to meet up). Hung Le's note flags a real OC alumni event (Newport Beach, Jul 19) Adam could attend in person.
+2. **Next session:** finish remaining Dana Point candidates (Dana point life - uncensored, POSITIVELY Dana Point, Dana Point Crime & Safety, Beach Cities BUY & SELL) or advance to **Capo Beach** per the city order.
