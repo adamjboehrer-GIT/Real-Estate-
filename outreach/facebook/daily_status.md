@@ -1,40 +1,38 @@
-# Facebook Daily Status — 2026-06-03
+# Facebook Daily Status — 2026-06-04
 
-**Account:** ✅ Verified as Adam Boehrer (@AdamonthecoastOC). No checkpoint, no rate-block.
+**Account:** ✅ Verified as Adam Boehrer (@AdamonthecoastOC), San Clemente / Pepperdine. No checkpoint, no rate-block. (Brief QUIC/network flakiness loading group pages early on; resolved on reload.)
 
-**Target worked:** `local_community` → **Dana Point** (San Clemente is essentially complete: 11 joined, 2 requested).
+**Target worked:** `local_community` → **Dana Point** (now complete — all remaining candidates processed).
 
 ## Groups joined today (4 — public, instant)
-- **Dana Point Unplugged** (72K) — also submitted the required participation answers (city, why, 2+2) so Adam can post once an admin approves first-time participation
-- **Dana Point Neighborhood Group** (9K)
-- **Destination Dana Point** (2K)
-- **Dana Point Business Buzz** (1.6K, local business networking)
+- **POSITIVELY Dana Point** (481) — general community
+- **Dana Point, Orange County!!!!!!** (310) — general community
+- **Dana point life - uncensored** (998) — general community
+- **Beach Cities BUY & SELL ☆ Dana Point - San Clemente** (3.9K) — buy/sell marketplace
 
 ## Join requests submitted today (2 — private, pending admin review)
-- **Dana Point, CA** (16K) — answered membership questions, agreed to rules (no spam / give more than you take)
-- **Residents (and Friends) of Dana Point, CA** (10K) — STRICT no-advertising group (ads only in a designated thread); answered all 3 required questions truthfully
+- **Dana Point Crime & Safety** (1.6K) — answered membership questionnaire truthfully (agree not to post negatively about law enforcement: Yes; no politics: Yes; agreed to rules). Rule 7 = no promotion of other FB groups/pages.
+- **Dine Out Dana Point** (1.9K) — dining community, Rule 1 = no promotions/spam (strict no-promo)
 
-**Total join actions today: 6** (within the 5–8/day cap).
+**Total join actions today: 6** (within the 5–8/day cap). Dana Point `not_joined` list is now empty.
 
-## Also confirmed
-- **San Clemente / Dana Point Rentals and Roommates** — yesterday's (6/2) request was **accepted**; now marked joined.
+## Surfaced for Adam's decision (not auto-joined)
+- **Pepperdine Bay Area Waves** (540, private) — this is the **Bay Area** alumni chapter, not Adam's SoCal/OC region. Per the authenticity guardrail I did not auto-join. Adam: join only if you actually want the Bay Area chapter; otherwise I'll leave it.
 
 ## Intro posts
-None today. Intro posting is re-enabled (per the 6/2 decision) for established general-community groups, but **every group touched today was joined within the day** — the pacing rule forbids posting an intro in a group joined less than ~1 day ago. Dana Point groups also need their tailored first line. Revisit intros for the now-settled Dana Point general groups in a future run (Dana Point Unplugged, Neighborhood Group, Destination Dana Point), excluding the strict no-ad Residents group.
+None. **Intro posting remains on hold** per the standing decision (2026-06-01) — building membership only.
 
-## NEW responses (4) — all on Adam's Pepperdine Alumni intro post
-Logged to `facebook_outreach` (signal=inbound, status=new). **Not auto-replied** — queued for Adam's personal reply.
+## NEW responses (1 new) — Adam's Pepperdine Alumni intro post
+Logged to `facebook_outreach` (signal=inbound). **Not auto-replied** — queued for Adam's personal reply.
 
-1. **Hope Mueller Murphy** — Class of **2019** (same year as Adam), lives in the valley with her husband. *"Would love to meet up and connect!"* → warm peer, strong personal-reply candidate.
-2. **Laiken Ritchie** — Seaver class of 2020, lives in LA. *"Would love an OC/LA Waves meetup soon!"* → warm.
-3. **Hung Le** — Pepperdine ambassador. Invited Adam to Waves of Welcome alumni gatherings: Coronado (Jun 27), Solana Beach (Aug 2), Newport Beach (Jul 19).
-4. **Jeanna Stolle Young** — Asked *"Any in OC?"* (re: alumni gatherings).
+1. **Maliha Marri** (NEW, 4h ago) — *"Hi Adam. I am in Huntington Beach. GSEP grad. Take care."* → status `needs_review`, no reply yet.
 
-Post also drew 9 reactions (Hung Le, Kat Perry + 7 others).
+The post also drew a fresh batch of reactions ("Jane Smithwick Hutchens and 12 others"). Previously-logged commenters (Hope Mueller Murphy, Laiken Ritchie, Hung Le, Jeanna Stolle Young) are unchanged — Adam already replied to Hope, Laiken, and Hung.
 
 ## Checkpoint / block
 None.
 
 ## Recommended next action
-1. **Adam:** personally reply to the 4 Pepperdine alumni — especially **Hope Mueller Murphy** and **Laiken Ritchie** (both genuine peers wanting to meet up). Hung Le's note flags a real OC alumni event (Newport Beach, Jul 19) Adam could attend in person.
-2. **Next session:** finish remaining Dana Point candidates (Dana point life - uncensored, POSITIVELY Dana Point, Dana Point Crime & Safety, Beach Cities BUY & SELL) or advance to **Capo Beach** per the city order.
+1. **Adam:** personally reply to **Maliha Marri** (Huntington Beach, Pepperdine GSEP grad) — newest comment on your intro, no reply yet. Quick warm "hello neighbor" connect.
+2. **Adam:** decide on **Pepperdine Bay Area Waves** (join only if you want the Bay Area chapter).
+3. **Next session:** advance to **Capo Beach** per the city order (Dana Point is now complete), discover + log candidate groups, then join a fresh 5–8 batch.
