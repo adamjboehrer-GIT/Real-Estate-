@@ -10,3 +10,41 @@ pillar definitions live in `PILLARS.md`. No hashtags on LinkedIn.
 ---
 
 <!-- New daily sections get added at the TOP, below this line. Oldest stay at the bottom. -->
+
+## Thursday, June 4, 2026
+
+### Idea 1 — Pillar: Neighborhood (Dana Point Harbor) · STATUS: DRAFT
+
+> The Dana Point Harbor you grew up with is about two thirds gone, and what is replacing it changes the math for anyone who owns nearby.
+>
+> The revitalization is a roughly 600 million dollar project, and it is well past the halfway mark. New docks are slated to open this spring, seven new waterfront buildings are targeted to finish by the end of the year, and the whole harbor is being readied to host Olympic sailing in 2028.
+>
+> For owners in Dana Point and Capistrano Beach, this is the kind of public investment that tends to show up in home values long before the last ribbon is cut. A walkable waterfront, new restaurants, and a working marina that finally matches the homes around it.
+>
+> If you own near the harbor and have wondered what your place is actually worth in this market, this is a good year to find out.
+>
+> Coastal Currents covers the local read every other week. Link in profile.
+
+### Idea 2 — Pillar: Personal · STATUS: DRAFT
+
+> I have sold homes for a living for less than two years. I have been reading real estate as an investor for a lot longer than that.
+>
+> Before I ever wrote a listing, I was buying property with my own money. That teaches you something a sales script never will. You learn to look at a house and see the risk, the value, and the long game past the closing date.
+>
+> Before that, my career was in brand strategy. It turned out to be the same work I do now. Take something good and position it so the right people actually see it. Pricing, story, exposure. A house is just a more personal version of that.
+>
+> I came to Sotheby's new on the agent side, and deliberate about it. I wanted my neighbors to have the best platform from the first day, not after I paid dues somewhere lesser.
+>
+> The honest reason I do this is simpler. I live here. These are my neighbors. The home is the work, and the relationship is why I show up for it.
+
+### Idea 3 — Pillar: Education · STATUS: DRAFT
+
+> Your listing does most of its work in the first two weeks. Most sellers spend those two weeks fixing things they should have handled before going live.
+>
+> When a home hits the market, that is when the most motivated buyers, the ones who have been watching and waiting, all look at once. In San Clemente right now the median home goes from list to sold in twelve days. That window is the whole game.
+>
+> The homes that win it were ready on day one. Priced where the market actually is, photographed well, clean, repairs already made. The ones that launch unfinished and reduce later spend the next two months chasing a number they could have hit at the start.
+>
+> Over a third of active listings in town are already carrying a price cut. Almost none of them needed to.
+>
+> Get it right before the sign goes in the yard.
