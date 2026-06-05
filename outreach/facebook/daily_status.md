@@ -23,7 +23,11 @@ Skipped: "Capo Beach GABLE PARK Campaign" (26 members, single-purpose campaign g
 Still pending: Dana Point, CA · Residents (and Friends) of Dana Point, CA · San Clemente Life · Pepperdine San Diego Waves
 
 ## Intros
-ON HOLD per standing decision (2026-06-01). None posted. Building membership only.
+Re-enabled for a one-off approved batch on 2026-06-05 (Adam's call). Standing hold otherwise remains — confirm before each future batch.
+Posted (both live immediately, no admin queue), tailored first line per group:
+- Dana Point Neighborhood Group (9K)
+- Destination Dana Point (2K)
+Held back: Dana Point Unplugged (72K, first-post admin review) for the next run — avoided 3 near-identical posts in one window.
 
 ## NEW responses (logged to facebook_outreach, NOT auto-replied)
 - **Camryn Jones** — commented on Adam's Pepperdine Alumni intro post (~18h ago). Status: new.
