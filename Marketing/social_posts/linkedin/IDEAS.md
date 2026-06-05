@@ -27,15 +27,15 @@ pillar definitions live in `PILLARS.md`. No hashtags on LinkedIn.
 
 ### Idea 2 — Pillar: Neighborhood (San Clemente, North Beach) · STATUS: DRAFT
 
-> One of the oldest buildings in San Clemente is about to reopen as fifteen restaurants under one roof.
+> One of the oldest buildings in San Clemente is about to reopen as fifteen restaurants under one roof, and it is landing in the part of town nobody expected it to.
 >
-> The Miramar in North Beach started life as a movie theater in 1938, with a bowling alley added in 1947. It is being converted into a food hall, around fifteen vendors and two bars, with an ocean-view patio on North El Camino Real. The opening is slated for early this summer.
+> The Miramar in North Beach opened as a movie theater in 1938 and added a bowling alley in 1947. For years it was one of those buildings everyone drove past and nobody could figure out what to do with. Now it is becoming a food hall, around fifteen vendors and two bars, with an ocean-view patio on North El Camino Real.
 >
-> North Beach has been the quieter end of town for years, the stretch people drove through on the way to the pier. Projects like this are what turn a pass-through into a destination, and that shift tends to reach the homes around it before it reaches the headlines.
+> North Beach has always been the scrappier end of San Clemente. Less polished than the pier or Del Mar, more rentals, more of a work in progress. That is exactly why this one matters. When real money and real effort go into the underdog end of a town, the people who feel it first are the ones already living there. Somewhere to walk to. Somewhere to take the kids on a Friday night. A reason to be a little prouder of the block.
 >
-> If you own in North Beach, this one is worth watching.
+> Own or rent up there, this is just good news.
 >
-> Coastal Currents covers the local read every other week. Link in profile.
+> Opening is slated for early this summer. I will be first in line.
 
 ### Idea 3 — Pillar: Education (buying near the water) · STATUS: DRAFT
 
