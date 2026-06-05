@@ -11,6 +11,44 @@ pillar definitions live in `PILLARS.md`. No hashtags on LinkedIn.
 
 <!-- New daily sections get added at the TOP, below this line. Oldest stay at the bottom. -->
 
+## Friday, June 5, 2026
+
+### Idea 1 — Pillar: Market data (Dana Point) · STATUS: DRAFT
+
+> A year ago, the typical Dana Point home took about 171 days to sell. Today it takes 70.
+>
+> That is one of the sharpest one-year shifts anywhere in Orange County. Expected market time dropped 101 days. Inventory is down 30 percent and buyer demand is up 71 percent over the same stretch.
+>
+> In the everyday market, under five million, homes are closing at essentially their full asking price, 99.7 percent of list, in under two weeks. The one exception is the top of the market. Homes above five million are still the slower, more negotiable segment, sitting around 80 days and closing in the low 90s as a share of list.
+>
+> So there are really two Dana Points right now. The under-five-million market rewards a clean, well-priced home with a fast, near-full-price sale. The luxury tier rewards patience and gives a serious buyer room to negotiate. Knowing which one your home sits in changes how you price it.
+>
+> Coastal Currents breaks the local numbers down every other week. Link in profile.
+
+### Idea 2 — Pillar: Neighborhood (San Clemente, North Beach) · STATUS: DRAFT
+
+> One of the oldest buildings in San Clemente is about to reopen as fifteen restaurants under one roof.
+>
+> The Miramar in North Beach started life as a movie theater in 1938, with a bowling alley added in 1947. It is being converted into a food hall, around fifteen vendors and two bars, with an ocean-view patio on North El Camino Real. The opening is slated for early this summer.
+>
+> North Beach has been the quieter end of town for years, the stretch people drove through on the way to the pier. Projects like this are what turn a pass-through into a destination, and that shift tends to reach the homes around it before it reaches the headlines.
+>
+> If you own in North Beach, this one is worth watching.
+>
+> Coastal Currents covers the local read every other week. Link in profile.
+
+### Idea 3 — Pillar: Education (buying near the water) · STATUS: DRAFT
+
+> If you are buying a home near the water in South Orange County, the view is not the thing to study. The sand is.
+>
+> Right now crews are trucking roughly thirteen thousand cubic yards of sand into Capistrano Beach to slow erosion that is threatening homes, the bluff, and the rail line. It is not the first round. Twenty thousand cubic yards went in two years ago and had mostly washed away within a year.
+>
+> None of this means do not buy near the water. It means buy with your eyes open. Ask where the beach is gaining sand and where it is losing it. Ask what the long-term shoreline plan is for that stretch, because the county is now designing dune systems for the most exposed spots.
+>
+> A beachfront home is a wonderful thing to own. The smart buyers just know exactly what they are buying.
+>
+> Coastal Currents in profile.
+
 ## Thursday, June 4, 2026
 
 ### Idea 1 — Pillar: Neighborhood (Dana Point Harbor) · STATUS: DRAFT
