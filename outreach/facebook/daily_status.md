@@ -1,38 +1,38 @@
-# Facebook Daily Status — 2026-06-04
+# Facebook Daily Status — 2026-06-05
 
-**Account:** ✅ Verified as Adam Boehrer (@AdamonthecoastOC), San Clemente / Pepperdine. No checkpoint, no rate-block. (Brief QUIC/network flakiness loading group pages early on; resolved on reload.)
+**Account OK:** Yes. Logged in as Adam Boehrer (@AdamonthecoastOC). No checkpoint, 2FA, or rate-block encountered.
 
-**Target worked:** `local_community` → **Dana Point** (now complete — all remaining candidates processed).
+## Join actions today (5 total — within 5–8 cap)
+Worked the next city in order: **Capo Beach** (exhausted of viable general groups), then began **Laguna Beach**.
 
-## Groups joined today (4 — public, instant)
-- **POSITIVELY Dana Point** (481) — general community
-- **Dana Point, Orange County!!!!!!** (310) — general community
-- **Dana point life - uncensored** (998) — general community
-- **Beach Cities BUY & SELL ☆ Dana Point - San Clemente** (3.9K) — buy/sell marketplace
+Joined (instant, public):
+- Friends Who Like San Clemente/Capo Beach/Dana Point/Laguna Beach — Capo Beach, 127 members
+- Life in Laguna Beach — 17K, very active
+- Laguna Beach Lifestyle — 3.6K
+- Laguna Beach Community — 1.7K
 
-## Join requests submitted today (2 — private, pending admin review)
-- **Dana Point Crime & Safety** (1.6K) — answered membership questionnaire truthfully (agree not to post negatively about law enforcement: Yes; no politics: Yes; agreed to rules). Rule 7 = no promotion of other FB groups/pages.
-- **Dine Out Dana Point** (1.9K) — dining community, Rule 1 = no promotions/spam (strict no-promo)
+Requested (private, membership questions answered honestly as Adam):
+- Dana Point/ Capo Beach/ Monarch Beach Only: Buy, Sell, Trade 92629 & 92624 — 2.4K. NOTE: strict no-agent-promo group (real estate posts allowed ONLY for own personal property within city limits). Logged in rules_notes; treat as no-promo for Adam.
 
-**Total join actions today: 6** (within the 5–8/day cap). Dana Point `not_joined` list is now empty.
+Skipped: "Capo Beach GABLE PARK Campaign" (26 members, single-purpose campaign group). "Pepperdine Bay Area Waves" (NorCal chapter — not a genuine fit for an OC resident; surfacing for Adam's call rather than auto-joining).
 
-## Surfaced for Adam's decision (not auto-joined)
-- **Pepperdine Bay Area Waves** (540, private) — this is the **Bay Area** alumni chapter, not Adam's SoCal/OC region. Per the authenticity guardrail I did not auto-join. Adam: join only if you actually want the Bay Area chapter; otherwise I'll leave it.
+## Admin approvals since last run (auto-moved requested → joined)
+- Dine Out Dana Point — approved
+- Dana Point Crime & Safety — approved
 
-## Intro posts
-None. **Intro posting remains on hold** per the standing decision (2026-06-01) — building membership only.
+Still pending: Dana Point, CA · Residents (and Friends) of Dana Point, CA · San Clemente Life · Pepperdine San Diego Waves
 
-## NEW responses (1 new) — Adam's Pepperdine Alumni intro post
-Logged to `facebook_outreach` (signal=inbound). **Not auto-replied** — queued for Adam's personal reply.
+## Intros
+ON HOLD per standing decision (2026-06-01). None posted. Building membership only.
 
-1. **Maliha Marri** (NEW, 4h ago) — *"Hi Adam. I am in Huntington Beach. GSEP grad. Take care."* → status `needs_review`, no reply yet.
+## NEW responses (logged to facebook_outreach, NOT auto-replied)
+- **Camryn Jones** — commented on Adam's Pepperdine Alumni intro post (~18h ago). Status: new.
+- **Adrianna Gutierrez + 15 others** — reacted to the same Pepperdine intro post (16 reactions, ~3h ago). Status: new.
+- (Maliha Marri also surfaced in notifications but was already logged from a prior run — no duplicate created.)
 
-The post also drew a fresh batch of reactions ("Jane Smithwick Hutchens and 12 others"). Previously-logged commenters (Hope Mueller Murphy, Laiken Ritchie, Hung Le, Jeanna Stolle Young) are unchanged — Adam already replied to Hope, Laiken, and Hung.
-
-## Checkpoint / block
-None.
+No friend requests or direct messages. Gmail: no Facebook engagement emails in the last 2 days.
 
 ## Recommended next action
-1. **Adam:** personally reply to **Maliha Marri** (Huntington Beach, Pepperdine GSEP grad) — newest comment on your intro, no reply yet. Quick warm "hello neighbor" connect.
-2. **Adam:** decide on **Pepperdine Bay Area Waves** (join only if you want the Bay Area chapter).
-3. **Next session:** advance to **Capo Beach** per the city order (Dana Point is now complete), discover + log candidate groups, then join a fresh 5–8 batch.
+- The Pepperdine intro keeps drawing genuine engagement. Worth Adam personally replying to Camryn Jones' comment (warm alumni connection, no pitch).
+- Next session: continue Laguna Beach (Laguna Beach Locals 5.2K private, Laguna Beach 911, Laguna Beach Buzz 764, Laguna Beach California 666 still not_joined), then move to Newport Beach.
+- Re-check pending requests for new approvals.
