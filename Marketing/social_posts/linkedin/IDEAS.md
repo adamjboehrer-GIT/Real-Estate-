@@ -27,13 +27,15 @@ pillar definitions live in `PILLARS.md`. No hashtags on LinkedIn.
 
 ### Idea 2 — Pillar: Neighborhood (San Clemente, North Beach) · STATUS: DRAFT
 
-> One of the oldest buildings in San Clemente is about to reopen as fifteen restaurants under one roof, and it is landing in the part of town nobody expected it to.
+> The North Beach comeback just got its anchor.
 >
-> The Miramar in North Beach opened as a movie theater in 1938 and added a bowling alley in 1947. For years it was one of those buildings everyone drove past and nobody could figure out what to do with. Now it is becoming a food hall, around fifteen vendors and two bars, with an ocean-view patio on North El Camino Real.
+> One of the oldest buildings in San Clemente is being brought back to life as a food hall, around fifteen vendors and two bars under one roof, with an ocean-view patio on North El Camino Real.
 >
-> North Beach has always been the scrappier end of San Clemente. Less polished than the pier or Del Mar, more rentals, more of a work in progress. That is exactly why this one matters. When real money and real effort go into the underdog end of a town, the people who feel it first are the ones already living there. Somewhere to walk to. Somewhere to take the kids on a Friday night. A reason to be a little prouder of the block.
+> The Miramar opened as a movie theater in 1938 and added a bowling alley in 1947. It has been a North Beach landmark for the better part of a century, and now it gets a second act.
 >
-> Own or rent up there, this is just good news.
+> North Beach has always had the bones. The ocean, the history, the walkability. It has been quietly waiting for its moment, and this is the kind of project that kicks it off. Somewhere to walk to. Somewhere to take the kids on a Friday night. A reason for the whole north end to feel the energy.
+>
+> Whether you own or rent up there, this is a great thing for the neighborhood.
 >
 > Opening is slated for early this summer. I will be first in line.
 
