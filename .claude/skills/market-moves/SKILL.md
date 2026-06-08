@@ -187,12 +187,10 @@ Post the headline + the four city one-liners directly in chat so Adam has the
 answer immediately, and tell him where the full briefing + JSON live. Note the
 reporting month explicitly (e.g., "this reports May data; June isn't closed yet").
 
-## First-run capture (do this the first time, then delete this section's TODOs)
+## Status
 
-The InfoSparks UI hasn't been automated before. On the first successful run,
-record into this file so future months are deterministic:
-- [ ] The working InfoSparks URL for Step 0
-- [ ] Whether multi-segment compare worked (8 exports) or we fell back to 32
-- [ ] The exact selectors/click-path for: setting the metric, adding segments,
-      setting the property-type filter, setting Monthly, and Export → CSV
-- [ ] Any plan limits hit (export caps, metrics not available on Adam's tier)
+First validated end-to-end on **2026-06-08** (reporting month May 2026): all 8
+metrics × 4 areas pulled via multi-segment compare, parsed, briefing written.
+Click-path above is the captured, working procedure. When done, **close the
+Playwright browser** (`browser_close`) so it releases the profile, and tell Adam
+he can log off CRMLS.
