@@ -82,23 +82,52 @@ session, find the orphaned Chrome on profile `mcp-chrome-bb6278f`
 
 ## Step 1 — Pull each metric
 
-Preferred path (fewest clicks): InfoSparks lets you put **multiple segments on one
-chart**. For each of the 8 metrics, build one chart with all four geographies as
-series, set Monthly, then **Export → CSV**. That's ~8 exports total instead of 32.
+Multi-segment compare WORKS on Adam's plan: all four areas go on one chart, so it
+is **8 exports total** (one per metric), each CSV carrying all four area columns.
 
-If the plan/UI doesn't support multi-segment compare, fall back to one chart per
-(geography × metric) and export each — 32 CSVs. Either way the parser handles it.
+### 1a — Set up the four areas (once, before any export)
 
-For each export, use `browser_snapshot` to find the controls, set:
-- Metric = the InfoSparks label from the table above
-- Segment(s) = OC + San Clemente + Dana Point + Laguna Beach
-- Property type filter = Residential, Single Family, Detached
-- Time Calculation = Monthly
+The chart loads with **Orange County** already set. Add the other three:
 
-then click the chart's **Export / Download → CSV**. Record the exact selector path
-the first time it works so subsequent metrics reuse it.
+1. Click **"+ ADD AN AREA"**. A new row appears defaulting to "Entire MLS".
+2. Click that row's search box, then click the **"City"** category tab (the
+   dropdown defaults to "All" / Associations and will NOT filter to a city until
+   you pick City).
+3. Type the city name (`San Clemente`, then `Dana Point`, then `Laguna Beach`).
+   Type slowly so the autocomplete fires. Click the matching "<City> City" result.
+4. Repeat "+ ADD AN AREA" for each of the three cities.
 
-Save every downloaded CSV into a dated import folder:
+**Quirk:** adding an area resets the Property Sub-Type filter to none ("Residential"
+only). After all four areas are in, open **Property Sub-Types** and click **Single
+Family** so the chart title reads "...: Residential, Single Family". Verify the
+chart title lists all four areas before exporting.
+
+Refs in the snapshot churn between steps; re-snapshot the area block (the `+ ADD AN
+AREA` list) before each add rather than reusing a stale ref.
+
+### 1b — Export each metric to CSV
+
+For each of the 8 metrics, repeat this exact path:
+
+1. Click the **metric chip** at the bottom (e.g. "Active Listings").
+2. Click **Share** (top-left of the chart, next to Print).
+3. In the Share Options dialog: Step 1 stays **Static** (default). Under Step 2,
+   click **"CSV - grab the raw data"** (the dialog often defaults to "Social Media
+   and Email", so always click CSV explicitly).
+4. Click the **Share** button — this generates the file and reveals a "Your URL"
+   box with a **"Download CSV file"** button.
+5. Click **Download CSV file**. It downloads to `~/.playwright-mcp/` as
+   `<Metric>-Orange County San Clemente Dana Point Laguna Beach-<YYYYMMDD>.csv`.
+6. Click **Close**, then go to the next metric.
+
+The dialog gets fresh refs every time it opens; snapshot it (depth 4 finds it near
+the end of the page) to grab the CSV radio, the generate-Share button, and the
+Download button each pass.
+
+### 1c — Move the files into the repo
+
+The downloads land in `~/.playwright-mcp/`, not the repo. Copy the 8 area CSVs into
+a dated import folder:
 
     data/imports/mls_stats/<YYYY-MM-DD>/   (today's date)
 
