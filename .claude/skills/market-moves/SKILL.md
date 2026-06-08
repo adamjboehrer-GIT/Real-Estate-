@@ -48,11 +48,10 @@ condos/townhomes, add that filter as a second pass.
 
 ## Step 0 — Open the browser, Adam logs in
 
-Open Playwright to InfoSparks. First run: navigate to the CRMLS portal / Adam's
-InfoSparks bookmark and **capture the working URL into this file** (see
-"First-run capture" at the bottom) so future runs go straight there.
+Open Playwright to the CRMLS login. Adam logs in there, then InfoSparks opens as
+its own tab.
 
-    mcp__playwright__browser_navigate → <INFOSPARKS_URL — capture on first run>
+    mcp__playwright__browser_navigate → https://go.crmls.org/
 
 Then send Adam exactly:
 
@@ -60,6 +59,17 @@ Then send Adam exactly:
 
 Wait for `ready` / `go` / `ok`. If he hits a snag (2FA, wrong page), help him get
 there — do not start pulling until he confirms he's on InfoSparks.
+
+**The InfoSparks tab.** InfoSparks runs at `https://crmls.stats.10kresearch.com/stats/market`
+and usually opens as a separate browser tab. After Adam says ready, list tabs and
+select the InfoSparks one before doing anything:
+
+    mcp__playwright__browser_tabs (action: list)   → find the "InfoSparks" tab
+    mcp__playwright__browser_tabs (action: select, index: <that tab>)
+
+If the Playwright profile is locked ("Browser is already in use") from a stale
+session, find the orphaned Chrome on profile `mcp-chrome-bb6278f`
+(`ps aux | grep mcp-chrome-bb6278f`), `kill` the main PID, then reopen.
 
 ## Step 1 — Pull each metric
 
