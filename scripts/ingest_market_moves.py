@@ -53,6 +53,7 @@ METRIC_MAP = {
     "median days on market": ("median_dom", "Median Days on Market"),
     "percent of list price received": ("pct_list_received", "% of List Price Received"),
     "pct. of last list price received": ("pct_list_received", "% of List Price Received"),
+    "median percent of last list price received": ("pct_list_received", "% of Last List Price Received"),
     "percent of original list price received": ("pct_orig_list_received", "% of Original List Received"),
 }
 
