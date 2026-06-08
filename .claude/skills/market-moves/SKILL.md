@@ -38,13 +38,22 @@ Orange County (county-level), San Clemente, Dana Point, Laguna Beach.
 | closed_sales        | Closed Sales                       | Actual transactions closing        |
 | months_supply       | Inventory Months Supply            | Buyer's vs seller's market balance |
 | median_sales_price  | Median Sales Price                 | Price level                        |
-| median_dom          | Median Days Active in MLS          | How fast homes sell                |
-| pct_list_received   | Percent of List Price Received     | Pricing power / negotiation room   |
+| median_dom          | Days Active in MLS                 | How fast homes sell                |
+| pct_list_received   | % of Last List Price               | Pricing power / negotiation room   |
 
-Standard InfoSparks settings: **Time Calculation = Monthly**, default 5-year
-range. Property filter = **Residential, Single Family, Detached** (matches Adam's
-existing San Clemente series so months/years stay comparable). If Adam asks for
-condos/townhomes, add that filter as a second pass.
+The bottom metric chips read: New Listings · Active Listings · Pending Sales ·
+Closed Sales · Total Closed Sides · Closed Volume · Days Active in MLS · Months
+Supply · Price Per Sq Ft · % of Last List Price · % of Original Price · Sales
+Price · Shows to Contract · Shows Per Listing. Click the 8 in the table. Two have
+a Median/Average sub-toggle (Days Active, Sales Price) — leave on **Median**
+(the default; the parser keys off the "Median ..." label).
+
+Standard InfoSparks settings: **Time Calculation = Monthly** (default), default
+5-year range. Property filter = **Residential** (Property Type) + **Single
+Family** (Property Sub-Type). Adam's saved view already has this; do NOT add the
+Attached/Detached restriction (the on-screen series is Single Family, not
+Detached-only). If Adam asks for condos/townhomes, add that sub-type as a second
+pass.
 
 ## Step 0 — Open the browser, Adam logs in
 
