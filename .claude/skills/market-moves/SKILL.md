@@ -144,10 +144,16 @@ Writes `data/market_stats/<YYYY-MM>_market_moves.json` (month taken from the las
 populated data row — the real reporting month, not today's export date), with
 `current`, `prior_month`, `mom_pct`, `year_ago`, `yoy_pct` for every geo × metric.
 
-Sanity-check the JSON: confirm the reporting month is what you expect (current
-month usually isn't closed yet, so it typically reports the prior month), all four
-geos are present, and no metric came back all-null (a null column means an export
-didn't capture that segment — re-pull it).
+Sanity-check the JSON: all four geos present, no metric all-null (a null column
+means an export missed that segment — re-pull it).
+
+**Reporting-month caveat (important).** InfoSparks usually carries the *current*
+month as the last row, but flow metrics for a not-yet-closed month settle late.
+On the 2026-06-08 run, May 2026 was the latest row and May **pending sales** were
+down 30-50% in every market at once — a late-posting artifact, not a real
+collapse. Stock metrics (Active Listings, Months Supply, Median Sales Price) for
+the latest month are trustworthy; treat the latest month's New Listings / Pending
+/ Closed as soft and say so in the briefing.
 
 ## Step 3 — Write the briefing
 
