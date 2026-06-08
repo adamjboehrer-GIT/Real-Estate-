@@ -127,9 +127,11 @@ Download button each pass.
 ### 1c — Move the files into the repo
 
 The downloads land in `~/.playwright-mcp/`, not the repo. Copy the 8 area CSVs into
-a dated import folder:
+a dated import folder (the `*Laguna-Beach-*` glob grabs exactly the 4-area files
+and skips any single-area test export):
 
-    data/imports/mls_stats/<YYYY-MM-DD>/   (today's date)
+    mkdir -p "data/imports/mls_stats/<YYYY-MM-DD>"
+    cp ~/.playwright-mcp/*Laguna-Beach-<YYYYMMDD>.csv "data/imports/mls_stats/<YYYY-MM-DD>/"
 
 Keep InfoSparks' own filenames; the parser reads metric + segments from inside
 each file, not the name.
