@@ -1,39 +1,46 @@
 # Facebook Daily Status — 2026-06-09
 
-**Account OK?** Yes. Verified as Adam Boehrer / @AdamonthecoastOC (profile id 100002240123645, "Realtor · San Clemente"). No checkpoint, 2FA, or rate-block.
+**Account OK?** Yes. Verified as Adam Boehrer / @AdamonthecoastOC (profile id 100002240123645). No checkpoint, 2FA, or rate-block all session.
 
-## Note on start of run
-The Playwright browser profile was locked by other sessions at first ("browser already in use"). Adam said "unlock," the stale processes were cleared, the Playwright MCP server was reconnected via `/mcp`, and the run proceeded cleanly from Step 0.
+## Run note
+Started with a browser-profile lock from other sessions; Adam said "unlock," processes were cleared, Playwright MCP reconnected via `/mcp`, and the full routine ran. Adam then directed: push intros now (permanent), and join Sotheby's groups.
 
-## Joins today — 6 (within 5–8 cap), all Newport Beach, all public
-City worked: **Newport Beach** (next in order after Laguna Beach). Discovery logged 11 CA candidates + 3 extras.
-1. **Newport Beach 🏖** (24K) — joined; participation request submitted (admin-reviewed before first post; rule 1 = no promotions/spam).
-2. **Newport Beach Public Forum** (7K, 3 friends members) — joined; request submitted. Rules: no promo, **Stay Local**, be kind. Answered question "county" = Orange.
-3. **Newport Beach Community Forum** (3K) — joined instantly.
-4. **Newport Beach Business Buzz** (3.5K) — joined instantly.
-5. **What's going on in Newport And Huntington Beach!** (2.2K) — joined instantly.
-6. **Newport Beach Business Networking** (397) — joined instantly. Group explicitly promotes local business / invites business owners — good intro candidate later.
+## Joins today — 8 total (at the 5–8/day cap)
+**Newport Beach (local_community), 6 joined:**
+1. Newport Beach 🏖 (24K) — joined + participation request submitted
+2. Newport Beach Public Forum (7K) — joined + request submitted (answered county=Orange)
+3. Newport Beach Community Forum (3K) — instant
+4. Newport Beach Business Buzz (3.5K) — instant
+5. What's going on in Newport And Huntington Beach! (2.2K) — instant
+6. Newport Beach Business Networking (397) — instant
 
-Logged but not yet joined (next Newport batch): Newport Beach Balboa & Catalina Island (499), Newport Beach Life (391), two small "Newport Beach, CA" groups, Newport Beach Chat Room (private), Newport Beach Buzz & Marketplace (private), Pickleball Players (84), plus the 19K buy-sell group (lower priority).
+**Sotheby's (sothebys — NEW category), 2:**
+7. Sotheby's International Realty Agents (14.3K, private) — **REQUESTED** (admin-reviewed; answered membership Qs honestly: office = Pacific Sotheby's San Clemente, cities = SC/Dana Point/Laguna/Newport CA, position = sales agent)
+8. SIR West Coasters Referral Network (283, public) — **joined** (CA-relevant SIR agent referral group)
 
-## Intro posts today — 0
-Skipped. Step 3 still reads "ON HOLD" in the skill (pending Adam's OK to permanently flip), and all 6 groups were joined <1 day ago so they're ineligible for intros anyway. **Important:** Adam's earlier intro post was **REMOVED by an admin from "Life in Laguna Beach" (~today)** — confirmed strict/paid-promo group. Noted in DB; do not post intros there.
+Sotheby's candidates logged for later joins: SIR Referral Network (7.8K), SIR Metropolitan/City Living Sphere (1.2K), SIR Tech/Lifestyle/Listings (950), SIR Ninjas (47). Skipped the Arizona "Russ Lyon" brokerage groups and the generic non-SIR luxury group (not Adam's authentic affiliation).
 
-## New responses / engagement (logged to facebook_outreach)
-- **Tim Reed** — MESSAGE REQUEST (19h ago, NOT accepted/replied). Local low-voltage/AV/CCTV installer (high-end OC coastal homes since 2012), launching **South County Cabling and Services**, getting C7 license, leaving employer ~end of June/July. Dana Hills '05, lives SJC/Dana Point. Wants to network with local realtors as a referral vendor and drop off cards. **Warm vendor/community contact — needs Adam.** A draft reply is saved in `facebook_outreach.drafted_message` for Adam's approval (NOT sent).
-- **Rich Bravo** — commented + replied on Adam's intro post in **San Clemente Living**, and reacted. Active engager; worth a friendly reply.
-- **Carrie Harvey** — commented on Adam's intro post in **Dana Point Neighborhood Group** (18h). Needs reply.
-- **Jamie Thrush** — liked Adam's intro post in **Dana point life - uncensored** (23h).
-- Adam's San Clemente Living intro post now has **7 reactions** (Rich Bravo + 6 others).
-- (Older, pre-window) Hung Le message request 6d ago referencing a "Newport Beach event" + cell 310-924-5876 — left as-is; surface if relevant.
+## Intro posts today — 3 (intro posting now PERMANENTLY ENABLED in the skill)
+Skill Step 3 flipped from "ON HOLD" to "ENABLED" (2026-06-09). Posted to older joined groups (>1 day), spread across 2 cities, first lines varied:
+1. **Laguna Beach Lifestyle** (3.7K) — posted, PENDING admin approval
+2. **Laguna Beach Community** (1.7K) — posted, PENDING admin approval
+3. **San Clemente Life** (28K) — posted, **LIVE in feed** (no approval gate)
 
-No auto-replies or DMs sent (policy: drafts only for Adam's approval).
+No CTA, no phone, no em-dashes; locked body, only first line tailored per city.
+(Note: did NOT post in Newport groups — all joined <1 day today, so ineligible per pacing rule.)
+
+## New responses / engagement (logged earlier this session to facebook_outreach)
+- **Tim Reed** — message request (warm local vendor, South County Cabling). Draft reply saved, NOT sent. **Needs Adam.**
+- **Rich Bravo** — comment+reply+reaction on Adam's San Clemente Living intro (7 reactions total).
+- **Carrie Harvey** — comment on Adam's Dana Point Neighborhood Group intro.
+- **Jamie Thrush** — like on Adam's Dana point life intro.
+- Admin **removed** Adam's intro from "Life in Laguna Beach" — confirmed strict no-promo (noted in DB).
 
 ## Blockers
-None this run. Account healthy.
+None. Account healthy.
 
 ## Recommended next action
-1. **Adam:** review/approve the Tim Reed reply (saved draft), and reply to Rich Bravo + Carrie Harvey comments. Tim is a strong local vendor connection.
-2. Next run: finish **Newport Beach** (candidates already logged), then move to **Huntington Beach**.
-3. Re-check pending join requests: Laguna Beach Locals, Dana Point CA, Residents of Dana Point CA, Capo Beach Buy-Sell-Trade, Pepperdine San Diego Waves.
-4. Confirm whether to permanently flip skill Step 3 to "intros enabled."
+1. **Adam:** approve/tweak the Tim Reed draft; reply to Rich Bravo + Carrie Harvey comments.
+2. Watch for SIR Agents (14K) approval; once in, that's a strong colleague network.
+3. Next run: finish **Newport Beach** (candidates logged), then **Huntington Beach**; continue intros in older eligible groups (Dana Point Unplugged is pending-approval, plus Dana Point Business Buzz / POSITIVELY Dana Point / Laguna small groups).
+4. Re-check pending requests: SIR Agents, Laguna Beach Locals, Dana Point CA x2, Capo Beach Buy-Sell-Trade, Pepperdine San Diego Waves.
