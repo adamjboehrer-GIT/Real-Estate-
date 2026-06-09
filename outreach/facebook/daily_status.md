@@ -15,7 +15,7 @@ Started with a browser-profile lock from other sessions; Adam said "unlock," pro
 6. Newport Beach Business Networking (397) — instant
 
 **Sotheby's (sothebys — NEW category), 2:**
-7. Sotheby's International Realty Agents (14.3K, private) — **REQUESTED** (admin-reviewed; answered membership Qs honestly: office = Pacific Sotheby's San Clemente, cities = SC/Dana Point/Laguna/Newport CA, position = sales agent)
+7. Sotheby's International Realty Agents (14.3K, private) — **REQUESTED** (admin-reviewed; membership Qs corrected per Adam: office = Pacific Sotheby's **Laguna Beach office** (Adam lives in San Clemente but his office is Laguna Beach), cities = Laguna/Dana Point/SC/Newport CA, position = sales agent. Original request was cancelled + re-submitted to fix the office.)
 8. SIR West Coasters Referral Network (283, public) — **joined** (CA-relevant SIR agent referral group)
 
 Sotheby's candidates logged for later joins: SIR Referral Network (7.8K), SIR Metropolitan/City Living Sphere (1.2K), SIR Tech/Lifestyle/Listings (950), SIR Ninjas (47). Skipped the Arizona "Russ Lyon" brokerage groups and the generic non-SIR luxury group (not Adam's authentic affiliation).
