@@ -11,6 +11,44 @@ pillar definitions live in `PILLARS.md`. No hashtags on LinkedIn.
 
 <!-- New daily sections get added at the TOP, below this line. Oldest stay at the bottom. -->
 
+## Wednesday, June 10, 2026
+
+### Idea 1 — Pillar: Neighborhood (San Juan Capistrano, Los Rios) · STATUS: DRAFT
+
+> The oldest neighborhood in California is quietly turning into one of the best nights out in South Orange County.
+>
+> A few blocks from the Mission sits Los Rios, a street of adobe homes and pepper trees that has been lived in since the 1790s. It is the oldest residential street in the state. For most of my life it was a place you walked through, a couple of cafes and a lot of history.
+>
+> Then River Street Marketplace opened right next to it. Sixty thousand square feet of restaurants, a food hall, a butcher, a brewery, and local shops, built low and broken into small buildings so it still feels like the town and not a mall.
+>
+> San Juan does not get talked about the way the beach towns do. But it has the Mission, the train depot, the horses, the oldest street in California, and now a real reason to stay through dinner.
+>
+> If you have not been since it opened, go. It is something to be proud of.
+
+### Idea 2 — Pillar: Personal · STATUS: DRAFT
+
+> I spent years in brand strategy before I ever sold a house. The job was to make someone feel something about a product in about three seconds.
+>
+> You learn quickly that the first impression is not the most important thing. It is the only thing most people ever give you. A headline, a storefront, a single photo. Three seconds and they have already decided whether to lean in or scroll past.
+>
+> Selling a home is the same instinct pointed at something far more personal. The first photo in the listing. The walk from the car to the front door. The light in the living room at the hour buyers actually show up. Plenty of good homes lose offers in those three seconds and the owners never know it happened.
+>
+> I did not come to real estate from sales. I came to it from positioning. Figuring out what is genuinely special about something and making sure the right people see it clearly.
+>
+> A house is the hardest and most rewarding version of that I have ever worked on. And when I get it right, a family gets to move home.
+
+### Idea 3 — Pillar: Education (seller prep) · STATUS: DRAFT
+
+> Before you list your home, please do not remodel the kitchen.
+>
+> It is the most common instinct and usually the most expensive mistake. A full kitchen remodel in South Orange County runs well into the tens of thousands, takes months, and rarely returns what you put in when you sell. Buyers quietly discount someone else's taste.
+>
+> What actually moves offers is cheaper and faster. Fresh paint in a clean neutral. A deep clean of every surface. Fixing the small broken things, the sticky drawer, the running toilet, the dead bulb. Sharpening the curb and the front door. Real photos.
+>
+> Buyers do not pay a premium for a renovation you picked for them. They pay a premium for a home that feels cared for and move-in ready. Spend your money there.
+>
+> Save the remodel for the home you are buying, not the one you are leaving.
+
 ## Friday, June 5, 2026
 
 ### Idea 1 — Pillar: Market data (Dana Point) · STATUS: DRAFT
