@@ -11,6 +11,44 @@ pillar definitions live in `PILLARS.md`. No hashtags on LinkedIn.
 
 <!-- New daily sections get added at the TOP, below this line. Oldest stay at the bottom. -->
 
+## Tuesday, June 16, 2026
+
+### Idea 1 — Pillar: Market data (San Clemente, May 2026) · STATUS: DRAFT
+
+> In May, the typical single-family home in San Clemente sold in eight days.
+>
+> That is the median, not the standout. And the typical home closed at exactly its asking price, one hundred percent of the last list. For a town where the median sale price just crossed 2.2 million dollars, that is a remarkably efficient market. Well-priced homes are not sitting.
+>
+> The number that keeps it honest: supply ticked up to 2.8 months from 2.2 a month earlier, and more homes came to market in May than April. So buyers have a little more to choose from than they did in early spring. But the good ones still go fast, and they go at ask.
+>
+> If you are weighing a sale, the lesson is the same one this market keeps repeating. Price it where the market actually is and it moves. Reach past that, and you spend the next two months chasing the number back down.
+>
+> Coastal Currents breaks the local numbers down every other week. Link in profile.
+
+### Idea 2 — Pillar: Neighborhood (San Clemente, Pier Bowl) · STATUS: DRAFT
+
+> For one weekend every July, the best seats in San Clemente are on the sand below the pier.
+>
+> The Ocean Festival takes over the Pier Bowl on July 18 and 19 this year, its 48th. Lifeguards racing dory boats through the surf, the Pier Bowl Surf Classic, sand sculpting, food trucks, free concerts, and something like forty thousand people who all decided the same stretch of beach was the place to be.
+>
+> I love it because it is the most San Clemente thing we do all year. Not polished, not corporate. Just a beach town that still throws itself a party around the thing it loves most, the ocean.
+>
+> If you have never been, make this the year. Bring a chair, get there early, stay for the music.
+>
+> It is a good reminder of why people fall for this town in the first place.
+
+### Idea 3 — Pillar: Personal · STATUS: DRAFT
+
+> We could have raised our family in a lot of places. We chose San Clemente on purpose.
+>
+> Before real estate I spent my career in brand strategy, and I invest in property, so I had learned to study a town the way you study a spreadsheet. Growth, numbers, upside. San Clemente did not win on the spreadsheet alone.
+>
+> It won on the small stuff. Kids riding bikes to the beach. Neighbors who actually know each other. A downtown that still feels like a town and not a brand. The kind of place where the guy at the coffee shop knows your order and your kids by name.
+>
+> I sell homes here now, but I bought into this place as a father first. So when I tell someone it is a good place to plant a life, it is not a pitch. It is where I planted mine.
+>
+> That is the part of this work I did not expect to love. I am not moving people to a market. I am welcoming them to my neighborhood.
+
 ## Wednesday, June 10, 2026
 
 ### Idea 1 — Pillar: Neighborhood (San Juan Capistrano, Los Rios) · STATUS: DRAFT
