@@ -1,0 +1,91 @@
+Metric:,Median Percent of Last List Price Received
+Time Calculation:,Monthly
+Data from:,6/16/2026
+Segments:,Orange County,San Clemente,Dana Point,Laguna Beach
+
+Filters
+Orange County:,"Residential, Single Family"
+San Clemente:,"Residential, Single Family"
+Dana Point:,"Residential, Single Family"
+Laguna Beach:,"Residential, Single Family"
+
+
+Date,"Orange County","San Clemente","Dana Point","Laguna Beach",
+January 2021,1,1,0.987,0.98,
+February 2021,1,1,1,0.982,
+March 2021,1.005,1,0.996,0.971,
+April 2021,1.009,1.003,0.993,0.987,
+May 2021,1.014,1.001,1,0.994,
+June 2021,1.02,1.011,1,0.987,
+July 2021,1.022,1.004,1.006,0.978,
+August 2021,1.013,1.000,1,0.979,
+September 2021,1.012,1.002,1,0.985,
+October 2021,1.009,1,0.980,0.976,
+November 2021,1.015,1.008,1,0.982,
+December 2021,1.016,1.009,1,1,
+January 2022,1.020,1.000,1,0.948,
+February 2022,1.041,1.010,1.053,0.974,
+March 2022,1.044,1.050,1.008,1.000,
+April 2022,1.046,1.023,1.017,1,
+May 2022,1.031,1.017,1.004,1.000,
+June 2022,1.012,1.001,1,0.952,
+July 2022,1,0.989,0.989,1,
+August 2022,0.997,0.984,0.960,0.966,
+September 2022,0.993,0.990,1,1,
+October 2022,0.989,0.981,0.974,0.982,
+November 2022,0.984,0.986,0.975,0.950,
+December 2022,0.979,0.963,0.980,0.984,
+January 2023,0.980,0.970,0.979,0.966,
+February 2023,0.987,0.996,0.976,0.970,
+March 2023,1,0.985,0.983,0.966,
+April 2023,1,0.977,0.980,0.952,
+May 2023,1,0.986,0.996,0.964,
+June 2023,1.001,1,1,0.999,
+July 2023,1.002,1,0.986,0.984,
+August 2023,1,0.989,1,0.964,
+September 2023,1,0.992,0.990,0.969,
+October 2023,1,0.998,0.971,0.941,
+November 2023,1,0.988,0.984,0.963,
+December 2023,1,0.976,0.966,0.943,
+January 2024,1,0.982,0.981,0.957,
+February 2024,1,0.989,1,0.984,
+March 2024,1.000,0.997,0.995,0.938,
+April 2024,1.001,1,0.980,0.985,
+May 2024,1.003,1,0.993,0.993,
+June 2024,1.001,1,1.000,0.971,
+July 2024,1.000,0.997,0.997,0.959,
+August 2024,1,0.989,0.983,0.975,
+September 2024,1,0.989,0.970,0.964,
+October 2024,1,0.982,0.96,0.955,
+November 2024,1,1,1,0.972,
+December 2024,0.994,0.985,0.984,0.944,
+January 2025,0.995,0.992,0.997,0.988,
+February 2025,1,0.993,0.977,0.944,
+March 2025,1,0.986,0.988,0.967,
+April 2025,1,0.989,0.974,0.968,
+May 2025,1,0.993,0.980,0.966,
+June 2025,0.999,0.986,0.972,0.961,
+July 2025,0.991,0.983,0.981,0.948,
+August 2025,0.991,0.973,0.979,0.948,
+September 2025,0.989,0.987,0.981,0.976,
+October 2025,0.991,0.989,0.984,0.960,
+November 2025,0.989,0.982,0.952,0.957,
+December 2025,0.989,0.979,0.971,0.944,
+January 2026,0.988,0.984,0.979,0.965,
+February 2026,1,1,0.963,0.947,
+March 2026,1,0.985,0.981,0.951,
+April 2026,1,1.000,0.989,0.998,
+May 2026,1,1,0.994,0.972,
+
+
+"	All data is from the California Regional Multiple Listing Service, INC. InfoSparks © 2026 ShowingTime Plus, LLC.
+
+
+
+
+		
+		
+		
+"
+
+

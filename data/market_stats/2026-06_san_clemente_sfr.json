@@ -1,0 +1,32 @@
+{
+  "market": "San Clemente",
+  "property_type": "Residential, Single Family",
+  "reporting_month": "2026-05",
+  "extracted_on": "2026-06-16",
+  "source": {
+    "system": "California Regional Multiple Listing Service (CRMLS)",
+    "tool": "InfoSparks / ShowingTime Plus",
+    "access_method": "manual login by licensed agent; export driven via Playwright (compliant)",
+    "export_files_dir": "data/imports/mls_stats/2026-06-16/"
+  },
+  "current_month": {
+    "median_sales_price_usd": 2237000,
+    "median_days_active_in_mls": 8,
+    "active_listings": 97,
+    "inventory_months_supply": 2.7,
+    "pending_sales": null
+  },
+  "year_over_year_may": {
+    "median_sales_price_usd": {"2025": 2025000, "2026": 2237000, "pct_change": 10.5},
+    "median_days_active_in_mls": {"2025": 14, "2026": 8, "pct_change": -42.9},
+    "active_listings": {"2025": 155, "2026": 97, "pct_change": -37.4},
+    "inventory_months_supply": {"2025": 3.5, "2026": 2.7, "pct_change": -22.9},
+    "pending_sales": {"2025": 51, "2026": 36, "pct_change": -29.4}
+  },
+  "data_quality_notes": [
+    "pending_sales for May 2026 is intentionally set to null in current_month so the website note falls back to active listings. The raw May new-pending count (36) is depressed by late MLS status posting on a not-yet-fully-settled month: pendings fell double digits in all four South County markets at once, which is the signature of late posting rather than a real demand drop. Do not feature the May pending number until it settles. The year_over_year_may block preserves the raw figure (36 vs 51) for the record.",
+    "Median sales price for May 2026 ($2,237,000) is consistent with April 2026 ($2,212,500) but still runs above the multi-month base; SFR monthly medians are volatile at low transaction counts. The durable signal is the supply squeeze plus fast DOM, not the headline price. Lean on the ~10% year-over-year framing.",
+    "All metrics sourced from the 2026-06-16 market-moves InfoSparks pull (data/market_stats/2026-05_market_moves.json), San Clemente, Residential / Single Family, monthly. Last populated CSV row is May 2026; June is not closed yet."
+  ],
+  "market_summary": "San Clemente single-family remains supply-constrained. Active listings (97) are down 37% year over year and months of supply tightened from 3.5 to 2.7, while well-priced homes still close fast (8 median days on market, down from 14 a year ago). The May median sales price of $2.24M is consistent with April and best read against the last few months rather than as a step-change. May flow metrics (pendings) are soft due to late posting and should not be featured this month."
+}
