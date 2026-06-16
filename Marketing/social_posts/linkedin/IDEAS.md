@@ -13,6 +13,10 @@ pillar definitions live in `PILLARS.md`. No hashtags on LinkedIn.
 
 ## Tuesday, June 16, 2026
 
+> ON HOLD (per Adam, 2026-06-16): do not post this batch. Revamp once the refreshed
+> May InfoSparks San Clemente pull is in. The market-data post especially gets rebuilt
+> on the new numbers; the neighborhood and personal posts can carry forward or be reworked.
+
 ### Idea 1 — Pillar: Market data (San Clemente, May 2026) · STATUS: DRAFT
 
 > In May, the typical single-family home in San Clemente sold in eight days.
