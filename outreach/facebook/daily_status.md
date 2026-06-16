@@ -1,43 +1,40 @@
-# Facebook Daily Status — 2026-06-11
+# Facebook Daily Status — 2026-06-16
 
 **Account OK?** Yes. Verified as Adam Boehrer / @AdamonthecoastOC (profile id 100002240123645). No checkpoint or rate-block during the run.
 
 ## Run note
-- Started with the recurring browser-profile lock ("Browser is already in use … mcp-chrome-bb6278f"). Cleared orphaned MCP-automation Chrome instances + stale SingletonLock files, reconnected.
-- After reconnect, Facebook was logged OUT. Adam logged back in by hand ("im in"), session re-verified, then the full routine ran clean.
-- Note for future: there are TWO duplicate profile dirs (`ms-playwright/` and `ms-playwright-mcp/` both holding `mcp-chrome-bb6278f`). This split is the likely cause of the repeated logouts/locks. Worth consolidating.
+- Hit the recurring browser-profile lock at start ("Browser is already in use … ms-playwright-mcp/mcp-chrome-bb6278f"). Cleared orphaned MCP Chrome + stale SingletonLock files, reconnected, and the session was already logged in as Adam (no manual re-login needed this time). Standing infra note still open: duplicate profile dirs (`ms-playwright/` + `ms-playwright-mcp/`) likely cause the repeat locks.
 
-## Joins today — 6 total (at cap), all Newport Beach (local_community)
-**5 joined instantly:**
-1. Newport/Huntington Beach Buy Sell or Trade (19.8K) — public, instant
-2. Newport Beach, CA (~702) — public, instant
-3. Newport Beach, Balboa and Catalina Island (~501) — public, instant
-4. Newport Beach Life (~399) — public, instant
+## Joins today — 6 total (at cap), all Huntington Beach (local_community), new city started
+All joined as **member** instantly; several have a separate participate-to-post gate (answered honestly where Adam qualifies):
+1. **Huntington Beach CommUNITY Voice** (99K) — member. Participation-to-post request submitted (live-in-HB=No, gave genuine SC-realtor reason, agreed rules). PENDING admin review.
+2. **HB EVERYTHING Surf City USA** (10K) — member. **Did NOT submit participation request:** rule #1 requires you live/work/run a business in HB. Adam doesn't qualify, so no false claim. **Do not post here.**
+3. **Huntington Beach Community Forum v. 2.0** (22.8K) — member. Participation request submitted (read-rules=Yes, location=SC w/ HB link, 8+8=16, agreed rules). PENDING admin review. Note rule #3 No advertising — genuine personal intro only.
+4. **Huntington Beach Locals Forum** (2.3K) — joined instantly, no gate.
+5. **Huntington Beach Insider** (20.5K) — member. **Did NOT submit participation request:** rule #1 requires HB residency. Adam doesn't qualify. **Do not post here.**
+6. **Huntington Beach Business Network Community** (10.9K) — member. Participation request submitted (genuine: SC realtor doing HB work, business = real estate / Pacific Sotheby's, agreed rules). PENDING admin review. Good intro candidate once approved (business networking group, friendly rules).
 
-**1 requested (private, admin review):**
-5. Newport Beach Buzz and Marketplace (8.4K) — answered 3 membership Qs (assoc = coastal OC realtor living in San Clemente, spends time in Newport; city = San Clemente; ad-cap agreement = Yes). **PENDING admin approval.**
+Also logged 3 more HB candidates not yet joined (Surf City 3.1K, Anything Goes 21K private, Buzz 2.8K) for next runs.
 
-**Skipped:** Newport Beach Chat Room (5.5K) — self-describes as "MATURE AUDIENCES ONLY (18+)", not a clean brand fit. Marked do-not-join in DB.
+## Intro posts today — 3 (at cap), all Newport Beach, only first line tailored
+1. **Newport Beach Community Forum** (3.1K) — posted, PENDING admin approval.
+2. **Newport Beach, Balboa and Catalina Island** (510) — posted **LIVE** in feed (no approval gate).
+3. **Newport Beach Business Networking** (426) — posted **LIVE** in feed (no approval gate).
 
-Newport Beach is now essentially worked. Remaining un-joined Newport items are tiny/niche (Newport Beach Pickleball 84, Newport Beach CA 196). Next city up: **Huntington Beach.**
-
-## Intro posts today — 3 (at cap), spread across 3 cities, all PENDING admin approval
-1. **Dana Point Business Buzz** (1.6K) — DP-tailored first line. Pending first-post review.
-2. **Laguna Beach** (917) — Laguna-tailored first line. Pending approval. (Group tolerates realtor posts — saw a KW agent coming-soon listing in feed.)
-3. **Friends Who Like San Clemente/Capo Beach/Dana Point/Laguna Beach** (128) — SC/coast-tailored first line. Pending approval. Genuine 9-yr town-appreciation community.
-
-Locked intro body used verbatim, only first line tailored. No CTA, no phone, no em-dashes.
+Locked intro body used verbatim, only first line tailored to Newport. No CTA, no phone, no em-dashes.
 
 ## New responses / engagement (logged to facebook_outreach)
-- **Lindy Do** — liked Adam's **Pepperdine Alumni** intro (reaction only).
-- **Brittany Ontiveros + 10 others** — 11 reactions on Adam's **San Clemente Life** intro (yesterday's post; reactions only, no comment to reply to).
-- No new comments, friend requests, or messages. Gmail had only a Facebook login security alert (our own sign-in) — ignored.
+- **Mark Edmondson** — sent Adam a **friend request** (followed by 1.2K, likely a notable local). Logged as `awaiting_adam`. **ACTION: surface to Adam to accept/decline** — not auto-confirmed.
+- **Lexie Wanninger +2** — reacted to Adam's Pepperdine Alumni intro (reactions only).
+- **Rich Bravo +6** — reacted to Adam's San Clemente Living intro (reactions only).
+- **Jean Bellin +14** — 15 reactions on Adam's San Clemente Life intro (reactions only).
+- No new comments or messages to reply to. Gmail had only a Facebook login security alert (our own sign-in) — ignored.
 
 ## Blockers
-None during the run. Standing infra note: duplicate Playwright profile dirs causing repeat lock/logout (see Run note).
+None during the run. Standing infra note: duplicate Playwright profile dirs causing repeat lock (cleared this run, but worth consolidating).
 
 ## Recommended next action
-1. Watch for approvals on the 3 pending intros (Dana Point Business Buzz, Laguna Beach, Friends Who Like…) and the Newport Buzz & Marketplace join request.
-2. Carryover from 2026-06-09 still open: approve/tweak the **Tim Reed** draft reply; reply to **Rich Bravo** + **Carrie Harvey** comments. Watch for **SIR Agents (14K)** join approval.
-3. Re-check older pending requests: SIR Agents, Laguna Beach Locals, Dana Point CA x2, Capo Beach Buy-Sell-Trade, Pepperdine San Diego Waves.
-4. Next run: start **Huntington Beach** discovery + joins; continue intros in older eligible groups (e.g. POSITIVELY Dana Point, Dana Point Orange County, Laguna Beach Buzz/California once >1 day).
+1. **Surface Mark Edmondson friend request to Adam** for accept/decline.
+2. Watch for approvals on today's 3 Newport intros + the HB participation requests (CommUNITY Voice, Community Forum v2.0, Business Network Community).
+3. Carryover still open from prior runs: Newport Beach Buzz & Marketplace join request; SIR Agents join; Laguna Beach Locals, Dana Point CA x2, Capo Beach Buy-Sell-Trade, Pepperdine San Diego Waves pending requests.
+4. Next run: finish Huntington Beach (join Surf City / Buzz; request Anything Goes), and once HB participation requests clear, post HB intros in the qualifying groups (Community Forum v2.0, Business Network Community, Locals Forum). Then advance to next city (Oceanside).
