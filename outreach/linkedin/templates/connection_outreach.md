@@ -3,7 +3,8 @@
 **Voice rule:** Lead with Adam as a person. Order: **husband, father, then realtor** looking to grow authentic connections with influential people in the community. Real estate is the secondary line, never the lead. No em-dashes. No "no pressure / not selling" disclaimers. No overpromising (never "I have buyers"). Personalize the `[Company]` / `[City]` hook from each profile so it never reads as a blast.
 
 ## Post-accept message (primary — sent after they accept; unlimited on free)
-> Hey [First], thanks for connecting. I'm Adam, a husband and dad living down in San Clemente, and a realtor around the South OC coast. More than the real estate though, I really just like getting to know the people who make these towns what they are, and you're clearly one of them with [Company]. Would be great to stay connected.
+**Voice (updated 2026-06-17):** Keep it short and direct. Just: agent on the South OC coast, would love to help where I can, great to be connected. Do NOT use the "more than the real estate though" framing or the husband/dad lead in post-accept messages. Light city/company personalization is fine but optional.
+> Hey [First], great to be connected. I'm Adam, a real estate agent here [in/on] [the South OC coast / San Clemente]. Would love to help wherever I can, and it's great to be in touch.
 
 ## Short connection note (only for the ~5 personalized notes/month allowed on free; reserve for top-tier / warm prospects)
 > Hi [First], I'm Adam, a husband and dad in San Clemente and a local realtor. I like building genuine connections with the people who shape our coastal communities. You're clearly one of them, would be great to connect.
