@@ -11,10 +11,8 @@ login). Budget 30 minutes once, then 5 minutes a week for reviews.
 - **Tied into the website:** added to the site's structured data (`sameAs`) so Google links your
   profile and adamboehrer.com as the same entity, plus a visible "Read my Google reviews" link in
   the Contact section.
-- **STILL TO GRAB — your review short link:** in business.google.com, open **Get more reviews**
-  and copy the `https://g.page/r/...` link. That's the one-tap "write a review" link for the
-  text in Step 3 below (cleaner than the share link, which only opens the profile). Send it to me
-  and I'll record it here.
+- **Review link (one-tap "write a review"):** https://g.page/r/CcZeBln8mGKFEAE/review
+  Use this in the request texts below. It drops people straight onto the review form.
 
 ## Why it matters more than the website itself
 For local searches, Google leans on the map pack (the 3 businesses with the map pin) far more
