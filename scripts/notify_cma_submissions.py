@@ -1,14 +1,34 @@
 #!/usr/bin/env python3
 """
-Polls the Mailchimp audience for new Home Value (CMA) form submissions and
-emails Adam when one shows up.
+Polls the Mailchimp audience for new Home Value (CMA) form submissions, keeps
+the home-value and newsletter crowds cleanly separated by tag, and emails Adam
+when a new home-value request shows up.
 
-Detection: members in list f44752d032 whose SOURCE merge field is "cma" and
-who do NOT yet carry the "cma-notified" tag. After emailing, the script tags
-the member as "cma-notified" so the next run skips them.
+Both forms on adamboehrer.com post to the SAME audience (f44752d032); the only
+thing the website sets to tell them apart is the SOURCE merge field
+("cma" vs "newsletter"). A single merge field is fragile — it gets overwritten
+if the same person later submits the other form — so on every run this script
+stamps durable Mailchimp TAGS that survive independently:
 
-First run is bootstrap mode: tag every existing CMA member without emailing,
-so we don't flood the inbox with historical signups. Marker file at
+    home-value-request : person asked for a home value report (SOURCE=cma)
+    newsletter         : person belongs on the Coastal Currents send list
+                         (SOURCE=newsletter, plus all pre-existing subscribers
+                         who were added before the forms tracked SOURCE)
+
+Tags are additive and never removed, so someone who does BOTH ends up with both
+tags. The practical payoff: when sending Coastal Currents, target the
+"newsletter" tag (or "everyone except home-value-request"). A home-value-only
+requester carries only "home-value-request" and is therefore left out of the
+newsletter — which is the whole point: you can ask for a valuation without
+becoming a newsletter subscriber.
+
+Notification: members tagged home-value-request who do NOT yet carry the
+"cma-notified" bookkeeping tag get an email to Adam; then they're tagged
+cma-notified so the next run skips them. (home-value-request marks WHO they are;
+cma-notified just records that Adam was already pinged.)
+
+First run is bootstrap mode: existing home-value requests are tagged silently
+(no email) so we don't flood the inbox with historical signups. Marker file at
 ~/.cma-notifier-initialized records that the bootstrap finished.
 
 Secrets are read from ~/.cma-notifier.env (chmod 600). Required keys:
@@ -31,7 +51,9 @@ HOME = Path.home()
 ENV_PATH = HOME / ".cma-notifier.env"
 INIT_MARKER = HOME / ".cma-notifier-initialized"
 LOG_PATH = HOME / "Library" / "Logs" / "cma-notifier.log"
-TAG_NAME = "cma-notified"
+TAG_NAME = "cma-notified"          # bookkeeping: Adam already emailed about this request
+HOME_VALUE_TAG = "home-value-request"  # durable: this person asked for a valuation
+NEWSLETTER_TAG = "newsletter"          # durable: this person belongs on the Coastal Currents list
 
 
 def log(msg: str) -> None:
@@ -76,13 +98,17 @@ def mailchimp_post(env: dict[str, str], path: str, body: dict) -> dict:
     req.add_header("Content-Type", "application/json")
     try:
         with request.urlopen(req, timeout=20) as resp:
-            return json.loads(resp.read())
+            raw = resp.read()
+            # The tags endpoint returns 204 No Content (empty body) on success.
+            if not raw:
+                return {}
+            return json.loads(raw)
     except error.HTTPError as e:
         detail = e.read().decode(errors="replace")
         raise RuntimeError(f"Mailchimp POST {path} failed: {e.code} {detail}")
 
 
-def fetch_cma_members(env: dict[str, str]) -> list[dict]:
+def fetch_all_members(env: dict[str, str]) -> list[dict]:
     members: list[dict] = []
     offset = 0
     count = 100
@@ -97,13 +123,14 @@ def fetch_cma_members(env: dict[str, str]) -> list[dict]:
         if len(batch) < count:
             break
         offset += count
-    cma = []
-    for m in members:
-        merge = m.get("merge_fields", {}) or {}
-        source = (merge.get("SOURCE") or "").strip().lower()
-        if source == "cma":
-            cma.append(m)
-    return cma
+    return members
+
+
+def is_home_value_request(member: dict) -> bool:
+    """A member is a home-value request if SOURCE=cma OR they already carry the tag."""
+    merge = member.get("merge_fields", {}) or {}
+    source = (merge.get("SOURCE") or "").strip().lower()
+    return source == "cma" or has_tag(member, HOME_VALUE_TAG)
 
 
 def has_tag(member: dict, tag: str) -> bool:
@@ -113,12 +140,39 @@ def has_tag(member: dict, tag: str) -> bool:
     return False
 
 
-def tag_member_notified(env: dict[str, str], member_id: str) -> None:
+def add_tag(env: dict[str, str], member_id: str, tag: str) -> None:
     mailchimp_post(
         env,
         f"/lists/{LIST_ID}/members/{member_id}/tags",
-        {"tags": [{"name": TAG_NAME, "status": "active"}]},
+        {"tags": [{"name": tag, "status": "active"}]},
     )
+
+
+def maintain_segment_tags(env: dict[str, str], members: list[dict]) -> tuple[int, int]:
+    """Stamp durable home-value-request / newsletter tags so the two crowds stay
+    cleanly segmentable regardless of the single SOURCE merge field being
+    overwritten. Additive only — tags are never removed."""
+    added_hv = added_nl = 0
+    for m in members:
+        merge = m.get("merge_fields", {}) or {}
+        source = (merge.get("SOURCE") or "").strip().lower()
+        if source == "cma":
+            # Home-value requester: tag as such, do NOT add to the newsletter.
+            if not has_tag(m, HOME_VALUE_TAG):
+                try:
+                    add_tag(env, m["id"], HOME_VALUE_TAG)
+                    added_hv += 1
+                except Exception as e:
+                    log(f"ERROR tagging {m.get('email_address')} {HOME_VALUE_TAG}: {e}")
+        else:
+            # SOURCE=newsletter or a pre-form legacy subscriber: belongs on the list.
+            if not has_tag(m, NEWSLETTER_TAG):
+                try:
+                    add_tag(env, m["id"], NEWSLETTER_TAG)
+                    added_nl += 1
+                except Exception as e:
+                    log(f"ERROR tagging {m.get('email_address')} {NEWSLETTER_TAG}: {e}")
+    return added_hv, added_nl
 
 
 def format_email_body(member: dict) -> tuple[str, str]:
@@ -164,11 +218,17 @@ def main() -> int:
     bootstrap = not INIT_MARKER.exists()
 
     try:
-        cma_members = fetch_cma_members(env)
+        all_members = fetch_all_members(env)
     except Exception as e:
         log(f"ERROR fetching members: {e}")
         return 1
 
+    # Keep the home-value and newsletter crowds separated by durable tags.
+    added_hv, added_nl = maintain_segment_tags(env, all_members)
+    if added_hv or added_nl:
+        log(f"TAGS: +{added_hv} {HOME_VALUE_TAG}, +{added_nl} {NEWSLETTER_TAG}.")
+
+    cma_members = [m for m in all_members if is_home_value_request(m)]
     pending = [m for m in cma_members if not has_tag(m, TAG_NAME)]
     if not pending:
         log(f"OK: 0 pending CMA submissions (bootstrap={bootstrap}).")
@@ -181,7 +241,7 @@ def main() -> int:
         tagged = 0
         for m in pending:
             try:
-                tag_member_notified(env, m["id"])
+                add_tag(env, m["id"], TAG_NAME)
                 tagged += 1
             except Exception as e:
                 log(f"ERROR tagging {m.get('email_address')}: {e}")
@@ -198,7 +258,7 @@ def main() -> int:
             log(f"ERROR emailing about {m.get('email_address')}: {e}")
             continue
         try:
-            tag_member_notified(env, m["id"])
+            add_tag(env, m["id"], TAG_NAME)
         except Exception as e:
             log(f"WARN: emailed {m.get('email_address')} but failed to tag: {e}")
             continue
