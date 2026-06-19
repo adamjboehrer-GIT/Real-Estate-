@@ -59,4 +59,28 @@ Voice rules live in `PILLARS.md`. Numbers cited below are from `website/data/sta
 
 ---
 
+## Ad-hoc · Home value report push · Pillar: Seller education / Lead-gen · STATUS: DRAFT
+
+<!-- Standalone lead-gen post to drive home-value requests to adamboehrer.com/#home-value.
+     Slot it on any Tue or Thu (next open: Tue June 23). Sits outside the pillar rotation. -->
+
+> Zillow thinks it knows what your home is worth. It does not.
+>
+> That automated estimate is a starting guess built from county records and broad averages. It
+> cannot see your remodeled kitchen, the view, the busy street, or that a nearly identical home
+> down the block just closed over asking. On the coast, where no two streets price the same, that
+> gap can run into six figures in either direction.
+>
+> So here is something I am glad to do for you. If you own a home anywhere from San Clemente to San
+> Diego, I will pull the real comparable sales around you, look at what is actually closing right
+> now, and write up an honest read of what your place would sell for in today's market. Not the
+> flattering number. The real one.
+>
+> I do it myself and send it back to you written up. It costs you nothing.
+>
+> Whether you are selling this year or just curious where you stand, knowing your real number is
+> the most useful thing you can have. You can request one at adamboehrer.com.
+
+---
+
 <!-- Next week (ISO 24, slot 4): Tue P2 Neighborhood spotlight, Thu P3 Personal. -->
