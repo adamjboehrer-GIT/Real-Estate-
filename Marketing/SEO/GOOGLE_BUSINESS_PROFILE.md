@@ -51,14 +51,28 @@ that pack. Most solo agents never finish theirs, so this is winnable.
 Reviews are the biggest ranking factor in the map pack, and they convert. Goal: a steady drip,
 not a one-time blast. Text past clients and your sphere individually (personal > mass).
 
-Send them the direct review link (in your profile dashboard under **Ask for reviews** / "Get
-more reviews" — it looks like `g.page/r/...`). Suggested text:
+Your direct review link: **https://g.page/r/CcZeBln8mGKFEAE/review**
 
-> Hi [name], quick favor. I'm building out my Google profile and a short review from you would
-> mean a lot, it really helps people find me. Takes about a minute: [your review link]. Thank you!
+Ready-to-send messages (text or email, pick the one that fits the relationship):
 
-After a closing, ask while the good feeling is fresh. Reply to every review (even a thank-you on
-the 5-stars) — Google likes active profiles.
+**Just closed with them (ask while the good feeling is fresh):**
+> Hey [name], it was such a pleasure helping you with [the house / your sale]. If you have a
+> minute, a quick Google review would mean a lot to me. It genuinely helps other folks on the
+> coast find me when they're looking. Here's the link: https://g.page/r/CcZeBln8mGKFEAE/review.
+> Thank you, and congrats again.
+
+**Past client from a while back:**
+> Hi [name], hope you and the family are doing well. I'm building up my Google reviews and would
+> really appreciate a quick word from you about working together. Takes about a minute:
+> https://g.page/r/CcZeBln8mGKFEAE/review. Means a lot, thank you.
+
+**Sphere / friend / colleague who knows your work:**
+> Hey [name], quick favor. I'm growing the real estate business on the coast, and Google reviews
+> make a real difference for getting found. If you'd be up for leaving a short one, here's the
+> link: https://g.page/r/CcZeBln8mGKFEAE/review. Appreciate you.
+
+Reply to every review you get (even a short thank-you on the 5-stars). Google rewards active
+profiles, and it reads well to anyone browsing them.
 
 ## Step 4 — Keep it warm
 - Post a "Google Post" every couple of weeks (a market stat, a new listing, the home value
