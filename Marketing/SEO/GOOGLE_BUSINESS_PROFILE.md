@@ -5,6 +5,17 @@ show up in the Google map pack and in "real estate agent near me" results around
 It is free and it lives outside the website (so I cannot do it for you — it needs your Google
 login). Budget 30 minutes once, then 5 minutes a week for reviews.
 
+## Your profile (live as of 2026-06-19)
+- **Listed as:** "Adam Boehrer - Realtor" (Google entity `/g/11z0jkcr92`)
+- **Share link:** https://share.google/9QGEUc76zwTSZR2PX
+- **Tied into the website:** added to the site's structured data (`sameAs`) so Google links your
+  profile and adamboehrer.com as the same entity, plus a visible "Read my Google reviews" link in
+  the Contact section.
+- **STILL TO GRAB — your review short link:** in business.google.com, open **Get more reviews**
+  and copy the `https://g.page/r/...` link. That's the one-tap "write a review" link for the
+  text in Step 3 below (cleaner than the share link, which only opens the profile). Send it to me
+  and I'll record it here.
+
 ## Why it matters more than the website itself
 For local searches, Google leans on the map pack (the 3 businesses with the map pin) far more
 than the blue links below it. A complete, active, well-reviewed profile is what gets you in
