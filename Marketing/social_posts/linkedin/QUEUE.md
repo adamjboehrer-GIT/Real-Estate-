@@ -11,6 +11,38 @@ Voice rules live in `PILLARS.md`. Numbers cited below are from `website/data/sta
 
 ---
 
+## Week of June 29, 2026 (ISO week 27 · rotation slot 3)
+
+_Note: Tuesday 6/30 already passed when these were generated (Wed 7/1). Post the market read whenever you get to it, or hold both for Thursday._
+
+### Post 1 — Tue June 30 · Pillar: Market data · STATUS: DRAFT
+
+> More than a third of active San Clemente listings are carrying a price cut right now. The well-priced ones are still selling in about eight days.
+>
+> That is the whole summer market in one line. San Clemente is running as two markets inside one town. Homes that launch at an honest number are closing near 98% of asking in a little over a week. Homes reaching for a price sit, cut, and chase the market down from behind. Same town, same month, completely different outcome.
+>
+> The backdrop favors sellers on paper. Months of supply is 2.7, down from 3.5 a year ago, and the median sits around $2.24M, up roughly 10% from last May. Anything under six months of supply is a seller's market by the textbook. But 36% of listings wearing a price cut is the reminder that the textbook only rewards the homes priced where buyers actually are.
+>
+> If you are buying, be ready to move cleanly on the right home. If you are weighing a sale, the leverage is real, but it lives almost entirely in the launch price.
+>
+> Full breakdown across Newport, Laguna, Dana Point, San Clemente, Oceanside, and Carlsbad in this week's Coastal Currents. Link in profile.
+
+---
+
+### Post 2 — Thu July 2 · Pillar: Seller education · STATUS: DRAFT
+
+> If you want to sell without a single price cut, handle the inspection before the buyer does.
+>
+> Most sellers wait for the buyer's inspector to find the problems. That is the worst possible time to learn about them. Now you are renegotiating a signed contract, with a buyer who feels like they caught something, and a clock running.
+>
+> A pre-listing inspection flips it. You pay a few hundred dollars, you see what their inspector will see, and you decide the terms. Fix the small deal-killers. Get quotes on the big items so no number gets invented for you in a panic. Then disclose cleanly and price with the real condition baked in.
+>
+> The payoff is an offer that holds together instead of one that unravels in week three. In a market where well-priced homes still sell in about eight days, the last thing you want is a surprise that hands your leverage back.
+>
+> That is one page from the South OC Sellers Playbook.
+
+---
+
 ## Week of June 1, 2026 (ISO week 23 · rotation slot 3)
 
 ### Post 1 — Tue June 2 · Pillar: Market data · STATUS: DRAFT
