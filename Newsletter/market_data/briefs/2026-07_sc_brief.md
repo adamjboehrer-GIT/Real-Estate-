@@ -9,7 +9,7 @@
 ---
 
 ## The data story in one sentence
-San Clemente is literally two markets in one town this summer: well-priced homes are still selling in about 8 days near full asking, while more than a third of standing listings carry a price cut and the full inventory would take roughly two months to clear. Where a home lands is decided by price and presentation, not by the headline "slowdown."
+San Clemente is holding: the median home sold at 100% of its asking price and values are up ~10% YoY, it leads the coastal peer set on 10-year appreciation (+116%), and inventory finally loosened this summer (active listings 79 → 97 in a month) — so the story is "more to choose from, without the discount," not a slowdown. (Two-markets angle from the prior draft was retired at Adam's request; DOM pulled from By The Numbers to avoid confusion next to Estimated Market Time.)
 
 ## San Clemente — the recurring stats
 **Single-family (InfoSparks, May 2026 closings):**
