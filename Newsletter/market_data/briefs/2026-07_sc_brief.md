@@ -9,7 +9,7 @@
 ---
 
 ## The data story in one sentence
-San Clemente is holding: the median home sold at 100% of its asking price and values are up ~10% YoY, it leads the coastal peer set on 10-year appreciation (+116%), and inventory finally loosened this summer (active listings 79 → 97 in a month) — so the story is "more to choose from, without the discount," not a slowdown. (Two-markets angle from the prior draft was retired at Adam's request; DOM pulled from By The Numbers to avoid confusion next to Estimated Market Time.)
+It's all about price. Macro uncertainty (rates, jobs, general anxiety) has made buyers impatient with aspirational pricing — 36% of listings have already cut — yet the discipline cuts both ways: correctly-priced homes still close at essentially full value (median SFR at 100% of last list, all-residential at 97.6% sale-to-list). Neighborhood item 1 = "Let's Talk Price." (Evolution: two-markets angle retired, then a brief "holding value / more inventory" framing, now consolidated into the price thesis at Adam's direction. DOM pulled from By The Numbers to avoid confusion next to Estimated Market Time. Macro references kept general, not specific war/AI claims.)
 
 ## San Clemente — the recurring stats
 **Single-family (InfoSparks, May 2026 closings):**
