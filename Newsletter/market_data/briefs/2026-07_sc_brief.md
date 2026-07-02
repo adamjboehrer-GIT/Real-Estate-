@@ -52,7 +52,7 @@ Market normalizing into summer: supply climbing toward its July–August peak, d
 - CTA rotation = Issue 1 slot: "thinking about selling." Adam's approved seller voice (meet people where they are, understand what matters most, position the home for the most offers and best terms). NO overpromising ("I have buyers"), NO "no pressure/no obligation" disclaimer padding. Points to https://adamboehrer.com. utm_campaign=2026-07_issue-04.
 - Deal Highlights / First Look: omitted (no Adam-provided coming-soon). Offer to add a block if he supplies one.
 - Carry the locked Coastal Currents header/footer JPGs unchanged.
-- Personal note drafted in Adam's voice for him to edit. Ask him for one firsthand San Clemente observation for the neighborhood section.
+- Personal note is a **Fourth of July note** ("Chair Races, Fog, and Fireworks"), not a market recap — the holding-value thesis moved entirely into neighborhood item 1 to kill the redundancy Adam flagged. July 4 details verified (chair races AM, Condor Squadron WWII flyover ~6pm, fireworks 9pm off the Municipal Pier, free trolley, limited parking). Ask him for one firsthand San Clemente observation for the neighborhood section.
 - After publish: regenerate website/data/stats.json and offer to commit + push (standing rule).
 
 ## Next issue (Issue 05, mid-to-late July)
