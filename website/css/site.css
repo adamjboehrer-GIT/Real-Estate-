@@ -336,6 +336,7 @@ a:hover { color: var(--gold); }
   line-height: 1.6;
   font-weight: 300;
 }
+.stats-more { margin: 28px 0 0; }
 
 /* ===== NEWSLETTER ===== */
 .value-bar {
@@ -784,4 +785,138 @@ body.modal-open { overflow: hidden; }
 /* ===== SCROLL OFFSET FOR STICKY NAV ===== */
 section[id], main[id] {
   scroll-margin-top: calc(var(--topbar-h) + 16px);
+}
+
+/* ===== CONTENT PAGES (market reports, neighborhood guides) ===== */
+.page-header { padding-top: 64px; padding-bottom: 64px; }
+.breadcrumb {
+  margin: 0 0 22px;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent-grey);
+}
+.breadcrumb a { color: var(--text-grey); }
+.breadcrumb a:hover { color: var(--gold); }
+.breadcrumb-sep { color: var(--gold); padding: 0 8px; }
+
+.page-title {
+  margin: 0 0 22px;
+  font-family: var(--serif);
+  font-size: 46px;
+  line-height: 1.14;
+  color: var(--sir-blue);
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+.page-updated {
+  margin: 24px 0 0;
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--accent-grey);
+  font-weight: 400;
+}
+
+/* Article prose */
+.prose p {
+  margin: 0 0 22px;
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-grey);
+  font-weight: 300;
+}
+.prose p:last-child { margin-bottom: 0; }
+.prose .band-title { margin-bottom: 26px; }
+.prose a { border-bottom: 1px solid var(--gold); padding-bottom: 1px; }
+.prose a:hover { color: var(--gold); }
+
+.prose-note {
+  margin: 28px 0 0;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--text-grey);
+  font-weight: 300;
+}
+
+/* Feature / neighborhood list */
+.feature-list {
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+}
+.feature-list li {
+  padding: 18px 0 18px 22px;
+  position: relative;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-grey);
+  font-weight: 300;
+  border-bottom: 1px solid var(--rule);
+}
+.feature-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 12px;
+  height: 1px;
+  background: var(--gold);
+}
+.feature-list strong {
+  color: var(--sir-blue);
+  font-weight: 600;
+}
+
+/* Peer comparison table */
+.market-table-wrap { overflow-x: auto; margin: 8px 0 0; }
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 460px;
+}
+.market-table th,
+.market-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+}
+.market-table thead th {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-grey);
+  font-weight: 600;
+  padding-top: 0;
+}
+.market-table tbody th {
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--text-grey);
+  font-weight: 300;
+}
+.market-table .num { text-align: right; }
+.market-table tbody td.num {
+  font-family: var(--serif);
+  font-size: 20px;
+  color: var(--text-grey);
+  font-weight: 400;
+}
+.market-table tr.is-highlight th,
+.market-table tr.is-highlight td {
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+.market-table tr.is-highlight th { color: var(--sir-blue); font-weight: 600; }
+.market-table tr.is-highlight td.num { color: var(--sir-blue); }
+
+@media only screen and (max-width: 760px) {
+  .page-title { font-size: 32px; }
+  .prose p { font-size: 16px; }
 }
