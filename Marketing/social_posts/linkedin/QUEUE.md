@@ -143,4 +143,5 @@ _Note: Tuesday 6/30 already passed when these were generated (Wed 7/1). Post the
 
 ---
 
-<!-- Next week (ISO 24, slot 4): Tue P2 Neighborhood spotlight, Thu P3 Personal. -->
+<!-- Next week (ISO 29, slot 1): Tue P1 Market data, Thu P3 Personal. -->
+<!-- Neighborhood pockets used so far: Dana Point Harbor, North Beach SC, Los Rios / San Juan Cap, Pier Bowl SC, Capistrano Beach. Next unused: Carlsbad, Oceanside, Laguna, Newport Coast. -->
