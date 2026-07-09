@@ -11,6 +11,34 @@ Voice rules live in `PILLARS.md`. Numbers cited below are from `website/data/sta
 
 ---
 
+## Week of July 6, 2026 (ISO week 28 · rotation slot 4)
+
+_Note: Tuesday 7/7 already passed when these were generated (Thu 7/9). Post the neighborhood spotlight whenever you get to it, or run it Tuesday next week and post the personal one today._
+
+### Post 1 — Tue July 7 · Pillar: Neighborhood spotlight · STATUS: DRAFT
+
+> OC Parks just trucked 13,500 cubic yards of sand onto Capistrano Beach. Most people drive right past the part of Dana Point that got it.
+>
+> Capo Beach is the quiet stretch, sitting between Doheny and the San Clemente line. The sand went down this spring at a cost of about $440,000, and it is an interim move. The long-term plan, approved by the Coastal Commission, is the Capistrano-Doheny nature-based shoreline adaptation project: a 1,150-foot system of sand dunes over a cobble berm running from the north end of Capistrano Beach into the south end of Doheny. Up on the bluff above it, Pines Park, developed by the Doheny family back in the 1920s, was recently designated a historic destination.
+>
+> Here is why it matters if you own down there or you are looking. Erosion is the honest variable on this stretch of coast, and pretending otherwise does nobody any favors. What the sand tells you is that public money is going into managing it rather than ignoring it. If you are shopping Capo Beach, know which side of the highway you are on and how the adaptation plan touches your parcel. That is a real question with a real answer, and it should be asked before the offer, not after.
+>
+> I read the coastal filings so the people who live here do not have to. More in Coastal Currents. Link in profile.
+
+---
+
+### Post 2 — Thu July 9 · Pillar: Personal · STATUS: DRAFT
+
+> I am new as an agent. I picked the hardest place in the country to be new, on purpose.
+>
+> Before this I spent my career in brand strategy, and I invest in real estate myself. Neither of those makes me a veteran of escrow, and I am not going to pretend it does. What they gave me is a read on the two things that quietly decide most outcomes. How a home gets positioned, which is pricing and story and exposure. And how to evaluate risk when the number on the page looks better than the deal sitting underneath it.
+>
+> When I got licensed I could have gone somewhere that would have been easier to start. I went to Sotheby's deliberately, because the people I would be working for are my neighbors, and they deserved the best platform I could put them on from the very first day rather than the one I grew into by year five.
+>
+> I live in San Clemente with my family. Father and neighbor first, realtor after that. The home is the work. The relationship is why I do it.
+
+---
+
 ## Week of June 29, 2026 (ISO week 27 · rotation slot 3)
 
 _Note: Tuesday 6/30 already passed when these were generated (Wed 7/1). Post the market read whenever you get to it, or hold both for Thursday._
