@@ -107,7 +107,8 @@ def main():
 
     # Row 1 — InfoSparks SFR
     cm = sc_sfr["current_month"]
-    yoy = sc_sfr.get("year_over_year_march", {})
+    yoy = next((v for k, v in sc_sfr.items()
+                if k.startswith("year_over_year") and isinstance(v, dict)), {})
     reporting_month = sc_sfr["reporting_month"]
     month_label = month_year_label(reporting_month)
     month_name_only = month_label.split()[0]  # "March"
@@ -118,7 +119,7 @@ def main():
     months_supply_last_year = yoy.get("inventory_months_supply", {}).get("2025")
     price = cm["median_sales_price_usd"]
     actives = cm["active_listings"]
-    pendings = cm["pending_sales"]
+    pendings = cm.get("pending_sales")
 
     # Row 2 — Pacific Sotheby's deck, San Clemente
     sc_city = next((c for c in oc["cities"] if c["name"] == "San Clemente"), None)
@@ -135,7 +136,9 @@ def main():
     sl_ratio = sold_all_val["sl_ratio_pct"]
     sl_ratio_under_5m = sold_under_5m[1]["sl_ratio_pct"] if sold_under_5m else None
 
-    hvi = sc_city["zillow_hvi_feb_2026"]["ten_year_pct"]
+    hvi_block = next((v for k, v in sc_city.items()
+                      if re.match(r"^zillow_hvi_[a-z]+_\d{4}$", k)), {})
+    hvi = hvi_block.get("ten_year_pct")
 
     stats = [
         {
@@ -153,12 +156,14 @@ def main():
         {
             "value": fmt_price_clean(price),
             "label": "Median Sales Price",
-            "note": f"{actives} active listings. {pendings} new pendings in {month_name_only}.",
+            "note": (f"{actives} active listings. {pendings} new pendings in {month_name_only}."
+                     if pendings is not None
+                     else f"{actives} active listings in {month_name_only}."),
         },
         {
             "value": f"{pct_reduced}%",
             "label": "Listings with a Price Cut",
-            "note": "Among the lowest in Orange County.",
+            "note": "Share of active San Clemente listings, all price points.",
         },
         {
             "value": f"{sl_ratio}%",
