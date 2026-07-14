@@ -15,12 +15,14 @@ Focus this run was the authentic **Sotheby's colleague/referral layer** plus one
 **Pepperdine (`pepperdine_alumni`)**
 5. **Pepperdine Bay Area Waves** (private, 539) — join **requested**. Answered membership Qs truthfully (school = Seaver College, grad year = 2019). Genuine fit: Adam is a Class of 2019 alum and is from the Bay Area (Livermore). **Pending admin approval.**
 
-## Intro posts today (2 — at the cap, well spaced)
-Both published **directly to the feed, no admin-approval queue**. First line tailored per city; body is the locked intro. No CTA, no em-dashes.
-1. **Dana Point, Orange County!!!!!!** (public) — Dana Point opener ("just up the coast in San Clemente but spend a ton of time down in Dana Point, the harbor and Salt Creek").
-2. **Huntington Beach Anything Goes** (private, member) — Huntington opener ("down the coast in San Clemente but I get up to Huntington plenty, the pier and Main Street").
+## Intro posts today (3 — at the cap). First line tailored per city; body is the locked intro. No CTA, no em-dashes.
+1. **Dana Point, Orange County!!!!!!** (public) — Dana Point opener ("just up the coast in San Clemente but spend a ton of time down in Dana Point, the harbor and Salt Creek"). Published directly, no queue.
+2. **Huntington Beach Anything Goes** (private, member) — Huntington opener ("down the coast in San Clemente but I get up to Huntington plenty, the pier and Main Street"). Published directly, no queue.
+3. **Dana Point Unplugged** (public, 72K — largest DP group) — Dana Point opener, varied first line ("San Clemente... Dana Point is basically our second home, the harbor, Doheny, the headlands trails"). Added at Adam's request to close the DP gap. **PENDING ADMIN APPROVAL** (this group admin-reviews first posts).
 
 Did NOT intro in the freshly-joined Sotheby's groups (joined <1 day ago; referral group is strictly outgoing-referrals / no self-promo anyway).
+
+**Dana Point + San Clemente intro coverage is now complete for all general/business community groups.** Remaining un-introd groups in both cities are deliberately skipped: strict no-promo/member-only (SC Life "SCLifepage", SC Surf Life, DP Dine Out, DP Crime & Safety, DP Residents strict-no-ads), marketplaces (Sell My Stuff, Buy Sell Trade, Beach Cities BUY & SELL), or niche/off-topic (Dog Group, Neighborhood Watch, Need A Hand, Rentals). Pending approval and not yet postable: Dana Point CA (16K), Capo/Monarch BST groups.
 
 ## NEW responses (log-only — do NOT auto-reply; drafts for Adam's approval)
 - **None new.** Notifications were all group-activity digests (marketplace/spam posts), join/welcome confirmations, and birthday reminders — no comments, reactions, or friend requests on Adam's posts.
