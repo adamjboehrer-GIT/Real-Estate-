@@ -1,7 +1,7 @@
 # Facebook Daily Status — 2026-07-14
 
 **Account:** Adam Boehrer (@AdamonthecoastOC) — session OK, profile resolved correctly, no checkpoint/2FA.
-**Pacing:** Last run was 2026-07-01 (13 days prior), so ample headroom. 5 join actions + 2 intros today, both within caps. No rate warnings.
+**Pacing:** Last run was 2026-07-01 (13 days prior), so ample headroom. 5 join actions + 3 intros today, both within caps. No rate warnings.
 
 ## Groups joined / requested today (5 — within the 5–8 cap)
 Focus this run was the authentic **Sotheby's colleague/referral layer** plus one Pepperdine alum group.
