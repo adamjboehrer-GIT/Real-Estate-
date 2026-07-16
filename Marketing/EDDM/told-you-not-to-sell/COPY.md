@@ -123,6 +123,9 @@ and the kitchen.
 ## Open items
 
 - [ ] Carrier route selection (Hillcrest? Broadmoor? new route?)
+- [ ] Real return address — currently a city-only placeholder. Use the Pacific
+      Sotheby's office address, never Adam's home address.
+- [ ] Permit number for the indicia (from the post office at EDDM signup)
 - [ ] Photo shoot: Adam in the neighborhood, 3:2
 - [ ] Signature scan for the "Adam" signoff
 - [ ] Print quote on uncoated 6.5x9
