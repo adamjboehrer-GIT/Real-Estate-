@@ -94,8 +94,7 @@ first, standing over the recycling bin. Putting the headline on the "back" waste
   generous leading. One thought per line where the line breaks allow. The piece must
   scan in ~8 seconds.
 - "Adam" signoff: handwritten signature scan if available, else Freight italic.
-- 1pt gold rule separating letter from bio block.
-- Bio block: below the rule. Benton Sans, smaller.
+- 1pt gold rule separating letter from the footer.
 - Pacific Sotheby's logo: bottom. (Brand: logo top or bottom only, never centered
   in the layout; clear space on all sides.)
 - Contact line: bottom, Accent Grey `#999999` acceptable here (decorative/legal
