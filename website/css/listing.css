@@ -424,8 +424,19 @@
 }
 
 @media (max-width: 620px) {
-  .listing-id-inner { flex-direction: column; align-items: flex-start; }
-  .listing-status, .listing-price { text-align: left; }
+  /* Once the address and price stack, a big left-aligned serif hard against the
+     margin under a full-bleed hero reads as crowded. Centering the block is the
+     usual treatment for this and balances it against the photo above. */
+  .listing-id-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    padding-block: 26px 22px;
+  }
+  .listing-address { font-size: clamp(1.7rem, 8vw, 2.1rem); }
+  .listing-status, .listing-price { text-align: center; }
+  .listing-status { margin-top: 14px; }
   .spec-list { grid-template-columns: repeat(2, 1fr); }
   .spec-list li:last-child { grid-column: 1 / -1; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
