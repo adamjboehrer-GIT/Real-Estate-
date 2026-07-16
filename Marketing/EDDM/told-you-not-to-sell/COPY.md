@@ -46,17 +46,15 @@ No photo. No logo lockup competing with the line. The restraint is the credibili
 
 ~140 words. Every cut sentence was one that repeated a beat the reader already had.
 
-### Bio block (bottom of Side B)
+### Bio block — CUT (Adam, 2026-07-16)
 
-> **Adam Boehrer**
-> Father. Neighbor. Realtor.
->
-> I live in San Clemente with my family. Before real estate I spent my career in
-> brand strategy, which is mostly the work of positioning something so people can
-> see what it's worth. I also invest in real estate myself, so I've had my own money
-> on the line reading value and risk. Both turn out to be most of this job.
->
-> The home is the work. The relationship is why I do it.
+No "about Adam" section on this piece. The letter says "consider this an
+introduction," so a bio block underneath it is the piece arguing with itself. The
+letter IS the introduction. The photo and the signature are the only "who is this"
+elements, which raises the bar on the photo considerably.
+
+Name / contact / logo / DRE stay. That's furniture, not a pitch, and CA DRE requires
+the license number on solicitation material.
 
 ### Contact line
 
