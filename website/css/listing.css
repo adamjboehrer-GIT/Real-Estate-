@@ -323,15 +323,6 @@
 .listing-attrib strong { font-weight: 600; color: var(--text-grey); }
 
 /* ---------- Sign-in modal specifics ---------- */
-.signin-note {
-  font-family: var(--sans);
-  font-weight: 300;
-  font-size: 0.8rem;
-  line-height: 1.6;
-  color: var(--accent-grey);
-  margin: 14px 0 0;
-}
-
 .choice-set { border: 0; margin: 0 0 4px; padding: 0; }
 
 .choice-legend {
@@ -402,8 +393,6 @@
   padding: 12px 0 2px;
   box-shadow: 0 -10px 14px -10px rgba(0, 35, 73, 0.18);
 }
-
-#signin-modal .signin-note { margin-top: 10px; }
 
 /* ---------- Responsive ---------- */
 @media only screen and (max-width: 760px) {
