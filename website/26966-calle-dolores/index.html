@@ -156,13 +156,17 @@
     </div>
   </section>
 
-  <!-- ===== HOSTED BY / CONTACT ===== -->
+  <!-- ===== SIGN IN / CONTACT =====
+       Second chance at anyone who dismissed the arrival modal. If they have
+       already signed in, the script below swaps this for a thank-you and drops
+       the sign-in button, so nobody is asked twice. -->
   <section class="band band-blue" id="contact">
     <div class="container narrow">
-      <p class="eyebrow eyebrow-on-blue">Questions About This Home</p>
-      <h2 class="band-title-on-blue">I am hosting on Sunday. Come find me.</h2>
-      <p class="band-lede-on-blue">If you are curious about the house, the street, or what anything nearby actually sold for, ask me while you are here. If you would rather do it later, my number and email are below.</p>
+      <p class="eyebrow eyebrow-on-blue" data-contact-eyebrow>Before You Go</p>
+      <h2 class="band-title-on-blue" data-contact-title>Please sign in.</h2>
+      <p class="band-lede-on-blue" data-contact-lede>It helps me pass your feedback to the sellers, and it is how I follow up if you have questions about the house. If you would rather just talk, my number is right here.</p>
       <div class="btn-row">
+        <button type="button" class="btn btn-primary" data-signin-open data-contact-cta>Sign in</button>
         <a href="tel:+19495418247" class="btn btn-secondary">949.541.8247</a>
         <a href="mailto:adam.boehrer@pacificsir.com" class="btn btn-secondary">Email me</a>
       </div>
@@ -371,6 +375,7 @@
         p.textContent = thanks;
         form.innerHTML = '';
         form.appendChild(p);
+        document.dispatchEvent(new Event('openhouse:signed'));
       });
     });
   })();
@@ -403,15 +408,36 @@
       if (e.key === 'Escape' && !modal.hidden) close();
     });
 
+    // Once someone has signed in, stop asking. The contact band becomes a
+    // thank-you and the top-right button turns into a plain link home.
+    function reflectSignedIn() {
+      var title = document.querySelector('[data-contact-title]');
+      var lede = document.querySelector('[data-contact-lede]');
+      var eyebrow = document.querySelector('[data-contact-eyebrow]');
+      var cta = document.querySelector('[data-contact-cta]');
+      if (eyebrow) eyebrow.textContent = 'Thanks';
+      if (title) title.textContent = 'You are signed in.';
+      if (lede) lede.textContent = 'Thanks for coming by. If anything comes to mind later, about this house or the street or what nearby homes actually sold for, just call or email me.';
+      if (cta) cta.remove();
+      var top = document.querySelector('.topbar-cta[data-signin-open]');
+      if (top) top.remove();
+    }
+
     var signed = false, dismissed = false;
     try {
       signed = localStorage.getItem('oh-capo-signed') === '1';
       dismissed = sessionStorage.getItem('oh-capo-dismissed') === '1';
     } catch (err) {}
-    if (!signed && !dismissed) {
+
+    if (signed) {
+      reflectSignedIn();
+    } else if (!dismissed) {
       // Let the hero paint first so the page reads as a home, not a wall.
       setTimeout(open, 700);
     }
+
+    // Also reflect immediately after a successful sign-in, without a reload.
+    document.addEventListener('openhouse:signed', reflectSignedIn);
   })();
 </script>
 

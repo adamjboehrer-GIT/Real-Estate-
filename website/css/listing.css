@@ -28,13 +28,16 @@
   border-bottom: 1px solid var(--rule);
 }
 
+/* padding-block, never the padding shorthand: these elements also carry
+   .container, whose `padding: 0 40px` (24px on mobile) is what keeps content
+   off the screen edge. A shorthand here silently zeroes it out. */
 .listing-id-inner {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
   gap: 18px 32px;
-  padding: 30px 0 26px;
+  padding-block: 30px 26px;
 }
 
 .listing-address {
@@ -128,7 +131,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px 40px;
-  padding: 20px 0;
+  padding-block: 20px;   /* see note above: .container owns the side padding */
   text-align: center;
 }
 
@@ -268,12 +271,38 @@
 
 /* ---------- Contact band ----------
    site.css .btn-row is display:block, which is fine on the home page where it
-   holds a single button. This page puts two side by side, so they need a real
+   holds a single button. This page puts three side by side, so they need a real
    gap or they read as one fused control. */
 #contact .btn-row {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+/* site.css .btn-primary is SIR Blue on white, which renders invisible on this
+   SIR Blue band. Invert the hierarchy here: solid white for the sign-in CTA
+   (the thing we actually want tapped), outlined white for phone and email. */
+#contact .btn-primary {
+  background: var(--white);
+  color: var(--sir-blue);
+}
+
+#contact .btn-primary:hover,
+#contact .btn-primary:focus-visible {
+  background: var(--gold);
+  color: var(--sir-blue);
+}
+
+#contact .btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+#contact .btn-secondary:hover,
+#contact .btn-secondary:focus-visible {
+  background: var(--white);
+  color: var(--sir-blue);
 }
 
 @media (max-width: 480px) {
