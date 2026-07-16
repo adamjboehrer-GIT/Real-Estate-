@@ -1,0 +1,404 @@
+/* ============================================================
+   listing.css — single-property listing pages
+   Layers on top of site.css. Brand tokens (--sir-blue, --gold,
+   --serif, --sans, --container-max) all come from site.css.
+   Brand rules honored here:
+     - no text or logos set over property photos
+     - gold used only for thin dividers and accents
+     - no font weight above 600, no underlines
+     - no border heavier than 1pt
+   ============================================================ */
+
+/* ---------- Hero: full-bleed photo, no overlaid text ---------- */
+.listing-hero {
+  width: 100%;
+  background: var(--sir-blue);
+}
+
+.listing-hero img {
+  display: block;
+  width: 100%;
+  height: clamp(260px, 52vw, 620px);
+  object-fit: cover;
+}
+
+/* ---------- Identity band directly under the hero ---------- */
+.listing-id {
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+}
+
+.listing-id-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px 32px;
+  padding: 30px 0 26px;
+}
+
+.listing-address {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3.4vw, 2.5rem);
+  line-height: 1.18;
+  color: var(--sir-blue);
+  margin: 0;
+}
+
+.listing-city {
+  font-family: var(--sans);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  margin: 8px 0 0;
+}
+
+.listing-price {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  color: var(--sir-blue);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.listing-status {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 6px;
+  text-align: right;
+}
+
+/* ---------- Spec strip ---------- */
+.spec-strip {
+  border-bottom: 1px solid var(--rule);
+  background: var(--white);
+}
+
+.spec-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--rule);
+}
+
+.spec-list li {
+  background: var(--white);
+  padding: 22px 12px;
+  text-align: center;
+}
+
+.spec-value {
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  color: var(--sir-blue);
+  line-height: 1.2;
+}
+
+.spec-label {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--accent-grey);
+}
+
+/* ---------- Open house callout ---------- */
+.openhouse {
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  background: var(--paper);
+}
+
+.openhouse-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 40px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.openhouse-label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0;
+}
+
+.openhouse-slot {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--sir-blue);
+  margin: 0;
+}
+
+/* ---------- Description ---------- */
+.listing-copy p {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--text-grey);
+  margin: 0 0 18px;
+}
+
+.listing-copy p:last-child { margin-bottom: 0; }
+
+/* ---------- Gallery ---------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery-item {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.gallery-btn img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.18s ease;
+}
+
+.gallery-btn:hover img,
+.gallery-btn:focus-visible img { opacity: 0.86; }
+
+.gallery-btn:focus-visible { outline: 1px solid var(--gold); outline-offset: 2px; }
+
+/* ---------- Lightbox ---------- */
+.lightbox[hidden] { display: none; }
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: rgba(0, 35, 73, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox-figure {
+  margin: 0;
+  max-width: 92vw;
+  max-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-figure img {
+  max-width: 92vw;
+  max-height: 74vh;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox-caption {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.86rem;
+  color: var(--white);
+  margin-top: 14px;
+  text-align: center;
+}
+
+.lightbox-count {
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  color: var(--accent-grey);
+  margin-top: 4px;
+}
+
+.lightbox-close,
+.lightbox-nav {
+  position: absolute;
+  background: none;
+  border: 0;
+  color: var(--white);
+  font-family: var(--sans);
+  font-weight: 300;
+  cursor: pointer;
+  padding: 14px 18px;
+  line-height: 1;
+}
+
+.lightbox-close { top: 8px; right: 12px; font-size: 2rem; }
+.lightbox-nav { top: 50%; transform: translateY(-50%); font-size: 2.4rem; }
+.lightbox-prev { left: 4px; }
+.lightbox-next { right: 4px; }
+
+.lightbox-close:focus-visible,
+.lightbox-nav:focus-visible { outline: 1px solid var(--gold); outline-offset: 2px; }
+
+/* ---------- Contact band ----------
+   site.css .btn-row is display:block, which is fine on the home page where it
+   holds a single button. This page puts two side by side, so they need a real
+   gap or they read as one fused control. */
+#contact .btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  #contact .btn-row { flex-direction: column; }
+  #contact .btn-row .btn { width: 100%; }
+}
+
+/* ---------- Attribution / compliance ---------- */
+.listing-attrib {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--accent-grey);
+  margin: 0;
+}
+
+.listing-attrib strong { font-weight: 600; color: var(--text-grey); }
+
+/* ---------- Sign-in modal specifics ---------- */
+.signin-note {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--accent-grey);
+  margin: 14px 0 0;
+}
+
+.choice-set { border: 0; margin: 0 0 4px; padding: 0; }
+
+.choice-legend {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--text-grey);
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+.choice-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.choice {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.choice input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.choice span {
+  display: block;
+  text-align: center;
+  padding: 10px 12px;
+  border: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  color: var(--text-grey);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.choice input:checked + span {
+  border-color: var(--sir-blue);
+  color: var(--sir-blue);
+}
+
+.choice input:focus-visible + span { outline: 1px solid var(--gold); outline-offset: 2px; }
+
+/* ------------------------------------------------------------
+   Sign-in modal compaction.
+   Every visitor arrives by scanning a QR in the doorway, so this
+   form is used one-handed on a phone. site.css stacks .signup-row
+   and sizes the panel for the newsletter modal, which pushes the
+   submit button below the fold here. All overrides are scoped to
+   #signin-modal so the home page newsletter modal is unaffected.
+   ------------------------------------------------------------ */
+#signin-modal .modal-lede { margin-bottom: 20px; }
+#signin-modal .signup .field { margin-bottom: 14px; }
+#signin-modal .choice-set { margin-bottom: 14px; }
+
+/* Keep the submit reachable without scrolling the panel. */
+#signin-modal .modal-signup .btn-row {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  background: var(--white);
+  margin-top: 18px;
+  padding: 12px 0 2px;
+  box-shadow: 0 -10px 14px -10px rgba(0, 35, 73, 0.18);
+}
+
+#signin-modal .signin-note { margin-top: 10px; }
+
+/* ---------- Responsive ---------- */
+@media only screen and (max-width: 760px) {
+  /* First and last name are short; keep them paired rather than
+     stacked, which site.css does by default. Saves a full field
+     of height on the critical path to the button. */
+  #signin-modal .signup-row { grid-template-columns: 1fr 1fr; gap: 12px; }
+  #signin-modal .modal-panel { padding: 40px 20px 24px; }
+  #signin-modal .modal-lede { font-size: 0.92rem; margin-bottom: 18px; }
+  #signin-modal .signup .field { margin-bottom: 12px; }
+  #signin-modal .choice span { padding: 9px 8px; font-size: 0.82rem; }
+}
+
+@media (max-width: 860px) {
+  .spec-list { grid-template-columns: repeat(3, 1fr); }
+  .spec-list li:nth-child(4),
+  .spec-list li:nth-child(5) { grid-column: span 1; }
+}
+
+@media (max-width: 620px) {
+  .listing-id-inner { flex-direction: column; align-items: flex-start; }
+  .listing-status, .listing-price { text-align: left; }
+  .spec-list { grid-template-columns: repeat(2, 1fr); }
+  .spec-list li:last-child { grid-column: 1 / -1; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+  .lightbox-nav { font-size: 1.8rem; padding: 10px 8px; }
+}

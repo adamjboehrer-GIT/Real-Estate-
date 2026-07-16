@@ -54,6 +54,8 @@ LOG_PATH = HOME / "Library" / "Logs" / "cma-notifier.log"
 TAG_NAME = "cma-notified"          # bookkeeping: Adam already emailed about this request
 HOME_VALUE_TAG = "home-value-request"  # durable: this person asked for a valuation
 NEWSLETTER_TAG = "newsletter"          # durable: this person belongs on the Coastal Currents list
+OPEN_HOUSE_TAG = "open-house-capo-beach"  # durable: signed in at the 26966 Calle Dolores open house
+OPEN_HOUSE_SOURCE_PREFIX = "openhouse"    # SOURCE values the listing-page sign-in forms post
 
 
 def log(msg: str) -> None:
@@ -148,11 +150,11 @@ def add_tag(env: dict[str, str], member_id: str, tag: str) -> None:
     )
 
 
-def maintain_segment_tags(env: dict[str, str], members: list[dict]) -> tuple[int, int]:
+def maintain_segment_tags(env: dict[str, str], members: list[dict]) -> tuple[int, int, int]:
     """Stamp durable home-value-request / newsletter tags so the two crowds stay
     cleanly segmentable regardless of the single SOURCE merge field being
     overwritten. Additive only — tags are never removed."""
-    added_hv = added_nl = 0
+    added_hv = added_nl = added_oh = 0
     for m in members:
         merge = m.get("merge_fields", {}) or {}
         source = (merge.get("SOURCE") or "").strip().lower()
@@ -165,14 +167,25 @@ def maintain_segment_tags(env: dict[str, str], members: list[dict]) -> tuple[int
                 except Exception as e:
                     log(f"ERROR tagging {m.get('email_address')} {HOME_VALUE_TAG}: {e}")
         else:
-            # SOURCE=newsletter or a pre-form legacy subscriber: belongs on the list.
+            # SOURCE=newsletter, an openhouse sign-in, or a pre-form legacy
+            # subscriber: all belong on the list.
             if not has_tag(m, NEWSLETTER_TAG):
                 try:
                     add_tag(env, m["id"], NEWSLETTER_TAG)
                     added_nl += 1
                 except Exception as e:
                     log(f"ERROR tagging {m.get('email_address')} {NEWSLETTER_TAG}: {e}")
-    return added_hv, added_nl
+
+            # Open house sign-ins additionally carry their own tag, so the people
+            # who physically walked the house stay segmentable from the general
+            # newsletter crowd. The INTENT / AGENT merge fields say what they want.
+            if source.startswith(OPEN_HOUSE_SOURCE_PREFIX) and not has_tag(m, OPEN_HOUSE_TAG):
+                try:
+                    add_tag(env, m["id"], OPEN_HOUSE_TAG)
+                    added_oh += 1
+                except Exception as e:
+                    log(f"ERROR tagging {m.get('email_address')} {OPEN_HOUSE_TAG}: {e}")
+    return added_hv, added_nl, added_oh
 
 
 def format_email_body(member: dict) -> tuple[str, str]:
@@ -224,9 +237,12 @@ def main() -> int:
         return 1
 
     # Keep the home-value and newsletter crowds separated by durable tags.
-    added_hv, added_nl = maintain_segment_tags(env, all_members)
-    if added_hv or added_nl:
-        log(f"TAGS: +{added_hv} {HOME_VALUE_TAG}, +{added_nl} {NEWSLETTER_TAG}.")
+    added_hv, added_nl, added_oh = maintain_segment_tags(env, all_members)
+    if added_hv or added_nl or added_oh:
+        log(
+            f"TAGS: +{added_hv} {HOME_VALUE_TAG}, +{added_nl} {NEWSLETTER_TAG}, "
+            f"+{added_oh} {OPEN_HOUSE_TAG}."
+        )
 
     cma_members = [m for m in all_members if is_home_value_request(m)]
     pending = [m for m in cma_members if not has_tag(m, TAG_NAME)]

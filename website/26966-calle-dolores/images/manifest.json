@@ -1,0 +1,142 @@
+[
+ {
+  "i": 0,
+  "master": 5,
+  "caption": "Front elevation at twilight"
+ },
+ {
+  "i": 1,
+  "master": 1,
+  "caption": "Front of the home from the street"
+ },
+ {
+  "i": 2,
+  "master": 9,
+  "caption": "Driveway and front landscaping"
+ },
+ {
+  "i": 3,
+  "master": 8,
+  "caption": "Aerial view over Capistrano Beach"
+ },
+ {
+  "i": 4,
+  "master": 4,
+  "caption": "Entry walkway"
+ },
+ {
+  "i": 5,
+  "master": 11,
+  "caption": "Living room"
+ },
+ {
+  "i": 6,
+  "master": 16,
+  "caption": "Great room, open to the kitchen"
+ },
+ {
+  "i": 7,
+  "master": 13,
+  "caption": "Living room seating"
+ },
+ {
+  "i": 8,
+  "master": 18,
+  "caption": "Living room and fireplace wall"
+ },
+ {
+  "i": 9,
+  "master": 21,
+  "caption": "Living room looking toward the kitchen"
+ },
+ {
+  "i": 10,
+  "master": 23,
+  "caption": "Kitchen island"
+ },
+ {
+  "i": 11,
+  "master": 22,
+  "caption": "Kitchen with premium cabinetry"
+ },
+ {
+  "i": 12,
+  "master": 27,
+  "caption": "Kitchen and range"
+ },
+ {
+  "i": 13,
+  "master": 31,
+  "caption": "Kitchen island seating"
+ },
+ {
+  "i": 14,
+  "master": 28,
+  "caption": "Kitchen open to the great room"
+ },
+ {
+  "i": 15,
+  "master": 29,
+  "caption": "Dining area"
+ },
+ {
+  "i": 16,
+  "master": 25,
+  "caption": "Stairway"
+ },
+ {
+  "i": 17,
+  "master": 43,
+  "caption": "Bedroom with slider to the deck"
+ },
+ {
+  "i": 18,
+  "master": 44,
+  "caption": "Bedroom"
+ },
+ {
+  "i": 19,
+  "master": 46,
+  "caption": "Deck access and view"
+ },
+ {
+  "i": 20,
+  "master": 48,
+  "caption": "Primary bathroom"
+ },
+ {
+  "i": 21,
+  "master": 49,
+  "caption": "Primary shower"
+ },
+ {
+  "i": 22,
+  "master": 33,
+  "caption": "Secondary bathroom"
+ },
+ {
+  "i": 23,
+  "master": 52,
+  "caption": "Covered deck"
+ },
+ {
+  "i": 24,
+  "master": 53,
+  "caption": "Deck and neighborhood view"
+ },
+ {
+  "i": 25,
+  "master": 59,
+  "caption": "Rear elevation at twilight"
+ },
+ {
+  "i": 26,
+  "master": 60,
+  "caption": "Fire pit and patio"
+ },
+ {
+  "i": 27,
+  "master": 62,
+  "caption": "Backyard hardscape"
+ }
+]
