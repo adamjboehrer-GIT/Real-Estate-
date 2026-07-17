@@ -1,0 +1,68 @@
+{
+  "market": "Dana Point",
+  "property_type": "Residential, Single Family, Detached",
+  "reporting_month": "2026-06",
+  "extracted_on": "2026-07-15",
+  "source": {
+    "system": "California Regional Multiple Listing Service (CRMLS)",
+    "tool": "InfoSparks / ShowingTime Plus",
+    "access_method": "manual export by licensed agent (compliant)",
+    "export_files_dir": "data/imports/mls_stats/2026-07-15_dana_point/"
+  },
+  "current_month": {
+    "median_sales_price_usd": 2097500,
+    "median_days_active_in_mls": 13,
+    "median_price_per_sqft_usd": 972,
+    "inventory_months_supply": 3.2
+  },
+  "trailing_3_months_apr_may_jun_2026": {
+    "median_sales_price_usd": [
+      2994000,
+      3150000,
+      2097500
+    ],
+    "median_days_active_in_mls": [
+      12,
+      9,
+      13
+    ],
+    "median_price_per_sqft_usd": [
+      1442,
+      1538,
+      972
+    ],
+    "inventory_months_supply": [
+      3.2,
+      3.2,
+      3.2
+    ]
+  },
+  "year_over_year_june": {
+    "median_sales_price_usd": {
+      "2025": 2350000,
+      "2026": 2097500,
+      "pct_change": -10.7
+    },
+    "median_days_active_in_mls": {
+      "2025": 19,
+      "2026": 13,
+      "pct_change": -31.6
+    },
+    "median_price_per_sqft_usd": {
+      "2025": 950,
+      "2026": 972,
+      "pct_change": 2.3
+    },
+    "inventory_months_supply": {
+      "2025": 4.3,
+      "2026": 3.2,
+      "pct_change": -25.6
+    }
+  },
+  "data_quality_notes": [
+    "Single-family detached only. Excludes Dana Point condos/townhomes.",
+    "June 2026 median sales price ($2.10M) and median price-per-sqft ($972) both dropped sharply from May ($3.15M / $1,538) and April ($2.99M / $1,442). Both metrics moving together indicates a lower-priced MIX of homes closed in June, not a single outlier. Recent SFR medians bounce widely at low monthly transaction counts.",
+    "Active Listings and Pending Sales reports were not exported this pull; months-of-supply (3.2) and DOM (13) still show a tight market. Inventory months supply has held flat at 3.2 for Apr-May-Jun 2026, down from 4.3 a year ago.",
+    "This pull swapped the usual Active Listings + Pending Sales reports for a Median Price Per Square Foot report."
+  ]
+}
