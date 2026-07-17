@@ -150,6 +150,26 @@ Every outreach action should be logged with: channel, contact ID, date, message 
 
 ---
 
+## Advertising & DRE Compliance (MANDATORY on all collateral)
+
+Every piece of collateral we create — flyers, print/broadcast ads, social posts, videos, email, website and landing pages, listing/property pages, signage, business cards — must pass the PSIR advertising-compliance rules **before it goes live**. This is a legal/DRE requirement, not a style preference: the core disclosure carries up to a **$2,500 fine per violation, no warning given first**. Brand rules (`Sotheby's Templates/Brand_Style_Guide.md`) and compliance rules (`Sotheby's Templates/Advertising_Compliance_Checklist.md`) must BOTH pass.
+
+**Adam's disclosure identity (use these exact values):** Adam Boehrer · **DRE #02419464** (always show all 8 digits, leading zero included) · Real Estate Agent / REALTOR® · Pacific Sotheby's International Realty · 949.541.8247 · adam.boehrer@pacificsir.com.
+
+**The 6 non-negotiables — check every asset:**
+1. **Name** — Adam Boehrer.
+2. **DRE #02419464** — conspicuous (no smaller than the smallest font elsewhere in the piece), never buried in a disclaimer block.
+3. **Designation** — "Real Estate Agent" or "REALTOR®" is present.
+4. **Brokerage** — "Pacific Sotheby's International Realty" (name or logo), **equally prominent** as Adam's name/personal logo — same size, same area.
+5. **AI-altered / virtually staged images** — any image we generate or retouch with AI (flyer graphics, listing photos, sky/object edits, virtual staging) needs an AB 723 disclosure on/next to it **with a link to the unaltered original**, or the unaltered image posted alongside. Required as of Jan 1, 2026.
+6. **Fair housing** — copy and audience **targeting** describe the property, never the people. Our lead-scoring and ad targeting must never filter or skew by a protected class (race, religion, familial status, color, disability, national origin, sex).
+
+**Channel specifics:** Social posts about the business need name + DRE # + company + designation (personal posts are exempt). First-contact text messages must include the license number. Videos need the full disclosure on-screen AND spoken. Website pages need the DRE # wherever name + contact appear, the PSIR logo ≥ Adam's logo (min 40px), the office address on the homepage footer, and the SIR franchise disclaimer ("Each office is independently owned and operated") + IDX disclaimer on property pages.
+
+*Full checklist with per-section detail: `Sotheby's Templates/Advertising_Compliance_Checklist.md` (source PDF alongside it).*
+
+---
+
 ## Working Directory Structure
 
 ```
