@@ -1,30 +1,18 @@
 """Build a printed open house sign-in sheet for a listing.
 
-The paper companion to build_phone_qr.py and build_openhouse_qr.py. Some
-visitors will not scan anything, and a clipboard by the door still converts
-better than nothing at all for that group.
+The paper path for visitors who would rather write than scan. One sheet, one
+line per person: name, email, phone, and whether they are already working with
+an agent.
 
-Field set deliberately mirrors the office template in
-Sotheby's Templates/PSIR Open House Sign In Sheet.pdf (name, email, phone,
-working-with-an-agent, and the real-estate-needs checkboxes) so it reads as
-familiar to anyone who has signed one before, and so what comes off the
-clipboard maps cleanly onto how leads already get logged.
+Column widths are not arbitrary. Email gets the most room because it is the
+field people write worst and the one that matters most: a misread email address
+is a lead that quietly never gets followed up. Phone is sized for a formatted
+ten-digit number and no more. The agent column is a Y / N to circle rather than
+a checkbox, because circling is faster on a clipboard and unambiguous later.
 
-Two additions beyond the office sheet, both intentional:
-
-  * A newsletter opt-in checkbox. Adam adds sign-ins to Coastal Currents via
-    Mailchimp, and an unchecked box is the difference between a subscriber and
-    a cold contact who never asked. Written as an explicit opt-in, not
-    pre-checked, so consent is real and defensible.
-  * A small QR in the header pointing at the listing page, so someone who
-    starts on paper can still pull the photos up mid-conversation.
-
-Layout is per-visitor blocks rather than a grid of narrow table cells. People
-write email addresses badly in cramped boxes, and a bad email address is a
-dead lead. Blocks buy the width back.
-
-Nothing here asks about, or leaves room to note, any protected class. Fair
-housing applies to what we collect, not only to what we publish.
+Row height is 0.42in, which is enough for adult handwriting. Cramming more
+lines onto the page trades legible leads for a bigger row count, which is the
+wrong trade.
 
 Brand rules honored: white background, SIR Blue and Gold only, nothing heavier
 than semibold, no underline, 1pt rules.
@@ -33,7 +21,8 @@ DRE compliance: name, DRE #02419464, designation, and brokerage in the footer.
 
 Usage:
   python3 scripts/build_signin_sheet.py
-  python3 scripts/build_signin_sheet.py --address "123 Main St" --pages 3
+  python3 scripts/build_signin_sheet.py --rows 20 --pages 2
+  python3 scripts/build_signin_sheet.py --address "123 Main St" --slug 123-main
 """
 import argparse
 import subprocess
@@ -49,8 +38,6 @@ GOLD = "#C29B40"
 TEXT_GREY = "#666666"
 ACCENT_GREY = "#999999"
 
-BLOCKS_PER_PAGE = 5
-
 
 def find_chrome() -> str:
     candidates = [
@@ -63,33 +50,13 @@ def find_chrome() -> str:
     raise FileNotFoundError("Chrome not found in /Applications/")
 
 
-BLOCK = """
-    <section class="block">
-      <div class="row">
-        <label class="fill grow"><span>Name</span><i></i></label>
-        <label class="fill phone"><span>Phone</span><i></i></label>
-      </div>
-      <div class="row">
-        <label class="fill grow"><span>Email</span><i></i></label>
-      </div>
-      <div class="row tight">
-        <p class="q">Working with a real estate agent?</p>
-        <span class="box"></span><p class="opt">Yes</p>
-        <span class="box"></span><p class="opt">No</p>
-      </div>
-      <div class="row tight">
-        <p class="q">Where are you in the process?</p>
-        <span class="box"></span><p class="opt">Just looking</p>
-        <span class="box"></span><p class="opt">Planning to buy</p>
-        <span class="box"></span><p class="opt">Ready to buy</p>
-        <span class="box"></span><p class="opt">Wanting to sell</p>
-        <span class="box"></span><p class="opt">Ready to sell</p>
-      </div>
-      <div class="row tight optin">
-        <span class="box"></span>
-        <p class="opt">Send me Coastal Currents, the local market update. Roughly twice a month.</p>
-      </div>
-    </section>
+ROW = """
+        <tr>
+          <td class="c-name"></td>
+          <td class="c-email"></td>
+          <td class="c-phone"></td>
+          <td class="c-agent"><span class="yn">Y</span><span class="slash">/</span><span class="yn">N</span></td>
+        </tr>
 """
 
 PAGE = """
@@ -108,7 +75,19 @@ PAGE = """
 
     <div class="rule"></div>
 
-    {blocks}
+    <table>
+      <thead>
+        <tr>
+          <th class="c-name">Name</th>
+          <th class="c-email">Email</th>
+          <th class="c-phone">Phone</th>
+          <th class="c-agent">Working<br>with an agent?</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows}
+      </tbody>
+    </table>
 
     <footer>
       <p class="agent">Adam Boehrer <span class="sep">&middot;</span> Real Estate Agent <span class="sep">&middot;</span> DRE #02419464</p>
@@ -155,44 +134,43 @@ HTML = """<!DOCTYPE html>
   .head-qr img {{ width: 0.82in; height: 0.82in; display: block; image-rendering: pixelated; }}
   .qr-cap {{ font-size: 6.5pt; color: {accent}; margin: 5px 0 0; letter-spacing: 0.03em; }}
 
-  /* flex:none or the 1px rule gets shrunk to nothing by the flex:1 blocks. */
+  /* flex:none or the 1px rule gets shrunk to nothing by the flex:1 table. */
   .rule {{ height: 1px; background: {gold}; margin: 14px 0 0; flex: none; }}
 
-  /* Blocks share the leftover height evenly, so the sheet always fills the
-     page whether it holds four visitors or six. */
-  .block {{
-    flex: 1; display: flex; flex-direction: column; justify-content: center;
-    border-bottom: 1px solid #e4e4e0; padding: 4px 0;
+  table {{
+    width: 100%; border-collapse: collapse;
+    margin-top: 12px; flex: none;
   }}
-  .block:last-of-type {{ border-bottom: none; }}
-
-  .row {{ display: flex; align-items: flex-end; gap: 18px; margin-bottom: 9px; }}
-  .row.tight {{ align-items: center; gap: 7px; margin-bottom: 6px; }}
-
-  /* The write-on line. The label sits above-left and the rule runs the full
-     width beneath it, which gives an adult's handwriting room to breathe. */
-  .fill {{ display: flex; flex-direction: column; }}
-  .fill.grow {{ flex: 1; }}
-  .fill.phone {{ width: 2.05in; flex: none; }}
-  .fill span {{
+  th {{
     font-size: 7.5pt; letter-spacing: 0.16em; text-transform: uppercase;
-    color: {accent}; margin-bottom: 2px;
+    color: {accent}; font-weight: 400; text-align: left;
+    padding: 0 8px 7px 2px; line-height: 1.35; vertical-align: bottom;
   }}
-  .fill i {{ display: block; height: 0.26in; border-bottom: 1px solid #c9c9c4; }}
+  td {{
+    height: 0.42in;                    /* room for adult handwriting */
+    border-bottom: 1px solid #c9c9c4;
+    padding: 0 8px 0 2px;
+    vertical-align: middle;
+  }}
+  /* Vertical dividers, lighter than the writing lines. Without them the three
+     text columns read as one continuous rule and people drift across the
+     boundary, which is how a phone number ends up in the email column. */
+  td:not(:last-child), th:not(:last-child) {{ border-right: 1px solid #e4e2de; }}
+  th {{ padding-right: 8px; }}
+  /* Widths sum to 100%. Email carries the most because it is the field people
+     write worst and the one a missed follow-up hinges on. */
+  .c-name  {{ width: 27%; }}
+  .c-email {{ width: 40%; }}
+  .c-phone {{ width: 20%; }}
+  .c-agent {{ width: 13%; text-align: center; padding-right: 2px; }}
 
-  .q {{
-    font-size: 8.5pt; color: {grey}; margin: 0 4px 0 0;
-    font-weight: 400; letter-spacing: 0.01em;
-  }}
-  .box {{
-    width: 10px; height: 10px; flex: none;
-    border: 1px solid {blue}; display: inline-block;
-  }}
-  .opt {{ font-size: 8.5pt; color: {blue}; margin: 0 9px 0 0; font-weight: 400; }}
-  .optin .opt {{ color: {grey}; }}
-  .optin {{ margin-top: 1px; }}
+  .yn {{ font-size: 10pt; color: {blue}; }}
+  .slash {{ font-size: 10pt; color: #c9c9c4; margin: 0 9px; }}
 
-  footer {{ border-top: 1px solid #e8e8e4; padding-top: 9px; margin-top: 6px; text-align: center; }}
+  footer {{
+    border-top: 1px solid #e8e8e4; padding-top: 9px;
+    margin-top: auto; text-align: center;
+  }}
   .agent {{ font-size: 9pt; font-weight: 600; margin: 0; letter-spacing: 0.01em; }}
   .brokerage {{ font-size: 8.5pt; font-weight: 400; color: {grey}; margin: 4px 0 0; }}
   .sep {{ color: {gold}; }}
@@ -210,8 +188,8 @@ def main() -> None:
     p.add_argument("--address", default="26966 Calle Dolores")
     p.add_argument("--city", default="Capistrano Beach, Dana Point")
     p.add_argument("--slug", default="26966-calle-dolores")
-    p.add_argument("--pages", type=int, default=2,
-                   help="how many sheets to print (5 visitors each)")
+    p.add_argument("--rows", type=int, default=18, help="sign-in lines per sheet")
+    p.add_argument("--pages", type=int, default=1, help="how many sheets to print")
     args = p.parse_args()
 
     out_dir = REPO / "Marketing" / "Listings" / args.slug
@@ -224,8 +202,7 @@ def main() -> None:
 
     page = PAGE.format(
         address=args.address, city=args.city, short=args.short,
-        qr_file=qr_png.resolve().as_uri(),
-        blocks=BLOCK * BLOCKS_PER_PAGE,
+        qr_file=qr_png.resolve().as_uri(), rows=ROW * args.rows,
     )
     html = HTML.format(
         blue=SIR_BLUE, gold=GOLD, grey=TEXT_GREY, accent=ACCENT_GREY,
@@ -249,8 +226,8 @@ def main() -> None:
     tmp_html.unlink(missing_ok=True)
 
     print(f"Sign-in sheet : {out_pdf}")
-    print(f"Capacity      : {args.pages} sheets x {BLOCKS_PER_PAGE} = "
-          f"{args.pages * BLOCKS_PER_PAGE} visitors")
+    print(f"Capacity      : {args.pages} sheet(s) x {args.rows} = "
+          f"{args.pages * args.rows} visitors")
 
 
 if __name__ == "__main__":
