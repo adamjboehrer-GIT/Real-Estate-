@@ -35,6 +35,24 @@ Secrets are read from ~/.cma-notifier.env (chmod 600). Required keys:
     MAILCHIMP_API_KEY=...
     GMAIL_APP_PASSWORD=...
     NOTIFY_EMAIL=adamjboehrer@gmail.com
+
+DEPLOYMENT -- this file is NOT the copy that runs on a schedule.
+
+macOS blocks launchd-spawned processes from reading anything under ~/Desktop
+(TCC), so the LaunchAgent cannot execute this file in place. Silent failure
+mode: the job exits non-zero every 30 min and Adam simply stops getting lead
+alerts. That happened Jul 16-20 2026 and swallowed an open house weekend.
+
+The scheduled copy lives at:
+    ~/Library/Application Support/cma-notifier/notify_cma_submissions.py
+
+After editing this file, redeploy it:
+    cp scripts/notify_cma_submissions.py \\
+       ~/Library/"Application Support"/cma-notifier/notify_cma_submissions.py
+
+Then confirm the job is healthy (second column must be 0, not 2):
+    launchctl kickstart -p gui/$(id -u)/com.adamboehrer.cma-notifier
+    launchctl list | grep cma-notifier
 """
 from __future__ import annotations
 
