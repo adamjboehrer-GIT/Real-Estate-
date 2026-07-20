@@ -189,6 +189,19 @@ cd "/Users/adamboehrer/Desktop/Claude Code" && \
 
 The script is APN-only (never fuzzy), is idempotent, never overwrites an existing email/phone with a different value, and is silent when the property has no enrichment row. Don't pause the loop on the result — log the line and continue. If no enrichment exists for that APN, the script simply reports zero fills and exits 0.
 
+### 5c. Resolve greeting names — run ONCE at the end of the session, not per property
+
+Newly ingested rows land with `contacts.first_name` holding the raw county vesting string ("Jennison Stephen M Tr / The S & M A Jennison Family") and `greeting_name` NULL. Any campaign merging `first_name` will produce "Hi Jennison Stephen M Tr,".
+
+After the batch finishes (and after 5b has filled emails, since this reads the email address):
+
+```bash
+cd "/Users/adamboehrer/Desktop/Claude Code" && \
+  python3 scripts/clean_owner_names.py --apply
+```
+
+This resolves who actually opens each inbox, which is frequently not the person on title, and leaves `greeting_name` NULL wherever that is ambiguous. It is idempotent and safe to re-run over the whole DB. Report the summary counts to Adam and mention any rows flagged `review` in `reports/greeting_name_review.csv`, which need a human decision on spelling.
+
 ### 6. Close the PDF preview and get back to the list
 
 Click the left-arrow in the PDF header: `.ico-pdf-arrow-left`. This returns you to the single-property Reports menu.
