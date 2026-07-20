@@ -16,11 +16,28 @@ Do not add figures that are not in that report.
 **Send from:** Adam's Pacific Sotheby's Outlook, 1:1, small batches, 3-minute spacing.
 **Goal:** neighbors walking through. Neighbors are the future listings.
 
-> ### Name warning
-> `contacts.first_name` for the title-farm rows holds raw vesting strings
-> ("SMITH JOHN A TR", "THE 2019 FAMILY TRUST"), not usable first names.
-> Default to the no-name greeting below. Only personalize where the name is
-> clearly a real person, and skip entity rows entirely.
+> ### Merge on `greeting_name`, never on `first_name`
+> `contacts.first_name` holds the raw county vesting string
+> ("Jennison Stephen M Tr / The S & M A Jennison Family"). Merging it produces
+> "Hi Jennison Stephen M Tr,".
+>
+> Use `contacts.greeting_name`, populated by `scripts/clean_owner_names.py`.
+> It resolves the person who actually opens the inbox, which is often not the
+> person on title (Audrey Morton, not Gregory; Kim Tarantino, not Nicholas),
+> and it is NULL wherever that could not be established safely.
+>
+> ```sql
+> SELECT DISTINCT lower(email) AS email, greeting_name
+> FROM contacts
+> WHERE city = 'Capistrano Beach' AND email != ''
+>   AND status NOT IN ('do_not_contact', 'bounced')
+> GROUP BY lower(email);
+> ```
+>
+> `NULL` greeting_name means send "Hi there,". For Capo Beach that is 48 of 117
+> named, the rest no-name. **Use DISTINCT on the email**: the table has
+> duplicate rows per address (richardkay@sbcglobal.net appears 4 times), and a
+> naive send would mail him four copies.
 
 **Subject:** Open house on Calle Dolores this Saturday
 
