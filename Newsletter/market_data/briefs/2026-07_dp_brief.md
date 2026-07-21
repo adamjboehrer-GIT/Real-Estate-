@@ -53,10 +53,38 @@ Per-city split (the two towns are strikingly similar, which is why the issue tre
 
 Capistrano Beach has notably deeper roots than San Clemente (16.2% vs 9.4% at 30+ years). Held in reserve as a future Capo-specific issue rather than spent here.
 
-## Why this is the story, and why it isn't a price story
-1. **It reframes what "the market" means.** Every stat we publish describes ~3% of homes. The other 97% aren't participating. That's a genuinely new idea for the reader, not pricing advice.
-2. **It explains tight inventory structurally.** Dana Point is down 26% in active listings year over year. The easy read is "cycle." The title data says otherwise: where median tenure is 13 years and 1 in 5 last bought before 2000, there simply aren't many homes in play. Low inventory is a property of the neighborhood, not a phase.
-3. **It's flattering and true.** The reader lives somewhere people don't leave. No pressure, no urgency, nothing to sell.
+## The "why it matters" — the payload (added after Adam's v2 note)
+
+**Adam's critique of the first build of this issue was correct and is the key lesson for the format:** a surprising statistic is not an insight. The v1 draft found low turnover, said it was "quietly remarkable," and explicitly closed with "that isn't a reason to do anything." It never made the reader a smarter buyer or seller. **Every question-led issue must end with the reader knowing something they can use.**
+
+The fix: prove that low turnover makes homes here genuinely hard to value, which is a thing readers already feel and can act on.
+
+**Street-level comp analysis** (same table, `property_address` parsed to street; streets with >=10 sampled homes, 1,974 homes across 67 streets):
+
+| Window | Median same-street sales per home | Homes with ZERO | Homes with <=2 |
+|---|---:|---:|---:|
+| Last 1 yr | 1 | **43%** | 86% |
+| Last 3 yr | 3 | 12% | 43% |
+| Last 5 yr | 5 | 6% | 26% |
+
+**Within-street size dispersion:** median largest/smallest home = 3.0x; outlier-resistant 90th/10th percentile = **1.9x**. Copy uses "about twice the size," from the 1.9x figure, not the 3.0x.
+
+**The argument the issue makes:** every automated valuation (Zillow, Redfin, bank tools) needs sales that are *recent*, *nearby*, and *similar*. This coast breaks all three at once. 43% of homes had no same-street sale last year; the median home had exactly one; and on a typical street the larger homes are double the smaller ones, so even that one comp may be a different house. The algorithm still returns a confident number to the dollar and never signals its own uncertainty.
+
+**The four takeaways the issue gives the reader** (this is the "makes you more knowledgeable" payload):
+1. Treat an online estimate here as a wide range, not a number; be suspicious when it swings month to month on no news.
+2. One recent sale on your street is a data point, not a value, especially at a different size.
+3. Price per square foot adjusted for condition, view, and lot travels across a thin comp set far better than raw sale price.
+4. Buyers: a list price in a low-turnover pocket may be anchored to very little and has not necessarily been tested. Fair to ask what it was based on.
+
+This also **earns the CTA honestly**: a hand-built comp analysis is the logical conclusion of the data, not a pitch bolted on.
+
+**Is this a price issue?** No, and the distinction matters. Issues 03/04 were seller *strategy* ("price it right to sell"). This is *valuation literacy* for buyers and sellers both ("here is why any number you are handed is uncertain, and how to read it"). Adam should sanity-check that call.
+
+## Secondary points, kept in prose not tiles
+- Tight inventory is structural, not cyclical: Dana Point is down 26% in active listings YoY, but where median tenure is 13 years there simply aren't many homes in play.
+- The reader lives somewhere people don't leave. Flattering and true, with nothing to sell.
+- The 6.1x appreciation figure moved out of the stat tiles into the closing paragraph, since the tiles now all serve the valuation argument.
 
 ## Honesty guardrails (all reflected in the issue's method note)
 - The sample is **the farm polygons Adam has pulled, not a census** of either town. Never write "every home in San Clemente." The issue says "a large sample rather than the final word."
