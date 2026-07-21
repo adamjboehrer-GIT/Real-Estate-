@@ -68,7 +68,7 @@ Full residential, May 2026 closings, July 1 2026 deck snapshot.
 
 10-yr exact (Zillow HVI, May 2026): DP +113.3%, SC +114.7%, Laguna +85.6%, Newport Coast +131.5%, SJC +96.4%.
 
-Interpretation: Dana Point is the **second-fastest-clearing market in the set** at 81 days, behind San Clemente (68) and essentially tied with San Juan Capistrano (74), and it clears in less than half the time of Laguna Beach (176) or Newport Coast (173). It also has the **lowest price-cut rate** in the group at 32%, meaning fewer Dana Point sellers are having to reset. Over ten years it has nearly matched San Clemente and run well ahead of Laguna Beach.
+Interpretation: Dana Point clears in 81 days, which puts it in the **same tight band as San Clemente (68) and San Juan Capistrano (74)** and at less than half the time of Laguna Beach (176) or Newport Coast (173). Note it is third-fastest of the five, not second. Do not write "second only to San Clemente." It also has the **lowest price-cut rate** in the group at 32%, meaning fewer Dana Point sellers are having to reset. Over ten years it has nearly matched San Clemente and run well ahead of Laguna Beach.
 
 *Watch the Zillow revisions:* Laguna Beach's 10-year figure moved from +97% (June deck) to +85.6% (July deck) and Dana Point from +114.7% to +113.3%. These are Zillow index revisions, not errors. Cite the July deck.
 
