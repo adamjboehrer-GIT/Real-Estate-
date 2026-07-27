@@ -30,12 +30,14 @@ Adam
 
 Hi Matt,
 
-Great meeting you at the Calle Dolores open house this weekend, and thanks for stopping in.
+Great meeting you at the Calle Dolores open house this weekend, and thanks for taking the time to come through.
 
-If Capistrano Beach is what you are looking at, I can keep track of what comes up there and send anything that
-fits over to you. Happy to widen it to the rest of the South OC coast as well.
+San Clemente, Capo Beach, and Dana Point are the stretch of coast I work, so if there is anything currently on the
+market you would like to see in person, just say the word and I will get you in. And if you tell me what you and
+your fiancée are after, I can put together a real search around it and keep you posted as things come up.
 
-Just let me know what you are after and I will start putting some options in front of you.
+Either way, I would love to buy the two of you a cup of coffee sometime and hear what you have in mind. Happy to
+help however I can in finding you the right home.
 
 Best,
 Adam
