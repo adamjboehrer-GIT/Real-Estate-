@@ -22,7 +22,9 @@ instead of after everyone else has seen them. All I need is a general price poin
 whatever else matters most to you in your next home. Send that over whenever it's convenient and I'll take care
 of the rest.
 
-And if you are still just getting a feel for the area, that's great too. Ask me anything about it.
+You set the pace on all of this. My job is just to keep you informed and aware of what's happening out here so
+that when the right property does come along, you already know it when you see it. Any questions in the meantime,
+big or small, send them my way. Happy to help however I can.
 
 Best,
 Adam
