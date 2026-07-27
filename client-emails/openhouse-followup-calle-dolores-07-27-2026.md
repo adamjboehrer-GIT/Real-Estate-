@@ -53,8 +53,11 @@ Adam
 
 ## 3. Dustin Ferris — dgferris@gmail.com
 
-Working with an agent (Y on the sheet). Adam is the listing agent here, so this is servicing the seller, not
-soliciting. Showing should be coordinated through Dustin's agent.
+Checked Y for working with an agent. Adam HOSTED the open house; the listing belongs to Kameron Brown
+(DRE #02021705, Pacific Sotheby's). So Adam cannot schedule showings unilaterally, and should not offer to.
+Goal of this email is to confirm whether Dustin is actually represented before routing anything to Kameron.
+Asking is the correct move: you are permitted to ask whether a buyer has an exclusive agreement, and you must
+ask before offering to represent them.
 
 **Subject:** Second look at 26966 Calle Dolores
 
@@ -63,12 +66,13 @@ Hi Dustin,
 Great meeting you and your group at the Calle Dolores open house this weekend, and thanks for taking the time to
 come through.
 
-You mentioned someone in your party could not make it out. I'd be glad to open the house back up so they can walk
-it in person. Send me a few windows that work on your end and I will get it on the calendar.
+You mentioned someone in your party was not able to make it out. Getting them back in for a look is easy enough
+to arrange. I was hosting for Kameron Brown, who has the listing and is a colleague of mine at Pacific Sotheby's,
+so send me a few windows that work on your end and I will get it coordinated.
 
-Easiest way to do that is to have your agent reach out to me directly and we will coordinate it between us. Or
-send their info over and I will take it from there, whichever is simpler for you. Happy to get them anything they
-need on the property in the meantime.
+One quick thing so I set it up the right way. Are you already working with an agent on your search, or were you
+out looking on your own this weekend? If you have someone, I will bring them in and work it through them. If not,
+I am glad to handle it for you start to finish.
 
 Best,
 Adam
