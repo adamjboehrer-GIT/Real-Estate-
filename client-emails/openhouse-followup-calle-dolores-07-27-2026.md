@@ -81,25 +81,28 @@ Adam
 
 ## 4. Sean — sean13579@gmail.com
 
-Agent box left blank on the sheet, no phone given. Least known of the group. Came through with a young child and
-another adult whose relationship is unknown, so the copy says "your family" and guesses nothing.
+Agent box left blank on the sheet, no phone given. Lives in Irvine. Came through with a young child and another
+adult whose relationship is unknown, so the copy says "your family" and guesses nothing.
 
 FAIR HOUSING: do not add anything about schools, "great for families," or "kid-friendly street," even though he
-came through with a child. Steering by familial status is a violation. Describe the property, never the people.
+came through with a child. Steering by familial status is a violation. When comparing the coastal towns for him,
+keep it to price points, housing stock, commute, and beach access. Never who lives there.
 
 **Subject:** Great meeting you at Calle Dolores
 
 Hi Sean,
 
-Great meeting you and your family at the Calle Dolores open house this weekend, and thanks for taking the time to
-come through.
+Great meeting you and your family at the Calle Dolores open house this weekend, and thanks for making the drive
+down from Irvine to come through.
 
-San Clemente, Capo Beach, and Dana Point are the stretch of coast right in my wheelhouse. If there is anything on
-the market you would like to see in person, just say the word and I will set it up.
+San Clemente, Capo Beach, and Dana Point are the stretch of coast right in my wheelhouse. If you are starting to
+look seriously down here, the differences between those three towns are bigger than they look on a map, and I am
+happy to walk you through how they compare. And if there is anything currently on the market you want to see in
+person, just say the word and I will set it up.
 
-We did not get much time to talk about what you are looking for. If you send over a general price point, bed and
-bath count, and anything else that is important to you, I will put a targeted search together so the right places
-are getting in front of you early.
+We did not get much time to talk about what you are after. Send over a general price point, bed and bath count,
+and anything else that is important to you, and I will put a targeted search together so the right places get in
+front of you early.
 
 One thing I should have asked while you were here. Are you working with an agent already? If you are, I
 completely respect that. If not, I would love to help you find the right home.
