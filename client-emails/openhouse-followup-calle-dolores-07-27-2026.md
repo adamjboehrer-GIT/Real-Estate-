@@ -51,6 +51,30 @@ Adam
 
 ---
 
+## 3. Dustin Ferris — dgferris@gmail.com
+
+Working with an agent (Y on the sheet). Adam is the listing agent here, so this is servicing the seller, not
+soliciting. Showing should be coordinated through Dustin's agent.
+
+**Subject:** Second look at 26966 Calle Dolores
+
+Hi Dustin,
+
+Great meeting you and your group at the Calle Dolores open house this weekend, and thanks for taking the time to
+come through.
+
+You mentioned someone in your party could not make it out. I'd be glad to open the house back up so they can walk
+it in person. Send me a few windows that work on your end and I will get it on the calendar.
+
+Easiest way to do that is to have your agent reach out to me directly and we will coordinate it between us. Or
+send their info over and I will take it from there, whichever is simpler for you. Happy to get them anything they
+need on the property in the meantime.
+
+Best,
+Adam
+
+---
+
 ## Sign-in sheet record
 
 | Name | Email | Phone | Working with agent? | Status |
