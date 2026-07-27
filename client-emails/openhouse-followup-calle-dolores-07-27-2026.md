@@ -14,10 +14,15 @@ Hi Carrie,
 
 Great meeting you at the Calle Dolores open house this weekend, and thanks for taking the time to come through.
 
-If Capistrano Beach is where you are focused, I am happy to keep an eye on what comes up there and send anything
-worth a look your way. Same goes for the rest of the South OC coast if you are open to it.
+San Clemente, Capo Beach, and Dana Point are the stretch of coast right in my wheelhouse, so if there is anything
+on the market you would like to walk through in person, just say the word and I will set it up.
 
-Let me know what you have in mind and I will start pulling things together for you.
+In the meantime, I'd be glad to put a targeted search together so the right properties get in front of you early
+instead of after everyone else has seen them. All I need is a general price point, bed and bath count, and
+whatever else matters most to you in your next home. Send that over whenever it's convenient and I'll take care
+of the rest.
+
+And if you are still just getting a feel for the area, that's great too. Ask me anything about it.
 
 Best,
 Adam
