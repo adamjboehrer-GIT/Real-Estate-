@@ -95,17 +95,16 @@ Hi Sean,
 Great meeting you and your family at the Calle Dolores open house this weekend, and thanks for making the drive
 down from Irvine to come through.
 
-San Clemente, Capo Beach, and Dana Point are the stretch of coast right in my wheelhouse. If you are starting to
-look seriously down here, the differences between those three towns are bigger than they look on a map, and I am
-happy to walk you through how they compare. And if there is anything currently on the market you want to see in
-person, just say the word and I will set it up.
+San Clemente, Capo Beach, and Dana Point are the stretch of coast right in my wheelhouse. Whether you are getting
+serious or just starting to look, let me be an asset in your search. The differences between those three towns
+are bigger than they look on a map, and I am glad to walk you through how they compare whenever that would be
+useful.
 
-We did not get much time to talk about what you are after. Send over a general price point, bed and bath count,
-and anything else that is important to you, and I will put a targeted search together so the right places get in
-front of you early.
+If something comes up you want to see in person, just say the word. And if you ever want me keeping an eye out, a
+general price point and bed and bath count is all I need to start sending the right things your way.
 
-One thing I should have asked while you were here. Are you working with an agent already? If you are, I
-completely respect that. If not, I would love to help you find the right home.
+One thing I did not get to ask while you were here. Are you working with an agent already? Either way, I am happy
+to be a resource on this stretch of the coast.
 
 Best,
 Adam
