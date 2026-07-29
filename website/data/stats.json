@@ -1,34 +1,34 @@
 {
-  "last_updated": "2026-07-13",
-  "reporting_label": "San Clemente · May 2026",
-  "row_1_label": "San Clemente Single-Family · May 2026",
+  "last_updated": "2026-07-29",
+  "reporting_label": "San Clemente · June 2026",
+  "row_1_label": "San Clemente · June 2026",
   "row_2_label": "San Clemente City-Wide · July 2026 Snapshot",
   "sources": "California Regional MLS (via InfoSparks / ShowingTime Plus) and Pacific Sotheby's July 2026 Market Report.",
   "stats": [
     {
-      "value": "8",
-      "label": "Median Days on Market",
-      "note": "Down from 14 days last May."
+      "value": "70",
+      "label": "Expected Market Time",
+      "note": "Days to sell the current supply, city-wide. Was 98 days a year ago."
     },
     {
-      "value": "2.7",
+      "value": "2.6",
       "label": "Months of Supply",
-      "note": "Tighter than 3.5 months a year ago."
+      "note": "Single-family. Tighter than 3.7 months a year ago."
     },
     {
-      "value": "$2.24M",
+      "value": "$1.89M",
       "label": "Median Sales Price",
-      "note": "97 active listings in May."
+      "note": "Single-family. 96 active listings, 46 new pendings in June."
     },
     {
-      "value": "34%",
+      "value": "40%",
       "label": "Listings with a Price Cut",
       "note": "Share of active San Clemente listings, all price points."
     },
     {
       "value": "101.1%",
       "label": "Sale-to-List Ratio",
-      "note": "Homes under $5M closed at 98.6% in May."
+      "note": "Homes under $5M closed at 98.6% in June."
     },
     {
       "value": "+115%",

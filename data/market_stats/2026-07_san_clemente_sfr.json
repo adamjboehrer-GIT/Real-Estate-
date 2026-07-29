@@ -1,0 +1,33 @@
+{
+  "market": "San Clemente",
+  "property_type": "Residential, Single Family",
+  "reporting_month": "2026-06",
+  "extracted_on": "2026-07-29",
+  "source": {
+    "system": "California Regional Multiple Listing Service (CRMLS)",
+    "tool": "InfoSparks / ShowingTime Plus",
+    "access_method": "manual login by licensed agent; export driven via Playwright (compliant)",
+    "export_files_dir": "data/imports/mls_stats/2026-07-24/"
+  },
+  "current_month": {
+    "median_sales_price_usd": 1892500,
+    "median_days_active_in_mls": 11,
+    "active_listings": 96,
+    "inventory_months_supply": 2.6,
+    "pending_sales": 46
+  },
+  "year_over_year_june": {
+    "median_sales_price_usd": {"2025": 1830000, "2026": 1892500, "pct_change": 3.4},
+    "median_days_active_in_mls": {"2025": 27, "2026": 11, "pct_change": -59.3},
+    "active_listings": {"2025": 156, "2026": 96, "pct_change": -38.5},
+    "inventory_months_supply": {"2025": 3.7, "2026": 2.6, "pct_change": -29.7},
+    "pending_sales": {"2025": 40, "2026": 46, "pct_change": 15.0}
+  },
+  "data_quality_notes": [
+    "June 2026 is the most recent fully closed month as of 2026-07-29. All values transcribed from the 2026-07-24 InfoSparks market-moves pull (data/market_stats/2026-06_market_moves.json), San Clemente, Residential / Single Family, monthly.",
+    "June pendings (46) are usable this month, unlike the May figure which was suppressed for late MLS status posting. May's raw pending count has since settled and June is flat against it.",
+    "Median sales price stepped down from May ($2,237,000) to June ($1,892,500). This is transaction-mix volatility at low monthly counts, not a 15% price drop. The durable read is the +3.4% year-over-year figure.",
+    "The May file (2026-06_san_clemente_sfr.json) lists 97 active listings for May; the July market-moves pull revises that to 101. Minor source revision, does not affect any published figure."
+  ],
+  "market_summary": "San Clemente single-family stayed supply-constrained through June. Active listings (96) are down 38% year over year and months of supply tightened from 3.7 to 2.6, while well-priced homes still close fast (11 median days on market, down from 27 a year ago). The June median of $1.89M is up 3.4% year over year; the month-to-month step down from May reflects transaction mix, not a price correction."
+}

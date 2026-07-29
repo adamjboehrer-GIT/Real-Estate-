@@ -2,10 +2,10 @@
 Regenerate website/data/stats.json from the latest market-stats JSONs.
 
 Pulls the six numbers Adam uses in Coastal Currents' "By The Numbers" block:
-  Row 1 (San Clemente SFR, InfoSparks):
-    - Median Days on Market
-    - Months of Supply
-    - Median Sales Price
+  Row 1:
+    - Expected Market Time (San Clemente city-wide, Pacific Sotheby's deck)
+    - Months of Supply (San Clemente SFR, InfoSparks)
+    - Median Sales Price (San Clemente SFR, InfoSparks)
   Row 2 (San Clemente city-wide, Pacific Sotheby's deck):
     - Listings with a Price Cut
     - Sale-to-List Ratio (all residential, most recent sold month)
@@ -113,8 +113,6 @@ def main():
     month_label = month_year_label(reporting_month)
     month_name_only = month_label.split()[0]  # "March"
 
-    dom = cm["median_days_active_in_mls"]
-    dom_last_year = yoy.get("median_days_active_in_mls", {}).get("2025")
     months_supply = cm["inventory_months_supply"]
     months_supply_last_year = yoy.get("inventory_months_supply", {}).get("2025")
     price = cm["median_sales_price_usd"]
@@ -127,6 +125,8 @@ def main():
         sys.exit("San Clemente not found in OC deck JSON")
 
     pct_reduced = sc_city["pct_listings_reduced"]
+    emt = sc_city["expected_market_time_days"]
+    emt_last_year = sc_city.get("expected_market_time_days_last_year")
 
     sold_all = find_sold_key(sc_city, "all")
     sold_under_5m = find_sold_key(sc_city, "under_5m")
@@ -142,23 +142,28 @@ def main():
 
     stats = [
         {
-            "value": str(dom),
-            "label": "Median Days on Market",
-            "note": f"Down from {dom_last_year} days last {month_name_only}."
-                    if dom_last_year else "",
+            "value": str(emt),
+            "label": "Expected Market Time",
+            # EMT is city-wide from the deck, not the SFR series in row 1's
+            # label, so the scope is stated in the note.
+            "note": (f"Days to sell the current supply, city-wide. "
+                     f"Was {emt_last_year} days a year ago."
+                     if emt_last_year else
+                     "Days to sell the current supply, city-wide."),
         },
         {
             "value": str(months_supply),
             "label": "Months of Supply",
-            "note": f"Tighter than {months_supply_last_year} months a year ago."
-                    if months_supply_last_year else "",
+            "note": f"Single-family. Tighter than {months_supply_last_year} months a year ago."
+                    if months_supply_last_year else "Single-family.",
         },
         {
             "value": fmt_price_clean(price),
             "label": "Median Sales Price",
-            "note": (f"{actives} active listings. {pendings} new pendings in {month_name_only}."
+            "note": (f"Single-family. {actives} active listings, "
+                     f"{pendings} new pendings in {month_name_only}."
                      if pendings is not None
-                     else f"{actives} active listings in {month_name_only}."),
+                     else f"Single-family. {actives} active listings in {month_name_only}."),
         },
         {
             "value": f"{pct_reduced}%",
@@ -183,7 +188,9 @@ def main():
     out = {
         "last_updated": dt.date.today().isoformat(),
         "reporting_label": f"San Clemente · {month_label}",
-        "row_1_label": f"San Clemente Single-Family · {month_label}",
+        # Row 1 mixes city-wide EMT with the SFR series, so the row label stays
+        # scope-neutral and each stat's note carries its own scope.
+        "row_1_label": f"San Clemente · {month_label}",
         "row_2_label": f"San Clemente City-Wide · {deck_label} Snapshot",
         "sources": "California Regional MLS (via InfoSparks / ShowingTime Plus) "
                    f"and Pacific Sotheby's {deck_label} Market Report.",
