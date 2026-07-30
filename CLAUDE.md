@@ -170,6 +170,22 @@ Every piece of collateral we create — flyers, print/broadcast ads, social post
 
 ---
 
+## Design System
+
+`Sotheby's Templates/design-system/` holds the built components every asset should be assembled
+from: `tokens.css` (colors, type stacks, weights, rule weights) plus preview files for the section
+header, stat tiles, data table, buttons, the DRE disclosure block, and the 1080x1080 carousel slide
+layouts. Tokens mirror `website/css/site.css`; change both together.
+
+Build new collateral from these rather than copying an old file. Synced to the Claude Design
+project "Pacific Sotheby's — Adam Boehrer" via the DesignSync tool. See the folder README.
+
+**Always declare font fallbacks.** `font-family: 'Source Sans Pro';` with no fallback silently
+renders an entire asset in the wrong typeface when the webfont fetch fails, with no error. Use the
+full stack, and use local font files for anything printed to PDF.
+
+---
+
 ## Working Directory Structure
 
 ```
