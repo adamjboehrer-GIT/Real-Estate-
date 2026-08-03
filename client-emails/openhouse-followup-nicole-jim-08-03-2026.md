@@ -2,37 +2,36 @@
 
 Open house held Sat 8/1 and Sun 8/2/2026. Circled **N** for working with an agent.
 Relocating from Idaho back to Dana Point. Budget $2M to $3M. 3+ bedrooms, likely a pool.
-In town for two weeks and asked Adam to take them out. Best buyer-rep opportunity from this sheet.
+In town two weeks. Shared Livermore connection with Adam. Best buyer-rep opportunity from this sheet.
+
+Adam is out of town until **Wednesday 8/12**, available from then on.
 
 ---
 
 ## Nicole + Jim — nicoleljulson@gmail.com
 
-**Subject:** Getting you out looking while you're here
+**Subject:** Great meeting you both, and a few homes to look at
 
 Hi Nicole and Jim,
 
-Adam Boehrer here, we met at the Calle Dolores open house this weekend.
+Adam Boehrer here. Great meeting you both at the Calle Dolores open house this weekend.
 
-Coming back to Dana Point is a great plan, and two weeks on the ground is plenty of time to make
-real progress if we spend it well.
+Small world on the Livermore connection. Did not expect that one to come up in a Capo Beach living
+room.
 
-What I took away: two to three million, at least three bedrooms, and a pool if we can find the
-right one. That's a workable set of criteria here. Let me pull together what's worth your time and
-get you inside it.
+I've already pulled together a list of homes I think are worth your attention. Take a look when you
+have a minute and tell me what lands and what misses. Honest reactions to the first round are what
+make the second round sharp, so do not be polite about it.
 
-Two things and we're moving.
+From there, let's get out and see some in person. I'm back in town Wednesday the 12th and wide open
+from there. Send me the days that work on your end and I'll build around them.
 
-First, send me a few windows that work over the next two weeks and I'll build the days around them.
-I'd rather see six of the right homes than twenty of the wrong ones.
+One housekeeping item before we go out. I'll send over a buyer representation agreement, which
+California now requires in writing. Short form, spells out what I do for you and how I'm paid. Easy
+to knock out ahead of time.
 
-Second, before we go out I'll send over a buyer representation agreement. California requires it in
-writing now, and it's a short form that lays out what I do for you and how I get paid. Everyone
-signs one before touring, so let's get it out of the way early instead of in a driveway somewhere.
+Talk soon,
 
-Send me your availability and I'll get to work.
-
-Best,
 Adam
 
 **Adam Boehrer**
@@ -44,25 +43,26 @@ REALTOR® · DRE #02419464
 
 ---
 
+## Before you send
+
+1. **Livermore line is deliberately generic.** I don't know what the connection actually is, so I
+   wrote something true either way rather than inventing a detail. Swap in the real specific if you
+   remember it. That's the line they'll remember.
+2. **Attach the home list.** The email references it, so it needs to go out with it.
+
 ## Compliance notes
 
-**Written buyer agreement is the gating item.** Under the NAR practice changes effective 8/17/2024,
-an MLS participant working with a buyer must have a written agreement in place **before touring a
-home**, in person or live virtual. California AB 2992 (effective 1/1/2025) separately requires a
-written buyer-broker representation agreement, signed as soon as practicable and no later than
-execution of the buyer's offer. Both point the same direction here: get it signed before the first
-showing, not after.
+**Written buyer agreement before touring.** NAR practice changes effective 8/17/2024 require a
+written agreement with a buyer before touring a home. California AB 2992 (effective 1/1/2025)
+requires a written buyer-broker representation agreement, signed as soon as practicable and no
+later than execution of the buyer's offer. Get it signed before the 8/12 showings. It must
+conspicuously disclose your compensation or how it's determined. Use the C.A.R. form.
 
-The agreement must conspicuously disclose the amount or rate of your compensation, or how it is
-determined. Use the C.A.R. form.
+**CRMLS** — Send the home list as a client portal link rather than pasting listing data into the
+email. Pasted MLS content triggers attribution and IDX disclaimer requirements.
 
-**CRMLS** — If you attach or paste listings when you send the tour list, that content needs proper
-attribution and the IDX disclaimer. Safest path is sending them a CRMLS-compliant client portal
-link rather than pasting listing data into an email.
-
-**Fair housing** — Copy sticks to the property: price, bedrooms, pool, location. Do not characterize
-neighborhoods by who lives in them, and avoid steering when you build the tour list. Let their
-stated criteria drive it.
+**Fair housing** — Build the tour list off their stated criteria only: price, bedrooms, pool,
+location. No neighborhood characterizations based on who lives there.
 
 **DRE / PSIR** — Name, DRE #02419464, REALTOR®, brokerage equally prominent, phone, email.
 
@@ -70,7 +70,10 @@ stated criteria drive it.
 
 ## Open items
 
-1. **Financing vs cash.** Unknown. If they're financing, a local lender pre-approval before touring
-   makes them far more competitive at this price point. Worth a sentence once they reply.
-2. **Are they selling in Idaho first?** Affects timeline and whether an offer would be contingent.
-3. **Pool as must-have vs nice-to-have.** Changes the inventory set meaningfully in Dana Point.
+1. **Timing is tight.** They said two weeks as of 8/1-8/2, so they may fly home around 8/15-8/16.
+   You're back 8/12. That's roughly a four-day window. Worth confirming their departure date in
+   your first exchange so you don't lose them to the calendar.
+2. **Financing vs cash.** Unknown. If financing, a local lender pre-approval before touring matters
+   a lot at this price point.
+3. **Selling in Idaho first?** Affects timeline and whether an offer would be contingent.
+4. **Pool: must-have or nice-to-have?** Meaningfully changes the Dana Point inventory set.
