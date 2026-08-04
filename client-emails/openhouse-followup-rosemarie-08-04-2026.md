@@ -14,7 +14,7 @@ sharpens over time. Goal is to stay in the picture, not to convert this week.
 
 Hi Rosemarie,
 
-Adam Boehrer here. Great meeting you both at the Calle Dolores open house this weekend.
+Great meeting you both at the Calle Dolores open house this weekend.
 
 Sounds like you're still early and casting a wide net. That's the right way to start. You learn
 more in a few months of looking around than you do from any amount of deciding in advance.
