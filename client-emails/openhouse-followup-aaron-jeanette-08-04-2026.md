@@ -16,10 +16,10 @@ Hi Aaron and Jeanette,
 
 Great meeting you both at the Calle Dolores open house this weekend.
 
-Let me start with how I see my job, which is mostly to make this easier on you. You shouldn't have
-to spend your evenings and weekends sorting through listings trying to figure out what's worth
-seeing. That part is mine. You tell me what you're after, I'll do the looking, and I'll bring you
-the handful that actually fit.
+I'd love to help you two find the right place. Honestly, the best part of this job is doing the
+digging so someone else doesn't have to. You've got plenty going on without spending your weekends
+scrolling through listings and guessing which ones are worth the drive. So tell me what you're
+after and let me go look for you.
 
 The multigenerational piece stuck with me. Having real room for mom when she visits changes the
 search, and honestly it makes it sharper. It points at a specific kind of home: a detached casita,
