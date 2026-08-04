@@ -16,10 +16,10 @@ Hi Aaron and Jeanette,
 
 Great meeting you both at the Calle Dolores open house this weekend.
 
-Let me start with how I see my job. Finding the right home should be my work, not something you two
-squeeze into your evenings and weekends. You have enough going on. I do this all day, I know what's
-coming before it lists, and I'd rather hand you a short list worth your time than have you scrolling
-through everything on your own.
+Let me start with how I see my job, which is mostly to make this easier on you. You shouldn't have
+to spend your evenings and weekends sorting through listings trying to figure out what's worth
+seeing. That part is mine. You tell me what you're after, I'll do the looking, and I'll bring you
+the handful that actually fit.
 
 The multigenerational piece stuck with me. Having real room for mom when she visits changes the
 search, and honestly it makes it sharper. It points at a specific kind of home: a detached casita,
