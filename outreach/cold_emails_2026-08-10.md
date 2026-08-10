@@ -1,24 +1,23 @@
 # Cold Email Round 2 — Draft Copy
 Generated 2026-08-10. Nothing is sent automatically. Pick the angles you like, then I'll generate the merge file.
 
-**Segments available in leads.db:**
+**The premise:** no market stats, no listing pitch. These sell Adam. The only thing each email is trying to accomplish is that the reader finishes it thinking "huh, that guy is not like the other seven agents in my mailbox."
 
-| Segment | Count | Channel |
-|---|---|---|
-| San Clemente, never contacted, has email | 273 | email |
-| Capistrano Beach, never contacted, has email | 248 | email |
-| Emailed in June/July, never replied, has phone | 657 | **phone** |
-| Never contacted, has phone | 836 | **phone** |
+**Segments in leads.db:**
 
-**Round 1 results (655 resident + 10 absentee sends, Jun 9 – Jul 16):** 53 bounced (8%), 4 opt-outs, 1 warm seller reply. 0.15% reply rate.
+| Segment | Count |
+|---|---|
+| San Clemente, never contacted, has email | 273 |
+| Capistrano Beach, never contacted, has email | 248 |
+| Emailed Jun/Jul, never replied | 657 |
 
-**What Round 1 did wrong:** the copy said "I have buyers waiting in the wings." That claim can't be backed, and homeowners in a farm area compare notes. Every email below leads with a verifiable number instead.
+Swap "San Clemente" for "Capo Beach" on segment 2. Everything else holds.
 
-**Stats used below are real** (Pacific Sotheby's July 2026 deck + CRMLS via InfoSparks, reporting Jun/Jul 2026). Refresh before sending if this sits more than a few weeks.
+**Round 1 (665 sends, Jun–Jul):** 53 bounced, 4 opt-outs, 1 reply. The copy claimed "I have buyers waiting in the wings." That's gone. The differentiator below is true and checkable, which is the only kind worth building on.
 
 ---
 
-## Signature block (goes on every send, DRE compliance)
+## Signature block (every send, DRE compliance)
 
 ```
 Adam Boehrer
@@ -29,117 +28,99 @@ Pacific Sotheby's International Realty
 
 ---
 
-# SEGMENT 1 — San Clemente owners, never contacted (273)
+## A · "what I did before this"
 
-## A1 · "70 days"
-
-**Subject:** 70 days
+**Subject:** what I did before this
 
 > Hi {{name}},
 >
-> That is how long it now takes to sell the average home in San Clemente. Last year it was 98.
+> Before real estate I spent my career in brand strategy. Which is a long way of saying I spent years figuring out why a person picks one thing over another when both things look identical on paper.
 >
-> At the same time, 40% of the homes currently listed here have already cut their price at least once.
+> Turns out that's the entire job here.
 >
-> Both of those are true right now, which is why almost everything you're hearing about this market is half a story. Fast market, and a lot of people getting it wrong on the way in.
+> Two houses, same street, same year, same square footage. One sells in a week with people climbing over each other. One sits until the price comes down twice. Everybody blames the market.
 >
-> I work San Clemente block by block. If you want to know what your specific street is doing instead of the city average, reply with your address and I'll put the real number together for you.
+> It's almost never the market.
+>
+> I'm a Realtor with Pacific Sotheby's and I live here in San Clemente. When you eventually sell, next spring or nine years from now, I want to be the call you make first. Not because I'll show up with a stack of names, but because I know how to position a home so that people fight over it.
+>
+> That's the whole email. I'm right here when you want me.
 >
 > Best,
 
-**Why it works:** the number is the hook, not you. The contradiction earns the read. The ask is one word (your address) and the payoff is concrete.
+**Why it works:** the brand-strategy background is the single most differentiating thing about you and almost no agent can say it. "It's almost never the market" is a real position that costs you something to say, which is exactly why it lands.
 
 ---
 
-## A2 · "the 10-day house"
+## B · "I buy them too"
 
-**Subject:** the 10-day house
+**Subject:** I buy them too
 
 > Hi {{name}},
 >
-> The median San Clemente home sold in 10 days last month. It closed at 101.1% of asking.
+> Most agents have never bought a piece of real estate with their own money. I have, and I still do.
 >
-> That is not a hot market being hot. That is a small number of homes that were priced and prepped correctly, dragging the whole average up. The ones that missed are sitting there right now with a price cut on them, and there are a lot of those.
+> It changes what you see when you walk into a house. You stop looking at a listing and start looking at risk, upside, and the gap between what a place is worth and what somebody is hoping it's worth. You also learn to say "don't buy that" out loud, which is not a sentence that helps an agent get paid.
 >
-> The difference between those two outcomes is almost entirely decided before a home ever goes live.
+> I'm a Realtor with Pacific Sotheby's, I live in San Clemente, and I think about this neighborhood constantly whether or not anyone is paying me to.
 >
-> If you're anywhere near thinking about selling, this year or in three years, I'd rather have the conversation early than get called in after a listing has gone stale. Reply and I'll walk you through what your place would actually do.
+> If you ever want a genuinely straight read on what your place is worth, or on something you're thinking about buying, that's a conversation I'd actually enjoy.
 >
 > Best,
 
-**Why it works:** takes a side. "Priced correctly beats hoping" is a real position, and it makes the early conversation the logical next step instead of a favor.
+**Why it works:** "don't buy that is not a sentence that helps an agent get paid" is the whole email. You're proving the trait by demonstrating it costs you money.
 
 ---
 
-# SEGMENT 2 — Capistrano Beach owners, never contacted (248)
+## C · "the new guy"
 
-## B1 · "five points"
-
-**Subject:** five points
+**Subject:** the new guy
 
 > Hi {{name}},
 >
-> Last month, homes in Dana Point sold for 95.6% of asking. In San Clemente, 101.1%.
+> I'll tell you the thing the other agents in your mailbox are hoping you don't ask.
 >
-> Same coastline, twenty minutes apart, five and a half points of difference. On a $2M house that's roughly $110,000 that showed up in one seller's account and not the other's.
+> I'm newer at this than they are.
 >
-> That gap is not the market. It's preparation, pricing, and how a home gets put in front of people.
+> Here's what that actually buys you. I'm not juggling nineteen listings. I answer my own phone. I still show up to things I don't have to show up to. And I chose Pacific Sotheby's deliberately, because if I was going to be new, I wanted my neighbors on the best platform available from day one instead of whenever I'd finally earned it.
 >
-> Capo Beach is the pocket I know best. If you ever want to know what your house would really do, ask me. I'll give you the honest number, including when the honest answer is "not yet."
+> What I'm not new at is real estate. I invest in it with my own money, and my career before this was brand strategy, which is the part of selling a home almost nobody is genuinely good at.
+>
+> I live in San Clemente and I'd like to know my neighbors. Reply if you ever want to talk about your house. Or don't, and I'll still wave.
 >
 > Best,
 
-**Why it works:** the dollar figure does the arguing. "Including when the answer is not yet" is the line that separates you from the other seventeen agents mailing this block.
+**Why it works:** this is the most Serhant thing in the file. He built a brand on being the broke actor who'd never sold anything. Naming your own weakness first takes it off the table and makes everything after it credible. "Or don't, and I'll still wave" is the line people will actually remember.
 
 ---
 
-## B2 · "89 homes"
+## D · "30 seconds"
 
-**Subject:** 89 homes
+**Subject:** 30 seconds
 
 > Hi {{name}},
 >
-> There are 89 homes for sale in Dana Point right now and 28 in escrow. At that pace, it takes about 95 days to clear the shelf. A year ago it was 131, so things have genuinely tightened.
+> Short version.
 >
-> The part nobody puts in the postcard: about a third of those 89 have already dropped their price.
+> I live in San Clemente. I'm a Realtor with Pacific Sotheby's. Before this I was in brand strategy, and I invest in real estate myself, so I come at a house from how it gets positioned and what it's honestly worth, not from how fast I can get a sign in the yard.
 >
-> I'd rather you have the real picture than the version that fits on a mailer. If your address is on my list and you want to know where you actually sit in that 89, reply and I'll send it over.
+> All I want out of this email is that you remember my name.
 >
-> Best,
-
-**Why it works:** most agents send "the market is hot!" You're sending the asterisk. That's the credibility play.
-
----
-
-# SEGMENT 3 — Follow-up to the 657 who got the June email and never replied
-
-Serhant's actual rule is that the follow-up is where the money is, and almost nobody sends it. This one goes to people who have already heard from you once.
-
-## C1 · "me again"
-
-**Subject:** me again
-
-> Hi {{name}},
->
-> I wrote you back in June about the San Clemente market. You didn't reply, which is fair. Most people don't, and most agents quit after one email.
->
-> So here's the update instead of a nudge.
->
-> Since that note: expected market time dropped to 70 days from 98 a year ago. Median sale price is $1.9M. Homes are closing at 101.1% of asking, and 40% of active listings have still taken a price cut.
->
-> That's the whole market in four lines. If you want the version that's about your house instead of the city, that's a ten-minute conversation and I'm glad to have it.
->
-> If you'd rather I stop, reply "stop" and you're off my list for good.
+> Because for most people the day does eventually come, and when it does I want to be the first call. Between now and then, ask me anything. I like this stuff.
 >
 > Best,
 
-**Why it works:** naming the silence disarms it. Leading with the update instead of the ask makes the second email feel like a service, not a chase. The opt-out line protects the domain and keeps the list clean.
+**Why it works:** the shortest one will probably outperform the clever ones. "All I want out of this email is that you remember my name" is honest about what a cold email actually is, which is disarming without ever announcing that it's disarming.
 
 ---
 
-# Send mechanics
+# How to run it
 
-- 3-minute spacing, small batches across the day, from the Pacific Sotheby's Outlook. Cold sends throttle around 150/day at tighter spacing.
+Send **A** and **C** against each other, roughly 130 each into San Clemente. They're the two strongest and they're strong for opposite reasons: A is competence, C is character. Whichever pulls better tells you which lever your farm responds to, and that answer is worth more than this round of replies.
+
+Hold **B** for Capo Beach, where the investor angle fits the ownership mix better. **D** is your follow-up to the 657 who ignored June.
+
+- 3-minute spacing, small batches across the day, from the Pacific Sotheby's Outlook. Tighter than that and sends throttle around 150/day.
 - Verify delivery via NDR bounces. A closed compose window is not a delivered email.
-- Any "stop" reply goes straight to `do_not_contact` in leads.db.
-- Round 1 bounced at 8%. Anything above that on Round 2 means the title data needs cleaning before the next batch.
+- Any "stop" reply goes to `do_not_contact` in leads.db.
+- Round 1 bounced at 8%. Higher than that this round means the title data needs cleaning before the next batch.
