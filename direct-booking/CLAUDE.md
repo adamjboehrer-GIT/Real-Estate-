@@ -74,6 +74,63 @@ is what makes the tax and deposit arithmetic testable.
 
 ---
 
+## Calendar sync and the double-booking problem
+
+The site does not replace Airbnb; it runs alongside it. So the central
+operational risk is selling the same night twice.
+
+**iCal is polling in both directions, and we only control one of them.**
+
+| Direction | Mechanism | Latency | Ours to control? |
+|---|---|---|---|
+| Airbnb → site | we fetch their `.ics` | 5 min (our cron) | yes |
+| site → Airbnb | Airbnb fetches our `.ics` | ~2–3 hours | **no** |
+
+Airbnb cannot be pushed to. Its API is partner-only, gated on demonstrated scale
+and 24/7 support, so it is not available to us — real-time sync is reachable only
+by renting a channel manager's existing partner status (Hostaway, OwnerRez,
+Hospitable, ~$100+/mo).
+
+That leaves a 2–3 hour window in which Airbnb can instant-book a night this site
+just sold. **Adam's decision (2026-08-10): block the dates in Airbnb manually at
+approval time, before the guest pays.** The outbound `.ics` feed is the automatic
+backstop, not the primary defense. Airbnb Instant Book stays on.
+
+What this implies for the build:
+- The approve action must **re-check availability live**, fetching Airbnb's feed
+  at that instant rather than trusting the cached copy.
+- The approval confirmation must hand the operator a **direct link to the Airbnb
+  calendar with the dates to block**. Make it one tap; a defense that is annoying
+  gets skipped.
+- A **conflict monitor** compares both calendars continuously and alerts loudly
+  if a night ever reads as sold on both. Cancelling an Airbnb reservation costs
+  host fees, a blocked calendar, a public note on the listing, and possibly
+  Superhost status — so detection in minutes matters.
+- Instant book on our own site stays off until calendar truth moves to a channel
+  manager. The operator being in the loop *is* the current safety mechanism.
+
+**Source of truth: Airbnb.** A dedicated Google Calendar is supported (its
+"Secret address in iCal format" is just another feed row) but was not chosen.
+
+### The iCal timezone trap — verified, not assumed
+
+`node-ical` parses `DTSTART;VALUE=DATE:20260810` into a Date at **local
+midnight**, not UTC midnight. On a Pacific machine that is `2026-08-10T07:00:00Z`,
+so reading UTC parts off it works west of Greenwich and silently shifts every
+date back a day east of it.
+
+Therefore, in `src/lib/ical.ts`:
+- **All-day events** are read via LOCAL date parts — that is what node-ical
+  actually encoded.
+- **Timed events** carry a real instant and are resolved onto a calendar day in
+  the **property's** timezone (`properties.timezone`), never the server's. A 9pm
+  Chicago event is already tomorrow in UTC.
+
+`npm run test:tz` runs the whole suite under UTC, Berlin, Tokyo and Auckland to
+keep this honest. Run it after touching anything date-related.
+
+---
+
 ## Lodging tax is a stack, never a single rate
 
 This is the single most jurisdiction-dependent part of the system, and the
