@@ -204,12 +204,34 @@ Build order steps 1–3 are done. The public property page renders at
 availability calendar, live itemized quote, gallery with lightbox, seasonal rate
 table, the five named tax lines, and a returning-guest section.
 
-**Everything except the photos is placeholder.** Rates, fees, min-stays, pet
-policy and all eight blocked date ranges are invented so the page has something
-to render — see the header comments in `supabase/seed/bella_vista_demo.sql` and
-`bella_vista_demo_pricing.sql`. When Jack supplies real numbers, replace both
-files wholesale. When his iCal feed is connected, **delete the seeded `manual`
-blocks** or they will fight the imported ones.
+**What is real, as of 2026-08-11** (lifted from Jack's live Airbnb listing,
+`rooms/1521197151084215709`, "Lakefront Family Fun | Kayak, Bike, Sauna,
+Theater"):
+
+- 12 guests · 4 bedrooms · 7 beds · 3 baths · pets allowed · 78 amenities
+- 4.95 stars, 37 reviews, Guest Favorite
+- Beds: 3 king rooms + a bunk room with two fulls and two twins
+- All the copy about the theater, game rooms, garage gear, sauna, Tunnel Vision
+  trail, steep driveway and the staircase to the dock
+- **Availability.** The public listing page exposes his real calendar, so the
+  demo does not need the iCal URL to show true dates. Clear the date selection
+  before reading it: Airbnb also greys out dates that merely violate the minimum
+  stay for a chosen arrival, which reads identically to booked.
+- Airbnb's own quote: **$1,400 all-in, Aug 17–21 2026, 2 guests.** This drives
+  the savings comparison on the page.
+
+**Still placeholder: the rates.** They are now *anchored* rather than invented,
+backing $225/night and $175 cleaning out of that $1,400 all-in figure less
+Arkansas tax and a typical ~14% guest service fee. That is an inference, not
+Jack's actual rate, and the headline savings number moves with it. Confirm
+before he sees a second version.
+
+The comparison block recomputes our side through `calculateQuote` from the same
+rate rows the widget uses, so the two numbers cannot drift. Only the Airbnb
+figure is a constant, in `COMPARISON` at the top of `src/app/[slug]/page.tsx`.
+
+When his iCal feed is connected, **delete the seeded `manual` blocks** or they
+will fight the imported ones.
 
 Photos live in `public/properties/bella-vista-lakefront/` (screenshot-sourced
 from his Airbnb listing, ~1560x1040). Originals are in `originals/`, gitignored.
