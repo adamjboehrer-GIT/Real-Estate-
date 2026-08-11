@@ -185,6 +185,35 @@ this way from their Airbnb calendar.
 
 ---
 
+## Supabase
+
+Project ref `jrazhunzbsiqzyviqwob`, free tier, provisioned 2026-08-11. Credentials
+live in `.env.local` (gitignored).
+
+**The direct DB host is IPv6-only.** `db.<ref>.supabase.co` has an AAAA record and no
+A record, so `psql` works from Adam's Mac but will fail from Vercel or any IPv4-only
+host. Migrations are applied locally over that direct connection; deployed code reaches
+Supabase over the REST API with the keys instead. If a deploy ever fails to reach the
+database, check the address family before suspecting the credentials.
+
+Apply a migration:
+
+```
+set -a && . ./.env.local && set +a
+psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f supabase/migrations/000N_whatever.sql
+```
+
+**Use the new-style `sb_publishable_...` / `sb_secret_...` keys.** The legacy JWT
+`anon`/`service_role` pair still works and is still visible in the dashboard, but
+Supabase is deprecating it — don't reintroduce it.
+
+**A seeded property is invisible to the anon key, and that is correct.** The only
+public policy on `properties` is `properties_public_read`, gated on
+`status = 'active'`. The seed ships the property as `draft`, so an anonymous read
+returns `[]`. Flip the status to see it publicly; don't "fix" the policy.
+
+---
+
 ## Commands
 
 ```
