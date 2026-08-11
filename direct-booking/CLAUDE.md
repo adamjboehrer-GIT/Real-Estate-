@@ -27,9 +27,21 @@ owner's identity, not Adam's.
 
 ## Demo property
 
-Adam's own lakefront home in **Bella Vista, Arkansas**. Because he owns it, there
-is no client-permission question about photos or copy, and the demo doubles as a
-live site he actually benefits from.
+A lakefront home in **Bella Vista, Arkansas** owned by **a friend of Adam's** —
+corrected 2026-08-11. An earlier version of this file said Adam owned it. He does
+not, and that changes things:
+
+- **Photos and listing copy belong to the owner.** They can be used to build a
+  private pitch demo shown to him, but nothing goes on a public URL, gets indexed,
+  or gets reused for another property until he agrees in writing.
+- **The demo site must be `noindex` and unlisted** until then.
+- **It must never take a real booking.** Stripe stays in test mode.
+- The owner has not been asked for his Airbnb iCal URL yet. The plan is to show
+  him a working demo first and ask only if he's interested.
+
+This is the actual product shape — Adam operates, someone else owns — so the demo
+proves the real flow rather than a special case. Public listing:
+https://www.airbnb.com/rooms/1521197151084215709
 
 Note that Bella Vista is also the subject of Adam's personal investing project at
 `~/Desktop/Bella Vista Investing/`, which is deliberately kept separate from the
