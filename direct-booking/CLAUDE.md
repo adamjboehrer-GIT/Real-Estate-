@@ -220,11 +220,12 @@ Theater"):
 - Airbnb's own quote: **$1,400 all-in, Aug 17–21 2026, 2 guests.** This drives
   the savings comparison on the page.
 
-**Still placeholder: the rates.** They are now *anchored* rather than invented,
-backing $225/night and $175 cleaning out of that $1,400 all-in figure less
-Arkansas tax and a typical ~14% guest service fee. That is an inference, not
-Jack's actual rate, and the headline savings number moves with it. Confirm
-before he sees a second version.
+**Still placeholder: the rates.** They are *anchored* rather than invented, and
+they encode the split (see "Load-bearing decisions" below): summer $250/night
+and $175 cleaning puts the guest's all-in total ~5% under Airbnb's $1,400 while
+leaving Jack ~$71/booking better off than staying on the platform. That is an
+inference from Airbnb's total, not Jack's actual rate, and every number on the
+page moves with it. Confirm before he sees a second version.
 
 The comparison block recomputes our side through `calculateQuote` from the same
 rate rows the widget uses, so the two numbers cannot drift. Only the Airbnb
