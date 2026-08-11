@@ -197,6 +197,32 @@ this way from their Airbnb calendar.
 
 ---
 
+## Demo state (2026-08-11)
+
+Build order steps 1–3 are done. The public property page renders at
+`/bella-vista-lakefront` off live Supabase data: hero, the book-direct pitch,
+availability calendar, live itemized quote, gallery with lightbox, seasonal rate
+table, the five named tax lines, and a returning-guest section.
+
+**Everything except the photos is placeholder.** Rates, fees, min-stays, pet
+policy and all eight blocked date ranges are invented so the page has something
+to render — see the header comments in `supabase/seed/bella_vista_demo.sql` and
+`bella_vista_demo_pricing.sql`. When Jack supplies real numbers, replace both
+files wholesale. When his iCal feed is connected, **delete the seeded `manual`
+blocks** or they will fight the imported ones.
+
+Photos live in `public/properties/bella-vista-lakefront/` (screenshot-sourced
+from his Airbnb listing, ~1560x1040). Originals are in `originals/`, gitignored.
+They move to Supabase Storage before launch — nothing should assume that path.
+
+The page is `noindex` via root layout metadata, and there is no payment path
+wired, so it cannot take a real booking. Keep both true until Jack agrees.
+
+Not yet built: booking request submission (the button is inert), admin panel,
+Stripe, email, iCal cron, outbound feed.
+
+---
+
 ## Supabase
 
 Project ref `jrazhunzbsiqzyviqwob`, free tier, provisioned 2026-08-11. Credentials
