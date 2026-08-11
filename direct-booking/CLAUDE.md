@@ -267,9 +267,16 @@ the asset the owner is really buying, and it must stay clean enough to export.
       starting point, not authoritative.
 - [ ] Get Adam's Bella Vista STR permit number — must be displayed on the site
       and posted at the property.
-- [ ] Airbnb iCal export URL for the lakefront home (Calendar → Availability →
-      Connect calendars → Export). Single most important thing to obtain.
+- [ ] Airbnb iCal export URL for the lakefront home. Host dashboard → Calendar →
+      select listing → Availability → Connect calendars → Export. **Not derivable
+      from the public listing URL** — it's generated in the host account and carries
+      a secret `?s=` token, so it never goes anywhere public. Single most important
+      thing to obtain.
+      Public listing: https://www.airbnb.com/rooms/1521197151084215709
+      (listing id `1521197151084215709`, which is also what the .ics URL should use)
 - [ ] Photos, nightly rates by season, min-stay rules, cleaning and pet fees.
+      Photos drop in `public/properties/bella-vista-lakefront/` for now — see the
+      README there. They move to Supabase Storage before launch.
 - [x] ~~Supabase project credentials, then run `supabase/migrations/0001_init.sql`.~~
       Done 2026-08-11 — project ref `jrazhunzbsiqzyviqwob`, migration and Bella Vista
       seed applied, credentials in `.env.local`. See "Supabase" below.
