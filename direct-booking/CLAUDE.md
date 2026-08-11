@@ -241,7 +241,9 @@ the asset the owner is really buying, and it must stay clean enough to export.
 - [ ] Airbnb iCal export URL for the lakefront home (Calendar → Availability →
       Connect calendars → Export). Single most important thing to obtain.
 - [ ] Photos, nightly rates by season, min-stay rules, cleaning and pet fees.
-- [ ] Supabase project credentials, then run `supabase/migrations/0001_init.sql`.
+- [x] ~~Supabase project credentials, then run `supabase/migrations/0001_init.sql`.~~
+      Done 2026-08-11 — project ref `jrazhunzbsiqzyviqwob`, migration and Bella Vista
+      seed applied, credentials in `.env.local`. See "Supabase" below.
 - [ ] Resend account and verified sending domain.
 - [ ] Confirm the advertising-disclosure language in SCMC 17.28.292 before any
       *California* property site goes public. Municode blocks automated fetching,
