@@ -324,6 +324,21 @@ Two consequences worth holding onto:
   to clear $1,000. That number is the single most important figure in the sales
   conversation, and it moves inversely with the guest discount.
 
+**Guest discount: 5%, chosen 2026-08-11.** Modelled against 0/2/3/5/8/10% and
+Adam picked 5% knowingly. Note what it means: at 5% the owner keeps ~49% of the
+value created, so the guest and the owner split it roughly evenly rather than
+the owner taking the majority. 3% would have given the owner 69% and dropped
+break-even to 11 bookings.
+
+The danger zone is the far end: at a 10% guest discount the owner gains $8 a
+booking and needs 121 of them to clear the subscription. Under a flat fee,
+over-discounting silently destroys the entire owner proposition, so treat 5% as
+a ceiling rather than a starting point.
+
+The discount only has to beat *friction*, not build trust — this channel serves
+repeat guests and referrals who already know the house. A stranger would need
+10%+ to overcome the trust gap, and that guest is not worth winning.
+
 For reference, channel managers (Hostaway, OwnerRez, Hospitable) run $100+/mo,
 so $1,000/yr undercuts the obvious alternative.
 
