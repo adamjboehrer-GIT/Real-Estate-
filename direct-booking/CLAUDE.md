@@ -246,6 +246,30 @@ Stripe, email, iCal cron, outbound feed.
 
 ---
 
+## Deployment
+
+Live at **https://direct-booking-two.vercel.app/bella-vista-lakefront**, first
+deployed 2026-08-11 so Adam could show Jack. Vercel project `direct-booking`,
+Hobby plan, account `adamjboehrer-9796`.
+
+Redeploy with `npx vercel deploy --prod --yes` (needs `VERCEL_TOKEN`, or
+`vercel login` in a real terminal — the login menu is arrow-key interactive and
+does not work when driven through Claude Code).
+
+Production env vars are set in Vercel, not read from `.env.local`. **The
+`DATABASE_URL` is deliberately NOT among them** — it carries the Postgres
+password, and the deployed app reaches Supabase over the REST API with the
+publishable and secret keys instead. Migrations stay a local-only operation.
+
+The page sets `robots: noindex, nofollow, nocache` in the root layout metadata,
+verified live. The URL is unlisted but not access-controlled, so anyone holding
+it can open it. Keep it to Jack until he agrees to the site.
+
+If this becomes a paying business, note Vercel's Hobby plan is non-commercial;
+Pro is $20/mo.
+
+---
+
 ## Supabase
 
 Project ref `jrazhunzbsiqzyviqwob`, free tier, provisioned 2026-08-11. Credentials
