@@ -250,11 +250,14 @@ Stripe, email, iCal cron, outbound feed.
 Project ref `jrazhunzbsiqzyviqwob`, free tier, provisioned 2026-08-11. Credentials
 live in `.env.local` (gitignored).
 
-**The direct DB host is IPv6-only.** `db.<ref>.supabase.co` has an AAAA record and no
-A record, so `psql` works from Adam's Mac but will fail from Vercel or any IPv4-only
-host. Migrations are applied locally over that direct connection; deployed code reaches
-Supabase over the REST API with the keys instead. If a deploy ever fails to reach the
-database, check the address family before suspecting the credentials.
+**Use the session pooler, not the direct host.** `db.<ref>.supabase.co` is
+IPv6-only (AAAA, no A record). It works right up until the Mac has no global IPv6
+address — a wifi change is enough — and then `getaddrinfo` returns nothing and psql
+dies with `could not translate host name`, even though `host db.<ref>...` still
+resolves it happily. That exact failure hit mid-session on 2026-08-11. `DATABASE_URL`
+now points at `aws-0-us-east-2.pooler.supabase.com:5432` with user
+`postgres.<ref>`, which is IPv4 and immune. Deployed code reaches Supabase over the
+REST API with the keys and is unaffected either way.
 
 Apply a migration:
 
