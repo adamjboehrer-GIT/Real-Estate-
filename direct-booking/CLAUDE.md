@@ -306,10 +306,25 @@ request. Holding dates on request strands inventory.
 **Guest funds never touch Adam's accounts.** Stripe Connect Standard; payments
 settle to the owner's own account. Adam holds a California DRE license, and
 handling guest funds starts to look like property management and trust-fund
-handling. Platform revenue comes out as `application_fee_amount` or a separate
-subscription invoice. This holds even when the owner is Adam himself — the demo
-property should still be onboarded as a normal connected account, because the
-demo is meant to prove the real flow.
+handling.
+
+**Platform revenue is a flat $1,000/year per property, billed as a subscription
+— decided 2026-08-11.** NOT a per-booking cut, so **no `application_fee_amount`
+is taken on any charge**. Don't reintroduce one; it changes the licensing
+posture and it changes the pitch.
+
+Two consequences worth holding onto:
+
+- Adam's revenue is independent of how the platform-fee wedge gets split between
+  owner and guest, so he has no incentive to push a big guest discount. Every
+  point of discount comes out of the owner's pocket, not his.
+- The owner's ROI is a **break-even count, not a percentage**. At the current
+  split (~$71/booking better than Airbnb), Jack needs ~14 direct bookings a year
+  to clear $1,000. That number is the single most important figure in the sales
+  conversation, and it moves inversely with the guest discount.
+
+For reference, channel managers (Hostaway, OwnerRez, Hospitable) run $100+/mo,
+so $1,000/yr undercuts the obvious alternative.
 
 **The outbound iCal feed is not optional.** `/api/properties/[slug]/calendar.ics`
 publishes direct bookings so the owner can import it into Airbnb and block those
