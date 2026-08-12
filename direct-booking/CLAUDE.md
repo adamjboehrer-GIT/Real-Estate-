@@ -348,20 +348,48 @@ Two consequences worth holding onto:
   to clear $1,000. That number is the single most important figure in the sales
   conversation, and it moves inversely with the guest discount.
 
-**Guest discount: 5%, chosen 2026-08-11.** Modelled against 0/2/3/5/8/10% and
-Adam picked 5% knowingly. Note what it means: at 5% the owner keeps ~49% of the
-value created, so the guest and the owner split it roughly evenly rather than
-the owner taking the majority. 3% would have given the owner 69% and dropped
-break-even to 11 bookings.
+### Pricing: the fee-split model (replaces the old flat-discount approach)
 
-The danger zone is the far end: at a 10% guest discount the owner gains $8 a
-booking and needs 121 of them to clear the subscription. Under a flat fee,
-over-discounting silently destroys the entire owner proposition, so treat 5% as
-a ceiling rather than a starting point.
+**`rate_periods.nightly_rate_cents` is the owner's OTA nightly rate**, the number
+on his Airbnb listing that he can verify — not what a guest is charged here. The
+quote engine adds his share of the displaced fee on top. This is the load-bearing
+idea: every rate row is a fact rather than an invention, which is what makes the
+head-to-head arithmetic instead of marketing.
 
-The discount only has to beat *friction*, not build trust — this channel serves
-repeat guests and referrals who already know the house. A stranger would need
-10%+ to overcome the trust gap, and that guest is not worth winning.
+**The 14% guest service fee is the only thing there is to bargain with.** Airbnb
+also takes ~3% from the owner, but Stripe's 2.9% almost exactly cancels that, so
+recovering it is worth roughly nothing. The 14% is the fee the owner *never
+sees* — levied on his guests, invisible on his payout statement, and the reason
+his house looks 14% more expensive than it is to everyone browsing.
+
+**The split is keyed on stay length** (`fee_split_tiers.owner_share`, longest
+qualifying tier wins). Longer stays hand more to the guest: fewer turnovers and
+less cleaning per night for the owner, and a larger booking needs a larger
+absolute saving to convert. Short stays keep more for the owner, because half of
+a small fee is a saving too trivial to change anyone's mind.
+
+Verified against Jack's real listing, 2026-08-11:
+
+| Stay | Owner keeps | Guest saves | Owner gains vs Airbnb |
+|---|---|---|---|
+| 3 nights | 70% | $38 | +$43 |
+| 4 nights | 50% | $83 | +$61 |
+| 7 nights | 35% | $166 | +$74 |
+| 14 nights | 25% | $333 | +$94 |
+
+Both sides rise with length. Nobody loses.
+
+**Never display a bare nightly rate.** Because the markup lives inside the rate,
+the per-night figure reads HIGHER than the Airbnb listing even when the all-in
+total is lower. Leading with it loses the comparison on the one number nobody
+actually pays. The widget quotes nothing until dates are chosen, then answers
+with the total and the head-to-head. Do not reintroduce a "from $X/night"
+headline.
+
+**Length-of-stay discounts are deliberately removed.** The fee-split ladder is
+now the length-based mechanism; stacking a weekly discount on top double-counted
+and was quoting weeks that cost the owner money. Don't re-add one without
+re-checking the owner's net.
 
 For reference, channel managers (Hostaway, OwnerRez, Hospitable) run $100+/mo,
 so $1,000/yr undercuts the obvious alternative.
