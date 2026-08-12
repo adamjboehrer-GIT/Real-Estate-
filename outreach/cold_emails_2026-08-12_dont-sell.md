@@ -50,6 +50,10 @@ Keep the wording as-is in both versions. It reads like the rest of the email ins
 > That's the whole email. I'm right here when you want me.
 >
 > Best,
+>
+> Adam
+>
+> Don't want to hear from me again? Reply "stop" and I'm gone for good.
 
 **Subject line alternates:** `don't sell your house` · `the Realtor telling you not to sell` · `an odd email from a Realtor`
 
