@@ -78,6 +78,10 @@ Keep the wording as-is in both versions. It reads like the rest of the email ins
 > When something does change, I'll give you a straight read on the number and I'll outwork anyone else in town on the part that comes after. Until then I'll leave you alone.
 >
 > Best,
+>
+> Adam
+>
+> Don't want to hear from me again? Reply "stop" and I'm gone for good.
 
 ---
 
