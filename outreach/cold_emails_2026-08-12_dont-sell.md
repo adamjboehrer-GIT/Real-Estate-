@@ -15,15 +15,17 @@ Do not send to `do_not_contact`. Version B is the only one that references the e
 
 ---
 
-## Signature block (every send, DRE compliance)
+## Signature + opt-out (every send)
+
+Name, DRE #, brokerage, and office address are all carried by the Outlook footer image.
+
+The opt-out line goes in as **live text, as the last line before the footer image.** Not inside the image. Outlook and Gmail block remote images by default, and an opt-out nobody can read is an opt-out that doesn't count.
 
 ```
-Adam Boehrer
-Real Estate Agent · DRE #02419464
-Pacific Sotheby's International Realty
-949.541.8247 · adam.boehrer@pacificsir.com
-adamboehrer.com · @adamonthecoastoc
+Don't want to hear from me again? Reply "stop" and I'm gone for good.
 ```
+
+Keep the wording as-is in both versions. It reads like the rest of the email instead of like a legal footer, which is the point.
 
 ---
 
