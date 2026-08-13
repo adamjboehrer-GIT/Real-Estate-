@@ -67,7 +67,8 @@ the part that's true, and turns on the double meaning of "move."
 
 > Hi {{name}},
 >
-> I emailed you back in June about buyers looking in your neighborhood. Very Realtor of me.
+> I emailed you back in June about buyers looking in your neighborhood. Very Realtor of me. You
+> didn't reply, which is fair.
 >
 > The interest is real. Homes here get attention. But interest has never once made someone move.
 >
