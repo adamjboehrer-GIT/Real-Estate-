@@ -26,6 +26,82 @@ lurking buyer in San Clemente has and no agent's feed answers.
 
 ---
 
+## Growth plan
+
+### The honest premise
+
+The automated loops produce roughly **70–110 net local followers a month**, and
+they do it every month without anyone thinking about it. That is the floor, and a
+floor worth having. It is not the engine. Two plays the automation cannot run
+account for most of the upside: **Reels** and **collaborator posts**.
+
+The target is not a big audience. San Clemente has about 26,000 households. An
+audience of 2,000 real local homeowners is a business; 20,000 followers from
+outside the market is a hobby that costs money to maintain.
+
+### Step zero — the profile has to convert
+
+Every loop below drives profile visits. The bio and the top row of the grid decide
+whether a visit becomes a follower, and that ratio multiplies everything else. Fix
+it before spending effort on traffic.
+
+- Bio names the market and the job in the first line. Link to adamboehrer.com.
+- Three pinned posts as the storefront: the best Deal of the Week, a market read,
+  one that shows the person.
+- Highlights: Deals, Market, San Clemente, About.
+- Follower/following ratio stays defensible. This is what the unfollow hygiene
+  pass is for, and it matters more for a luxury brand than raw count does.
+
+### The four engines, by yield
+
+**1. Collaborator posts — highest yield, needs a relationship.**
+A Collab publishes to both accounts' feeds and both audiences. One collab with a
+San Clemente business that has 8k local followers typically converts 1–3% to
+follows, so 80–240 people who are exactly the right people. Nothing else on this
+list comes close per unit of effort. Costs a relationship, not money. Candidates
+come straight out of the `business_venue` targets already in the table.
+
+**2. Reels — highest ceiling, most variable.**
+Non-followers see Reels. They largely do not see feed posts. A carousel reaches
+the existing audience; a Reel reaches the town. A local Reel that lands in a
+market of 65,000 people can do 10,000–50,000 views. Most do 500. The distribution
+of outcomes is the point: the losses are capped and the wins are uncapped, so
+volume matters more than polish.
+
+**3. Saves and shares — the algorithmic multiplier.**
+The ranking weights saves and shares far above likes. Deal of the Week is built
+to be forwarded, because "is anything actually a good buy right now" is a
+question people send to their spouse. Every format should pass the test: would
+someone send this to one specific person?
+
+**4. The local graph loop — automated, compounding, slow.**
+15 follows and 10 substantive comments a day. The comments matter more than the
+follows: a real comment on a local business's post puts Adam in front of the
+right audience looking like a neighbor rather than an ad.
+
+### Cross-channel funnels already in hand
+
+These cost nothing and are currently unused: the San Clemente direct mail farm,
+open house QR signs and the `/oh` short link, the Coastal Currents newsletter
+footer, LinkedIn, the email signature, and the website. Every one of them should
+name the handle. A person who already met Adam converts at a far higher rate than
+a stranger reached through a hashtag.
+
+### Deliberately not doing
+
+Buying followers. Engagement pods. Follow-for-follow with other agents, whose
+audiences are agents and do not buy houses here. Broad or national content. Any
+targeting that touches a protected class, which is both illegal and a bad idea.
+
+### The metric
+
+Not follower count. Track **followers from the five target cities**, **saves and
+shares per post**, and **DMs that become `contacts` rows**. Reach that never
+becomes a conversation is a vanity number. `instagram_dms` and
+`instagram_post_metrics` exist to keep that honest.
+
+---
+
 ## Content pillars and cadence
 
 Four posts a week. That is the ceiling and the floor. A week with nothing real to
