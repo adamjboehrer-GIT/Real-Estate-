@@ -60,17 +60,19 @@ inside it. No images in the body, so no AB 723 disclosure applies.
 
 ## Version B · emailed in June, no reply (659)
 
-Round 1 told them buyers were waiting for a home in their neighborhood. Owning that is what earns
-the second read.
+Round 1 told them buyers were waiting for a home in their neighborhood. This one owns that, keeps
+the part that's true, and turns on the double meaning of "move."
 
-**Subject:** the opposite of my last email
+**Subject:** what actually moves people
 
 > Hi {{name}},
 >
-> I emailed you in June about buyers looking in your neighborhood. Very Realtor of me. You didn't
-> reply, which is fair.
+> I emailed you back in June about buyers looking in your neighborhood. Very Realtor of me.
 >
-> Here's the opposite. You probably shouldn't sell your house. Life decides that, not the market.
+> The interest is real. Homes here get attention. But interest has never once made someone move.
+>
+> Life does that. A job changes, a family grows or empties out, a place stops fitting. If none of
+> that is happening at your house, you probably shouldn't sell.
 >
 > So take this as an introduction instead. If there's a real estate question sitting in the back of
 > your head, bring it to me. Coffee is on me, or a phone call if that's easier.
@@ -83,7 +85,7 @@ the second read.
 >
 > Don't want to hear from me again? Reply "stop" and I'm gone for good.
 
-**Subject alternates:** `let me try that again` · `I owe you a better email` · `the opposite of what I sent in June`
+**Subject alternates:** `let me try that again` · `about that email in June` · `interest doesn't move anyone`
 
 ---
 
