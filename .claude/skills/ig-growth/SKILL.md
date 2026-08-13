@@ -60,9 +60,27 @@ Oceanside → Carlsbad. Finish a city's vetted list before opening the next.
    WHERE follow_status = 'approved' AND do_not_engage = 0
    ORDER BY city, followers DESC;
    ```
-2. If fewer than 10 approved targets remain, run **discovery** (step 2b) and
-   stop for the day. Newly discovered accounts are written as `identified`, and
-   Adam approves them. Never follow an unvetted account.
+2. If fewer than 10 approved targets remain, run **discovery** (step 2b) inline
+   and keep going.
+
+   Discovery **auto-approves** anything that clears the vetting bar. Adam chose
+   this explicitly on 2026-08-13: growth runs without him in the loop, and the
+   audit happens after the fact rather than before. Every account followed is
+   listed in that day's status file with the reason it qualified, and Adam can
+   mark any of them `do_not_engage = 1`, which also stops future engagement.
+
+   Because his approval is no longer the gate, **the vetting bar is the gate**
+   and it is not optional. An account must clear all of it:
+   - located in, or clearly tied to, one of the five target cities
+   - in one of the three target categories (`business_venue`,
+     `creator_influencer`, `agent_allied`)
+   - a real account with a post in the last 6 months
+   - not on the exclusion list in step 2b
+
+   Anything that does not clearly clear all four is written as `identified` and
+   left for Adam. When unsure, do not follow. The cost of skipping a good account
+   is one follow; the cost of auto-following badly is Adam's professional
+   reputation in a town where people talk.
 3. For each target, navigate to the profile and find the first header button
    matching `/^(Follow|Following|Requested)$/`. Click only if it reads `Follow`.
    Wait ~2.5s and verify it flipped to `Following` or `Requested`. Ignore the
