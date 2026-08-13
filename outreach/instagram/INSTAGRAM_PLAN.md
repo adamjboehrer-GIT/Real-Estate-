@@ -26,18 +26,83 @@ lurking buyer in San Clemente has and no agent's feed answers.
 
 ---
 
-## Growth plan
+## Growth plan — target 10,000 followers
 
-### The honest premise
+### The honest math
 
-The automated loops produce roughly **70–110 net local followers a month**, and
-they do it every month without anyone thinking about it. That is the floor, and a
-floor worth having. It is not the engine. Two plays the automation cannot run
-account for most of the upside: **Reels** and **collaborator posts**.
+The automated loops produce roughly **70–110 net followers a month**. At that
+rate 10,000 takes about eight years. The loops are a floor worth having, and they
+are not how this goal gets hit.
 
-The target is not a big audience. San Clemente has about 26,000 households. An
-audience of 2,000 real local homeowners is a business; 20,000 followers from
-outside the market is a hobby that costs money to maintain.
+**Reels are the only mechanism that takes a local agent account to 10K in a
+reasonable timeframe.** Non-followers see Reels; they largely do not see feed
+posts. Everything else in this plan is support.
+
+Realistic path at 4 Reels a week:
+
+| Phase | Months | Net follows/mo | Why |
+|-------|--------|----------------|-----|
+| Foundation | 1–3 | 300–500 | No authority yet, most Reels underperform |
+| Traction | 4–9 | 600–1,200 | Formats that work are identified and repeated |
+| Compounding | 10–18 | 1,000–2,000 | Back catalogue keeps surfacing, breakouts land |
+
+**12 to 18 months.** Faster if two or three Reels break out, and one will
+eventually: the outcome distribution is what matters, since a flop costs an hour
+and a hit is worth 1,000 followers. Volume beats polish.
+
+Note that 10K unlocks nothing mechanically. The old swipe-up threshold is gone
+and link-in-bio is available at any size. 10K is a credibility number, which is a
+real reason to want it, just not a feature gate.
+
+### The audience question 10K forces
+
+San Clemente has about 26,000 households. Realistically maybe 2,000–3,000 local
+residents would ever follow an agent, so **10,000 cannot be all San Clemente**.
+There are two ways to make up the difference:
+
+- **Broad coastal-lifestyle content.** Grows fastest, and fills the audience with
+  people who will never transact here. A follower in Ohio who likes ocean footage
+  is worth nothing.
+- **South OC coastal plus relocation intent.** San Clemente, Dana Point, Laguna,
+  San Juan Capistrano, Capo Beach is 200,000+ people, and out-of-state buyers
+  researching coastal California are already the highest-value buyer segment in
+  `CLAUDE.md`.
+
+**Take the second.** The useful thing about relocation content is that it travels
+nationally *and* converts: a "what $2M buys in San Clemente" Reel gets shared by
+people who will never move here and watched by the handful who will. Same asset,
+mass reach, right leads. That is the thread the whole Reels strategy pulls on.
+
+### Reel formats, by expected yield
+
+1. **What $X buys in [city]** — the workhorse. Endlessly repeatable across price
+   points and cities, inherently comparative, and relocation bait.
+2. **Deal of the Week as a Reel** — the data engine already exists. Walk the
+   number, name the catch. Nobody else in the market posts a real one.
+3. **Reality checks** — what people get wrong about moving here. Cost, commute,
+   marine layer, insurance, Mello-Roos. Credibility comes from saying the
+   unflattering part.
+4. **Neighborhood verdicts** — should you live in [pocket], honestly.
+5. **Market data, 20 seconds** — one number, one implication.
+
+Rules: hook lands in the first 1.5 seconds, no slow intros, on-screen text
+carries it muted, 20–40 seconds, and Adam on camera. Agent accounts that reach
+10K almost always have a face. Voiceover over b-roll works to start and converts
+worse.
+
+### Everything else supports the Reels
+
+- **Collaborator posts.** Publishes to both feeds and both audiences. One collab
+  with an 8k local account converts 1–3%, so 80–240 exactly-right people. Highest
+  yield per unit of effort available. Costs a relationship, not money.
+- **Saves and shares.** Weighted far above likes. Every format should pass one
+  test: would someone send this to one specific person?
+- **The local graph loop.** Automated. 15 follows and 10 substantive comments a
+  day, compounding quietly underneath everything else.
+- **Cross-channel funnels already in hand and currently unused:** the San Clemente
+  direct mail farm, open house QR signs and the `/oh` link, the Coastal Currents
+  footer, LinkedIn, the email signature, the website. Someone who already met
+  Adam converts far better than a stranger from a hashtag.
 
 ### Step zero — the profile has to convert
 
