@@ -26,9 +26,23 @@ Verify `outreach/verify_list_2026-08-13.csv` before sending. See `VERIFICATION.m
 **Greetings:** only 396 rows have a usable first name (A: 170, B: 226). The rest are trusts and
 vesting strings, so they rotate between `Hi neighbor,` and `Hello, neighbor!` like round 1.
 
-**Signature + opt-out:** the Outlook footer image carries name, DRE #02419464, REALTOR®, brokerage,
-office address. The opt-out goes in as **live text, last line before the footer image**, never
-inside it. No images in the body, so no AB 723 disclosure applies.
+**Disclosure + opt-out:** both go in as **live text in the body**, not left to the Outlook signature
+image. Outlook and Gmail block remote images by default, and a disclosure nobody can see is a
+disclosure that does not count. Every email ends:
+
+```
+Best,
+
+Adam Boehrer
+REALTOR® · DRE #02419464
+Pacific Sotheby's International Realty
+949.541.8247 · adam.boehrer@pacificsir.com
+
+If you'd rather not hear from me again, just reply "stop" and I'm gone for good.
+```
+
+DRE # renders at body size, so it is never smaller than anything else in the piece. The Outlook
+signature block still lands below this. No images in the body, so no AB 723 disclosure applies.
 
 ---
 
