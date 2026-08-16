@@ -257,6 +257,23 @@ To get the full list popup back, click the green list-toggle button: `#boundary-
 - **Python ingestion fails:** capture the raw lines to `Title Database/_failed/<apn>.json` for later re-processing. Do not crash the whole loop — move on.
 - **APN is missing from extracted fields:** the ingestion script will refuse to insert (APN is the upsert key). Log the property number and lines path, skip, continue.
 
+## Batch runner must be self-limiting (MCP idle timeout)
+
+Install the loop once as `window.__tpRun(start, end, budgetMs)` and call it per batch, rather than
+re-sending the whole function each time. Two properties of the runner are non-negotiable:
+
+1. **An internal time budget** (default 12 min) checked before each property, returning
+   `stopped: 'budget_exhausted_at_N'`. A batch-size cap alone does NOT bound worst-case runtime — 25
+   properties × ~270s worst case is ~112 min, and a `browser_evaluate` silent for ~1810s is killed by the
+   MCP idle timeout, which also wedges the tab beyond the reach of screenshot/navigate.
+2. **Results accumulated on `window.__tpResults`** as each property finishes, so an aborted call never
+   loses completed work — recover it with a one-line evaluate afterward.
+
+Also check session expiry (`/Security/GetUserExpiry`) before each property so an expired session ends the
+batch instantly instead of burning N × 60s of ready-arrow timeouts.
+
+If the tab wedges anyway: open a new tab, close the wedged one, restore the polygon from Saved Areas.
+
 ## Rate limiting courtesy
 
 Insert a 2-second delay between properties (`await new Promise(r => setTimeout(r, 2000))`). This keeps the loop human-paced and reduces the chance of triggering abuse detection. At 575 properties that's ~20 extra minutes of wait time — worth it.
