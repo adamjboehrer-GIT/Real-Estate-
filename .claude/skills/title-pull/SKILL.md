@@ -272,6 +272,16 @@ re-sending the whole function each time. Two properties of the runner are non-ne
 Also check session expiry (`/Security/GetUserExpiry`) before each property so an expired session ends the
 batch instantly instead of burning N × 60s of ready-arrow timeouts.
 
+**Reload the page every ~50 properties (2 batches), before the tab wedges.** The IgniteRE tab reliably
+becomes unresponsive after ~75-80 PDF report previews in a single page lifetime — past the reach of
+evaluate, screenshot AND navigate, and on one occasion it took the whole browser down. Measured
+2026-08-16: wedged at exactly 80 previews on the first page, 75 on the second, with ~25 minutes of auth
+session still valid, so it is cumulative previews and not a timeout.
+
+Do not wait for the cliff: once wedged, even `window.__tpResults` is unreachable, so the whole in-flight
+batch is lost. The prophylactic reload cycle (reload → Saved Areas → reinstall runner) takes under a
+minute and is the cheapest reliability win in the loop.
+
 If the tab wedges anyway: open a new tab, close the wedged one, restore the polygon from Saved Areas.
 
 ## Rate limiting courtesy
