@@ -35,6 +35,36 @@ Wait for his answer. Parse a start integer N and end integer M from his reply. A
 
 Once you have a valid N and M, confirm back to him in one line: "Running title-pull on properties N through M — that's (M - N + 1) homes. Starting now." Then proceed to the preconditions check.
 
+## Step 0.5 — Save the polygon as an IgniteRE Saved Area, and capture the manifest
+
+**Do this immediately after Adam says "ready", before anything else.** It removes the polygon redraw
+from every future session.
+
+1. **Save the area natively.** Adam's account has Saved Areas enabled (`#IsSavedSearchEnabled` = True).
+   Click the save icon on the boundary-search header (`div.icon-save.boundary__search-ico-save`), which
+   opens the "New Saved Area" modal. Set the name in `#boundary-search-save-text` — click the field,
+   `ControlOrMeta+a` to select the prefilled default, then type over it (plain `browser_type` *prepends*
+   rather than replaces). Click `#saveShape`. Confirm `POST /BoundarySearch/SaveAsync` returns 200 with
+   an `Id` and a null `ErrorMessage`.
+
+   After any signout, Adam re-logs in and picks the area from Saved Areas (`#aSavedSearches`) — **he
+   never redraws the polygon.** Check there first before ever asking him to draw.
+
+2. **Capture the search manifest.** Read the response body of `POST /BoundarySearch/SearchPropertiesAsync`
+   from the network log. It contains all N properties with **PropertyId, APN, owner, address,
+   IsOwnerOccupied, IsInHOA, IsInForeclosure, sqft, year built, last sale**. Save it to
+   `scripts/.tp_session_<YYYY-MM-DD>_manifest.json`.
+
+   Dedupe against `properties.apn` using this manifest rather than address strings — it is exact, and it
+   survives row renumbering if the polygon is ever redrawn slightly differently. Also save the polygon
+   vertices from the *request* body to `data/polygons/<name>.json` as a backup.
+
+**The 90-minute cap is not preventable — do not waste time trying.** `GET /Security/GetUserExpiry`
+returns login and expiry times; expiry is always login + 90 minutes, fixed. It is not idle-based and not
+report-count-based, so keepalive pings and pacing changes do nothing. Plan sessions around it: expect a
+re-login roughly every 90 minutes, and make resume cheap (saved area + manifest + queue file) rather than
+trying to avoid the signout.
+
 ## Step 1.5 — Snapshot all row labels and pre-dedupe (do this BEFORE any per-property work)
 
 **Critical resilience step.** FirstAm IgniteRE silently logs the user out after a couple hours of activity. On 2026-05-04 the session died at property #148 of 481, forcing a polygon redraw to resume. To make session timeouts non-fatal, dump every row label to disk *before* clicking into any property, then run batch dedupe to compute the actual pull queue.
