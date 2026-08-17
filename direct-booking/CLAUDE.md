@@ -480,4 +480,20 @@ the asset the owner is really buying, and it must stay clean enough to export.
 - [ ] Confirm the advertising-disclosure language in SCMC 17.28.292 before any
       *California* property site goes public. Municode blocks automated fetching,
       so this needs a human read or a call to Planning at (949) 361-6197. Not
-      blocking for Arkansas.
+      blocking for Arkansas. **Now blocking for three properties, not zero** —
+      see the San Clemente prospects above.
+- [ ] **Verify San Clemente's 10% transient occupancy tax** (SCMC ch. 3.16) with
+      City Finance before any California property leaves `draft`. The figure is
+      carried in the parent repo's CLAUDE.md and seeded in all three San Clemente
+      properties, but nobody has read the ordinance directly. Under-collecting
+      means the owner pays the shortfall.
+- [ ] **Per-night pet fees are not modelled.** `properties.pet_fee_cents` is
+      charged once per stay. Both San Clemente prospects that take pets charge
+      per night ($20/night at the Del Mar condo, $30/day at the Garden Cottage),
+      and the seeded values are four-night approximations that are wrong at every
+      other length. Needs a `pet_fee_kind` column, mirroring the flat/per-night
+      split `tax_rates.kind` already has.
+- [ ] Airbnb iCal export URLs for the three San Clemente properties, if any of
+      them says yes. Their calendars are currently hand-seeded from the public
+      listing pages and go stale within weeks. Delete the seeded `manual` blocks
+      the day a real feed connects.
