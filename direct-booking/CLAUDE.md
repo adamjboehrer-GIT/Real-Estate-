@@ -246,6 +246,56 @@ Stripe, email, iCal cron, outbound feed.
 
 ---
 
+## The San Clemente prospects (2026-08-17)
+
+Three more demo sites, built to pitch. Same posture as the Bella Vista demo in
+every respect that matters: **none of these three owners has been contacted, none
+has agreed to anything**, the properties are `draft`, the pages are `noindex`,
+the URLs are unlisted, and the photos and listing facts are theirs.
+
+| Slug | Property | Owner | Airbnb |
+|---|---|---|---|
+| `sc-village-balcony` | The Balcony on Del Mar | Pete & Cathy | 5.00 · 400 reviews |
+| `sc-pier-starfish` | Starfish | Shannon | 5.00 · 159 reviews |
+| `sc-garden-cottage` | Garden Cottage at the Green | Aneta | 4.99 · 230 reviews |
+
+Sourcing, selection criteria and every observed Airbnb figure:
+`docs/prospects/RESEARCH.md`. How to run each conversation, including the
+break-even counts: `docs/prospects/PITCH.md`.
+
+**Rates are solved backwards out of real Airbnb quotes**, not invented. Airbnb's
+listing page no longer itemizes anything — it shows one all-in figure — so each
+seed inverts `all-in = (rent + cleaning) x 1.14 x 1.10` to recover a nightly rate
+the owner can check against his own calendar. Cleaning is the free variable in
+that equation and is an estimate everywhere. Fall and early winter are anchored
+to observed quotes; summer and the holidays are extrapolated. Every seed says
+which is which.
+
+`node scripts/pitch-math.mjs` (against a running dev server) prints the owner
+side: what he nets on Airbnb, what he nets here, and how many direct bookings a
+year clear the $1,000. That break-even is the number to walk in with.
+
+### The page is no longer single-property
+
+Rendering a second property exposed how much of the lake house was baked into
+the JSX — the headline, the paragraphs about the game room, a hardcoded bed
+count, the literal words "Arkansas lodging tax". All of that now lives in
+`src/content/<slug>.ts`, typed by `src/content/types.ts` and registered in
+`src/content/index.ts`. Adding a property is a seed file plus a copy file, and a
+row with no copy 404s rather than rendering photographs with no words.
+
+Copy is code, not data, on purpose: it is long-form, hand-edited against the
+layout it has to fit, and it changes when the layout does. Facts the quote engine
+needs — rates, fees, capacity, taxes, availability — stay in Postgres.
+
+**Every property gets its own palette.** Themes are `[data-theme="..."]` blocks
+in `globals.css` that re-point the same custom properties the `@theme` block
+generates utilities from, selected by a wrapper on the page. Three sites built
+from one template must not look like three sites built from one template; that
+is the product being sold.
+
+---
+
 ## Deployment
 
 Live at **https://direct-booking-two.vercel.app/bella-vista-lakefront**, first
