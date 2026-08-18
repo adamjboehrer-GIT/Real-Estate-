@@ -1,0 +1,277 @@
+{
+  "schema_version": "1.0",
+  "command": "market-moves",
+  "reporting_month": "2026-07",
+  "source": {
+    "system": "California Regional Multiple Listing Service (CRMLS)",
+    "tool": "InfoSparks / ShowingTime Plus",
+    "access_method": "manual login by licensed agent; export driven via Playwright (compliant)",
+    "import_dir": "data/imports/mls_stats/2026-08-17"
+  },
+  "geographies": {
+    "Dana Point": {
+      "active_listings": {
+        "label": "Active Listings",
+        "current": 74.0,
+        "prior_month": 66.0,
+        "mom_pct": 12.1,
+        "year_ago": 93.0,
+        "yoy_pct": -20.4
+      },
+      "closed_sales": {
+        "label": "Closed Sales",
+        "current": 24.0,
+        "prior_month": 20.0,
+        "mom_pct": 20.0,
+        "year_ago": 23.0,
+        "yoy_pct": 4.3
+      },
+      "months_supply": {
+        "label": "Months Supply of Inventory",
+        "current": 3.7,
+        "prior_month": 3.2,
+        "mom_pct": 15.6,
+        "year_ago": 4.1,
+        "yoy_pct": -9.8
+      },
+      "median_dom": {
+        "label": "Median Days on Market",
+        "current": 38.0,
+        "prior_month": 13.0,
+        "mom_pct": 192.3,
+        "year_ago": 30.0,
+        "yoy_pct": 26.7
+      },
+      "pct_list_received": {
+        "label": "% of Last List Price Received",
+        "current": 0.981,
+        "prior_month": 0.996,
+        "mom_pct": -1.5,
+        "year_ago": 0.981,
+        "yoy_pct": 0.0
+      },
+      "median_sales_price": {
+        "label": "Median Sales Price",
+        "current": 2067500.0,
+        "prior_month": 2097500.0,
+        "mom_pct": -1.4,
+        "year_ago": 2375000.0,
+        "yoy_pct": -12.9
+      },
+      "new_listings": {
+        "label": "New Listings",
+        "current": 38.0,
+        "prior_month": 29.0,
+        "mom_pct": 31.0,
+        "year_ago": 32.0,
+        "yoy_pct": 18.8
+      },
+      "pending_sales": {
+        "label": "Pending Sales",
+        "current": 19.0,
+        "prior_month": 23.0,
+        "mom_pct": -17.4,
+        "year_ago": 25.0,
+        "yoy_pct": -24.0
+      }
+    },
+    "Laguna Beach": {
+      "active_listings": {
+        "label": "Active Listings",
+        "current": 160.0,
+        "prior_month": 156.0,
+        "mom_pct": 2.6,
+        "year_ago": 201.0,
+        "yoy_pct": -20.4
+      },
+      "closed_sales": {
+        "label": "Closed Sales",
+        "current": 29.0,
+        "prior_month": 26.0,
+        "mom_pct": 11.5,
+        "year_ago": 23.0,
+        "yoy_pct": 26.1
+      },
+      "months_supply": {
+        "label": "Months Supply of Inventory",
+        "current": 7.4,
+        "prior_month": 7.0,
+        "mom_pct": 5.7,
+        "year_ago": 10.5,
+        "yoy_pct": -29.5
+      },
+      "median_dom": {
+        "label": "Median Days on Market",
+        "current": 29.0,
+        "prior_month": 32.0,
+        "mom_pct": -9.4,
+        "year_ago": 55.0,
+        "yoy_pct": -47.3
+      },
+      "pct_list_received": {
+        "label": "% of Last List Price Received",
+        "current": 0.963,
+        "prior_month": 0.969,
+        "mom_pct": -0.6,
+        "year_ago": 0.948,
+        "yoy_pct": 1.6
+      },
+      "median_sales_price": {
+        "label": "Median Sales Price",
+        "current": 3350000.0,
+        "prior_month": 3450000.0,
+        "mom_pct": -2.9,
+        "year_ago": 2982500.0,
+        "yoy_pct": 12.3
+      },
+      "new_listings": {
+        "label": "New Listings",
+        "current": 37.0,
+        "prior_month": 45.0,
+        "mom_pct": -17.8,
+        "year_ago": 31.0,
+        "yoy_pct": 19.4
+      },
+      "pending_sales": {
+        "label": "Pending Sales",
+        "current": 17.0,
+        "prior_month": 27.0,
+        "mom_pct": -37.0,
+        "year_ago": 25.0,
+        "yoy_pct": -32.0
+      }
+    },
+    "Orange County": {
+      "active_listings": {
+        "label": "Active Listings",
+        "current": 3361.0,
+        "prior_month": 3296.0,
+        "mom_pct": 2.0,
+        "year_ago": 3997.0,
+        "yoy_pct": -15.9
+      },
+      "closed_sales": {
+        "label": "Closed Sales",
+        "current": 1224.0,
+        "prior_month": 1292.0,
+        "mom_pct": -5.3,
+        "year_ago": 1239.0,
+        "yoy_pct": -1.2
+      },
+      "months_supply": {
+        "label": "Months Supply of Inventory",
+        "current": 3.1,
+        "prior_month": 3.0,
+        "mom_pct": 3.3,
+        "year_ago": 3.7,
+        "yoy_pct": -16.2
+      },
+      "median_dom": {
+        "label": "Median Days on Market",
+        "current": 15.0,
+        "prior_month": 13.0,
+        "mom_pct": 15.4,
+        "year_ago": 17.0,
+        "yoy_pct": -11.8
+      },
+      "pct_list_received": {
+        "label": "% of Last List Price Received",
+        "current": 1.0,
+        "prior_month": 1.0,
+        "mom_pct": 0.0,
+        "year_ago": 0.991,
+        "yoy_pct": 0.9
+      },
+      "median_sales_price": {
+        "label": "Median Sales Price",
+        "current": 1450000.0,
+        "prior_month": 1470000.0,
+        "mom_pct": -1.4,
+        "year_ago": 1398500.0,
+        "yoy_pct": 3.7
+      },
+      "new_listings": {
+        "label": "New Listings",
+        "current": 1603.0,
+        "prior_month": 1729.0,
+        "mom_pct": -7.3,
+        "year_ago": 1765.0,
+        "yoy_pct": -9.2
+      },
+      "pending_sales": {
+        "label": "Pending Sales",
+        "current": 967.0,
+        "prior_month": 1190.0,
+        "mom_pct": -18.7,
+        "year_ago": 1284.0,
+        "yoy_pct": -24.7
+      }
+    },
+    "San Clemente": {
+      "active_listings": {
+        "label": "Active Listings",
+        "current": 88.0,
+        "prior_month": 102.0,
+        "mom_pct": -13.7,
+        "year_ago": 161.0,
+        "yoy_pct": -45.3
+      },
+      "closed_sales": {
+        "label": "Closed Sales",
+        "current": 48.0,
+        "prior_month": 52.0,
+        "mom_pct": -7.7,
+        "year_ago": 43.0,
+        "yoy_pct": 11.6
+      },
+      "months_supply": {
+        "label": "Months Supply of Inventory",
+        "current": 2.3,
+        "prior_month": 2.7,
+        "mom_pct": -14.8,
+        "year_ago": 3.8,
+        "yoy_pct": -39.5
+      },
+      "median_dom": {
+        "label": "Median Days on Market",
+        "current": 9.0,
+        "prior_month": 11.0,
+        "mom_pct": -18.2,
+        "year_ago": 30.0,
+        "yoy_pct": -70.0
+      },
+      "pct_list_received": {
+        "label": "% of Last List Price Received",
+        "current": 0.99,
+        "prior_month": 0.991,
+        "mom_pct": -0.1,
+        "year_ago": 0.983,
+        "yoy_pct": 0.7
+      },
+      "median_sales_price": {
+        "label": "Median Sales Price",
+        "current": 1874950.0,
+        "prior_month": 1892500.0,
+        "mom_pct": -0.9,
+        "year_ago": 1865000.0,
+        "yoy_pct": 0.5
+      },
+      "new_listings": {
+        "label": "New Listings",
+        "current": 43.0,
+        "prior_month": 55.0,
+        "mom_pct": -21.8,
+        "year_ago": 55.0,
+        "yoy_pct": -21.8
+      },
+      "pending_sales": {
+        "label": "Pending Sales",
+        "current": 39.0,
+        "prior_month": 47.0,
+        "mom_pct": -17.0,
+        "year_ago": 34.0,
+        "yoy_pct": 14.7
+      }
+    }
+  }
+}

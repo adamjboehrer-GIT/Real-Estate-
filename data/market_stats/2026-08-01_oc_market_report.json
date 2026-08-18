@@ -1,0 +1,522 @@
+{
+  "schema_version": "1.0",
+  "source": "pacific_sothebys_monthly_deck",
+  "source_label": "Pacific Sotheby's August 1 2026 Market Report (City Data Only)",
+  "report_date": "2026-08-01",
+  "reporting_month": "2026-08",
+  "sold_reporting_month": "2026-07",
+  "zillow_reporting_month": "2026-06",
+  "nar_reporting_month": null,
+  "source_file": "Newsletter/market_data/sources/2026-08-01_pacific_sothebys_deck.pdf",
+  "extracted_by": "manual",
+  "extracted_at": "2026-08-18",
+  "notes": [
+    "Deck is titled 'ORANGE COUNTY | AUGUST 2026 HOUSING MARKET UPDATE' and is the 'City Data Only' cut: 13 OC cities, no national/macro section, no Reports-on-Housing reduction breakdown.",
+    "DATA IS GENUINELY FRESH versus the July 28 2026 deck. Sold slides advance from 'JUNE 2026 SOLD' to 'JULY 2026 SOLD' with different values in every city (San Clemente 55 -> 65 homes, $1.9m -> $1.7m median), and the Zillow section advances from 'May 2026 Home Prices' to 'June 2026 Home Prices'. Verified by diffing pdftotext -layout output of both decks. Unlike the July 28 deck, nothing here is recycled.",
+    "Per-city comparison slides are titled 'Year-Over-Year Comparison'. The overview 'Y-O-Y CHANGES' column and per-city deltas are YEAR-OVER-YEAR and are stored in the legacy inventory_mom_pct / pending_mom_pct / emt_mom_days fields to preserve the pipeline; for THIS deck those legacy-named fields hold Y-o-Y values.",
+    "GOTCHA - North Coastal Area slide, Corona Del Mar row: reads '82 Homes / 32 Pendings / 77 Days / +39% | +60% | -12 Days', which is Aliso Viejo's row duplicated. The main overview slide and the per-city Corona Del Mar slide both read 74 / 11 / 202 days (Last Year 182). Internal math confirms: 74 / (11/30) = 202. Using 74 / 11 / 202.",
+    "GOTCHA - North Coastal Area slide, Newport Beach row: reads '-20% | +31 Days', which is Laguna Niguel's demand and EMT delta. The main overview and the per-city Newport Beach slide both read '-6% or -3 Pending' and 'Last Year: 148 Days' (163 - 148 = +15). Using -6% / +15 days.",
+    "GOTCHA - South Coastal Area slide, Laguna Niguel row: EMT reads '163 Days', which is Newport Beach's EMT. The main overview and the per-city Laguna Niguel slide both read 129 days, and the math confirms it: 168 / (39/30) = 129. Using 129.",
+    "GOTCHA - price-reduction percentages: the per-city slides are shifted by one position from Laguna Beach onward (per-city Laguna Beach shows 44% = Laguna Niguel's value, per-city Laguna Niguel shows 40% = Newport Beach's, per-city Newport Beach shows 32% = Newport Coast's, per-city Newport Coast shows 44% = San Clemente's, per-city San Clemente shows 45% = San Juan Capistrano's). The main Active Price Reductions slide and both regional reduction slides agree with each other on all 13 cities, so the aggregates are used: Laguna Beach 42, Laguna Niguel 44, Newport Beach 40, Newport Coast 32, San Clemente 44, San Juan Capistrano 45. NOTE: San Clemente is 44%, not the 45% printed on its own slide.",
+    "GOTCHA - Costa Mesa ALL sold S/L ratio: the per-city slide reads 91.1%. The aggregate slide reads 99.1%, and since all 46 Costa Mesa sales were under $5M the ALL and $0-5M buckets must match (the $0-5M bucket reads 99.1% on both slides). Using 99.1%.",
+    "GOTCHA - Irvine $5M+ sold count: the per-city slide reads '55 HOMES SOLD'. The aggregate slide reads 5, and 171 + 5 = 176 ALL. Using 5.",
+    "GOTCHA - San Clemente bucket split: the per-city slide reads 65 under $5M and 2 above $5M, which sums to 67 against an ALL count of 65. The aggregate slides read 64 and 1, which sums correctly. Using 64 / 1. The per-city $0-5M S/L of 100.4% is likewise the ALL figure bleeding in; the aggregate reads 100.3%.",
+    "GOTCHA - Corona Del Mar Zillow Y-o-Y: the main Home Price Snapshot slide reads '+86%'. The North Coastal slide reads '+8.6%'. Using +8.6%.",
+    "EMT math verified against inventory / (demand / 30) for all 13 cities after corrections; every city reconciles to within rounding.",
+    "Orange County aggregate: Zillow HVI June 2026 0.0% M-o-M, +1.7% Y-o-Y, +91.7% 10-yr; 41% of OC inventory carries a price reduction. No Reports on Housing reduction breakdown in this deck cut - the July 28 file's breakdown (as of 2026-07-01) remains the most recent."
+  ],
+  "national": {
+    "mortgage_30yr_fixed_pct": null,
+    "mortgage_30yr_fixed_source": null,
+    "mortgage_7yr_arm_pct": null,
+    "arm_share_of_applications_pct": null,
+    "fannie_mae_5yr_price_forecast_pct": null,
+    "mortgage_rate_projection": null,
+    "nar_confidence_feb_2026": {},
+    "extra": {
+      "note": "August 1 2026 deck is the 'City Data Only' cut and contains no national/macro section."
+    }
+  },
+  "cities": [
+    {
+      "name": "Aliso Viejo",
+      "region": "South OC",
+      "active_inventory": 82,
+      "pending_sales": 32,
+      "expected_market_time_days": 77,
+      "expected_market_time_days_last_year": 89,
+      "inventory_mom_pct": 39,
+      "inventory_mom_homes": 23,
+      "pending_mom_pct": 60,
+      "pending_mom_count": 12,
+      "emt_mom_days": -12,
+      "pct_listings_reduced": 39,
+      "sold_july_2026_all": {
+        "count": 29,
+        "median_price_usd": 940000,
+        "sl_ratio_pct": 99.0,
+        "median_dom": 13
+      },
+      "sold_july_2026_under_5m": {
+        "count": 29,
+        "median_price_usd": 940000,
+        "sl_ratio_pct": 99.0,
+        "median_dom": 13
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 0
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": -0.1,
+        "yoy_pct": 0.7,
+        "ten_year_pct": 87.6
+      }
+    },
+    {
+      "name": "Corona Del Mar",
+      "region": "North OC",
+      "active_inventory": 74,
+      "pending_sales": 11,
+      "expected_market_time_days": 202,
+      "expected_market_time_days_last_year": 182,
+      "inventory_mom_pct": -13,
+      "inventory_mom_homes": -11,
+      "pending_mom_pct": -21,
+      "pending_mom_count": -3,
+      "emt_mom_days": 20,
+      "pct_listings_reduced": 27,
+      "sold_july_2026_all": {
+        "count": 22,
+        "median_price_usd": 3600000,
+        "sl_ratio_pct": 102.9,
+        "median_dom": 35
+      },
+      "sold_july_2026_under_5m": {
+        "count": 14,
+        "median_price_usd": 3200000,
+        "sl_ratio_pct": 98.2,
+        "median_dom": 38
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 8,
+        "median_price_usd": 7900000,
+        "sl_ratio_pct": 98.2,
+        "median_dom": 21
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.4,
+        "yoy_pct": 8.6,
+        "ten_year_pct": 108.2
+      }
+    },
+    {
+      "name": "Costa Mesa",
+      "region": "North OC",
+      "active_inventory": 122,
+      "pending_sales": 32,
+      "expected_market_time_days": 114,
+      "expected_market_time_days_last_year": 77,
+      "inventory_mom_pct": 33,
+      "inventory_mom_homes": 30,
+      "pending_mom_pct": -11,
+      "pending_mom_count": -4,
+      "emt_mom_days": 38,
+      "pct_listings_reduced": 41,
+      "sold_july_2026_all": {
+        "count": 46,
+        "median_price_usd": 1600000,
+        "sl_ratio_pct": 99.1,
+        "median_dom": 12
+      },
+      "sold_july_2026_under_5m": {
+        "count": 46,
+        "median_price_usd": 1600000,
+        "sl_ratio_pct": 99.1,
+        "median_dom": 12
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 0
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.4,
+        "yoy_pct": 5.2,
+        "ten_year_pct": 105.6
+      }
+    },
+    {
+      "name": "Coto De Caza",
+      "region": "South OC",
+      "active_inventory": 66,
+      "pending_sales": 5,
+      "expected_market_time_days": 396,
+      "expected_market_time_days_last_year": 158,
+      "inventory_mom_pct": 5,
+      "inventory_mom_homes": 3,
+      "pending_mom_pct": -58,
+      "pending_mom_count": -7,
+      "emt_mom_days": 239,
+      "pct_listings_reduced": 52,
+      "sold_july_2026_all": {
+        "count": 18,
+        "median_price_usd": 2300000,
+        "sl_ratio_pct": 95.9,
+        "median_dom": 27
+      },
+      "sold_july_2026_under_5m": {
+        "count": 17,
+        "median_price_usd": 2100000,
+        "sl_ratio_pct": 96.7,
+        "median_dom": 12
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 1,
+        "median_price_usd": 5900000,
+        "sl_ratio_pct": 97.9,
+        "median_dom": 78
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": -0.3,
+        "yoy_pct": 1.1,
+        "ten_year_pct": 104.3
+      }
+    },
+    {
+      "name": "Dana Point",
+      "region": "South OC",
+      "active_inventory": 103,
+      "pending_sales": 22,
+      "expected_market_time_days": 140,
+      "expected_market_time_days_last_year": 123,
+      "inventory_mom_pct": -19,
+      "inventory_mom_homes": -24,
+      "pending_mom_pct": -29,
+      "pending_mom_count": -9,
+      "emt_mom_days": 18,
+      "pct_listings_reduced": 28,
+      "sold_july_2026_all": {
+        "count": 40,
+        "median_price_usd": 1800000,
+        "sl_ratio_pct": 99.6,
+        "median_dom": 28
+      },
+      "sold_july_2026_under_5m": {
+        "count": 37,
+        "median_price_usd": 1700000,
+        "sl_ratio_pct": 96.4,
+        "median_dom": 22
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 3,
+        "median_price_usd": 11800000,
+        "sl_ratio_pct": 99.4,
+        "median_dom": 127
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.2,
+        "yoy_pct": 5.0,
+        "ten_year_pct": 112.5
+      }
+    },
+    {
+      "name": "Huntington Beach",
+      "region": "North OC",
+      "active_inventory": 288,
+      "pending_sales": 110,
+      "expected_market_time_days": 79,
+      "expected_market_time_days_last_year": 81,
+      "inventory_mom_pct": -4,
+      "inventory_mom_homes": -11,
+      "pending_mom_pct": -1,
+      "pending_mom_count": -1,
+      "emt_mom_days": -2,
+      "pct_listings_reduced": 44,
+      "sold_july_2026_all": {
+        "count": 128,
+        "median_price_usd": 1300000,
+        "sl_ratio_pct": 100.0,
+        "median_dom": 23
+      },
+      "sold_july_2026_under_5m": {
+        "count": 124,
+        "median_price_usd": 1300000,
+        "sl_ratio_pct": 100.4,
+        "median_dom": 23
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 4,
+        "median_price_usd": 6400000,
+        "sl_ratio_pct": 91.9,
+        "median_dom": 32
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.2,
+        "yoy_pct": 4.2,
+        "ten_year_pct": 96.8
+      }
+    },
+    {
+      "name": "Irvine",
+      "region": "North OC",
+      "active_inventory": 769,
+      "pending_sales": 146,
+      "expected_market_time_days": 158,
+      "expected_market_time_days_last_year": 165,
+      "inventory_mom_pct": -5,
+      "inventory_mom_homes": -43,
+      "pending_mom_pct": -1,
+      "pending_mom_count": -2,
+      "emt_mom_days": -7,
+      "pct_listings_reduced": 42,
+      "sold_july_2026_all": {
+        "count": 176,
+        "median_price_usd": 1400000,
+        "sl_ratio_pct": 96.2,
+        "median_dom": 33
+      },
+      "sold_july_2026_under_5m": {
+        "count": 171,
+        "median_price_usd": 1400000,
+        "sl_ratio_pct": 95.2,
+        "median_dom": 33
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 5,
+        "median_price_usd": 6200000,
+        "sl_ratio_pct": 93.5,
+        "median_dom": 60
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": -0.6,
+        "yoy_pct": -1.9,
+        "ten_year_pct": 104.3
+      }
+    },
+    {
+      "name": "Laguna Beach",
+      "region": "South OC",
+      "active_inventory": 180,
+      "pending_sales": 23,
+      "expected_market_time_days": 235,
+      "expected_market_time_days_last_year": 281,
+      "inventory_mom_pct": -20,
+      "inventory_mom_homes": -45,
+      "pending_mom_pct": -4,
+      "pending_mom_count": -1,
+      "emt_mom_days": -46,
+      "pct_listings_reduced": 42,
+      "sold_july_2026_all": {
+        "count": 28,
+        "median_price_usd": 3500000,
+        "sl_ratio_pct": 97.2,
+        "median_dom": 33
+      },
+      "sold_july_2026_under_5m": {
+        "count": 19,
+        "median_price_usd": 2600000,
+        "sl_ratio_pct": 95.5,
+        "median_dom": 30
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 9,
+        "median_price_usd": 8800000,
+        "sl_ratio_pct": 99.4,
+        "median_dom": 226
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.5,
+        "yoy_pct": 5.1,
+        "ten_year_pct": 85.8
+      }
+    },
+    {
+      "name": "Laguna Niguel",
+      "region": "South OC",
+      "active_inventory": 168,
+      "pending_sales": 39,
+      "expected_market_time_days": 129,
+      "expected_market_time_days_last_year": 99,
+      "inventory_mom_pct": 4,
+      "inventory_mom_homes": 7,
+      "pending_mom_pct": -20,
+      "pending_mom_count": -10,
+      "emt_mom_days": 31,
+      "pct_listings_reduced": 44,
+      "sold_july_2026_all": {
+        "count": 67,
+        "median_price_usd": 1400000,
+        "sl_ratio_pct": 96.0,
+        "median_dom": 18
+      },
+      "sold_july_2026_under_5m": {
+        "count": 67,
+        "median_price_usd": 1400000,
+        "sl_ratio_pct": 96.0,
+        "median_dom": 18
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 0
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.1,
+        "yoy_pct": 4.0,
+        "ten_year_pct": 114.2
+      }
+    },
+    {
+      "name": "Newport Beach",
+      "region": "North OC",
+      "active_inventory": 266,
+      "pending_sales": 49,
+      "expected_market_time_days": 163,
+      "expected_market_time_days_last_year": 148,
+      "inventory_mom_pct": 4,
+      "inventory_mom_homes": 9,
+      "pending_mom_pct": -6,
+      "pending_mom_count": -3,
+      "emt_mom_days": 15,
+      "pct_listings_reduced": 40,
+      "sold_july_2026_all": {
+        "count": 54,
+        "median_price_usd": 3900000,
+        "sl_ratio_pct": 97.2,
+        "median_dom": 40
+      },
+      "sold_july_2026_under_5m": {
+        "count": 38,
+        "median_price_usd": 3100000,
+        "sl_ratio_pct": 92.2,
+        "median_dom": 40
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 16,
+        "median_price_usd": 5800000,
+        "sl_ratio_pct": 98.3,
+        "median_dom": 28
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.6,
+        "yoy_pct": 10.5,
+        "ten_year_pct": 118.3
+      }
+    },
+    {
+      "name": "Newport Coast",
+      "region": "North OC",
+      "active_inventory": 47,
+      "pending_sales": 7,
+      "expected_market_time_days": 201,
+      "expected_market_time_days_last_year": 150,
+      "inventory_mom_pct": -15,
+      "inventory_mom_homes": -8,
+      "pending_mom_pct": -36,
+      "pending_mom_count": -4,
+      "emt_mom_days": 51,
+      "pct_listings_reduced": 32,
+      "sold_july_2026_all": {
+        "count": 10,
+        "median_price_usd": 9800000,
+        "sl_ratio_pct": 98.0,
+        "median_dom": 21
+      },
+      "sold_july_2026_under_5m": {
+        "count": 2,
+        "median_price_usd": 4000000,
+        "sl_ratio_pct": 94.9,
+        "median_dom": 24
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 8,
+        "median_price_usd": 11600000,
+        "sl_ratio_pct": 93.8,
+        "median_dom": 21
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": -0.1,
+        "yoy_pct": 9.7,
+        "ten_year_pct": 130.3
+      }
+    },
+    {
+      "name": "San Clemente",
+      "region": "South OC",
+      "active_inventory": 118,
+      "pending_sales": 54,
+      "expected_market_time_days": 66,
+      "expected_market_time_days_last_year": 101,
+      "inventory_mom_pct": -27,
+      "inventory_mom_homes": -43,
+      "pending_mom_pct": 13,
+      "pending_mom_count": 6,
+      "emt_mom_days": -35,
+      "pct_listings_reduced": 44,
+      "sold_july_2026_all": {
+        "count": 65,
+        "median_price_usd": 1700000,
+        "sl_ratio_pct": 100.4,
+        "median_dom": 10
+      },
+      "sold_july_2026_under_5m": {
+        "count": 64,
+        "median_price_usd": 1700000,
+        "sl_ratio_pct": 100.3,
+        "median_dom": 10
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 1,
+        "median_price_usd": 5200000,
+        "sl_ratio_pct": 95.9,
+        "median_dom": 90
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.5,
+        "yoy_pct": 2.8,
+        "ten_year_pct": 114.4
+      }
+    },
+    {
+      "name": "San Juan Capistrano",
+      "region": "South OC",
+      "active_inventory": 75,
+      "pending_sales": 22,
+      "expected_market_time_days": 102,
+      "expected_market_time_days_last_year": 105,
+      "inventory_mom_pct": -3,
+      "inventory_mom_homes": -2,
+      "pending_mom_pct": 0,
+      "pending_mom_count": 0,
+      "emt_mom_days": -3,
+      "pct_listings_reduced": 45,
+      "sold_july_2026_all": {
+        "count": 28,
+        "median_price_usd": 1400000,
+        "sl_ratio_pct": 99.2,
+        "median_dom": 24
+      },
+      "sold_july_2026_under_5m": {
+        "count": 26,
+        "median_price_usd": 1300000,
+        "sl_ratio_pct": 100.0,
+        "median_dom": 24
+      },
+      "sold_july_2026_5m_plus": {
+        "count": 2,
+        "median_price_usd": 7800000,
+        "sl_ratio_pct": 93.4,
+        "median_dom": 41
+      },
+      "zillow_hvi_june_2026": {
+        "mom_pct": 0.1,
+        "yoy_pct": 2.8,
+        "ten_year_pct": 95.7
+      }
+    }
+  ],
+  "orange_county": {
+    "zillow_hvi_june_2026": {
+      "mom_pct": 0.0,
+      "yoy_pct": 1.7,
+      "ten_year_pct": 91.7
+    },
+    "pct_listings_reduced": 41
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "market": "Dana Point",
+  "property_type": "Residential, Single Family",
+  "reporting_month": "2026-07",
+  "extracted_on": "2026-08-18",
+  "source": {
+    "system": "California Regional Multiple Listing Service (CRMLS)",
+    "tool": "InfoSparks / ShowingTime Plus",
+    "access_method": "manual login by licensed agent; export driven via Playwright (compliant)",
+    "export_files_dir": "data/imports/mls_stats/2026-08-17/"
+  },
+  "current_month": {
+    "median_sales_price_usd": 2067500,
+    "median_days_active_in_mls": 38,
+    "active_listings": 74,
+    "inventory_months_supply": 3.7,
+    "pending_sales": 19,
+    "closed_sales": 24,
+    "pct_of_last_list_received": 98.1
+  },
+  "trailing_3_months_may_jun_jul_2026": {
+    "median_sales_price_usd": [
+      3450000,
+      2097500,
+      2067500
+    ],
+    "median_days_active_in_mls": [
+      9,
+      13,
+      38
+    ],
+    "inventory_months_supply": [
+      3.4,
+      3.2,
+      3.7
+    ],
+    "active_listings": [
+      71,
+      66,
+      74
+    ]
+  },
+  "year_over_year_july": {
+    "median_sales_price_usd": {
+      "2025": 2375000,
+      "2026": 2067500,
+      "pct_change": -12.9
+    },
+    "median_days_active_in_mls": {
+      "2025": 30,
+      "2026": 38,
+      "pct_change": 26.7
+    },
+    "active_listings": {
+      "2025": 93,
+      "2026": 74,
+      "pct_change": -20.4
+    },
+    "inventory_months_supply": {
+      "2025": 4.1,
+      "2026": 3.7,
+      "pct_change": -9.8
+    },
+    "pending_sales": {
+      "2025": 25,
+      "2026": 19,
+      "pct_change": -24.0
+    },
+    "closed_sales": {
+      "2025": 23,
+      "2026": 24,
+      "pct_change": 4.3
+    },
+    "pct_of_last_list_received": {
+      "2025": 98.1,
+      "2026": 98.1,
+      "pct_change": 0.0
+    }
+  },
+  "data_quality_notes": [
+    "July 2026 values read directly from the raw InfoSparks CSVs in data/imports/mls_stats/2026-08-17/ (Dana Point column) and cross-checked against data/market_stats/2026-07_market_moves.json. Both agree on all eight metrics.",
+    "FILTER CHANGE from the prior Dana Point file: 2026-07_dana_point_sfr.json used 'Residential, Single Family, Detached' from a Dana Point-specific pull, while this pull uses 'Residential, Single Family' across all four segments. The series are close but not identical (May 2026 median reads $3,450,000 here versus $3,150,000 in the detached-only file). Do not mix the two series in a month-over-month comparison.",
+    "No median price per square foot in this pull. That metric came from the separate 2026-07-15_dana_point export and is not part of the standard multi-city market-moves set.",
+    "Houses slowed in July, not just the city-wide all-residential figure. Median days active jumped to 38 from 13 in June and 30 a year ago, and pendings fell to 19, down 24% year over year. Months of supply loosened to 3.7 from 3.2 in June, though it is still below 4.1 a year ago.",
+    "The $2,067,500 median is down 12.9% year over year, but Dana Point closes roughly 24 single-family homes a month. At that count the median tracks transaction mix as much as value. The May-to-July walk ($3.45M, $2.10M, $2.07M) is mix, not a 40% collapse.",
+    "This corroborates the Pacific Sotheby's August 1 deck, which put Dana Point city-wide expected market time at 140 days against 123 a year ago."
+  ],
+  "market_summary": "Dana Point single-family cooled in July. Homes took a median of 38 days to go active-to-pending, up from 13 in June and 30 a year ago, and new pendings fell 24% year over year to 19. Supply is still tighter than last year at 3.7 months against 4.1, so this is a demand-side slowdown rather than an inventory build. The $2.07M median is down year over year on a mix that skewed lower, at transaction counts too small to read as a price move."
+}

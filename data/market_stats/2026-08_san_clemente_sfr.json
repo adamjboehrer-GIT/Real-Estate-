@@ -1,0 +1,67 @@
+{
+  "market": "San Clemente",
+  "property_type": "Residential, Single Family",
+  "reporting_month": "2026-07",
+  "extracted_on": "2026-08-18",
+  "source": {
+    "system": "California Regional Multiple Listing Service (CRMLS)",
+    "tool": "InfoSparks / ShowingTime Plus",
+    "access_method": "manual login by licensed agent; export driven via Playwright (compliant)",
+    "export_files_dir": "data/imports/mls_stats/2026-08-17/"
+  },
+  "current_month": {
+    "median_sales_price_usd": 1874950,
+    "median_days_active_in_mls": 9,
+    "active_listings": 88,
+    "inventory_months_supply": 2.3,
+    "pending_sales": 39,
+    "closed_sales": 48,
+    "pct_of_last_list_received": 99.0
+  },
+  "year_over_year_july": {
+    "median_sales_price_usd": {
+      "2025": 1865000,
+      "2026": 1874950,
+      "pct_change": 0.5
+    },
+    "median_days_active_in_mls": {
+      "2025": 30,
+      "2026": 9,
+      "pct_change": -70.0
+    },
+    "active_listings": {
+      "2025": 161,
+      "2026": 88,
+      "pct_change": -45.3
+    },
+    "inventory_months_supply": {
+      "2025": 3.8,
+      "2026": 2.3,
+      "pct_change": -39.5
+    },
+    "pending_sales": {
+      "2025": 34,
+      "2026": 39,
+      "pct_change": 14.7
+    },
+    "closed_sales": {
+      "2025": 43,
+      "2026": 48,
+      "pct_change": 11.6
+    },
+    "pct_of_last_list_received": {
+      "2025": 98.3,
+      "2026": 99.0,
+      "pct_change": 0.7
+    }
+  },
+  "data_quality_notes": [
+    "July 2026 is the most recent fully closed month as of 2026-08-18. Every value was read directly from the raw InfoSparks CSVs in data/imports/mls_stats/2026-08-17/ (San Clemente column, Residential / Single Family, monthly) and cross-checked against the parsed data/market_stats/2026-07_market_moves.json. Both agree on all eight metrics.",
+    "SOURCE REVISION: InfoSparks revised June 2026 San Clemente upward between the 2026-07-24 and 2026-08-17 pulls. Active listings 96 to 102, pending sales 46 to 47, months supply 2.6 to 2.7. The prior snapshot (2026-07_san_clemente_sfr.json) published the pre-revision figures. Immaterial to any published copy, but June-vs-July month-over-month comparisons should use the revised June numbers, not the older file.",
+    "Supply is the story this month. Active listings fell to 88, down 45% year over year and down from 102 in June, and months of supply tightened to 2.3 from 3.8 a year ago. This is the tightest San Clemente single-family supply in the tracked series.",
+    "Median days active dropped to 9, from 30 a year ago and 11 in June. Median percent of last list price received is 99.0%, up from 98.3% a year ago.",
+    "Median sales price of $1,874,950 is essentially flat year over year (+0.5%) and flat against June ($1,892,500 revised). At roughly 48 closings a month, single-month medians move on transaction mix. The durable read is flat-to-slightly-up pricing on sharply tighter supply and much faster absorption.",
+    "Pending sales (39) are a flow metric, new pendings originated in July, not homes currently under contract. Up 14.7% year over year but down from 47 in June, which is normal summer seasonality."
+  ],
+  "market_summary": "San Clemente single-family supply tightened hard through July. Active listings (88) are down 45% year over year and months of supply fell to 2.3 from 3.8, the tightest reading in the tracked series, while homes that are priced right are clearing in a median of 9 days at 99.0% of last list. The July median of $1,874,950 is flat year over year, up 0.5%. The market is not being driven by price growth right now. It is being driven by how little there is to buy and how fast the well-priced homes go."
+}
