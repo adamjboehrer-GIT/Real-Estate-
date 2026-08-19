@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "date_published": "2026-07-29",
+    "date_display": "July 29, 2026",
+    "short_title": "July 2026",
+    "title": "San Clemente Market, July 2026: Expected Market Time Falls to 70 Days | Adam Boehrer, Pacific Sotheby's",
+    "headline": "A home that earns its keep.",
+    "lede": "San Clemente is clearing inventory faster than anywhere else on this stretch of coast, and four in ten listings have still had to cut their price. Both are true at once. Plus the honest answer to whether you can ever buy here, and the Beach Trail reopening timeline.",
+    "description": "San Clemente's expected market time fell to 70 days from 98 a year ago, 40% of active listings have taken a price cut, and the June median sale price hit $1.89M. Plus how an owner-occupied home that earns income gets a first purchase across the line in South Orange County. By Adam Boehrer, Pacific Sotheby's International Realty.",
+    "og_title": "San Clemente Market, July 2026: A Home That Earns Its Keep",
+    "og_description": "Expected market time down to 70 days from 98. Four in ten listings cutting price. The June median at $1.89M. And the honest answer to whether you can ever buy on this coast.",
+    "places": [
+      "San Clemente",
+      "Dana Point",
+      "San Juan Capistrano",
+      "Laguna Beach",
+      "Newport Coast"
+    ],
+    "keywords": [
+      "San Clemente housing market",
+      "expected market time",
+      "house hacking South Orange County",
+      "San Clemente median home price",
+      "coastal Orange County real estate"
+    ],
+    "date_modified": "2026-07-29"
+  },
+  "table_columns": [
+    "City",
+    "Median",
+    "Cuts",
+    "EMT"
+  ],
+  "table_highlight": "San Clemente",
+  "sections": [
+    {
+      "eyebrow": "A Note From Adam",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 4,
+          "to": 13
+        }
+      ]
+    },
+    {
+      "eyebrow": "The Good Life",
+      "title": "The Beach Trail is coming back.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 14,
+          "to": 15
+        }
+      ]
+    },
+    {
+      "eyebrow": "What I'm Watching",
+      "title": "Before it hits the market.",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 16,
+          "to": 17
+        }
+      ]
+    },
+    {
+      "eyebrow": "By The Numbers",
+      "title": "San Clemente, July 2026",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 18,
+          "to": 27
+        }
+      ]
+    },
+    {
+      "eyebrow": "San Clemente in Context",
+      "title": "How the coast compares, July 2026",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 28,
+          "to": 29
+        },
+        {
+          "kind": "table",
+          "from": 29,
+          "to": 53
+        },
+        {
+          "kind": "mixed",
+          "from": 53,
+          "to": 54
+        }
+      ]
+    },
+    {
+      "eyebrow": "Wondering Where You Stand?",
+      "title": "An honest read on the home you already own.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 55,
+          "to": 57
+        }
+      ]
+    },
+    {
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "sources",
+          "from": 57,
+          "to": 58
+        }
+      ]
+    }
+  ]
+}

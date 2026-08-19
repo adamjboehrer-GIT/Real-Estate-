@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "date_published": "2026-06-19",
+    "date_display": "June 19, 2026",
+    "short_title": "June 2026",
+    "title": "Dana Point Market, June 2026: Six Months of Inventory Down to Ten Weeks | Adam Boehrer, Pacific Sotheby's",
+    "headline": "Six months to ten weeks: the Dana Point shift.",
+    "lede": "A year ago Dana Point was clearing its inventory in about six months. This spring it is closer to ten weeks, and homes under $5M are closing at list in under two weeks. That is the steepest one-year shift of any town in the South OC coastal peer set.",
+    "description": "Dana Point single-family homes sold in a median 12 days in April 2026, less than half of last April's 32, with supply down to 3.1 months from 4.8 and a $2.99M median. The harbor rebuild is visibly underway. By Adam Boehrer, Pacific Sotheby's International Realty.",
+    "og_title": "Dana Point Market, June 2026: Six Months to Ten Weeks",
+    "og_description": "Median 12 days on market, less than half of last April. Supply down from 4.8 months to 3.1. Sale-to-list at 100.7%. The steepest one-year shift on this coast.",
+    "places": [
+      "Dana Point",
+      "San Clemente",
+      "Laguna Beach",
+      "Newport Coast",
+      "San Juan Capistrano"
+    ],
+    "keywords": [
+      "Dana Point real estate",
+      "Dana Point Harbor revitalization",
+      "Lantern District",
+      "Dana Point median home price",
+      "South Orange County housing market"
+    ],
+    "date_modified": "2026-06-19"
+  },
+  "table_columns": [
+    "City",
+    "Days to Clear",
+    "Price Cuts",
+    "Sale / List"
+  ],
+  "table_highlight": "Dana Point",
+  "sections": [
+    {
+      "eyebrow": "A Note From Adam",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 3,
+          "to": 4
+        }
+      ]
+    },
+    {
+      "eyebrow": "This Issue · Dana Point",
+      "title": "What's happening in the neighborhood.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 6,
+          "to": 8
+        }
+      ]
+    },
+    {
+      "eyebrow": "Around Town",
+      "title": "What's new in Dana Point.",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 9,
+          "to": 13
+        }
+      ]
+    },
+    {
+      "eyebrow": "On My Desk",
+      "title": "Deals worth knowing about.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 14,
+          "to": 18
+        }
+      ]
+    },
+    {
+      "eyebrow": "By The Numbers",
+      "title": "Dana Point, April and May 2026",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 19,
+          "to": 39
+        },
+        {
+          "kind": "sources",
+          "from": 39,
+          "to": 40
+        }
+      ]
+    },
+    {
+      "eyebrow": "Dana Point in Context",
+      "title": "How the coast compares this month.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 41,
+          "to": 42
+        },
+        {
+          "kind": "table",
+          "from": 42,
+          "to": 66
+        },
+        {
+          "kind": "mixed",
+          "from": 66,
+          "to": 69
+        }
+      ]
+    },
+    {
+      "eyebrow": "What's It Worth?",
+      "title": "What's your home worth right now?",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 71,
+          "to": 74
+        },
+        {
+          "kind": "mixed",
+          "from": 70,
+          "to": 71
+        }
+      ]
+    }
+  ]
+}

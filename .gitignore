@@ -32,3 +32,12 @@ website/screenshots/
 # deployed website/<listing>/images/full/ set (same 1800x1200), so keep them
 # local rather than committing ~20MB of binaries per listing.
 Marketing/Listings/*/source-photos/
+
+# Title-pull working files — contain owner names and street addresses
+scripts/.tp_*
+scripts/.tmp_lines.json
+scripts/_batch_send_generated.js
+
+# Per-homeowner CMA pages — named address + valuation, private links only.
+# Never commit while this repo is public.
+website/report/

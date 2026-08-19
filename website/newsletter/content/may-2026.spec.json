@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "date_published": "2026-05-05",
+    "date_display": "May 5, 2026",
+    "short_title": "May 2026",
+    "title": "San Clemente Market, May 2026: Peak Spring and Pricing Discipline | Adam Boehrer, Pacific Sotheby's",
+    "headline": "Peak spring, and pricing discipline is deciding everything.",
+    "lede": "Homes priced on the high side of their range have really struggled, while anything priced correctly from day one is moving fast. The difference is not demand. It is pricing. Plus Hillcrest renovations and Jimmy B's opening on El Camino Real.",
+    "description": "San Clemente single-family homes sold in a median 11 days in March 2026 at a 100.8% sale-to-list ratio, with 28% of city-wide listings taking a price cut. Why correctly priced homes move fast while high-side listings sit. By Adam Boehrer, Pacific Sotheby's International Realty.",
+    "og_title": "San Clemente Market, May 2026: Pricing Discipline Is Deciding Everything",
+    "og_description": "Priced right from day one and it moves. Priced on the high side and it sits. The difference is not demand. Plus Hillcrest renovations and Jimmy B's on El Camino Real.",
+    "places": [
+      "San Clemente",
+      "Dana Point",
+      "Laguna Beach",
+      "Newport Coast",
+      "San Juan Capistrano"
+    ],
+    "keywords": [
+      "San Clemente housing market",
+      "San Clemente home prices",
+      "Hillcrest San Clemente",
+      "sale to list ratio",
+      "coastal Orange County real estate"
+    ],
+    "date_modified": "2026-05-05"
+  },
+  "table_columns": [
+    "City",
+    "Days to Clear",
+    "Price Cuts",
+    "Sale / List"
+  ],
+  "table_highlight": "San Clemente",
+  "sections": [
+    {
+      "eyebrow": "A Note From Adam",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 3,
+          "to": 4
+        }
+      ]
+    },
+    {
+      "eyebrow": "This Issue · San Clemente",
+      "title": "What's happening in the neighborhood.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 6,
+          "to": 8
+        }
+      ]
+    },
+    {
+      "eyebrow": "Around Town",
+      "title": "What's new in San Clemente.",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 9,
+          "to": 13
+        }
+      ]
+    },
+    {
+      "eyebrow": "On My Desk",
+      "title": "Deals worth knowing about.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 14,
+          "to": 20
+        }
+      ]
+    },
+    {
+      "eyebrow": "By The Numbers",
+      "title": "San Clemente, March and April 2026",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 21,
+          "to": 41
+        },
+        {
+          "kind": "sources",
+          "from": 41,
+          "to": 42
+        }
+      ]
+    },
+    {
+      "eyebrow": "San Clemente in Context",
+      "title": "How the coast compares this month.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 43,
+          "to": 44
+        },
+        {
+          "kind": "table",
+          "from": 44,
+          "to": 68
+        },
+        {
+          "kind": "mixed",
+          "from": 68,
+          "to": 71
+        }
+      ]
+    },
+    {
+      "eyebrow": "Before You List",
+      "title": "The conversation before the listing.",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 73,
+          "to": 76
+        },
+        {
+          "kind": "mixed",
+          "from": 72,
+          "to": 73
+        }
+      ]
+    }
+  ]
+}

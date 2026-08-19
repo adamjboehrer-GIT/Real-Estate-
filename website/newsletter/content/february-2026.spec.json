@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "date_published": "2026-02-18",
+    "date_display": "February 18, 2026",
+    "short_title": "February 2026",
+    "title": "San Clemente Market, February 2026: Days on Market Nearly Doubles Year Over Year | Adam Boehrer, Pacific Sotheby's",
+    "headline": "What I'm watching as the 2026 market opens.",
+    "lede": "January closed with the median San Clemente single-family home taking 53 days to sell, up from 29 the year before. Supply barely moved. What that combination says about the spring ahead, plus where the renovation capital is going in Hillcrest.",
+    "description": "San Clemente single-family homes took a median 53 days to sell in January 2026, up from 29 days a year earlier, with 2.1 months of supply and a $1.73M median sale price. Plus why South San Clemente owners are renovating instead of selling. By Adam Boehrer, Pacific Sotheby's International Realty.",
+    "og_title": "San Clemente Market, February 2026: What I'm Watching as the Year Opens",
+    "og_description": "Median days on market nearly doubled year over year to 53. Supply flat at 2.1 months. Median price $1.73M. Here is what that combination means for spring.",
+    "places": [
+      "San Clemente"
+    ],
+    "keywords": [
+      "San Clemente housing market",
+      "San Clemente days on market",
+      "Hillcrest San Clemente",
+      "months of supply",
+      "coastal Orange County real estate"
+    ],
+    "date_modified": "2026-02-18"
+  },
+  "sections": [
+    {
+      "eyebrow": "A Note From Adam",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 6,
+          "to": 7
+        }
+      ]
+    },
+    {
+      "eyebrow": "This Issue · San Clemente",
+      "title": "What's happening in the neighborhood.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 9,
+          "to": 13
+        }
+      ]
+    },
+    {
+      "eyebrow": "Around Town",
+      "title": "What's new in San Clemente.",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 14,
+          "to": 18
+        }
+      ]
+    },
+    {
+      "eyebrow": "On My Desk",
+      "title": "Deals worth knowing about.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 19,
+          "to": 25
+        }
+      ]
+    },
+    {
+      "eyebrow": "By The Numbers",
+      "title": "San Clemente single-family, January 2026",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 26,
+          "to": 36
+        },
+        {
+          "kind": "sources",
+          "from": 36,
+          "to": 37
+        }
+      ]
+    },
+    {
+      "eyebrow": "Thinking About Selling?",
+      "title": "A quick introduction goes a long way.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 37,
+          "to": 40
+        }
+      ]
+    }
+  ]
+}

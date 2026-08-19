@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "date_published": "2026-04-01",
+    "date_display": "April 1, 2026",
+    "short_title": "April 2026",
+    "title": "San Clemente Market, April 2026: Median 11 Days on Market, 100.8% Sale-to-List | Adam Boehrer, Pacific Sotheby's",
+    "headline": "March closed strong. Here's what that tells us about April.",
+    "lede": "March was the cleanest month San Clemente has seen in over a year. Median time on market fell to 11 days, homes closed above list, and price cuts sat among the lowest in Orange County. This issue also looks at Capistrano Beach and Beach Road.",
+    "description": "San Clemente single-family homes sold in a median 11 days in March 2026, down from 19 a year earlier, at a 100.8% sale-to-list ratio and a $1.81M median price. Plus Beach Road, the tightest direct-sand pocket in Capistrano Beach. By Adam Boehrer, Pacific Sotheby's International Realty.",
+    "og_title": "San Clemente Market, April 2026: March Closed Strong",
+    "og_description": "Median 11 days on market, down from 19. Sale-to-list at 100.8%. Price cuts among the lowest in Orange County. Plus Beach Road and the Capistrano Beach bluffs.",
+    "places": [
+      "San Clemente",
+      "Capistrano Beach",
+      "Dana Point",
+      "Laguna Beach",
+      "Newport Coast",
+      "San Juan Capistrano"
+    ],
+    "keywords": [
+      "San Clemente housing market",
+      "Capistrano Beach real estate",
+      "Beach Road Capistrano Beach",
+      "sale to list ratio",
+      "San Clemente days on market"
+    ],
+    "date_modified": "2026-04-01"
+  },
+  "table_columns": [
+    "City",
+    "Days to Clear",
+    "Price Cuts",
+    "Sale / List"
+  ],
+  "table_highlight": "San Clemente",
+  "sections": [
+    {
+      "eyebrow": "A Note From Adam",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 6,
+          "to": 7
+        }
+      ]
+    },
+    {
+      "eyebrow": "This Issue · Capistrano Beach",
+      "title": "What's happening in the neighborhood.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 9,
+          "to": 13
+        }
+      ]
+    },
+    {
+      "eyebrow": "Around Town",
+      "title": "What's new in Capistrano Beach.",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 14,
+          "to": 18
+        }
+      ]
+    },
+    {
+      "eyebrow": "On My Desk",
+      "title": "Deals worth knowing about.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 19,
+          "to": 25
+        }
+      ]
+    },
+    {
+      "eyebrow": "By The Numbers",
+      "title": "San Clemente, March and April 2026",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 26,
+          "to": 46
+        },
+        {
+          "kind": "sources",
+          "from": 46,
+          "to": 47
+        }
+      ]
+    },
+    {
+      "eyebrow": "San Clemente in Context",
+      "title": "How the coast compares heading into peak spring.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 48,
+          "to": 49
+        },
+        {
+          "kind": "table",
+          "from": 49,
+          "to": 73
+        },
+        {
+          "kind": "mixed",
+          "from": 73,
+          "to": 76
+        }
+      ]
+    },
+    {
+      "eyebrow": "Know Someone on the Sidelines?",
+      "title": "This is the window where a good introduction pays off.",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 76,
+          "to": 79
+        }
+      ]
+    }
+  ]
+}

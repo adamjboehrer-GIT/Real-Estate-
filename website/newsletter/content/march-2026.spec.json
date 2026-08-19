@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "date_published": "2026-03-18",
+    "date_display": "March 18, 2026",
+    "short_title": "March 2026",
+    "title": "Dana Point Market, March 2026: Spring Opens Earlier Than Last Year | Adam Boehrer, Pacific Sotheby's",
+    "headline": "Spring is opening with a different tone than last year.",
+    "lede": "February closed faster than I expected and the spring buyer pool is forming earlier. This issue looks at Dana Point, where Del Prado Place adds 18 condos to the Lantern District and Harbor Phase 3 demolition is now underway.",
+    "description": "The 2026 spring buyer pool formed earlier than last year across South Orange County. This issue covers Dana Point: 18 new Del Prado Place condos in the Lantern District, Harbor Phase 3 demolition, and the Festival of Whales. By Adam Boehrer, Pacific Sotheby's International Realty.",
+    "og_title": "Dana Point Market, March 2026: Spring Opens on a Different Tone",
+    "og_description": "February closed faster than expected and the spring buyer pool formed early. Plus Del Prado Place, Harbor Phase 3 demolition, and Doheny in the locals' window.",
+    "places": [
+      "Dana Point",
+      "San Clemente"
+    ],
+    "keywords": [
+      "Dana Point real estate",
+      "Dana Point Harbor revitalization",
+      "Lantern District condos",
+      "South Orange County spring market",
+      "Doheny State Beach"
+    ],
+    "date_modified": "2026-03-18"
+  },
+  "sections": [
+    {
+      "eyebrow": "A Note From Adam",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 6,
+          "to": 7
+        }
+      ]
+    },
+    {
+      "eyebrow": "This Issue · Dana Point",
+      "title": "What's happening in the neighborhood.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 9,
+          "to": 13
+        }
+      ]
+    },
+    {
+      "eyebrow": "Around Town",
+      "title": "What's new in Dana Point.",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 14,
+          "to": 18
+        }
+      ]
+    },
+    {
+      "eyebrow": "On My Desk",
+      "title": "Deals worth knowing about.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 19,
+          "to": 25
+        }
+      ]
+    },
+    {
+      "eyebrow": "By The Numbers",
+      "title": "San Clemente single-family, February 2026",
+      "band": "band-white",
+      "parts": [
+        {
+          "kind": "html",
+          "html": "      <p>The February closing figures that ran in the emailed edition of this issue are not reproduced here. For current San Clemente numbers, updated every two weeks from CRMLS, see the <a href=\"/san-clemente-housing-market/\">San Clemente housing market report</a>.</p>"
+        }
+      ]
+    },
+    {
+      "eyebrow": "Before You List",
+      "title": "The conversation before the listing.",
+      "band": "band-paper",
+      "parts": [
+        {
+          "kind": "mixed",
+          "from": 38,
+          "to": 42
+        }
+      ]
+    }
+  ]
+}
