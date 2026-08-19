@@ -920,3 +920,49 @@ section[id], main[id] {
   .page-title { font-size: 32px; }
   .prose p { font-size: 16px; }
 }
+
+/* ===== ISSUE PAGER (previous / next newsletter issue) ===== */
+.issue-pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  border-top: 1px solid var(--gold);
+  padding-top: 28px;
+}
+.issue-pager .pager-item.is-next {
+  text-align: right;
+  grid-column: 2;
+}
+.issue-pager .pager-label {
+  margin: 0 0 10px;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-grey);
+  font-weight: 600;
+}
+.issue-pager .pager-month {
+  display: block;
+  margin: 0 0 4px;
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  color: var(--text-grey);
+  font-weight: 400;
+}
+.issue-pager .pager-item a {
+  display: inline-block;
+  font-family: var(--serif);
+  font-size: 21px;
+  line-height: 1.32;
+  color: var(--sir-blue);
+  font-weight: 400;
+}
+.issue-pager .pager-item a:hover,
+.issue-pager .pager-item a:hover .pager-month { color: var(--gold); }
+
+@media only screen and (max-width: 760px) {
+  .issue-pager { grid-template-columns: 1fr; gap: 28px; }
+  .issue-pager .pager-item.is-next { text-align: left; grid-column: 1; }
+}

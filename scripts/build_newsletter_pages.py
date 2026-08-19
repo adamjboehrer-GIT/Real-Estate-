@@ -47,6 +47,38 @@ ISSUES = ["february-2026", "march-2026", "april-2026",
           "may-2026", "june-2026", "july-2026"]
 
 
+def issue_order(slugs=None):
+    """Issues that have a spec, oldest first, as (slug, meta) pairs.
+
+    Feeds the previous/next pager. Ordered by date_published rather than the
+    ISSUES list so a back-dated issue still lands in the right place.
+    """
+    out = []
+    for slug in (slugs or ISSUES):
+        path = os.path.join(CONTENT, slug + ".spec.json")
+        if os.path.exists(path):
+            out.append((slug, json.load(open(path, encoding="utf-8"))["meta"]))
+    out.sort(key=lambda p: p[1]["date_published"])
+    return out
+
+
+def pager_item(slug, meta, rel):
+    """One side of the previous/next pager, or empty for the end issues."""
+    if not slug:
+        return ""
+    label = "Previous issue" if rel == "prev" else "Next issue"
+    arrow = "&larr; " if rel == "prev" else ""
+    tail = " &rarr;" if rel == "next" else ""
+    css = "pager-item is-prev" if rel == "prev" else "pager-item is-next"
+    return f'''<div class="{css}">
+          <p class="pager-label">{label}</p>
+          <a href="/newsletter/{slug}" rel="{rel}">
+            <span class="pager-month">{esc(meta["short_title"])}</span>
+            {arrow}{esc(meta["headline"])}{tail}
+          </a>
+        </div>'''
+
+
 # ----------------------------------------------------------------- chrome ---
 def chrome():
     """Lift nav / modal / footer / scripts out of a canonical site page."""
@@ -281,13 +313,36 @@ def strip_utm(href):
 
 
 # ------------------------------------------------------------------ build ---
-def build(slug, nav, modal, footer_and_js):
+def build(slug, nav, modal, footer_and_js, order=None):
     raw = json.load(open(os.path.join(CONTENT, slug + ".raw.json"), encoding="utf-8"))
     spec = json.load(open(os.path.join(CONTENT, slug + ".spec.json"), encoding="utf-8"))
     blocks = raw["blocks"]
 
     url = f"{BASE}/newsletter/{slug}"
     m = spec["meta"]
+
+    # ---- previous / next neighbours
+    order = order if order is not None else issue_order()
+    slugs = [o[0] for o in order]
+    i = slugs.index(slug) if slug in slugs else -1
+    prev = order[i - 1] if i > 0 else (None, None)
+    nxt = order[i + 1] if 0 <= i < len(order) - 1 else (None, None)
+    head_rels = "".join(
+        f'\n  <link rel="{rel}" href="{BASE}/newsletter/{s_}">'
+        for rel, s_ in (("prev", prev[0]), ("next", nxt[0])) if s_)
+    pager = ""
+    if prev[0] or nxt[0]:
+        pager = f'''
+  <!-- ===== PREVIOUS / NEXT ISSUE ===== -->
+  <section class="band band-white">
+    <div class="container narrow">
+      <nav class="issue-pager" aria-label="Coastal Currents issues">
+        {pager_item(*prev, "prev")}
+        {pager_item(*nxt, "next")}
+      </nav>
+    </div>
+  </section>
+'''
 
     # ---- body sections
     body = []
@@ -384,11 +439,11 @@ def build(slug, nav, modal, footer_and_js):
   <meta name="twitter:title" content="{html.escape(m["og_title"], quote=True)}">
   <meta name="twitter:description" content="{html.escape(m["og_description"], quote=True)}">
   <meta name="twitter:image" content="{BASE}{m.get("image", "/images/headshot.jpg")}">
-  <link rel="canonical" href="{url}">
+  <link rel="canonical" href="{url}">{head_rels}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Source+Sans+Pro:wght@300;400;600&display=swap">
-  <link rel="stylesheet" href="/css/site.css?v=20260819a">
+  <link rel="stylesheet" href="/css/site.css?v=20260819b">
 {ld(crumbs)}
 {ld(article)}
 </head>
@@ -420,7 +475,7 @@ def build(slug, nav, modal, footer_and_js):
   </section>
 
 {body}
-
+{pager}
   <!-- ===== KEEP READING ===== -->
   <section class="band band-paper">
     <div class="container narrow prose">
@@ -448,12 +503,13 @@ def build(slug, nav, modal, footer_and_js):
 
 def main():
     nav, modal, footer_and_js = chrome()
+    order = issue_order()
     for slug in (sys.argv[1:] or ISSUES):
         spec_path = os.path.join(CONTENT, slug + ".spec.json")
         if not os.path.exists(spec_path):
             print(f"{slug}: SKIP (no spec)")
             continue
-        dest, size = build(slug, nav, modal, footer_and_js)
+        dest, size = build(slug, nav, modal, footer_and_js, order)
         print(f"{slug}: {size:,} bytes -> {os.path.relpath(dest, ROOT)}")
 
 

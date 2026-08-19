@@ -9,12 +9,17 @@ Rules that matter here:
     per-homeowner CMA reports under /report/, which are private links sent to
     one owner each and must never be listed.
   * lastmod comes from the file's last git commit, falling back to mtime, so
-    it reflects real content changes rather than a hand-maintained guess.
+    it reflects real content changes rather than a hand-maintained guess. The
+    exception is a dated newsletter issue: its content is fixed at publication,
+    so lastmod is its date_published. Rebuilding the template must not restamp
+    six archived issues with today's date -- Google discounts lastmod site-wide
+    once it sees dates that do not match real content changes.
 
 Usage: python3 scripts/build_sitemap.py
 """
 
 import datetime
+import json
 import os
 import re
 import subprocess
@@ -51,6 +56,18 @@ def git_date(path):
     return datetime.date.fromtimestamp(os.path.getmtime(path)).isoformat()
 
 
+def issue_published(url):
+    """date_published for /newsletter/<slug>, else None."""
+    m = re.fullmatch(r"/newsletter/([a-z0-9-]+)", url)
+    if not m:
+        return None
+    spec = os.path.join(SITE, "newsletter", "content", m.group(1) + ".spec.json")
+    if not os.path.exists(spec):
+        return None
+    d = json.load(open(spec, encoding="utf-8")).get("meta", {}).get("date_published")
+    return d if d and re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else None
+
+
 def is_noindex(path):
     head = open(path, encoding="utf-8", errors="ignore").read(6000)
     m = re.search(r'<meta[^>]+name="robots"[^>]+content="([^"]*)"', head, re.I)
@@ -75,7 +92,7 @@ def discover():
                 url = "/" if rel == "index.html" else "/" + rel[:-len("index.html")]
             else:
                 url = "/" + rel[:-len(".html")]      # extensionless
-            pages.append((url, git_date(full)))
+            pages.append((url, issue_published(url) or git_date(full)))
     # newest content first, homepage always at the top
     pages.sort(key=lambda p: (p[0] != "/", p[0]))
     return pages
