@@ -81,6 +81,16 @@ Both are non-engineers. Claude Code is the primary technical operator for this s
 - **`/ig-growth`** — Daily unattended Instagram growth loop for `@adamonthecoastoc`. Follows vetted local accounts (15/day), runs unfollow hygiene on accounts that never followed back, leaves substantive comments inside the local graph (10/day), replies to stories, and triages inbound DMs into `instagram_dms` + `contacts`. Halts on the first action-block or checkpoint. **Never posts to the feed and never sends a DM.** Scheduled by launchd (`com.adamboehrer.ig-growth`, 11:15am, offset from fb-daily at 9:30 so the two never contend for the Playwright profile). Procedure at `.claude/skills/ig-growth/SKILL.md`.
 - **`/ig-content`** — Builds the week of Instagram posts into an approval queue, including the flagship **Deal of the Week** carousel. `scripts/ig_deal_of_week.py` ranks active CRMLS listings by price per square foot against the median of closed comps matched on property class, area, and size band; `scripts/ig_render_deal_card.py` renders three brand-compliant 1080x1350 frames. Everything lands in `outreach/instagram/QUEUE.md` at `status='draft'`. **Nothing publishes without Adam approving that specific post** — `scripts/ig_publish.py` refuses any row that is not `approved` with `compliance_ok=1`. Strategy, caps, and voice rules at `outreach/instagram/INSTAGRAM_PLAN.md`; procedure at `.claude/skills/ig-content/SKILL.md`.
 
+- **`/newpage`** — The build standard for every page on adamboehrer.com. Invoke on any page
+  creation, rebuild, or audit under `website/`. Enforces the head block (topic-led title, meta
+  description, OG/Twitter, canonical: absolute, non-www, extensionless), a minimum of two JSON-LD
+  blocks with the `RealEstateAgent` author identity and DRE #02419464, one `<h1>` with real
+  heading hierarchy, at least one inbound internal link from an existing page, sitemap
+  regeneration, deploy, live verification, and an IndexNow push. Newsletter issues are
+  **generated**, never pasted from Mailchimp: `extract_newsletter_content.py` →
+  `<slug>.spec.json` → `build_newsletter_pages.py`. Full checklist at
+  `.claude/skills/newpage/SKILL.md`; audit history at `website/SEO/INDEXING_REPAIR_PLAN.md`.
+
 ---
 
 ## Current Active Deals (as of project start)
@@ -150,6 +160,58 @@ Every outreach action should be logged with: channel, contact ID, date, message 
 - [ ] Write PropStream CSV ingestion script
 - [ ] Define "quality buyer" and "quality seller" scoring criteria in writing
 - [ ] Get details on the two off-market deals
+
+---
+
+## STR Market Benchmark (San Clemente)
+
+A parcel-level read of the short-term rental market, built from public Airbnb
+listing pages: booked pace, nightly rate and revenue per available night for
+every entire-home listing in the city, plus who operates how many units and who
+is running professional host software.
+
+Built as the door-opener for short-term rental owners. Most of them are
+unreachable with a normal agent pitch and none of them can get this number
+anywhere else, so it earns the meeting; the business behind it is acquisition
+representation, because STR operators buy repeatedly and San Clemente's permit
+rules make legal inventory genuinely hard to find (see below).
+
+Pipeline, gotchas and the meaning of each metric: `data/str_market/README.md`.
+Scripts are `str_harvest.py`, `str_prices.py`, `str_analyze.py` and
+`build_str_benchmark.py`. Output lands in `Marketing/Market Breakdowns/`, and
+`--highlight <ids> --for "<name>"` produces an owner-personalised edition.
+
+**The personalised edition diagnoses, it does not just rank.** Each of the owner's
+listings is scored against its own bedroom cohort on rate and on booked pace
+separately, because those two trade against each other and only the pair says
+which lever is stuck: priced above where it sells, selling faster than it is
+priced, or behind on both. It also compares their seasonal curve to the market's.
+That is the part an owner actually argues with, and arguing is the point -- the
+report is there to prove Adam knows the asset class, not to sell them anything.
+
+**Booked pace is not occupancy** and the analysis deliberately refuses to emit an
+annual revenue figure. Read the README before quoting any number from it.
+
+**San Clemente STLU rules, confirmed with the City 2026-08-18** and load-bearing
+for anyone advising an STR buyer:
+
+- The STLU permit is **void as of the date of conveyance**. A buyer cannot inherit
+  the seller's short-term rental income. The owner must record a "City's Right to
+  Notice of Change in Ownership" covenant with the County Clerk-Recorder, so the
+  City finds out at close whether or not anyone volunteers it. This kills deals in
+  escrow when nobody checks.
+- Eligibility is **geographic, not quota-based. There is no cap** — no percentage,
+  no saturation threshold, no waitlist. Either the parcel is inside an
+  STLU-allowed area or it is not. Single-family homes in low-density residential
+  zones generally are not. The City publishes the allowed-areas map:
+  http://www.san-clemente.org/home/showdocument?id=27831
+- Governing code: **SCMC 17.16.145 and 17.28.292**. Applications take 30-60 days,
+  then 2-4 weeks for the operating licence.
+- Other real conditions: **HOA written approval** where applicable, notification
+  letters to every owner **within 300 feet**, and proof of commercial vacation
+  rental insurance renewed annually.
+- $140 one-time zoning permit, $105/yr operating licence, **10% TOT** on rent,
+  cleaning fees and key charges, filed quarterly.
 
 ---
 
