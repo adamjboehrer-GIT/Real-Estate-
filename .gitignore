@@ -41,3 +41,4 @@ scripts/_batch_send_generated.js
 # Per-homeowner CMA pages — named address + valuation, private links only.
 # Never commit while this repo is public.
 website/report/
+archive/
