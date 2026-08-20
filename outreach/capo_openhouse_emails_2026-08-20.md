@@ -28,9 +28,13 @@ Hope to see you Saturday.
 Best,
 
 Adam Boehrer
-REALTOR® · DRE #02419464
+Real Estate Agent, REALTOR® · DRE #02419464
 Pacific Sotheby's International Realty
-949.541.8247 · adam.boehrer@pacificsir.com
+949.541.8247
+adam.boehrer@pacificsir.com
+https://adamboehrer.com
+Instagram: @adamonthecoastoc
+LinkedIn: https://www.linkedin.com/in/adam-boehrer-0b2118133/
 
 Listed by Kameron Brown, DRE #02021705, Pacific Sotheby's International Realty. This is not a solicitation of property already listed with another broker.
 
