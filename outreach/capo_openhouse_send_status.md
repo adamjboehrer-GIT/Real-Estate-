@@ -32,9 +32,9 @@ recover a first name from it. Judge reply rate on the named rows.
 
 | Date | Sent | Numbers | Failures | Bounces | Opt-outs |
 |---|---|---|---|---|---|
-| 2026-08-20 | 36 | #1-36 | 0 | 2 | 1 |
+| 2026-08-20 | 89 | #1-89 | 0 | 2 | 1 |
 
-**Next batch starts at #55** (#37-54 in flight).
+**Next batch starts at #108** (#90-107 in flight).
 
 ## Pacing
 
@@ -140,6 +140,37 @@ those addresses want a different channel rather than a retry from the same mailb
 |---|---|---|---|
 | 20 | eburkow@yahoo.com | 5.0.350 policy rejection (Yahoo) | not marked bounced; mailbox is live |
 | 28 | hilaryjean_kalb@yahoo.com | 5.0.350 policy rejection (Yahoo) | not marked bounced; mailbox is live |
+
+## Browser died mid-batch at #89, 2026-08-20
+
+Batch #73-90 returned `page.waitForTimeout: Target page, context or browser has been
+closed`. The browser went away underneath a live run.
+
+**Nothing was orphaned.** The loop drives the page through the `page` handle, so it dies
+with the tab. That is the same property the double-send postmortem relies on: closing the
+tab is what actually kills a runaway loop.
+
+**Reconciled two independent ways, and they agreed exactly:**
+
+| Source | Says |
+|---|---|
+| `localStorage.__sendLedger_camp-capo-oh-2026-08` | 89 numbers spent, max 89, batch range #73-89 |
+| Outlook Sent Items, newest first | #89, 88, 87, 86, 85, 84, 83 |
+
+So **#73-89 sent and #90 never started**. Logged 73-89 and resumed at #90. The ledger
+survived because it lives in the profile directory, not the process.
+
+The dead run still held `__sendLock`. Cleared it explicitly rather than waiting out the
+150s staleness window, since both sources had already confirmed the run was dead.
+
+### Row count exceeds send count, and that is correct
+
+`leads.db` shows 90 outbound rows for 89 sends. `benji_2003@hotmail.com` (#88) maps to
+two contact records; the title data carries duplicate rows per person, up to five for
+`richardkay@sbcglobal.net`. The logger records the touch against every contact record for
+that person, while the send list dedupes on the address, so the person received exactly
+one email. Six manifest entries have more than one contact id. **Count sends by distinct
+queue number, never by interaction rows.**
 
 ## Playwright profile lock, 2026-08-20
 
