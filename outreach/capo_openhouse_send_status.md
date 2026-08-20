@@ -32,9 +32,9 @@ recover a first name from it. Judge reply rate on the named rows.
 
 | Date | Sent | Numbers | Failures | Bounces | Opt-outs |
 |---|---|---|---|---|---|
-| 2026-08-20 | 107 | #1-107 | 0 | 7 | 1 |
+| 2026-08-20 | 127 | #1-127 | 0 | 7 | 1 |
 
-**Next batch starts at #126** (#108-125 in flight).
+**Next batch starts at #146** (#128-145 in flight).
 
 ## Pacing
 
@@ -60,6 +60,32 @@ correcting the collision. The key is now `__sendLedger_<campaign>`.
 Coffee keeps its protection through guard 4, the DB seed, which reloads all 312 logged
 sends from `leads.db` into its own key at run start. Verified: a 300-320 request still
 drops 300-312 and generates only 313-320.
+
+## Tier 2 dropped, 2026-08-20 (Adam's call)
+
+**The 100 catch-all addresses (#226-325) will not be sent.** Adam chose verified-only
+after seeing the Friday arithmetic: 182 remained against a ~150/day ceiling, and Yahoo was
+already rejecting. Tier 1 alone (#1-225) fits comfortably before Saturday.
+
+The queue file still holds #226-325. Nothing needs deleting; simply stop at #225. If a
+later round wants them, they should be re-verified first rather than sent on 8/13 data.
+
+## The ledger does NOT survive a browser crash
+
+Batch #126-143 died with `Page crashed`, and after recovery
+`localStorage.__sendLedger_camp-capo-oh-2026-08` came back **empty** — not stale, gone.
+The earlier #89 crash had preserved it, so this is not reliable either way.
+
+**Consequence: the localStorage ledger is a within-session guard only. The DB seed
+(guard 4) is the durable one.** It re-seeded all 127 logged numbers into the fresh ledger
+on the next generate, which is the only reason the campaign could resume safely.
+
+**So: always log a batch to `leads.db` before generating the next one.** An unlogged batch
+plus a wiped ledger equals no duplicate protection at all.
+
+Reconciliation here had to come from Sent Items alone: newest was `fjbill24@yahoo.com`
+(#127), so #126-127 sent and #128 onward never ran. The crash landed about three minutes
+into the batch, consistent with the 234s the call was alive.
 
 ## Manifest-mapping bug, found and fixed 2026-08-20
 
