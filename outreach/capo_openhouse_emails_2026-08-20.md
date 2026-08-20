@@ -13,7 +13,9 @@ Hi {name},
 
 Quick note to the neighborhood. I'm hosting the open house at 26966 Calle Dolores this Saturday, 1 to 4.
 
-The price just came down to $1,995,000. Fully remodeled and turn-key in the Golden Triangle, repiped and rewired, owned solar with a whole-home battery, no HOA. Worth seeing in person at that number.
+The price just came down to $1,995,000.
+
+This home is fully remodeled and turnkey. It's been repiped and rewired. The solar is owned, with a whole-home battery. No HOA. That's something worth seeing in person.
 
 Walking through a house on your own street is also the most honest way to find out what your place would do in this market. Come look, tell me what you think of it, and I'll tell you what I'm seeing around Capo Beach.
 
