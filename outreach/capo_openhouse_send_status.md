@@ -32,9 +32,14 @@ recover a first name from it. Judge reply rate on the named rows.
 
 | Date | Sent | Numbers | Failures | Bounces | Opt-outs |
 |---|---|---|---|---|---|
-| 2026-08-20 | 127 | #1-127 | 0 | 7 | 1 |
+| 2026-08-20 | 131 | #1-130, #132 | 1 (#131, retryable) | 7 | 1 |
 
-**Next batch starts at #146** (#128-145 in flight).
+**STOPPED FOR THE DAY at 131.** Resume Friday 8/21 with **#131 first**, then #133-225.
+94 remain. Do not send #226-325: tier 2 is dropped.
+
+#131 `gilbertabrigo1@gmail.com` hit the 120s per-email watchdog and **never sent**.
+Confirmed twice: absent from Sent Items, and absent from the ledger, so it is not marked
+spent and is safe to retry. It is deliberately unlogged for that reason.
 
 ## Pacing
 
@@ -60,6 +65,20 @@ correcting the collision. The key is now `__sendLedger_<campaign>`.
 Coffee keeps its protection through guard 4, the DB seed, which reloads all 312 logged
 sends from `leads.db` into its own key at run start. Verified: a 300-320 request still
 drops 300-312 and generates only 313-320.
+
+## Why the day stopped at 131 rather than 150
+
+The last batch returned **4 sent, 1 watchdog failure, 13 skipped on run budget, in 23
+minutes.** Five composes consumed a 22-minute budget that normally carries 18. The Outlook
+tab had degraded to the point where each compose was taking minutes instead of seconds.
+
+That is the third failure in a row on the same browser: crash at #89, crash at #127, then
+this stall. Continuing would have meant more crashes, more reconciliation, and more chances
+to lose track of what actually sent, in exchange for a handful of emails. **Stopped at 131
+on purpose**, comfortably under the 150 ceiling.
+
+Friday starts on a fresh browser with 94 to send, which fits a normal day easily. Restart
+Chrome before the first batch rather than reusing this session's profile state.
 
 ## Tier 2 dropped, 2026-08-20 (Adam's call)
 
