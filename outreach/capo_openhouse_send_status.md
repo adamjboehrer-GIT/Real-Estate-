@@ -32,9 +32,9 @@ recover a first name from it. Judge reply rate on the named rows.
 
 | Date | Sent | Numbers | Failures | Bounces | Opt-outs |
 |---|---|---|---|---|---|
-| 2026-08-20 | 89 | #1-89 | 0 | 2 | 1 |
+| 2026-08-20 | 107 | #1-107 | 0 | 7 | 1 |
 
-**Next batch starts at #108** (#90-107 in flight).
+**Next batch starts at #126** (#108-125 in flight).
 
 ## Pacing
 
@@ -140,6 +140,26 @@ those addresses want a different channel rather than a retry from the same mailb
 |---|---|---|---|
 | 20 | eburkow@yahoo.com | 5.0.350 policy rejection (Yahoo) | not marked bounced; mailbox is live |
 | 28 | hilaryjean_kalb@yahoo.com | 5.0.350 policy rejection (Yahoo) | not marked bounced; mailbox is live |
+| 46 | lwinters@hotmail.com | delivery failed (postmaster) | not marked bounced pending a reason code |
+| 53 | pheckler@hotmail.com | delivery failed (postmaster) | **second failure** — also failed in the coffee round 8/14 as "transient". Two strikes; stop retrying this one. |
+| 57 | rmarkley2k@yahoo.com | couldn't be delivered (Yahoo) | not marked bounced; mailbox is live |
+| 80 | aleighess@yahoo.com | couldn't be delivered (Yahoo) | not marked bounced; mailbox is live |
+| 103 | clwboo@aol.com | couldn't be delivered (AOL) | not marked bounced; mailbox is live |
+
+**Rate check: 7 of 107, about 6.5%.** Round 1 ran 8% unverified and that is the level
+`VERIFICATION.md` calls reputation-damaging, so this is close enough to watch rather than
+ignore, *but* the composition matters: 4 of 7 are Yahoo and 1 is AOL, both Yahoo-operated.
+This reads as one mailbox provider throttling a single sender, not a bad list. The
+addresses were MillionVerifier-clean less than a week ago.
+
+**None are marked `bounced`.** They are policy rejections against live mailboxes, and
+marking them would permanently suppress real neighbors over a provider dispute.
+
+## Auto-responders
+
+| # | Address | What came back | Action |
+|---|---|---|---|
+| 44 | lneitzel@winston.com | "Lisa Neitzel is no longer with the firm" | Marked `bounced` to suppress. The mailbox accepts mail but it no longer reaches the owner, and mail about her home was landing in an inbox now staffed by strangers. Suppression here is a privacy call as much as a deliverability one. If Adam wants to reach her, it needs a different address. |
 
 ## Browser died mid-batch at #89, 2026-08-20
 
