@@ -105,7 +105,7 @@ the pace metric used throughout.
 - [Dana Point housing market](https://adamboehrer.com/dana-point-housing-market/): the same series for Dana Point, including harbor-area context.
 
 ## Guides and analysis
-- [Rent vs. buy in San Clemente](https://adamboehrer.com/rent-vs-buy-san-clemente/): monthly cost gap, crossover year across appreciation scenarios, and the assumptions that move the answer.
+- [Rent vs. buy in San Clemente](https://adamboehrer.com/rent-vs-buy-san-clemente/): the monthly cost gap between owning and renting, what mortgage principal and appreciation build in equity at years 5, 10, 20 and 30, and how long you need to stay.
 - [House hacking in South Orange County](https://adamboehrer.com/house-hacking-south-orange-county/): owner-occupied income property as a route to a first coastal purchase, and the loan programs that apply.
 
 ## Coastal Currents newsletter
