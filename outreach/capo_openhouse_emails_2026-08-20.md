@@ -15,13 +15,15 @@ Quick note to the neighborhood. I'm hosting the open house at 26966 Calle Dolore
 
 The price just came down to $1,995,000.
 
-This home is fully remodeled and turnkey. It's been repiped and rewired. The solar is owned, with a whole-home battery. No HOA. That's something worth seeing in person.
+This home is fully remodeled and turnkey. It's been repiped and rewired. The solar is owned, with a whole-home battery.
 
-Walking through a house on your own street is also the most honest way to find out what your place would do in this market. Come look, tell me what you think of it, and I'll tell you what I'm seeing around Capo Beach.
+Mostly, though, I'd just like to meet the neighbors. And walking through a house on your street is a great way to find out where your own home sits in this market.
+
+Come check it out, tell me what you think, and I'll let you know what I'm seeing around Capo Beach.
 
 Photos and details: https://adamboehrer.com/26966-calle-dolores/
 
-Hope to meet you Saturday.
+Hope to see you Saturday.
 
 Best,
 

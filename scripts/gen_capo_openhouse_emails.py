@@ -44,15 +44,19 @@ BODY = [
     "Quick note to the neighborhood. I'm hosting the open house at 26966 Calle Dolores "
     "this Saturday, 1 to 4.",
     "The price just came down to $1,995,000.",
-    # Adam's own wording, kept beat for beat. Only change: "no HOA" was hanging off the
-    # solar clause, so it gets its own sentence rather than reading as a feature of the solar.
+    # Adam's wording. "No HOA" is cut on purpose: everyone on this list already lives in
+    # Capo Beach and knows the tract has none, so it reads as filler to them even though
+    # it is a real selling point to an outside buyer.
     "This home is fully remodeled and turnkey. It's been repiped and rewired. The solar is "
-    "owned, with a whole-home battery. No HOA. That's something worth seeing in person.",
-    "Walking through a house on your own street is also the most honest way to find out what "
-    "your place would do in this market. Come look, tell me what you think of it, and I'll "
-    "tell you what I'm seeing around Capo Beach.",
+    "owned, with a whole-home battery.",
+    # The real ask. Meeting the neighbors leads; the market angle is secondary.
+    "Mostly, though, I'd just like to meet the neighbors. And walking through a house on "
+    "your street is a great way to find out where your own home sits in this market.",
+    "Come check it out, tell me what you think, and I'll let you know what I'm seeing "
+    "around Capo Beach.",
     "Photos and details: https://adamboehrer.com/26966-calle-dolores/",
-    "Hope to meet you Saturday.",
+    # "see" rather than "meet" so the sign-off does not echo the line three paragraphs up.
+    "Hope to see you Saturday.",
 ]
 
 # Live text in every email. The Outlook signature carries the same disclosure but rides
