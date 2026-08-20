@@ -32,9 +32,9 @@ recover a first name from it. Judge reply rate on the named rows.
 
 | Date | Sent | Numbers | Failures | Bounces | Opt-outs |
 |---|---|---|---|---|---|
-| 2026-08-20 | 18 | #1-18 | 0 | tbd | tbd |
+| 2026-08-20 | 36 | #1-36 | 0 | 2 | 1 |
 
-**Next batch starts at #37** (#19-36 in flight).
+**Next batch starts at #55** (#37-54 in flight).
 
 ## Pacing
 
@@ -110,6 +110,15 @@ python3 scripts/log_resident_sends.py 19-36 --campaign camp-capo-oh-2026-08
 3. Log what actually went out, then generate the next batch. The DB seed and the ledger
    refuse anything already sent, so the resume point does not have to be perfect.
 
+## Opt-outs (permanent)
+
+`build_send_list.py` blocks every `do_not_contact` row, so no rebuilt list will
+resurface them.
+
+| # | Address | Name | Date | Their words | Action taken |
+|---|---|---|---|---|---|
+| 26 | gwynne99@gmail.com | Gwynne Simmons | 2026-08-20 | "Stop" | `do_not_contact`, opt-out logged. Never contact again on any channel. Verified she has nothing pending in either the capo queue (#26, already sent) or the coffee queue (#10, sent 8/14). |
+
 ## Replies
 
 | # | Address | Name | Date | What they said | Action |
@@ -117,5 +126,31 @@ python3 scripts/log_resident_sends.py 19-36 --campaign camp-capo-oh-2026-08
 
 ## Bounces
 
+**Both rejections so far are Yahoo, both `5.0.350`** — a generic policy/security
+rejection, explicitly *not* "no such user". Neither is marked `bounced`: the mailboxes
+are not dead, Yahoo declined the message. Marking them bounced would permanently
+suppress two real neighbors.
+
+**Yahoo exposure worth watching.** 62 of the 325 addresses are Yahoo. 6 have gone out
+and 2 were rejected. 56 remain (31 in tier 1, 25 in tier 2). Overall delivery is still
+34 of 36. Not a reason to stop, but if the Yahoo rejection rate holds through tier 1,
+those addresses want a different channel rather than a retry from the same mailbox.
+
 | # | Address | Notice | Action |
 |---|---|---|---|
+| 20 | eburkow@yahoo.com | 5.0.350 policy rejection (Yahoo) | not marked bounced; mailbox is live |
+| 28 | hilaryjean_kalb@yahoo.com | 5.0.350 policy rejection (Yahoo) | not marked bounced; mailbox is live |
+
+## Playwright profile lock, 2026-08-20
+
+Mid-session the MCP server threw `Browser is already in use for .../mcp-chrome-bb6278f`.
+The lock pointed at a Chrome that was **34 seconds old**, not the hour-old one holding the
+Outlook session: the original had exited and a fresh instance grabbed the profile.
+
+Fix was `pkill -f mcp-chrome-bb6278f`, then remove `SingletonLock`/`SingletonCookie`/
+`SingletonSocket`, then reconnect. **The Outlook session survived**, because cookies live
+in the profile directory rather than in the process.
+
+Safe only because no send loop was live at the time. Never do this mid-run: killing the
+browser during a batch loses the loop with no way to know where it stopped. Check that
+nothing is in flight first, then reconcile Sent Items after.
