@@ -9,11 +9,14 @@
   <meta property="og:description" content="Coastal Currents: a bi-weekly read on what is actually happening in South Orange County real estate. Real numbers. The streets worth watching.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://adamboehrer.com/">
-  <meta property="og:image" content="https://adamboehrer.com/images/headshot.jpg">
+  <meta property="og:image" content="https://adamboehrer.com/images/family-hero-1400.jpg">
+  <meta property="og:image:width" content="1400">
+  <meta property="og:image:height" content="934">
+  <meta property="og:image:alt" content="Adam Boehrer with his wife and their two young children on the coast at sunset">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Adam Boehrer · Pacific Sotheby's International Realty">
   <meta name="twitter:description" content="A friendly neighborhood real estate agent on the South Orange County coast. Free, personal home value reports from San Clemente to San Diego.">
-  <meta name="twitter:image" content="https://adamboehrer.com/images/headshot.jpg">
+  <meta name="twitter:image" content="https://adamboehrer.com/images/family-hero-1400.jpg">
   <link rel="canonical" href="https://adamboehrer.com/">
   <script type="application/ld+json">
   {
@@ -56,7 +59,13 @@
   }
   </script>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/site.css?v=20260601modal">
+  <link rel="stylesheet" href="css/site.css?v=20260820nav">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#002349">
 </head>
 <body>
 
@@ -79,10 +88,40 @@
     <nav class="topbar-nav" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#numbers">Market</a>
+      <div class="nav-dd" data-dd>
+        <button type="button" class="nav-dd-toggle" aria-expanded="false" aria-controls="nav-guides" data-dd-toggle>
+          Guides
+          <svg class="nav-dd-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav-dd-menu" id="nav-guides" hidden>
+          <a href="/san-clemente-housing-market/">San Clemente Market Report</a>
+          <a href="/dana-point-housing-market/">Dana Point Market Report</a>
+          <a href="/rent-vs-buy-san-clemente/">Rent vs. Buy in San Clemente</a>
+          <a href="/house-hacking-south-orange-county/">House Hacking in South OC</a>
+          <a href="/newsletter/">Coastal Currents Archive</a>
+        </div>
+      </div>
       <a href="#home-value">Home Value</a>
       <a href="#contact">Contact</a>
     </nav>
     <button type="button" class="topbar-cta" data-newsletter-open>Join the Newsletter</button>
+    <div class="mobnav" data-mobnav>
+      <button type="button" class="mobnav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu" data-mobnav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="mobnav-panel" id="mobile-menu" hidden>
+        <a href="/#about">About</a>
+        <a href="/#home-value">Home Value</a>
+        <a href="/#contact">Contact</a>
+        <p class="mobnav-group">Guides &amp; market reports</p>
+        <a href="/san-clemente-housing-market/">San Clemente Market Report</a>
+        <a href="/dana-point-housing-market/">Dana Point Market Report</a>
+        <a href="/rent-vs-buy-san-clemente/">Rent vs. Buy in San Clemente</a>
+        <a href="/house-hacking-south-orange-county/">House Hacking in South OC</a>
+        <p class="mobnav-group">Newsletter</p>
+        <a href="/newsletter/">Coastal Currents Archive</a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -92,7 +131,7 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow">San Clemente · Coastal Southern California</p>
+        <p class="eyebrow">San Clemente &middot; Coastal Southern California</p>
         <h1 class="hero-title">Relationships over transactions.</h1>
         <p class="hero-lede">My goal is simple: bring some integrity back into the process of buying and selling homes. I build connections that go beyond the deal, in the community I actually live in.</p>
 
@@ -101,17 +140,26 @@
         </div>
       </div>
       <div class="hero-portrait">
-        <img src="images/headshot.jpg" alt="Adam Boehrer, Pacific Sotheby's International Realty, San Clemente, California">
+        <img src="images/family-hero-1000.jpg"
+             srcset="images/family-hero-1000.jpg 1000w, images/family-hero-1400.jpg 1400w"
+             sizes="(max-width: 760px) calc(100vw - 48px), (max-width: 1000px) 40vw, 500px"
+             width="1000" height="667" fetchpriority="high"
+             alt="Adam Boehrer with his wife and their two young children on the coast at sunset">
       </div>
     </div>
   </section>
 
   <!-- ===== ABOUT ===== -->
   <section class="band band-white" id="about">
-    <div class="container narrow">
+    <div class="container about-grid">
+      <div class="about-portrait">
+        <img src="images/headshot.jpg" width="2500" height="2117" loading="lazy" alt="Adam Boehrer, Real Estate Agent, Pacific Sotheby's International Realty, San Clemente, California">
+      </div>
+      <div class="about-copy">
       <p class="eyebrow eyebrow-gold">About</p>
       <h2 class="band-title">Why I do this the way I do.</h2>
       <p class="approach-body">Before I ever sold a home, I was a father and a neighbor here in San Clemente, and I still lead with that. My background is in brand strategy, which is really the art of positioning: pricing, story, and getting the right people to pay attention. I am also an active real estate investor, so I know how to look at a property and read the risk and the value before falling in love with it. I bring both of those to the people I work with, and I will tell you what I would do if it were my own money.</p>
+      </div>
     </div>
   </section>
 
@@ -178,6 +226,42 @@
         <li><a href="/newsletter/may-2026" class="btn-text">May 2026 &middot; Peak spring, and pricing discipline</a></li>
       </ul>
       <p class="prose-note">Every issue covers a different neighborhood on this coast. <a href="/newsletter/">Read the full archive</a>.</p>
+    </div>
+  </section>
+
+  <!-- ===== GUIDES & MARKET REPORTS ===== -->
+  <section class="band band-white" id="guides">
+    <div class="container">
+      <p class="eyebrow eyebrow-gold">Guides &amp; market reports</p>
+      <h2 class="band-title">Everything else I have written.</h2>
+      <p class="band-lede">Market reports I keep current, and a few longer pieces on the math behind buying on this coast.</p>
+
+      <div class="guide-grid">
+        <a class="guide-card" href="/san-clemente-housing-market/">
+          <span class="guide-kicker">Market report</span>
+          <span class="guide-title">San Clemente Housing Market</span>
+          <span class="guide-body">Median price, pace, and inventory for San Clemente, and how it stacks up against the rest of the South Orange County coast. Updated as the numbers move.</span>
+          <span class="guide-go">Read the report</span>
+        </a>
+        <a class="guide-card" href="/dana-point-housing-market/">
+          <span class="guide-kicker">Market report</span>
+          <span class="guide-title">Dana Point Housing Market</span>
+          <span class="guide-body">The same read for Dana Point. What is selling, what is sitting, and where the pace actually sits against San Clemente and Laguna Beach.</span>
+          <span class="guide-go">Read the report</span>
+        </a>
+        <a class="guide-card" href="/rent-vs-buy-san-clemente/">
+          <span class="guide-kicker">Guide</span>
+          <span class="guide-title">Rent vs. Buy in San Clemente</span>
+          <span class="guide-body">Owning a typical home here runs about $8,000 a month more than renting one. Here is what that gap actually builds by year 5, 10, 20, and 30.</span>
+          <span class="guide-go">Read the guide</span>
+        </a>
+        <a class="guide-card" href="/house-hacking-south-orange-county/">
+          <span class="guide-kicker">Guide</span>
+          <span class="guide-title">House Hacking in South OC</span>
+          <span class="guide-body">Two realistic ways into this market for a first-time buyer: a home that earns its keep, and the fixer nobody else wants while turn-key carries a premium.</span>
+          <span class="guide-go">Read the guide</span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -438,5 +522,6 @@
   })();
 </script>
 
+  <script src="/js/nav.js" defer></script>
 </body>
 </html>

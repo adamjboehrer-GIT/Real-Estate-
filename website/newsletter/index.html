@@ -227,7 +227,7 @@
   ]
 }
   </script>
-  <link rel="stylesheet" href="/css/site.css?v=20260819a">
+  <link rel="stylesheet" href="/css/site.css?v=20260820nav">
   <style>
     .archive-hero {
       background: var(--paper);
@@ -348,6 +348,12 @@
       .issue-title { font-size: 22px; }
     }
   </style>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#002349">
 </head>
 <body>
 
@@ -367,6 +373,23 @@
       <a href="/#contact">Contact</a>
     </nav>
     <a href="/#newsletter" class="topbar-cta">Join the Newsletter</a>
+    <div class="mobnav" data-mobnav>
+      <button type="button" class="mobnav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu" data-mobnav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="mobnav-panel" id="mobile-menu" hidden>
+        <a href="/#about">About</a>
+        <a href="/#home-value">Home Value</a>
+        <a href="/#contact">Contact</a>
+        <p class="mobnav-group">Guides &amp; market reports</p>
+        <a href="/san-clemente-housing-market/">San Clemente Market Report</a>
+        <a href="/dana-point-housing-market/">Dana Point Market Report</a>
+        <a href="/rent-vs-buy-san-clemente/">Rent vs. Buy in San Clemente</a>
+        <a href="/house-hacking-south-orange-county/">House Hacking in South OC</a>
+        <p class="mobnav-group">Newsletter</p>
+        <a href="/newsletter/">Coastal Currents Archive</a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -441,5 +464,6 @@
 
 </main>
 
+  <script src="/js/nav.js" defer></script>
 </body>
 </html>

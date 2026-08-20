@@ -966,3 +966,255 @@ section[id], main[id] {
   .issue-pager { grid-template-columns: 1fr; gap: 28px; }
   .issue-pager .pager-item.is-next { text-align: left; grid-column: 1; }
 }
+
+/* ============================================================
+   HOMEPAGE REFRESH — family header, About portrait, guides grid
+   ============================================================ */
+
+/* ---- Hero: landscape family photo instead of the tall headshot ---- */
+.hero-inner { grid-template-columns: 1fr 1.05fr; gap: 64px; }
+.hero-portrait img {
+  max-width: 560px;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 10px;
+}
+
+/* ---- Top nav: Guides dropdown ---- */
+/* The extra item makes the row tight, so stop "Home Value" wrapping to two lines. */
+.topbar-nav { gap: 26px; }
+.topbar-nav > a { white-space: nowrap; }
+
+.nav-dd { position: relative; display: flex; align-items: center; }
+.nav-dd-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-grey);
+  font-weight: 600;
+  line-height: inherit;
+}
+.nav-dd-toggle:hover,
+.nav-dd-toggle[aria-expanded="true"] { color: var(--gold); }
+.nav-dd-toggle:focus-visible { outline: 1px solid var(--gold); outline-offset: 6px; }
+.nav-dd-caret { width: 9px; height: 6px; flex: none; transition: transform 0.18s ease; }
+.nav-dd-toggle[aria-expanded="true"] .nav-dd-caret { transform: rotate(180deg); }
+
+.nav-dd-menu {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 268px;
+  background: var(--white);
+  border: 1px solid var(--rule);
+  box-shadow: 0 14px 34px rgba(0, 35, 73, 0.10);
+  padding: 8px 0;
+  z-index: 60;
+}
+.nav-dd-menu[hidden] { display: none; }
+.nav-dd-menu a {
+  display: block;
+  padding: 11px 22px;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  line-height: 1.4;
+  color: var(--sir-blue);
+  white-space: nowrap;
+}
+.nav-dd-menu a:hover { color: var(--gold); background: var(--paper); }
+.nav-dd-menu a:focus-visible { outline: 1px solid var(--gold); outline-offset: -3px; }
+
+/* ---- About: headshot now lives beside the story ---- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+.about-portrait img {
+  width: 100%;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 10px;
+}
+.about-copy { max-width: 64ch; }
+
+/* ---- Guides & market reports ---- */
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 44px;
+}
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 30px 32px 32px;
+  border: 1px solid var(--rule);
+  background: var(--white);
+  transition: border-color 0.18s ease;
+}
+.guide-card:hover { border-color: var(--gold); color: inherit; }
+.guide-card:focus-visible { outline: 1px solid var(--gold); outline-offset: 4px; }
+.guide-kicker {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--gold);
+}
+.guide-title {
+  font-family: var(--serif);
+  font-size: 25px;
+  line-height: 1.22;
+  color: var(--sir-blue);
+  font-weight: 400;
+}
+.guide-body {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-grey);
+  font-weight: 300;
+}
+.guide-go {
+  margin-top: auto;   /* keeps the CTA on a common baseline across each row */
+  padding-top: 8px;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--sir-blue);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 4px;
+}
+.guide-card:hover .guide-go { color: var(--gold); }
+
+@media only screen and (max-width: 1000px) {
+  .hero-inner { grid-template-columns: 1fr 1fr; gap: 44px; }
+  .about-grid { gap: 48px; }
+  .guide-grid { gap: 20px; margin-top: 36px; }
+  .guide-card { padding: 26px 26px 28px; }
+  .guide-title { font-size: 22px; }
+}
+
+@media only screen and (max-width: 760px) {
+  /* Landscape photo wants the full column, not the old 280px headshot box */
+  .hero-portrait img { max-width: 100%; margin: 0; }
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .about-portrait img { max-width: 320px; }
+  .about-copy { max-width: none; }
+
+  .guide-grid { grid-template-columns: 1fr; margin-top: 30px; }
+}
+
+/* ============================================================
+   MOBILE MENU — the only navigation under 760px
+   ============================================================ */
+.mobnav { display: none; }               /* desktop: the top nav handles it */
+.mobnav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0 8px;
+  margin: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  flex: none;
+}
+.mobnav-toggle span {
+  display: block;
+  height: 1px;                            /* brand: 1pt maximum stroke weight */
+  width: 100%;
+  background: var(--sir-blue);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.mobnav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.mobnav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.mobnav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.mobnav-toggle:focus-visible { outline: 1px solid var(--gold); outline-offset: 2px; }
+
+.mobnav-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  box-shadow: 0 18px 34px rgba(0, 35, 73, 0.10);
+  max-height: calc(100vh - var(--topbar-h));
+  overflow-y: auto;
+  padding: 8px 0 20px;
+  z-index: 55;
+}
+.mobnav-panel[hidden] { display: none; }
+.mobnav-panel a {
+  display: block;
+  padding: 15px 24px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--sir-blue);
+  border-bottom: 1px solid var(--rule);
+}
+.mobnav-panel a:last-child { border-bottom: 0; }
+.mobnav-panel a:hover,
+.mobnav-panel a:focus-visible { color: var(--gold); background: var(--paper); }
+.mobnav-group {
+  margin: 18px 0 2px;
+  padding: 0 24px 8px;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--gold);
+}
+.mobnav-panel .mobnav-group + a { border-top: 1px solid var(--gold); }
+
+body.nav-open { overflow: hidden; }
+
+/* The panel is white on a white page, so without a scrim the links below it
+   read as page content. Painted from inside .topbar, which already sits above
+   the page, so it needs no z-index war with the rest of the site. */
+body.nav-open .topbar::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  top: var(--topbar-h);
+  background: rgba(0, 35, 73, 0.42);
+  z-index: 54;                            /* under the panel (55), over the page */
+}
+
+@media only screen and (max-width: 760px) {
+  .mobnav { display: flex; align-items: center; }
+}
+
+/* Reduced motion: keep the state change, drop the animation. */
+@media (prefers-reduced-motion: reduce) {
+  .mobnav-toggle span,
+  .nav-dd-caret { transition: none; }
+}
