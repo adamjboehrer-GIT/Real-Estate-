@@ -431,3 +431,31 @@
   .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
   .lightbox-nav { font-size: 1.8rem; padding: 10px 8px; }
 }
+
+/* ---------- Price improvement band ----------
+   Blue ground with gold hairlines. Brand rules cap dividers at 1pt and forbid
+   gold as a background, so the emphasis comes from the band itself, not weight. */
+.price-drop {
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  text-align: center;
+}
+
+.price-drop .band-title-on-blue {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  margin-top: 6px;
+}
+
+.price-drop .band-lede-on-blue {
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+.price-drop .band-lede-on-blue + .band-lede-on-blue {
+  margin-top: 14px;
+  color: var(--gold);
+}
+
+/* The status line sits above the price and now reads "Price Improved" rather
+   than "For Sale", so it earns a little more presence than the old label. */
+.listing-status { font-weight: 600; }
