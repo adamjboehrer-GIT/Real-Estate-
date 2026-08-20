@@ -32,9 +32,9 @@ recover a first name from it. Judge reply rate on the named rows.
 
 | Date | Sent | Numbers | Failures | Bounces | Opt-outs |
 |---|---|---|---|---|---|
-| 2026-08-20 | | | | | |
+| 2026-08-20 | 18 | #1-18 | 0 | tbd | tbd |
 
-**Next batch starts at #19.**
+**Next batch starts at #37** (#19-36 in flight).
 
 ## Pacing
 
@@ -60,6 +60,24 @@ correcting the collision. The key is now `__sendLedger_<campaign>`.
 Coffee keeps its protection through guard 4, the DB seed, which reloads all 312 logged
 sends from `leads.db` into its own key at run start. Verified: a 300-320 request still
 drops 300-312 and generates only 313-320.
+
+## Manifest-mapping bug, found and fixed 2026-08-20
+
+After batch #1-18 sent cleanly, `log_resident_sends.py --campaign camp-capo-oh-2026-08`
+logged all 18 against **the wrong contacts** and reported "0 not found".
+
+The manifest selector was a two-way conditional: the coffee manifest for `camp-coffee*`,
+the resident manifest for everything else. This campaign matched neither, so it fell
+through to June's resident manifest, where #1-18 also exist and point at different people.
+It could not report a miss, because nothing was missing.
+
+Fixed to an explicit dict with no fallback; an unmapped campaign exits rather than
+guessing. The 18 bad rows were deleted and re-logged correctly, verified address by
+address against the queue.
+
+Same root cause as the ledger collision above: **a queue number means nothing without the
+campaign that issued it.** Anything keyed on the bare number is a bug waiting for a second
+campaign to exist.
 
 ## Coffee round is paused for this
 
