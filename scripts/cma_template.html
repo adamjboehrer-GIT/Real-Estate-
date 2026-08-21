@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home Value Report · {{SUBJECT_ADDRESS}}</title>
+<style>
+  @page {
+    size: letter;
+    margin: 0.55in 0.65in;
+    @bottom-left {
+      content: "Adam Boehrer · Pacific Sotheby's International Realty";
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+      font-size: 8pt;
+      color: #999999;
+      letter-spacing: 0.08em;
+    }
+    @bottom-right {
+      content: counter(page) " of " counter(pages);
+      font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+      font-size: 8pt;
+      color: #999999;
+    }
+  }
+
+  :root {
+    --sir-blue: #002349;
+    --gold: #C29B40;
+    --text-grey: #666666;
+    --accent-grey: #999999;
+    --rule: #e8e8e4;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0; padding: 0;
+    color: var(--text-grey);
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .header {
+    border-bottom: 1pt solid var(--gold);
+    padding-bottom: 14pt;
+    margin-bottom: 22pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .header .brand {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-size: 14pt;
+    color: var(--sir-blue);
+    letter-spacing: 0.05em;
+  }
+  .header .brand small {
+    display: block;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 8.5pt;
+    color: var(--accent-grey);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 4pt;
+  }
+  .header .meta {
+    text-align: right;
+    font-size: 9pt;
+    color: var(--accent-grey);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .eyebrow {
+    font-size: 9pt;
+    color: var(--gold);
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 8pt;
+  }
+
+  h1.subject {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-size: 24pt;
+    color: var(--sir-blue);
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 4pt;
+    letter-spacing: 0.005em;
+  }
+  .subject-sub {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-style: italic;
+    color: var(--text-grey);
+    font-size: 12pt;
+    margin: 0 0 24pt;
+  }
+
+  /* ---- VALUE RANGE ---- */
+  .range {
+    background: #fafaf7;
+    border-top: 1pt solid var(--gold);
+    border-bottom: 1pt solid var(--gold);
+    padding: 22pt 18pt;
+    text-align: center;
+    margin-bottom: 26pt;
+  }
+  .range .label {
+    font-size: 9pt;
+    color: var(--accent-grey);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 8pt;
+  }
+  .range .midpoint {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-size: 32pt;
+    color: var(--sir-blue);
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 10pt;
+  }
+  .range .span {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-style: italic;
+    font-size: 13pt;
+    color: var(--text-grey);
+  }
+  .range .span .lo, .range .span .hi { color: var(--sir-blue); font-style: normal; }
+
+  /* ---- SECTIONS ---- */
+  h2 {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-size: 13pt;
+    color: var(--sir-blue);
+    font-weight: 500;
+    border-bottom: 0.5pt solid var(--rule);
+    padding-bottom: 4pt;
+    margin: 0 0 10pt;
+    letter-spacing: 0.02em;
+  }
+  section { margin-bottom: 20pt; page-break-inside: avoid; }
+
+  /* ---- COMP TABLE ---- */
+  table.comps {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    table-layout: fixed;
+  }
+  table.comps col.addr  { width: 33%; }
+  table.comps col.bd    { width: 5%; }
+  table.comps col.ba    { width: 5%; }
+  table.comps col.sqft  { width: 8%; }
+  table.comps col.ppsf  { width: 8%; }
+  table.comps col.sold  { width: 11%; }
+  table.comps col.list  { width: 11%; }
+  table.comps col.dt    { width: 8%; }
+  table.comps col.dom   { width: 5%; }
+  table.comps col.mi    { width: 6%; }
+  table.comps th {
+    background: var(--sir-blue);
+    color: #fff;
+    text-align: left;
+    padding: 4pt 5pt;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-size: 7.5pt;
+    text-transform: uppercase;
+  }
+  table.comps td {
+    padding: 4pt 5pt;
+    border-bottom: 0.5pt solid var(--rule);
+    vertical-align: top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  table.comps tr.subject td { background: #fafaf7; font-weight: 600; color: var(--sir-blue); }
+  table.comps td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  table.comps .group-header td {
+    background: transparent;
+    font-size: 8pt;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 10pt;
+    padding-bottom: 4pt;
+    border-bottom: 0.5pt solid var(--gold);
+  }
+
+  /* ---- MARKET SNAPSHOT ---- */
+  .snapshot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12pt;
+  }
+  .snapshot .cell {
+    border-top: 1pt solid var(--gold);
+    padding-top: 8pt;
+  }
+  .snapshot .cell .v {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-size: 16pt;
+    color: var(--sir-blue);
+    line-height: 1.1;
+  }
+  .snapshot .cell .l {
+    font-size: 8pt;
+    color: var(--accent-grey);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 4pt;
+  }
+  .snapshot-source {
+    font-size: 8pt;
+    color: var(--accent-grey);
+    font-style: italic;
+    margin-top: 12pt;
+  }
+
+  /* ---- NARRATIVE + ADJUSTMENTS ---- */
+  .narrative {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-size: 11.5pt;
+    color: #333;
+    line-height: 1.65;
+  }
+  .narrative p { margin: 0 0 10pt; }
+  .adjustments {
+    font-size: 9.5pt;
+    color: var(--text-grey);
+    background: #fafaf7;
+    border-left: 2pt solid var(--gold);
+    padding: 10pt 14pt;
+    margin-top: 12pt;
+  }
+  .adjustments .l {
+    font-size: 8pt;
+    color: var(--gold);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4pt;
+  }
+
+  /* ---- FOOTER / CONTACT ---- */
+  .closer {
+    margin-top: 18pt;
+    padding-top: 12pt;
+    border-top: 1pt solid var(--gold);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    page-break-inside: avoid;
+  }
+  .closer .name {
+    font-family: "Garamond", "Times New Roman", serif;
+    font-size: 14pt;
+    color: var(--sir-blue);
+    margin: 0 0 2pt;
+  }
+  .closer .title {
+    font-size: 8.5pt;
+    color: var(--accent-grey);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 8pt;
+  }
+  .closer .lines {
+    font-size: 9.5pt;
+    color: var(--text-grey);
+    line-height: 1.7;
+  }
+  .closer .lines a { color: var(--sir-blue); text-decoration: none; }
+  .disclaimer {
+    margin-top: 10pt;
+    font-size: 7pt;
+    color: var(--accent-grey);
+    line-height: 1.45;
+    font-style: italic;
+  }
+  section { margin-bottom: 16pt; }
+  .snapshot { gap: 10pt; }
+  .snapshot .cell { padding-top: 6pt; }
+  .snapshot .cell .v { font-size: 15pt; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="brand">
+    Pacific Sotheby's International Realty
+    <small>Home Value Report</small>
+  </div>
+  <div class="meta">Prepared {{REPORT_DATE}}</div>
+</div>
+
+<p class="eyebrow">Prepared for {{LEAD_NAME}}</p>
+<h1 class="subject">{{SUBJECT_ADDRESS}}</h1>
+<p class="subject-sub">{{SUBJECT_ONE_LINER}}</p>
+
+<div class="range">
+  <div class="label">Estimated value range</div>
+  <div class="midpoint">{{MIDPOINT}}</div>
+  <div class="span"><span class="lo">{{LOW}}</span> &nbsp;to&nbsp; <span class="hi">{{HIGH}}</span></div>
+</div>
+
+<section>
+  <h2>The read</h2>
+  <div class="narrative">{{NARRATIVE_HTML}}</div>
+  {{ADJUSTMENTS_BLOCK}}
+</section>
+
+<section>
+  <h2>Comparable sales</h2>
+  <table class="comps">
+    <colgroup>
+      <col class="addr"><col class="bd"><col class="ba"><col class="sqft"><col class="ppsf">
+      <col class="sold"><col class="list"><col class="dt"><col class="dom"><col class="mi">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Address</th>
+        <th class="num">Bd</th>
+        <th class="num">Ba</th>
+        <th class="num">SqFt</th>
+        <th class="num">$/SqFt</th>
+        <th class="num">Sold</th>
+        <th class="num">List</th>
+        <th class="num">Date</th>
+        <th class="num">DOM</th>
+        <th class="num">Mi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="subject">
+        <td>{{SUBJECT_SHORT}} (subject)</td>
+        <td class="num">{{S_BEDS}}</td>
+        <td class="num">{{S_BATHS}}</td>
+        <td class="num">{{S_SQFT}}</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
+        <td class="num">—</td>
+      </tr>
+      <tr class="group-header"><td colspan="10">Sold</td></tr>
+      {{SOLD_ROWS}}
+      {{ACTIVE_GROUP}}
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>{{CITY}} market snapshot</h2>
+  <div class="snapshot">
+    {{SNAPSHOT_CELLS}}
+  </div>
+  <div class="snapshot-source">Source: Pacific Sotheby's biweekly market deck · reporting month {{SNAPSHOT_MONTH}}</div>
+</section>
+
+<div class="closer">
+  <div>
+    <div class="name">Adam Boehrer</div>
+    <div class="title">Pacific Sotheby's International Realty · DRE# 02419464</div>
+    <div class="lines">
+      Direct: 949.541.8247<br>
+      <a href="mailto:adam.boehrer@pacificsir.com">adam.boehrer@pacificsir.com</a><br>
+      <a href="https://adamboehrer.com">adamboehrer.com</a>
+    </div>
+  </div>
+  <div class="lines" style="text-align:right;max-width:260px;">
+    Pulled the comps myself, ran the read myself.<br>
+    Reply to the email this came from with any questions, or text me directly.
+  </div>
+</div>
+
+<p class="disclaimer">
+  This estimate is a comparative market analysis prepared by a licensed real estate
+  agent, not a formal appraisal. Market conditions change daily and the value range
+  reflects publicly available sold and active listings on the date prepared. For an
+  exact valuation suitable for lending or legal purposes, an independent appraiser
+  should be engaged.
+</p>
+
+</body>
+</html>
