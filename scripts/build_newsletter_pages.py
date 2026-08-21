@@ -46,6 +46,20 @@ AGENT = {
 ISSUES = ["february-2026", "march-2026", "april-2026",
           "may-2026", "june-2026", "july-2026"]
 
+# Town -> its standing market report. The issue is dated; the report is the
+# permanent home for that town's numbers, so every issue should feed it.
+REPORTS = {
+    "San Clemente": ("/san-clemente-housing-market/",
+                     "San Clemente housing market report, updated from CRMLS"),
+    "Dana Point": ("/dana-point-housing-market/",
+                   "Dana Point housing market report, updated from CRMLS"),
+}
+GUIDES = [
+    ("/rent-vs-buy-san-clemente/", "Rent vs. buy in San Clemente, with the real math"),
+    ("/house-hacking-south-orange-county/", "House hacking in South Orange County"),
+]
+FEED_URL = BASE + "/newsletter/feed.xml"
+
 
 def issue_order(slugs=None):
     """Issues that have a spec, oldest first, as (slug, meta) pairs.
@@ -78,6 +92,33 @@ def pager_item(slug, meta, rel):
           </a>
         </div>'''
 
+
+
+def keep_reading(m):
+    """Related links, led by the town this issue actually featured.
+
+    meta.places is ordered by prominence in the issue, so a Dana Point issue
+    leads with the Dana Point report instead of shipping the same four links
+    on every page. Remaining reports still follow, so no town is orphaned.
+    """
+    links, seen = [], set()
+    for place in list(m.get("places", [])) + list(REPORTS):
+        r = REPORTS.get(place)
+        if r and r[0] not in seen:
+            seen.add(r[0])
+            links.append(r)
+    links.extend(GUIDES)
+    links.append(("/newsletter/", "Every past issue of Coastal Currents"))
+    return "\n".join(f'        <li><a href="{href}">{esc(label)}</a></li>'
+                     for href, label in links)
+
+
+def keep_reading_title(m):
+    """Name the featured town in the heading when this issue has one."""
+    for place in m.get("places", []):
+        if place in REPORTS:
+            return f"More on the {place} market."
+    return "More on this market."
 
 # ----------------------------------------------------------------- chrome ---
 def chrome():
@@ -440,6 +481,7 @@ def build(slug, nav, modal, footer_and_js, order=None):
   <meta name="twitter:description" content="{html.escape(m["og_description"], quote=True)}">
   <meta name="twitter:image" content="{BASE}{m.get("image", "/images/headshot.jpg")}">
   <link rel="canonical" href="{url}">{head_rels}
+  <link rel="alternate" type="application/rss+xml" title="Coastal Currents" href="{FEED_URL}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Source+Sans+Pro:wght@300;400;600&display=swap">
@@ -480,12 +522,9 @@ def build(slug, nav, modal, footer_and_js, order=None):
   <section class="band band-paper">
     <div class="container narrow prose">
       <p class="eyebrow eyebrow-gold">Keep Reading</p>
-      <h2 class="band-title">More on this market.</h2>
+      <h2 class="band-title">{keep_reading_title(m)}</h2>
       <ul>
-        <li><a href="/newsletter/">Every past issue of Coastal Currents</a></li>
-        <li><a href="/san-clemente-housing-market/">San Clemente housing market report</a></li>
-        <li><a href="/dana-point-housing-market/">Dana Point housing market report</a></li>
-        <li><a href="/rent-vs-buy-san-clemente/">Rent vs. buy in San Clemente, with the real math</a></li>
+{keep_reading(m)}
       </ul>
     </div>
   </section>

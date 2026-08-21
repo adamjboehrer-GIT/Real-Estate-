@@ -21,6 +21,7 @@ the pace metric used throughout.
 A bi-weekly read on coastal South OC real estate. Every issue carries dated,
 sourced local figures.
 - [Archive, all issues](https://adamboehrer.com/newsletter/)
+- [RSS feed, every issue with its publication date](https://adamboehrer.com/newsletter/feed.xml)
 - [July 2026: expected market time falls to 70 days](https://adamboehrer.com/newsletter/july-2026)
 - [June 2026: the Dana Point shift, six months to ten weeks](https://adamboehrer.com/newsletter/june-2026)
 - [May 2026: peak spring and pricing discipline](https://adamboehrer.com/newsletter/may-2026)

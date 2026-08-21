@@ -42,10 +42,16 @@ def build_404():
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Source+Sans+Pro:wght@300;400;600&display=swap">
-  <link rel="stylesheet" href="/css/site.css?v=20260819a">
+  <link rel="stylesheet" href="/css/site.css?v=20260820nav">
   <script type="application/ld+json">
 {json.dumps(crumbs, indent=2, ensure_ascii=False)}
   </script>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#002349">
 </head>
 <body>
 
@@ -112,6 +118,7 @@ the pace metric used throughout.
 A bi-weekly read on coastal South OC real estate. Every issue carries dated,
 sourced local figures.
 - [Archive, all issues](https://adamboehrer.com/newsletter/)
+- [RSS feed, every issue with its publication date](https://adamboehrer.com/newsletter/feed.xml)
 - [July 2026: expected market time falls to 70 days](https://adamboehrer.com/newsletter/july-2026)
 - [June 2026: the Dana Point shift, six months to ten weeks](https://adamboehrer.com/newsletter/june-2026)
 - [May 2026: peak spring and pricing discipline](https://adamboehrer.com/newsletter/may-2026)
