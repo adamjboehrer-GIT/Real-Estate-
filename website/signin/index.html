@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Open House Sign In | Adam Boehrer, Pacific Sotheby's International Realty</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="author" content="Adam Boehrer">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Kiosk: added to the iPad home screen this launches full screen with no
+       Safari chrome, which is what we want sitting on the entry table. -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Sign In">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sir-blue: #002349;
+      --gold: #C29B40;
+      --text-grey: #666666;
+      --accent-grey: #999999;
+      --footer-cream: #efece5;
+      --white: #ffffff;
+      --rule: #e0e0dc;
+
+      /* Webfonts can fail on open house wifi. Fallbacks are the brand-approved
+         substitutes, so the page still reads correctly if Google Fonts times out. */
+      --serif: 'Amiri', Garamond, 'Times New Roman', serif;
+      --sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: var(--white);
+      color: var(--text-grey);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+      overscroll-behavior: none;
+    }
+
+    /* Nobody should be able to select, long-press or drag anything on a kiosk.
+       Inputs opt back in below. */
+    body {
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .page {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sheet {
+      flex: 1;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 40px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* ===== MASTHEAD ===== */
+    .eyebrow {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 10px;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 46px;
+      line-height: 1.15;
+      color: var(--sir-blue);
+      margin: 0 0 10px;
+    }
+    .address {
+      font-size: 19px;
+      color: var(--text-grey);
+      margin: 0 0 26px;
+    }
+    .rule {
+      border: 0;
+      border-top: 1px solid var(--gold);
+      margin: 0 0 30px;
+      width: 72px;
+    }
+
+    /* ===== FORM ===== */
+    .field { margin-bottom: 20px; }
+    .row {
+      display: flex;
+      gap: 18px;
+    }
+    .row .field { flex: 1; }
+
+    label, .legend {
+      display: block;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--sir-blue);
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+      -webkit-user-select: text;
+      user-select: text;
+      width: 100%;
+      /* 20px keeps iOS from zooming the page on focus. Do not drop below 17px. */
+      font-size: 20px;
+      font-family: var(--sans);
+      font-weight: 300;
+      color: var(--sir-blue);
+      background: var(--white);
+      padding: 16px 16px;
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      appearance: none;
+      transition: border-color 0.15s ease;
+    }
+    input:focus {
+      outline: none;
+      border-color: var(--gold);
+    }
+    input::placeholder { color: var(--accent-grey); font-weight: 300; }
+    /* Native invalid styling is loud and red. Only flag on an actual bad submit. */
+    input:invalid { box-shadow: none; }
+    form.was-submitted input:invalid { border-color: #b4472f; }
+
+    fieldset {
+      border: 0;
+      margin: 0 0 26px;
+      padding: 0;
+      min-width: 0;
+    }
+    .choices {
+      display: flex;
+      gap: 14px;
+    }
+    .choice { flex: 1; position: relative; }
+    .choice input {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      cursor: pointer;
+    }
+    .choice span {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      padding: 16px 12px;
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+      color: var(--sir-blue);
+      background: var(--white);
+      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+    .choice input:checked + span {
+      background: var(--sir-blue);
+      border-color: var(--sir-blue);
+      color: var(--white);
+    }
+    .choice input:focus-visible + span { border-color: var(--gold); }
+
+    .btn {
+      display: block;
+      width: 100%;
+      font-family: var(--sans);
+      font-size: 21px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--sir-blue);
+      border: 1px solid var(--sir-blue);
+      border-radius: 3px;
+      padding: 20px 24px;
+      cursor: pointer;
+      appearance: none;
+      transition: opacity 0.15s ease;
+    }
+    .btn:active { opacity: 0.85; }
+    .btn[disabled] { opacity: 0.6; cursor: default; }
+
+    .consent {
+      font-size: 14px;
+      color: var(--accent-grey);
+      text-align: center;
+      margin: 16px 0 0;
+      line-height: 1.5;
+    }
+    .error {
+      display: none;
+      font-size: 15px;
+      color: #b4472f;
+      text-align: center;
+      margin: 14px 0 0;
+    }
+    .error.show { display: block; }
+
+    /* ===== THANK YOU ===== */
+    .thanks { display: none; text-align: center; padding: 40px 0; }
+    .thanks h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 1.15;
+      color: var(--sir-blue);
+      margin: 0 0 14px;
+    }
+    .thanks p {
+      font-size: 20px;
+      margin: 0 auto;
+      max-width: 460px;
+    }
+    .thanks .rule { margin: 26px auto 0; }
+
+    body.signed .signin-form { display: none; }
+    body.signed .thanks { display: block; }
+
+    /* ===== FOOTER (DRE compliance block) ===== */
+    .site-footer {
+      background: var(--footer-cream);
+      padding: 20px 0;
+      padding-bottom: calc(20px + env(safe-area-inset-bottom));
+    }
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 0 24px;
+    }
+    .brand-footer {
+      width: 100%;
+      max-width: 420px;
+    }
+    .brand-footer img {
+      display: block;
+      width: 100%;
+      /* The JPG carries ~71px of cream above and ~70px below the artwork.
+         Cropping to the content band keeps the disclosure block tight. */
+      aspect-ratio: 1200 / 430;
+      object-fit: cover;
+      object-position: center;
+    }
+    .legal-bar {
+      margin: 0;
+      font-size: 11px;
+      color: var(--text-grey);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* ===== RECOVERY PANEL (Adam only) ===== */
+    .recovery {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: var(--white);
+      padding: 28px;
+      overflow-y: auto;
+    }
+    .recovery.show { display: block; }
+    .recovery h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      color: var(--sir-blue);
+      font-size: 26px;
+      margin: 0 0 6px;
+    }
+    .recovery p.meta { margin: 0 0 16px; font-size: 15px; }
+    .recovery textarea {
+      -webkit-user-select: text;
+      user-select: text;
+      width: 100%;
+      height: 46vh;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 14px;
+      color: var(--sir-blue);
+      padding: 12px;
+      border: 1px solid var(--rule);
+      border-radius: 3px;
+    }
+    .recovery .btn-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .recovery .btn { width: auto; flex: 1; font-size: 16px; padding: 14px 18px; }
+    .btn-ghost {
+      background: var(--white);
+      color: var(--sir-blue);
+      border: 1px solid var(--rule);
+    }
+
+    /* Landscape iPad. The whole sheet plus the disclosure block has to sit
+       above the fold, so the vertical rhythm tightens rather than scrolls. */
+    @media (max-height: 850px) {
+      .sheet { padding: 22px 40px 14px; }
+      h1 { font-size: 34px; margin-bottom: 6px; }
+      .eyebrow { font-size: 13px; margin-bottom: 6px; }
+      .address { font-size: 17px; margin-bottom: 14px; }
+      .rule { margin-bottom: 16px; }
+      .field { margin-bottom: 12px; }
+      label, .legend { font-size: 14px; margin-bottom: 5px; }
+      fieldset { margin-bottom: 14px; }
+      input[type="text"], input[type="tel"], input[type="email"] { padding: 11px 14px; }
+      .choice span { padding: 11px 12px; font-size: 19px; }
+      .btn { padding: 14px 24px; font-size: 19px; }
+      .consent { font-size: 13px; margin-top: 10px; }
+      .thanks { padding: 12px 0; }
+      .thanks h2 { font-size: 36px; }
+      .site-footer { padding: 12px 0; padding-bottom: calc(12px + env(safe-area-inset-bottom)); }
+      .brand-footer { max-width: 300px; }
+      .footer-inner { gap: 6px; }
+    }
+
+    /* Safari with its toolbar showing, or a smaller tablet. */
+    @media (max-height: 720px) {
+      .sheet { padding: 14px 40px 10px; }
+      h1 { font-size: 30px; }
+      .address { font-size: 16px; margin-bottom: 10px; }
+      .rule { margin-bottom: 12px; }
+      .field { margin-bottom: 9px; }
+      fieldset { margin-bottom: 11px; }
+      input[type="text"], input[type="tel"], input[type="email"] { padding: 9px 14px; }
+      .choice span { padding: 9px 12px; }
+      .btn { padding: 12px 24px; }
+      .consent { margin-top: 8px; }
+      .brand-footer { max-width: 260px; }
+    }
+
+    @media (max-width: 600px) {
+      .sheet { padding: 28px 22px 20px; }
+      h1 { font-size: 34px; }
+      .row { flex-direction: column; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+  <main class="sheet">
+
+    <!-- ===== SIGN IN ===== -->
+    <form class="signin-form" id="signin-form" novalidate
+      action="https://pacificsir.us6.list-manage.com/subscribe/post?u=cf70355a0c40376ae76d606fd&amp;id=f44752d032"
+      method="post"
+      target="mc_target">
+
+      <p class="eyebrow">Open House</p>
+      <h1>Welcome in.</h1>
+      <p class="address">26966 Calle Dolores, Capistrano Beach</p>
+      <hr class="rule">
+
+      <div class="row">
+        <div class="field">
+          <label for="f-first">First name</label>
+          <input type="text" id="f-first" name="FNAME" autocomplete="off" autocapitalize="words"
+                 autocorrect="off" spellcheck="false" required>
+        </div>
+        <div class="field">
+          <label for="f-last">Last name</label>
+          <input type="text" id="f-last" name="LNAME" autocomplete="off" autocapitalize="words"
+                 autocorrect="off" spellcheck="false" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-phone">Phone</label>
+        <input type="tel" id="f-phone" name="PHONE" inputmode="tel" autocomplete="off"
+               placeholder="(949) 555 0134" required>
+      </div>
+
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input type="email" id="f-email" name="EMAIL" inputmode="email" autocomplete="off"
+               autocapitalize="off" autocorrect="off" spellcheck="false" required>
+      </div>
+
+      <fieldset>
+        <span class="legend" id="agent-legend">Are you working with an agent?</span>
+        <div class="choices" role="radiogroup" aria-labelledby="agent-legend">
+          <label class="choice">
+            <input type="radio" name="AGENT" value="Yes" required>
+            <span>Yes</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="AGENT" value="No">
+            <span>No</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Routes the contact in Mailchimp. notify_cma_submissions.py stamps the
+           open-house tag on any SOURCE starting with "openhouse". -->
+      <input type="hidden" name="SOURCE" value="openhouse-capo">
+
+      <!-- Mailchimp honeypot. Leave empty, do not remove. -->
+      <div style="position:absolute;left:-5000px;" aria-hidden="true">
+        <input type="text" name="b_cf70355a0c40376ae76d606fd_f44752d032" tabindex="-1" value="">
+      </div>
+
+      <button type="submit" class="btn" id="submit-btn">Sign In</button>
+      <p class="error" id="form-error"></p>
+      <p class="consent">I send an occasional note on what is actually selling along this stretch of coast. Unsubscribe anytime.</p>
+    </form>
+
+    <!-- ===== THANK YOU ===== -->
+    <section class="thanks" id="thanks" aria-live="polite">
+      <p class="eyebrow">Thank You</p>
+      <h2>You are signed in.</h2>
+      <p>Enjoy the house. Grab me if you have any questions about it, the street, or what nearby homes actually sold for.</p>
+      <hr class="rule">
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="brand-footer">
+        <img src="/images/brand-footer.jpg" alt="Adam Boehrer, Real Estate Agent, DRE 02419464. 949.541.8247. adam.boehrer@pacificsir.com. Pacific Sotheby's International Realty.">
+      </div>
+      <p class="legal-bar" id="legal-bar">
+        &copy; <span id="yr">2026</span> Adam Boehrer. Pacific Sotheby's International Realty. DRE #02419464. Each office is independently owned and operated.
+      </p>
+    </div>
+  </footer>
+</div>
+
+<!-- ===== RECOVERY PANEL — Adam only, five taps on the legal line ===== -->
+<div class="recovery" id="recovery" role="dialog" aria-label="Sign in log">
+  <h2>Sign in log</h2>
+  <p class="meta" id="recovery-meta"></p>
+  <textarea id="recovery-csv" readonly></textarea>
+  <div class="btn-row">
+    <button type="button" class="btn" id="rec-retry">Resend unsent</button>
+    <button type="button" class="btn btn-ghost" id="rec-clear">Clear log</button>
+    <button type="button" class="btn btn-ghost" id="rec-close">Close</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var STORE_KEY = 'oh-signin-log-capo';
+  var RESET_MS = 6000;   // how long the thank you screen stays up
+  var POST_TIMEOUT_MS = 8000;
+
+  var form = document.getElementById('signin-form');
+  var btn = document.getElementById('submit-btn');
+  var errEl = document.getElementById('form-error');
+  var body = document.body;
+  var resetTimer = null;
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mailchimp's classic endpoint answers with its own HTML page. Posting into a
+  // hidden iframe keeps the guest on this screen. Same pattern the rest of
+  // adamboehrer.com uses.
+  var iframe = document.createElement('iframe');
+  iframe.name = 'mc_target';
+  iframe.title = 'Mailchimp response';
+  iframe.setAttribute('aria-hidden', 'true');
+  iframe.style.cssText = 'position:absolute;width:0;height:0;border:0;opacity:0';
+  document.body.appendChild(iframe);
+
+  /* ---------- local log: nothing gets lost if the wifi drops ---------- */
+
+  function readLog() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || '[]'); }
+    catch (e) { return []; }
+  }
+  function writeLog(rows) {
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(rows)); } catch (e) {}
+  }
+  function logEntry(entry) {
+    var rows = readLog();
+    rows.push(entry);
+    writeLog(rows);
+    return rows.length - 1;
+  }
+  function markSent(index) {
+    var rows = readLog();
+    if (rows[index]) { rows[index].sent = true; writeLog(rows); }
+  }
+
+  /* ---------- helpers ---------- */
+
+  function digits(s) { return (s || '').replace(/\D/g, ''); }
+
+  // Mailchimp's PHONE field is US format. Normalize to 949-555-0134 so a number
+  // typed any which way still lands.
+  function normalizePhone(raw) {
+    var d = digits(raw);
+    if (d.length === 11 && d.charAt(0) === '1') d = d.slice(1);
+    if (d.length !== 10) return null;
+    return d.slice(0, 3) + '-' + d.slice(3, 6) + '-' + d.slice(6);
+  }
+
+  function validEmail(v) {
+    return /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test((v || '').trim());
+  }
+
+  function showError(msg) {
+    errEl.textContent = msg;
+    errEl.classList.add('show');
+    form.classList.add('was-submitted');
+  }
+  function clearError() {
+    errEl.textContent = '';
+    errEl.classList.remove('show');
+  }
+
+  function val(name) {
+    var el = form.elements[name];
+    return el && el.value ? el.value.trim() : '';
+  }
+
+  function checkedAgent() {
+    var els = form.elements['AGENT'];
+    for (var i = 0; i < els.length; i++) if (els[i].checked) return els[i].value;
+    return '';
+  }
+
+  /* ---------- submit ---------- */
+
+  form.addEventListener('submit', function (e) {
+    clearError();
+
+    var first = val('FNAME'), last = val('LNAME');
+    var email = val('EMAIL'), agent = checkedAgent();
+    var phone = normalizePhone(val('PHONE'));
+
+    if (!first || !last) { e.preventDefault(); showError('Please add your first and last name.'); return; }
+    if (!phone) { e.preventDefault(); showError('Please enter a 10 digit phone number.'); return; }
+    if (!validEmail(email)) { e.preventDefault(); showError('That email does not look right. Mind checking it?'); return; }
+    if (!agent) { e.preventDefault(); showError('One more: are you working with an agent?'); return; }
+
+    // Send the cleaned number rather than whatever was typed.
+    form.elements['PHONE'].value = phone;
+
+    btn.disabled = true;
+    btn.textContent = 'Signing in...';
+
+    var index = logEntry({
+      t: new Date().toISOString(),
+      first: first, last: last, phone: phone, email: email, agent: agent,
+      sent: false
+    });
+
+    var done = false;
+    function finish() {
+      if (done) return;
+      done = true;
+      iframe.removeEventListener('load', onLoad);
+      showThanks();
+    }
+    function onLoad() { markSent(index); finish(); }
+
+    iframe.addEventListener('load', onLoad);
+    // If the post never comes back, the guest still gets a clean thank you and
+    // the entry stays queued for a retry.
+    setTimeout(finish, POST_TIMEOUT_MS);
+    // form submits normally into the iframe from here
+  });
+
+  /* ---------- thank you, then back to blank ---------- */
+
+  function showThanks() {
+    body.classList.add('signed');
+    if (resetTimer) clearTimeout(resetTimer);
+    resetTimer = setTimeout(resetForm, RESET_MS);
+  }
+
+  function resetForm() {
+    form.reset();
+    form.classList.remove('was-submitted');
+    clearError();
+    btn.disabled = false;
+    btn.textContent = 'Sign In';
+    body.classList.remove('signed');
+    if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+    window.scrollTo(0, 0);
+    retryUnsent();
+  }
+
+  // Tapping the thank you screen skips the wait for the next person in line.
+  document.getElementById('thanks').addEventListener('click', function () {
+    if (body.classList.contains('signed')) resetForm();
+  });
+
+  /* ---------- retry queue ---------- */
+
+  var retrying = false;
+  function retryUnsent() {
+    if (retrying || !navigator.onLine) return;
+    var rows = readLog();
+    var pending = [];
+    for (var i = 0; i < rows.length; i++) if (!rows[i].sent) pending.push(i);
+    if (!pending.length) return;
+
+    retrying = true;
+    var at = 0;
+
+    function next() {
+      if (at >= pending.length) { retrying = false; refreshRecovery(); return; }
+      var idx = pending[at++];
+      var row = readLog()[idx];
+      if (!row) { next(); return; }
+
+      // A throwaway form so the visible one is never touched mid-retry.
+      var f = document.createElement('form');
+      f.method = 'post';
+      f.action = form.action;
+      f.target = 'mc_target';
+      f.style.display = 'none';
+      var fields = {
+        FNAME: row.first, LNAME: row.last, EMAIL: row.email,
+        PHONE: row.phone, AGENT: row.agent, SOURCE: 'openhouse-capo'
+      };
+      fields['b_cf70355a0c40376ae76d606fd_f44752d032'] = '';
+      for (var k in fields) {
+        if (!Object.prototype.hasOwnProperty.call(fields, k)) continue;
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = k;
+        input.value = fields[k];
+        f.appendChild(input);
+      }
+      document.body.appendChild(f);
+
+      var settled = false;
+      function onLoad() {
+        if (settled) return;
+        settled = true;
+        iframe.removeEventListener('load', onLoad);
+        markSent(idx);
+        if (f.parentNode) f.parentNode.removeChild(f);
+        setTimeout(next, 600);
+      }
+      iframe.addEventListener('load', onLoad);
+      setTimeout(function () {
+        if (settled) return;
+        settled = true;
+        iframe.removeEventListener('load', onLoad);
+        if (f.parentNode) f.parentNode.removeChild(f);
+        retrying = false;   // still offline, stop and wait for the next trigger
+      }, POST_TIMEOUT_MS);
+
+      f.submit();
+    }
+    next();
+  }
+
+  window.addEventListener('online', retryUnsent);
+  retryUnsent();
+
+  /* ---------- recovery panel: five taps on the legal line ---------- */
+
+  var panel = document.getElementById('recovery');
+  var taps = 0, tapTimer = null;
+
+  document.getElementById('legal-bar').addEventListener('click', function () {
+    taps++;
+    clearTimeout(tapTimer);
+    tapTimer = setTimeout(function () { taps = 0; }, 1500);
+    if (taps >= 5) { taps = 0; openRecovery(); }
+  });
+
+  function csvEscape(v) { return '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"'; }
+
+  function refreshRecovery() {
+    var rows = readLog();
+    var unsent = 0;
+    var out = ['Time,First,Last,Phone,Email,WorkingWithAgent,SentToMailchimp'];
+    for (var i = 0; i < rows.length; i++) {
+      var r = rows[i];
+      if (!r.sent) unsent++;
+      out.push([r.t, r.first, r.last, r.phone, r.email, r.agent, r.sent ? 'yes' : 'NO'].map(csvEscape).join(','));
+    }
+    document.getElementById('recovery-csv').value = rows.length ? out.join('\n') : 'No sign ins yet.';
+    document.getElementById('recovery-meta').textContent =
+      rows.length + ' sign in' + (rows.length === 1 ? '' : 's') + ' on this iPad. ' +
+      (unsent ? unsent + ' not confirmed sent to Mailchimp.' : 'All confirmed sent to Mailchimp.');
+  }
+
+  function openRecovery() { refreshRecovery(); panel.classList.add('show'); }
+
+  document.getElementById('rec-close').addEventListener('click', function () {
+    panel.classList.remove('show');
+  });
+  document.getElementById('rec-retry').addEventListener('click', function () {
+    retryUnsent();
+    setTimeout(refreshRecovery, 1200);
+  });
+
+  // Two taps to clear, so a stray finger cannot wipe the day's log.
+  var clearBtn = document.getElementById('rec-clear');
+  var armed = false, armTimer = null;
+  clearBtn.addEventListener('click', function () {
+    if (!armed) {
+      armed = true;
+      clearBtn.textContent = 'Tap again to erase';
+      armTimer = setTimeout(function () { armed = false; clearBtn.textContent = 'Clear log'; }, 4000);
+      return;
+    }
+    clearTimeout(armTimer);
+    armed = false;
+    clearBtn.textContent = 'Clear log';
+    writeLog([]);
+    refreshRecovery();
+  });
+
+  /* ---------- kiosk housekeeping ---------- */
+
+  // Pinch zoom on a shared iPad leaves the page stranded for the next person.
+  document.addEventListener('gesturestart', function (e) { e.preventDefault(); });
+
+  // If the iPad sleeps mid sign in, come back to a clean blank screen.
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState !== 'visible') return;
+    retryUnsent();
+    if (body.classList.contains('signed')) resetForm();
+  });
+
+  // Clear anything half typed and abandoned. Ten minutes of no touch and the
+  // next guest gets a fresh screen.
+  var idleTimer = null;
+  function bumpIdle() {
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(function () {
+      if (!body.classList.contains('signed')) {
+        form.reset();
+        form.classList.remove('was-submitted');
+        clearError();
+      }
+    }, 600000);
+  }
+  ['touchstart', 'keydown', 'click'].forEach(function (ev) {
+    document.addEventListener(ev, bumpIdle, true);
+  });
+  bumpIdle();
+})();
+</script>
+
+</body>
+</html>
